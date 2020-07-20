@@ -11934,564 +11934,6 @@
 
 /* WEBPACK VAR INJECTION */
 
-/* harmony import */
-
-/*#__PURE__*/
-
-// Make it available globally as it needs to be accessible within the single file components (.vue)
-
-/* harmony default export */
-
-// We use this to apply style to certain elements
-
-// const buttons = [ 'copy', 'csv', 'excel', 'pdf', 'print' ];
-
-// dom:`
-
-//   <'row bt-datatable-header'<'col-sm-6'l><'col-sm-6'f>>
-
-//   <'row bt-datatable-body'<'col-sm-12'tr>>
-
-//   <'row bt-datatable-footer'<'col-sm-5'i><'col-sm-7'p>>`,
-
-/* 6 */
-
-/*! Responsive 2.2.3
- * 2014-2018 SpryMedia Ltd - datatables.net/license
- */
-
-/**
- * @summary     Responsive
- * @description Responsive tables plug-in for DataTables
- * @version     2.2.3
- * @file        dataTables.responsive.js
- * @author      SpryMedia Ltd (www.sprymedia.co.uk)
- * @contact     www.sprymedia.co.uk/contact
- * @copyright   Copyright 2014-2018 SpryMedia Ltd.
- *
- * This source file is free software, available under the following license:
- *   MIT license - http://datatables.net/license/mit
- *
- * This source file is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
- * or FITNESS FOR A PARTICULAR PURPOSE. See the license files for details.
- *
- * For details please refer to: http://www.datatables.net
- */
-
-// Sanity check that we are using DataTables 1.10 or newer
-
-// Check if responsive has already been initialised on this table
-
-// details is an object, but for simplicity the user can give it as a string
-
-// or a boolean
-
-/**
- * Responsive is a plug-in for the DataTables library that makes use of
- * DataTables' ability to change the visibility of columns, changing the
- * visibility of columns so the displayed columns fit into the table container.
- * The end result is that complex tables will be dynamically adjusted to fit
- * into the viewport, be it on a desktop, tablet or mobile browser.
- *
- * Responsive for DataTables has two modes of operation, which can used
- * individually or combined:
- *
- * * Class name based control - columns assigned class names that match the
- *   breakpoint logic can be shown / hidden as required for each breakpoint.
- * * Automatic control - columns are automatically hidden when there is no
- *   room left to display them. Columns removed from the right.
- *
- * In additional to column visibility control, Responsive also has built into
- * options to use DataTables' child row display to show / hide the information
- * from the table that has been hidden. There are also two modes of operation
- * for this child row display:
- *
- * * Inline - when the control element that the user can use to show / hide
- *   child rows is displayed inside the first column of the table.
- * * Column - where a whole column is dedicated to be the show / hide control.
- *
- * Initialisation of Responsive is performed by:
- *
- * * Adding the class `responsive` or `dt-responsive` to the table. In this case
- *   Responsive will automatically be initialised with the default configuration
- *   options when the DataTable is created.
- * * Using the `responsive` option in the DataTables configuration options. This
- *   can also be used to specify the configuration options, or simply set to
- *   `true` to use the defaults.
- *
- *  @class
- *  @param {object} settings DataTables settings object for the host table
- *  @param {object} [opts] Configuration options
- *  @requires jQuery 1.7+
- *  @requires DataTables 1.10.3+
- *
- *  @example
- *      $('#example').DataTable( {
- *        responsive: true
- *      } );
- *    } );
- */
-
-/**
-	 * Initialise the Responsive instance
-	 *
-	 * @private
-	 */
-
-// Use DataTables' throttle function to avoid processor thrashing on
-
-// resize
-
-// iOS has a bug whereby resize can fire when only scrolling
-
-// See: http://stackoverflow.com/questions/8898412
-
-// DataTables doesn't currently trigger an event when a row is added, so
-
-// we need to hook into its private API to enforce the hidden rows when
-
-// new data is added
-
-// Destroy event handler
-
-// Restore the columns that we've hidden
-
-// Reorder the breakpoints array here in case they have been added out
-
-// of order
-
-// Details handler
-
-// DataTables will trigger this event on every column it shows and
-
-// hides individually
-
-// Use a small debounce to allow multiple columns to be set together
-
-// Redraw the details box on each draw which will happen if the data
-
-// has changed. This is used until DataTables implements a native
-
-// `updated` event for rows
-
-// Change in column sizes means we need to calc
-
-// On Ajax reload we want to reopen any child rows which are displayed
-
-// by responsive
-
-// If columns were hidden, then DataTables needs to adjust the
-
-// column sizing
-
-// First pass - draw the table for the current viewport size
-
-/**
-	 * Calculate the visibility for the columns in a table for a given
-	 * breakpoint. The result is pre-determined based on the class logic if
-	 * class names are used to control all columns, but the width of the table
-	 * is also used if there are columns which are to be automatically shown
-	 * and hidden.
-	 *
-	 * @param  {string} breakpoint Breakpoint name to use for the calculation
-	 * @return {array} Array of boolean values initiating the visibility of each
-	 *   column.
-	 *  @private
-	 */
-
-// Second pass, use up any remaining width for other columns. For
-
-// scrolling tables we need to subtract the width of the scrollbar. It
-
-// may not be requires which makes this sub-optimal, but it would
-
-// require another full redraw to make complete use of those extra few
-
-// pixels
-
-// Control column needs to always be included. This makes it sub-
-
-// optimal in terms of using the available with, but to stop layout
-
-// thrashing or overflow. Also we need to account for the control column
-
-// width first so we know how much width is available for the other
-
-// columns, since the control column might not be the first one shown
-
-// Allow columns to be shown (counting by priority and then right to
-
-// left) until we run out of room
-
-// Once we've found a column that won't fit we don't let any
-
-// others display either, or columns might disappear in the
-
-// middle of the table
-
-// Determine if the 'control' column should be shown (if there is one).
-
-// This is the case when there is a hidden column (that is not the
-
-// control column). The two loops look inefficient here, but they are
-
-// trivial and will fly through. We need to know the outcome from the
-
-// first , before the action in the second can be taken
-
-// Replace not visible string with false from the control column detection above
-
-// Finally we need to make sure that there is at least one column that
-
-// is visible
-
-/**
-	 * Create the internal `columns` array with information about the columns
-	 * for the table. This includes determining which breakpoints the column
-	 * will appear in, based upon class names in the column, which makes up the
-	 * vast majority of this method.
-	 *
-	 * @private
-	 */
-
-// Add this breakpoint and all smaller
-
-// Add this breakpoint and all larger
-
-// Add all but this breakpoint
-
-// Loop over each column and determine if it has a responsive control
-
-// class
-
-// Split the class name up so multiple rules can be applied if needed
-
-// Include in all
-
-// Include in none (default) and no auto
-
-// Special column that is only visible, when one of the other
-
-// columns is hidden. This is used for the details control
-
-// Does this column have a class that matches this breakpoint?
-
-// Class name matches breakpoint name fully
-
-// Class name matched primary breakpoint name with no qualifier
-
-// If there was no control class, then automatic sizing is used
-
-/**
-	 * Show the details for the child row
-	 *
-	 * @param  {DataTables.Api} row    API instance for the row
-	 * @param  {boolean}        update Update flag
-	 * @private
-	 */
-
-/**
-	 * Initialisation for the details handler
-	 *
-	 * @private
-	 */
-
-// The inline type always uses the first child as the target
-
-// Keyboard accessibility
-
-// Initial draw has already happened
-
-// type.target can be a string jQuery selector or a column index
-
-// Click handler to show / hide the details rows when they are available
-
-// If the table is not collapsed (i.e. there is no hidden columns)
-
-// then take no action
-
-// Check that the row is actually a DataTable's controlled node
-
-// For column index, we determine if we should act or not in the
-
-// handler - otherwise it is already okay
-
-// $().closest() includes itself in its check
-
-// Check event type to do an action
-
-// The renderer is given as a function so the caller can execute it
-
-// only when they need (i.e. if hiding there is no point is running
-
-// the renderer)
-
-// For mouse users, prevent the focus ring from showing
-
-// And then re-allow at the end of the click
-
-/**
-	 * Get the details to pass to a renderer for a row
-	 * @param  {int} rowIdx Row index
-	 * @private
-	 */
-
-// Never and control columns should not be passed to the renderer
-
-/**
-	 * Find a breakpoint object from a name
-	 *
-	 * @param  {string} name Breakpoint name to find
-	 * @return {object}      Breakpoint description object
-	 * @private
-	 */
-
-/**
-	 * Re-create the contents of the child rows as the display has changed in
-	 * some way.
-	 *
-	 * @private
-	 */
-
-/**
-	 * Alter the table display for a resized viewport. This involves first
-	 * determining what breakpoint the window currently is in, getting the
-	 * column visibilities to apply and then setting them.
-	 *
-	 * @private
-	 */
-
-// Determine what breakpoint we are currently at
-
-// Show the columns for that break point
-
-// Set the class before the column visibility is changed so event
-
-// listeners know what the state is. Need to determine if there are
-
-// any columns that are not visible but can be shown
-
-// Inform listeners of the change
-
-// If no records, update the "No records" display element
-
-/**
-	 * Determine the width of each column in the table so the auto column hiding
-	 * has that information to work with. This method is never going to be 100%
-	 * perfect since column widths can change slightly per page, but without
-	 * seriously compromising performance this is quite effective.
-	 *
-	 * @private
-	 */
-
-// Are we allowed to do auto sizing?
-
-// Are there any columns that actually need auto-sizing, or do they all
-
-// have classes defined
-
-// Need to restore all children. They will be reinstated by a re-render
-
-// Clone the table with the current data in it
-
-// Body rows - we don't need to take account of DataTables' column
-
-// visibility since we implement our own here (hence the `display` set)
-
-// Footer
-
-// In the inline case extra padding is applied to the first column to
-
-// give space for the show / hide icon. We need to use this in the
-
-// calculation
-
-// It is unsafe to insert elements with the same name into the DOM
-
-// multiple times. For example, cloning and inserting a checked radio
-
-// clears the chcecked state of the original radio.
-
-// A position absolute table would take the table out of the flow of
-
-// our container element, bypassing the height and width (Scroller)
-
-// The cloned header now contains the smallest that each column can be
-
-/**
-	 * Set a column's visibility.
-	 *
-	 * We don't use DataTables' column visibility controls in order to ensure
-	 * that column visibility can Responsive can no-exist. Since only IE8+ is
-	 * supported (and all evergreen browsers of course) the control of the
-	 * display attribute works well.
-	 *
-	 * @param {integer} col      Column index
-	 * @param {boolean} showHide Show or hide (true or false)
-	 * @private
-	 */
-
-// empty string will remove the attr
-
-// If the are child nodes stored, we might need to reinsert them
-
-/**
-	 * Update the cell tab indexes for keyboard accessibility. This is called on
-	 * every table draw - that is potentially inefficient, but also the least
-	 * complex option given that column visibility can change on the fly. Its a
-	 * shame user-focus was removed from CSS 3 UI, as it would have solved this
-	 * issue with a single CSS statement.
-	 *
-	 * @private
-	 */
-
-// This is a bit of a hack - we need to limit the selected nodes to just
-
-// those of this table
-
-/**
- * List of default breakpoints. Each item in the array is an object with two
- * properties:
- *
- * * `name` - the breakpoint name.
- * * `width` - the breakpoint width
- *
- * @name Responsive.breakpoints
- * @static
- */
-
-/**
- * Display methods - functions which define how the hidden data should be shown
- * in the table.
- *
- * @namespace
- * @name Responsive.defaults
- * @static
- */
-
-// User interaction and the row is show, or nothing to show
-
-// Display
-
-// This is a wrapper so the modal options for Bootstrap and jQuery UI can
-
-// have options passed into them. This specific one doesn't need to be a
-
-// function but it is for consistency in the `modal` name
-
-// Show a modal
-
-// will tidy events for us
-
-// https://jsperf.com/childnodes-array-slice-vs-loop
-
-/**
- * Responsive default settings for initialisation
- *
- * @namespace
- * @name Responsive.defaults
- * @static
- */
-
-/**
-	 * List of breakpoints for the instance. Note that this means that each
-	 * instance can have its own breakpoints. Additionally, the breakpoints
-	 * cannot be changed once an instance has been creased.
-	 *
-	 * @type {Array}
-	 * @default Takes the value of `Responsive.breakpoints`
-	 */
-
-/**
-	 * Enable / disable auto hiding calculations. It can help to increase
-	 * performance slightly if you disable this option, but all columns would
-	 * need to have breakpoint classes assigned to them
-	 *
-	 * @type {Boolean}
-	 * @default  `true`
-	 */
-
-/**
-	 * Details control. If given as a string value, the `type` property of the
-	 * default object is set to that value, and the defaults used for the rest
-	 * of the object - this is for ease of implementation.
-	 *
-	 * The object consists of the following properties:
-	 *
-	 * * `display` - A function that is used to show and hide the hidden details
-	 * * `renderer` - function that is called for display of the child row data.
-	 *   The default function will show the data from the hidden columns
-	 * * `target` - Used as the selector for what objects to attach the child
-	 *   open / close to
-	 * * `type` - `false` to disable the details display, `inline` or `column`
-	 *   for the two control types
-	 *
-	 * @type {Object|string}
-	 */
-
-/**
-	 * Orthogonal data request option. This is used to define the data type
-	 * requested when Responsive gets the data to show in the child row.
-	 *
-	 * @type {String}
-	 */
-
-/*
- * API
- */
-
-// Doesn't do anything - work around for a bug in DT... Not documented
-
-/**
- * Version information
- *
- * @name Responsive.version
- * @static
- */
-
-// Attach a listener to the document which listens for DataTables initialisation
-
-// events so we can automatically initialise
-
-/* 7 */
-
-/*!
-   * Bowser - a browser detector
-   * https://github.com/lancedikson/bowser
-   * MIT License | (c) Dustin Diaz 2012-2015
-   * MIT License | (c) Denis Demchenko 2015-2019
-   */
-
-/**!
-
-   @license
-   handlebars v4.7.3
-
-  Copyright (C) 2011-2019 by Yehuda Katz
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-  THE SOFTWARE.
-
-  */
-
-/* 8 */
-
 /*!
 * Parsley.js
 * Version 2.9.2 - built Tue, Dec 10th 2019, 6:18 pm
@@ -13105,6 +12547,564 @@
 // For browsers that do not support isTrusted, assumes event is native.
 
 // Bind the testing handlers
+
+/* 6 */
+
+/* harmony import */
+
+/*#__PURE__*/
+
+// Make it available globally as it needs to be accessible within the single file components (.vue)
+
+/* harmony default export */
+
+// We use this to apply style to certain elements
+
+// const buttons = [ 'copy', 'csv', 'excel', 'pdf', 'print' ];
+
+// dom:`
+
+//   <'row bt-datatable-header'<'col-sm-6'l><'col-sm-6'f>>
+
+//   <'row bt-datatable-body'<'col-sm-12'tr>>
+
+//   <'row bt-datatable-footer'<'col-sm-5'i><'col-sm-7'p>>`,
+
+/* 7 */
+
+/*! Responsive 2.2.3
+ * 2014-2018 SpryMedia Ltd - datatables.net/license
+ */
+
+/**
+ * @summary     Responsive
+ * @description Responsive tables plug-in for DataTables
+ * @version     2.2.3
+ * @file        dataTables.responsive.js
+ * @author      SpryMedia Ltd (www.sprymedia.co.uk)
+ * @contact     www.sprymedia.co.uk/contact
+ * @copyright   Copyright 2014-2018 SpryMedia Ltd.
+ *
+ * This source file is free software, available under the following license:
+ *   MIT license - http://datatables.net/license/mit
+ *
+ * This source file is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE. See the license files for details.
+ *
+ * For details please refer to: http://www.datatables.net
+ */
+
+// Sanity check that we are using DataTables 1.10 or newer
+
+// Check if responsive has already been initialised on this table
+
+// details is an object, but for simplicity the user can give it as a string
+
+// or a boolean
+
+/**
+ * Responsive is a plug-in for the DataTables library that makes use of
+ * DataTables' ability to change the visibility of columns, changing the
+ * visibility of columns so the displayed columns fit into the table container.
+ * The end result is that complex tables will be dynamically adjusted to fit
+ * into the viewport, be it on a desktop, tablet or mobile browser.
+ *
+ * Responsive for DataTables has two modes of operation, which can used
+ * individually or combined:
+ *
+ * * Class name based control - columns assigned class names that match the
+ *   breakpoint logic can be shown / hidden as required for each breakpoint.
+ * * Automatic control - columns are automatically hidden when there is no
+ *   room left to display them. Columns removed from the right.
+ *
+ * In additional to column visibility control, Responsive also has built into
+ * options to use DataTables' child row display to show / hide the information
+ * from the table that has been hidden. There are also two modes of operation
+ * for this child row display:
+ *
+ * * Inline - when the control element that the user can use to show / hide
+ *   child rows is displayed inside the first column of the table.
+ * * Column - where a whole column is dedicated to be the show / hide control.
+ *
+ * Initialisation of Responsive is performed by:
+ *
+ * * Adding the class `responsive` or `dt-responsive` to the table. In this case
+ *   Responsive will automatically be initialised with the default configuration
+ *   options when the DataTable is created.
+ * * Using the `responsive` option in the DataTables configuration options. This
+ *   can also be used to specify the configuration options, or simply set to
+ *   `true` to use the defaults.
+ *
+ *  @class
+ *  @param {object} settings DataTables settings object for the host table
+ *  @param {object} [opts] Configuration options
+ *  @requires jQuery 1.7+
+ *  @requires DataTables 1.10.3+
+ *
+ *  @example
+ *      $('#example').DataTable( {
+ *        responsive: true
+ *      } );
+ *    } );
+ */
+
+/**
+	 * Initialise the Responsive instance
+	 *
+	 * @private
+	 */
+
+// Use DataTables' throttle function to avoid processor thrashing on
+
+// resize
+
+// iOS has a bug whereby resize can fire when only scrolling
+
+// See: http://stackoverflow.com/questions/8898412
+
+// DataTables doesn't currently trigger an event when a row is added, so
+
+// we need to hook into its private API to enforce the hidden rows when
+
+// new data is added
+
+// Destroy event handler
+
+// Restore the columns that we've hidden
+
+// Reorder the breakpoints array here in case they have been added out
+
+// of order
+
+// Details handler
+
+// DataTables will trigger this event on every column it shows and
+
+// hides individually
+
+// Use a small debounce to allow multiple columns to be set together
+
+// Redraw the details box on each draw which will happen if the data
+
+// has changed. This is used until DataTables implements a native
+
+// `updated` event for rows
+
+// Change in column sizes means we need to calc
+
+// On Ajax reload we want to reopen any child rows which are displayed
+
+// by responsive
+
+// If columns were hidden, then DataTables needs to adjust the
+
+// column sizing
+
+// First pass - draw the table for the current viewport size
+
+/**
+	 * Calculate the visibility for the columns in a table for a given
+	 * breakpoint. The result is pre-determined based on the class logic if
+	 * class names are used to control all columns, but the width of the table
+	 * is also used if there are columns which are to be automatically shown
+	 * and hidden.
+	 *
+	 * @param  {string} breakpoint Breakpoint name to use for the calculation
+	 * @return {array} Array of boolean values initiating the visibility of each
+	 *   column.
+	 *  @private
+	 */
+
+// Second pass, use up any remaining width for other columns. For
+
+// scrolling tables we need to subtract the width of the scrollbar. It
+
+// may not be requires which makes this sub-optimal, but it would
+
+// require another full redraw to make complete use of those extra few
+
+// pixels
+
+// Control column needs to always be included. This makes it sub-
+
+// optimal in terms of using the available with, but to stop layout
+
+// thrashing or overflow. Also we need to account for the control column
+
+// width first so we know how much width is available for the other
+
+// columns, since the control column might not be the first one shown
+
+// Allow columns to be shown (counting by priority and then right to
+
+// left) until we run out of room
+
+// Once we've found a column that won't fit we don't let any
+
+// others display either, or columns might disappear in the
+
+// middle of the table
+
+// Determine if the 'control' column should be shown (if there is one).
+
+// This is the case when there is a hidden column (that is not the
+
+// control column). The two loops look inefficient here, but they are
+
+// trivial and will fly through. We need to know the outcome from the
+
+// first , before the action in the second can be taken
+
+// Replace not visible string with false from the control column detection above
+
+// Finally we need to make sure that there is at least one column that
+
+// is visible
+
+/**
+	 * Create the internal `columns` array with information about the columns
+	 * for the table. This includes determining which breakpoints the column
+	 * will appear in, based upon class names in the column, which makes up the
+	 * vast majority of this method.
+	 *
+	 * @private
+	 */
+
+// Add this breakpoint and all smaller
+
+// Add this breakpoint and all larger
+
+// Add all but this breakpoint
+
+// Loop over each column and determine if it has a responsive control
+
+// class
+
+// Split the class name up so multiple rules can be applied if needed
+
+// Include in all
+
+// Include in none (default) and no auto
+
+// Special column that is only visible, when one of the other
+
+// columns is hidden. This is used for the details control
+
+// Does this column have a class that matches this breakpoint?
+
+// Class name matches breakpoint name fully
+
+// Class name matched primary breakpoint name with no qualifier
+
+// If there was no control class, then automatic sizing is used
+
+/**
+	 * Show the details for the child row
+	 *
+	 * @param  {DataTables.Api} row    API instance for the row
+	 * @param  {boolean}        update Update flag
+	 * @private
+	 */
+
+/**
+	 * Initialisation for the details handler
+	 *
+	 * @private
+	 */
+
+// The inline type always uses the first child as the target
+
+// Keyboard accessibility
+
+// Initial draw has already happened
+
+// type.target can be a string jQuery selector or a column index
+
+// Click handler to show / hide the details rows when they are available
+
+// If the table is not collapsed (i.e. there is no hidden columns)
+
+// then take no action
+
+// Check that the row is actually a DataTable's controlled node
+
+// For column index, we determine if we should act or not in the
+
+// handler - otherwise it is already okay
+
+// $().closest() includes itself in its check
+
+// Check event type to do an action
+
+// The renderer is given as a function so the caller can execute it
+
+// only when they need (i.e. if hiding there is no point is running
+
+// the renderer)
+
+// For mouse users, prevent the focus ring from showing
+
+// And then re-allow at the end of the click
+
+/**
+	 * Get the details to pass to a renderer for a row
+	 * @param  {int} rowIdx Row index
+	 * @private
+	 */
+
+// Never and control columns should not be passed to the renderer
+
+/**
+	 * Find a breakpoint object from a name
+	 *
+	 * @param  {string} name Breakpoint name to find
+	 * @return {object}      Breakpoint description object
+	 * @private
+	 */
+
+/**
+	 * Re-create the contents of the child rows as the display has changed in
+	 * some way.
+	 *
+	 * @private
+	 */
+
+/**
+	 * Alter the table display for a resized viewport. This involves first
+	 * determining what breakpoint the window currently is in, getting the
+	 * column visibilities to apply and then setting them.
+	 *
+	 * @private
+	 */
+
+// Determine what breakpoint we are currently at
+
+// Show the columns for that break point
+
+// Set the class before the column visibility is changed so event
+
+// listeners know what the state is. Need to determine if there are
+
+// any columns that are not visible but can be shown
+
+// Inform listeners of the change
+
+// If no records, update the "No records" display element
+
+/**
+	 * Determine the width of each column in the table so the auto column hiding
+	 * has that information to work with. This method is never going to be 100%
+	 * perfect since column widths can change slightly per page, but without
+	 * seriously compromising performance this is quite effective.
+	 *
+	 * @private
+	 */
+
+// Are we allowed to do auto sizing?
+
+// Are there any columns that actually need auto-sizing, or do they all
+
+// have classes defined
+
+// Need to restore all children. They will be reinstated by a re-render
+
+// Clone the table with the current data in it
+
+// Body rows - we don't need to take account of DataTables' column
+
+// visibility since we implement our own here (hence the `display` set)
+
+// Footer
+
+// In the inline case extra padding is applied to the first column to
+
+// give space for the show / hide icon. We need to use this in the
+
+// calculation
+
+// It is unsafe to insert elements with the same name into the DOM
+
+// multiple times. For example, cloning and inserting a checked radio
+
+// clears the chcecked state of the original radio.
+
+// A position absolute table would take the table out of the flow of
+
+// our container element, bypassing the height and width (Scroller)
+
+// The cloned header now contains the smallest that each column can be
+
+/**
+	 * Set a column's visibility.
+	 *
+	 * We don't use DataTables' column visibility controls in order to ensure
+	 * that column visibility can Responsive can no-exist. Since only IE8+ is
+	 * supported (and all evergreen browsers of course) the control of the
+	 * display attribute works well.
+	 *
+	 * @param {integer} col      Column index
+	 * @param {boolean} showHide Show or hide (true or false)
+	 * @private
+	 */
+
+// empty string will remove the attr
+
+// If the are child nodes stored, we might need to reinsert them
+
+/**
+	 * Update the cell tab indexes for keyboard accessibility. This is called on
+	 * every table draw - that is potentially inefficient, but also the least
+	 * complex option given that column visibility can change on the fly. Its a
+	 * shame user-focus was removed from CSS 3 UI, as it would have solved this
+	 * issue with a single CSS statement.
+	 *
+	 * @private
+	 */
+
+// This is a bit of a hack - we need to limit the selected nodes to just
+
+// those of this table
+
+/**
+ * List of default breakpoints. Each item in the array is an object with two
+ * properties:
+ *
+ * * `name` - the breakpoint name.
+ * * `width` - the breakpoint width
+ *
+ * @name Responsive.breakpoints
+ * @static
+ */
+
+/**
+ * Display methods - functions which define how the hidden data should be shown
+ * in the table.
+ *
+ * @namespace
+ * @name Responsive.defaults
+ * @static
+ */
+
+// User interaction and the row is show, or nothing to show
+
+// Display
+
+// This is a wrapper so the modal options for Bootstrap and jQuery UI can
+
+// have options passed into them. This specific one doesn't need to be a
+
+// function but it is for consistency in the `modal` name
+
+// Show a modal
+
+// will tidy events for us
+
+// https://jsperf.com/childnodes-array-slice-vs-loop
+
+/**
+ * Responsive default settings for initialisation
+ *
+ * @namespace
+ * @name Responsive.defaults
+ * @static
+ */
+
+/**
+	 * List of breakpoints for the instance. Note that this means that each
+	 * instance can have its own breakpoints. Additionally, the breakpoints
+	 * cannot be changed once an instance has been creased.
+	 *
+	 * @type {Array}
+	 * @default Takes the value of `Responsive.breakpoints`
+	 */
+
+/**
+	 * Enable / disable auto hiding calculations. It can help to increase
+	 * performance slightly if you disable this option, but all columns would
+	 * need to have breakpoint classes assigned to them
+	 *
+	 * @type {Boolean}
+	 * @default  `true`
+	 */
+
+/**
+	 * Details control. If given as a string value, the `type` property of the
+	 * default object is set to that value, and the defaults used for the rest
+	 * of the object - this is for ease of implementation.
+	 *
+	 * The object consists of the following properties:
+	 *
+	 * * `display` - A function that is used to show and hide the hidden details
+	 * * `renderer` - function that is called for display of the child row data.
+	 *   The default function will show the data from the hidden columns
+	 * * `target` - Used as the selector for what objects to attach the child
+	 *   open / close to
+	 * * `type` - `false` to disable the details display, `inline` or `column`
+	 *   for the two control types
+	 *
+	 * @type {Object|string}
+	 */
+
+/**
+	 * Orthogonal data request option. This is used to define the data type
+	 * requested when Responsive gets the data to show in the child row.
+	 *
+	 * @type {String}
+	 */
+
+/*
+ * API
+ */
+
+// Doesn't do anything - work around for a bug in DT... Not documented
+
+/**
+ * Version information
+ *
+ * @name Responsive.version
+ * @static
+ */
+
+// Attach a listener to the document which listens for DataTables initialisation
+
+// events so we can automatically initialise
+
+/* 8 */
+
+/*!
+   * Bowser - a browser detector
+   * https://github.com/lancedikson/bowser
+   * MIT License | (c) Dustin Diaz 2012-2015
+   * MIT License | (c) Denis Demchenko 2015-2019
+   */
+
+/**!
+
+   @license
+   handlebars v4.7.3
+
+  Copyright (C) 2011-2019 by Yehuda Katz
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+
+  */
 
 /* 9 */
 

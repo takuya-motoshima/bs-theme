@@ -119,4 +119,8 @@ export default class {
   enableSubmit() {
     this.submit.prop('disabled', false);
   }
+
+  addValidator(name, validator, priority) {
+    Parsley.addValidator(name, validator, priority);
+  }
 }
