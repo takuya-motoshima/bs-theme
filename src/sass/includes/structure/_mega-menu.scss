@@ -1,0 +1,179 @@
+.bt-mega-dropdown {
+	position: static;
+}
+
+.bt-mega-menu.dropdown-menu {
+	padding: $mega-menu-padding;
+	margin-top: 0;
+	width: 100%;
+	border-width: 0;
+	box-shadow: $mega-menu-box-shadow;
+ 	border-top-right-radius: 0;
+ 	border-top-left-radius: 0;
+ 	z-index: $mega-menu-zindex;
+
+ 	@include tablet {
+ 		
+ 		.bt-nav-tabs-sub & {
+	 		padding: 0;
+	 		background-color: darken($left-sidebar-sub-level-bg, 5%);
+ 		}
+ 	}
+}
+
+.bt-mega-menu-row {
+	display: flex;
+  flex-wrap: wrap;
+  margin-right: ($grid-gutter-width / -1.5);
+  margin-left: ($grid-gutter-width / -1.5);
+
+	@include tablet {
+		padding: 7px 0;
+		flex-direction: column;
+		margin: 0;
+	}
+}
+
+.bt-mega-menu-column {
+	position: relative;
+	padding-top: $mega-menu-column-vertical-spacing;
+	padding-bottom: $mega-menu-column-vertical-spacing;
+	width: 100%;
+  min-height: 1px;
+  padding-right: ($grid-gutter-width / 1.5);
+  padding-left: ($grid-gutter-width / 1.5);
+
+	@include make-col(3);
+	border-right: 1px solid darken(theme-color("light"), 5%);
+
+	@include tablet {
+		max-width: 100%;
+		border-right-width: 0;
+		padding: 0;
+	}
+
+	&:first-child {
+		padding-left: 40px;
+
+		@include tablet {
+			padding: 0;
+		}
+	}
+
+	&:last-child {
+		border-right-width: 0;
+	}
+}
+
+.bt-mega-menu-section {
+	margin: $mega-menu-section-margin;
+	
+	@include tablet {
+		margin: 0;
+
+		&.parent {
+
+			> .nav-link {
+				color: $left-sidebar-text-color;
+				
+				&:after {
+					position: absolute;
+					content: $arrow-down-code;
+					font-family: $icons-font;
+					font-size: 1.615rem;
+					vertical-align: middle;
+					top: 0;
+					right: 15px;
+					color: darken($left-sidebar-bg, 19%);
+				}
+			}
+		}
+
+		&.open {
+
+			> .nav-link {
+	    	color: theme-color("primary");
+
+	    	&:after {
+	    		content: $arrow-up-code;
+	    		color: theme-color("primary");
+	    	}
+	    }
+		}
+	}
+
+	> .nav-link {
+		font-size: 1.07rem;
+		font-weight: 400;
+
+		.navbar .navbar-nav & {
+			padding: $mega-menu-section-padding;
+
+			@include tablet {
+				padding: 0 17px 0 ($sub-nav-item-padding + 54px);
+			}
+		}
+
+		@include tablet {
+			position: relative;
+	    font-size: 1rem;
+	    line-height: $sub-nav-height * 0.72;
+	    color: darken(theme-color("light"), 37%);
+		}
+
+		.icon {
+			font-size: 1.3rem;
+			vertical-align: middle;
+			margin-right: 6px;
+			margin-top: -2px;
+
+			@include tablet {
+				font-size: 1.154rem
+			}
+		}
+	}
+}
+
+.bt-mega-menu-sub-items {
+
+	@include tablet {
+		display: none;
+		padding: $sub-nav-mobile-vertical-padding 0;
+		background-color: darken($left-sidebar-sub-level-bg, 8%);
+
+		.bt-mega-menu-section.open & {
+			display: block;
+		}
+	}
+
+	.dropdown-item {
+		color: $navbar-default-link-color;
+
+		.navbar .navbar-nav & {
+			padding: $mega-menu-item-padding;
+
+			&:hover {
+				background-color: transparent;
+				color: $navbar-default-link-hover-color;
+			}
+			
+			&.active {
+				background-color: transparent;
+				color: theme-color("primary");
+			}
+
+			&:focus {
+				background-color: transparent;
+			}
+		}
+
+		@include tablet {
+			color: $left-sidebar-text-color;
+
+			.bt-nav-tabs-sub .dropdown-menu & {
+				padding: .6rem 1.5rem .6rem 110px;
+				font-size: 1rem;
+			}
+		}
+	}
+}

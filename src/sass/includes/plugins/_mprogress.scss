@@ -1,0 +1,14 @@
+.ui-mprogress {
+	.deter-bar {
+		background: $primary;
+	}
+	.peg {
+		box-shadow: 0 0 10px $primary, 0 0 5px lighten($primary, 15%);
+	}
+
+	.bar-bg,
+  .buffer-bg {
+  	background: lighten($primary, 30%);
+  }
+}
+

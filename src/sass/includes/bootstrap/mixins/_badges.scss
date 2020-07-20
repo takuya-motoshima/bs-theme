@@ -1,0 +1,6 @@
+//Colored Badges Mixin
+@mixin badge-color($color){
+  color: $badge-text-color;
+  background-color: $color;
+  border: transparent;
+}

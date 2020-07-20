@@ -1,0 +1,24 @@
+@mixin sf-pro-font($type, $weight, $file, $format) {
+    @font-face {
+        font-family: 'SF Pro #{$type}';
+        font-style: normal;
+        font-weight: $weight;
+        src: url('#{$fonts-path}/#{$file}.#{$format}') format($format);
+    }
+}
+
+@include sf-pro-font('JP', 300, 'SFProJP_light', 'woff2');
+@include sf-pro-font('JP', 400, 'SFProJP_regular', 'woff2');
+@include sf-pro-font('JP', 500, 'SFProJP_medium', 'woff2');
+@include sf-pro-font('JP', 600, 'SFProJP_semibold', 'woff2');
+@include sf-pro-font('JP', 700, 'SFProJP_bold', 'woff2');
+@include sf-pro-font('Display', 400, 'sf-pro-display_regular', 'woff2');
+@include sf-pro-font('Display', 500, 'sf-pro-display_medium', 'woff2');
+@include sf-pro-font('Display', 600, 'sf-pro-display_semibold', 'woff2');
+@include sf-pro-font('Display', 700, 'sf-pro-display_bold', 'woff2');
+@include sf-pro-font('Text', 400, 'sf-pro-text_regular', 'woff2');
+@include sf-pro-font('Text', 600, 'sf-pro-text_semibold', 'woff2');
+@include sf-pro-font('Text', 700, 'sf-pro-text_bold', 'woff2');
+@include sf-pro-font('Icons', 300, 'SFProIcons_light', 'woff');
+@include sf-pro-font('Icons', 400, 'SFProIcons_regular', 'woff');
+@include sf-pro-font('Icons', 600, 'SFProIcons_semibold', 'woff');

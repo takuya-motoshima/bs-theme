@@ -1,0 +1,100 @@
+// Color fix function to determine whether we need to use a contrast color or not
+
+@function calculate-yiq($color) {
+	$r: red($color);
+  $g: green($color);
+  $b: blue($color);
+  
+  @return (($r*299) + ($g*587) + ($b*114))/1000;
+}
+
+@function is-dark-contrast($color) {
+	$yiq: calculate-yiq($color);
+
+	@if ($yiq >= 128) {
+  	@return true;
+  } @else {
+    @return false;
+  }
+}
+
+@function shade-correction($color, $text: false, $mix-color: black, $percentage: 57%) {
+
+  @if (is-dark-contrast($color)) {
+  	@if($text) {
+			$color: mix($mix-color, $color, $percentage);
+  	} @else {
+  		@if( $percentage != 57% ){
+    		$color: mix($mix-color, $color, $percentage);
+  		} @else {
+    		$color: mix($mix-color, $color, 28%);
+  		}
+  	}
+  } @else {
+    $color: #FFFFFF;
+  }
+
+	@return $color;
+}
+
+@function primary-contrast-correction($color, $bg) {
+	@if $enable-contrast-calculation != true {
+		@return $color;
+	}
+
+	@if(is-dark-contrast($bg)){
+		@if(check-contrast($bg, $color, 3.3)) {
+			@return $color;
+		} @else {
+			@return mix(white, $bg, 65%);
+		}
+	} @else {
+		@return mix($bg, white, 40%);
+	}
+}
+
+@function shade-contrast-correction($color, $bg) {
+	@if $enable-contrast-calculation != true {
+		@return mix(black, $bg, 50%);
+	}
+
+	@if(is-dark-contrast($bg)){
+		@if(check-contrast($bg, $color, 3.3)) {
+			@return mix(black, $bg, 28%);
+		} @else {
+			@return mix(black, $bg, 50%);
+		}
+	} @else {
+			@return mix($bg, white, 40%);		
+	}
+}
+
+@function contrast-image-selector($bg, $url) {
+	@if(is-dark-contrast($bg)){
+		@return $url;
+	} @else {
+		@return str-insert($url, "-white", (str-index($url, "/logo") + str-length("/logo")));
+	}
+}
+
+@function is-custom-color($vartype, $list-name, $function-name: "", $param1: "", $param2: "", $param3: false, $param4: black, $param5: 57%) {
+	@if(type-of($vartype) == color) {
+		@if($function-name == "shade-correction") {
+			@return shade-correction($param1, $param3, $param4, $param5);
+		} @else if($function-name == "primary-contrast-correction") {
+			@return primary-contrast-correction($param1, $param2);
+		} @else if($function-name == "shade-contrast-correction") {
+			@return shade-contrast-correction($param1, $param2);
+		} @else if($function-name == "lighten") {
+			@return lighten($param1, $param5);
+		} @else if($function-name == "darken") {
+			@return darken($param1, $param5);
+		} @else if($function-name == "assign") {
+			@return $param1;
+		} @else {
+			@return $vartype;
+		}
+	} @else {
+		@return map-get($vartype, $list-name);
+	}
+}

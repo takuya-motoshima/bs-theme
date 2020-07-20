@@ -1,0 +1,129 @@
+/*------------------------------------------------------------------
+  [Input Groups]
+*/
+
+//Search input component
+.input-search {
+
+  input{
+    border: 1px solid $input-border-color;
+    border-radius: 0;
+    display: block;
+    font-size: $font-size-base;
+
+    &:focus{
+      background-color: transparent;
+    }
+  }
+
+  .input-group-btn {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: auto;
+    top: 1px;
+    right: 1px;
+    z-index: 3;
+
+    button{
+      box-shadow: none;
+      border: none;
+      height: $input-height - .1538rem;
+
+      &:active{
+        background-color: transparent;
+        box-shadow: none;
+      }
+
+      .icon{
+        font-size: 1.923rem;
+        color: lighten($body-color, 20%);
+      }
+
+      &:hover{
+
+      	.icon{
+      		color: lighten($body-color, 10%);
+      	}
+      }
+    }
+  }
+
+  &.input-group-lg{
+
+  	.input-group-btn {
+
+  		button{
+  			height: $input-height-lg - .1538rem;
+  		}
+  	}
+  }
+
+  &.input-group-sm{
+
+  	.input-group-btn{
+
+  		button{
+  			height: $input-height-sm + .4rem;
+
+        &:active,
+        &:active:hover {
+          background-color: transparent;
+          box-shadow: none;
+
+          .icon {
+            color: theme-color("primary");
+          }
+        }
+
+  			.icon{
+  				font-size: 1.692rem;
+  			}
+  		}
+  	}
+  }
+}
+
+.input-group-lg{
+
+  > .form-control:not(textarea),
+  > .input-group-prepend > .input-group-text,
+  > .input-group-append > .input-group-text,
+  > .input-group-prepend > .btn,
+  > .input-group-append > .btn {
+    height: 57px;
+    padding: 12px 14px;
+    font-size: 1.385rem;
+    font-weight: $font-weight-light;
+    border-radius: 2px;
+  }
+
+  > .input-group-append {
+
+    .btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  .input-group-prepend {
+
+    .btn {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+.input-group-sm {
+
+  > .form-control:not(textarea),
+  > .input-group-prepend > .input-group-text,
+  > .input-group-append > .input-group-text,
+  > .input-group-prepend > .btn,
+  > .input-group-append > .btn {
+    height: 37px;
+    font-size: $font-size-base;
+    padding: 4px 12px;
+  }
+}

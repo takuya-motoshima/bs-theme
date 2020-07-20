@@ -1,0 +1,58 @@
+// Footer
+
+.bt-footer {
+	background-color: $footer-bg;
+	padding: $footer-padding;
+	border-top: 1px solid $footer-border-color;
+	color: $footer-color;
+
+	@include phone {
+		padding: $footer-padding-phone;
+	}
+	@include tablet {
+		padding: $footer-padding-phone;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.nav {
+		.nav-link {
+			@include tablet {
+				padding: $footer-nav-padding-phone;
+			}
+			@include phone {
+				padding: $footer-nav-padding-phone;
+			}
+
+			&:first-child {
+				@include tablet {
+					padding-left: 0;
+				}
+				@include phone {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}
+
+.bt-footer-links {
+	li {
+		padding: 2px 0;
+	}
+}
+.footer-copyright {
+	text-align: right;
+	padding: $footer-copyright-padding;
+
+	@include tablet{
+		text-align: left;
+		padding-left: 0;
+	}
+
+	@include phone{
+		text-align: left;
+	}
+}

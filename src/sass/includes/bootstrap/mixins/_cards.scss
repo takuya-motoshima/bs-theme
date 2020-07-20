@@ -1,0 +1,20 @@
+//Full colored panel
+@mixin card-full-color($bgcolor, $color:$white){
+  background-color: $bgcolor;
+  color: $color;
+
+  .card-header-contrast{
+      background-color: lighten($bgcolor, 3%);
+      padding: 20px 20px 15px;
+      margin: 0;
+  }
+
+  .tools{
+    .icon{
+      color: $color;
+      &:hover{
+        color: darken($bgcolor, 6%);
+      }
+    }
+  }
+}

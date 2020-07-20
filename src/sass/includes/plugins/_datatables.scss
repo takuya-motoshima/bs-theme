@@ -1,0 +1,218 @@
+/*------------------------------------------------------------------
+	[dataTables]
+*/
+// @import "../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// @import "../../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+// @import "../../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+table.dataTable {
+	margin: 0 !important;
+	border-collapse: collapse !important;
+	width: 100% !important;
+
+	thead {
+
+		// Sort icon
+		.sorting:before,
+		.sorting:after,
+		.sorting_asc:before,
+		.sorting_asc:after,
+		.sorting_desc:before,
+		.sorting_desc:after {
+			top: 50% !important;
+			right: .5em !important;
+			bottom: initial !important;
+			transform: translateY(-50%);
+			font-family: "Font Awesome 5 Free";
+			// font-size: 1.538rem;
+		}
+
+		// Ascending sort icon
+		.sorting:before,
+		.sorting_asc:before,
+		.sorting_desc:before,
+		.sorting_asc_disabled:before,
+		.sorting_desc_disabled:before {
+			content: "\f0de";
+		}
+
+		// Descending sort icon
+		.sorting:after,
+		.sorting_asc:after,
+		.sorting_desc:after,
+		.sorting_asc_disabled:after,
+		.sorting_desc_disabled:after {
+			content: "\f0dd";
+		}
+
+		// Active sort icon
+		.sorting_asc:before,
+		.sorting_desc:after {
+			color: #16b;
+		}
+	}
+
+	tbody {
+
+		tr.child {
+
+			ul.dtr-details {
+				padding: 0;
+				line-height: 28px;
+				width: 100%;
+			}
+		}
+
+		th {
+
+			&.dataTables_empty {
+				background-color: #ffffff;
+			}
+		}
+
+		td {
+
+			span.expand-content-icon {
+				display: none;
+				cursor: pointer;
+				color: theme-color("primary");
+				font-size: 1.692rem;
+				padding-top: 5px;
+			}
+
+			&.dataTables_empty {
+				background-color: #ffffff;
+			}
+		}
+	}
+
+	&.dtr-inline.collapsed {
+	
+		> tbody {
+		
+			> tr[role="row"] {
+				
+				> td {
+					
+					&:first-child {
+						padding-left: 33px;
+						
+						&:before {
+							top: 50%;
+							transform: translateY(-50%);
+							left: 9px;
+							color: theme-color("primary");
+							font-weight: bold;
+							font-size: 1.538rem;
+							line-height: 15px;
+							border-color: theme-color("primary");
+							background-color: transparent;
+							box-shadow: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+div.dataTables_wrapper {
+	flex-flow: column;
+	align-items: stretch;
+	padding-left: 0;
+	padding-right: 0;
+
+	div.dataTables_filter {
+
+		label {
+			display: flex;
+			align-items: center;
+			width: 100%;
+		}
+
+		input {
+			flex: 1;
+		}
+	}
+
+	div.dataTables_info {
+		color: lighten($body-color, 13%);
+		padding-top: 5px;
+	}
+
+	div.dataTables_paginate {
+
+		ul.pagination {
+			margin: 0;
+			justify-content: flex-end;
+
+			@include phone {
+				justify-content: center;
+			}
+		}
+	}
+
+	div.dataTables_length label, 
+	div.dataTables_filter label {
+		margin-bottom: 0;
+		font-size: 1rem;
+		color: lighten($body-color, 13%);
+	}
+
+	div.dataTables_length {
+		
+		label {
+			justify-content: flex-start;
+
+			select.form-control-sm {
+				height: 37px;
+				padding: 2px;
+				margin: 0 5px;
+			}
+		}
+
+		select {
+			width: 75px;
+		}
+	}
+
+	div.dataTables_filter {
+		
+		& + * {
+			padding-top: 10px;
+		}
+
+		label {
+			justify-content: flex-end;
+
+			select {
+				padding: 2px;
+			}
+		}
+	}
+}
+
+.bt-datatable-header {
+  border-bottom: 0;
+	// border-bottom: 1px solid $table-border-color;
+	margin: 2px 0 0;
+	padding: 15px 10px 22px;
+
+	.dt-buttons {
+
+		.btn {
+
+			embed{
+				outline: none;
+			}
+		}
+	}
+}
+
+.bt-datatable-footer {
+	margin: 0;
+	padding: 15px 3px 13px;
+	background-color: #FFFFFF;
+	border-top: 1px solid $table-border-color;
+}
+
