@@ -15,7 +15,7 @@
     "url": "git+https://github.com/takuya-motoshima/bs-theme.git"
   },
   "files": [
-    "dist/*.js",
+    "dist",
     "package.json"
   ],
   "keywords": [
