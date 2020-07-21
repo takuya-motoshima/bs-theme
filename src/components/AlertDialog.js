@@ -1,7 +1,7 @@
 import $ from 'jquery';
-import Dialog from '~/components/Dialog';
+import DialogBase from '~/components/DialogBase';
 
-export default class extends Dialog {
+export default class extends DialogBase {
   
   constructor({ keyboard = true, icon = 'success' } = {}) {
     const template = `

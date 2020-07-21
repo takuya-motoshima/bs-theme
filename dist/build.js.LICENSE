@@ -15865,7 +15865,7 @@
 
 // Initialize scroller
 
-// CONCATENATED MODULE: ./src/components/Dialog.js
+// CONCATENATED MODULE: ./src/components/DialogBase.js
 
 // afterClose: () => this.afterClose()
 

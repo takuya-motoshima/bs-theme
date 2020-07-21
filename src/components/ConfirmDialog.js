@@ -1,8 +1,8 @@
 import $ from 'jquery';
 import { Template } from 'js-shared'
-import Dialog from '~/components/Dialog';
+import DialogBase from '~/components/DialogBase';
 
-export default class extends Dialog {
+export default class extends DialogBase {
 
   constructor({ keyboard = true, cancelable = true, okButton = 'OK', cancelButton = 'キャンセル' } = {}) {
     const template = `

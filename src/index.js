@@ -12,6 +12,7 @@ import initScrollTopButton from '~/utils/initScrollTopButton';
 import color from '~/utils/color';
 import AlertDialog from '~/components/AlertDialog';
 import ConfirmDialog from '~/components/ConfirmDialog';
+import DialogBase from '~/components/DialogBase';
 import Validator from '~/components/Validator';
 import DataTable from '~/components/DataTable';
 import Clipboard from '~/components/Clipboard';
@@ -623,6 +624,7 @@ export {
   scroller,
   AlertDialog,
   ConfirmDialog,
+  DialogBase,
   Validator,
   DataTable,
   Clipboard,
