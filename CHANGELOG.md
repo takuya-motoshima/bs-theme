@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.5] - 2020-07-22
+
+- The header of the confirmation dialog is not used, so it is deleted.
+
 ## [0.0.4] - 2020-07-21
 
 - Add dialog base class(DialogBase).
