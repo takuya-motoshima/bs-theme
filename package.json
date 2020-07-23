@@ -1,6 +1,6 @@
 {
   "name": "bs-theme",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "This is a Bootstrap 4 theme.",
   "main": "dist/build.js",
   "module": "dist/build.js",
