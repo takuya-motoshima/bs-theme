@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.6] - 2020-07-23
+
+- Add margin bottom to a form group inside a modal.
+
 ## [0.0.5] - 2020-07-22
 
 - The header of the confirmation dialog is not used, so it is deleted.
