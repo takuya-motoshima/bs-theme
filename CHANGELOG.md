@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.11] - 2020-07-23
+
+  - Changed to align the label of inline form group (.form-group.row) automatically to the right according to the size of media query.
+
 ## [0.0.10] - 2020-07-23
 
   - Removed background color and border bottom of modal header.

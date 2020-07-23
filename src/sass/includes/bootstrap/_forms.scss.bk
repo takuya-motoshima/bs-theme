@@ -2,7 +2,7 @@
   [Forms]
 */
 .form-control {
-	border-width: 1px;
+  border-width: 1px;
   border-top-color: $input-top-border;
   box-shadow: none;
   padding: 10px 12px;
@@ -132,31 +132,6 @@ select.form-control-xs {
 
     label {
       white-space: nowrap;
-
-      @include media-breakpoint-up(sm) {
-        &[class*='col-sm'] {
-          text-align: right !important;
-        }
-      }
-
-      @include media-breakpoint-up(md) {
-        &[class*='col-md'] {
-          text-align: right !important;
-        }
-      }
-
-      @include media-breakpoint-up(lg) {
-        &[class*='col-lg'] {
-          text-align: right !important;
-        }
-      }
-
-      @include media-breakpoint-up(xl) {
-        &[class*='col-xl'] {
-          text-align: right !important;
-        }
-      }
-
     }
   }
 
