@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.7] - 2020-07-23
+
+  - Add Sass such as round icon(src/sass/includes/plugins/\_icon.scss).
+
 ## [0.0.6] - 2020-07-23
 
 - Add margin bottom to a form group inside a modal.

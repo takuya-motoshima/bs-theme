@@ -1,0 +1,98 @@
+.icon-round {
+
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  line-height: normal;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  color: #696767;
+
+  &.icon-primary {
+    background-color: theme-color("primary");
+    color: $white;
+  }
+
+  &.icon-success {
+    background-color: theme-color("success");
+    color: $white;
+  }
+
+  &.icon-warning {
+    background-color: theme-color("warning");
+    color: $white;
+  }
+
+  &.icon-danger {
+    background-color: theme-color("danger");
+    color: $white;
+  }
+
+  &.icon-info {
+    background-color: theme-color("info");
+    color: $white;
+  }
+
+
+  &.fa-xs {
+    width: calc(1.7rem * .75);
+    height: calc(1.7rem * .75);
+  }
+
+  &.fa-sm {
+    width: calc(1.7rem * .875);
+    height: calc(1.7rem * .875);
+  }
+
+  &.fa-lg {
+    width: calc(1.7rem * 1.33333);
+    height: calc(1.7rem * 1.33333);
+  }
+
+  &.fa-2x {
+    width: calc(1.7rem * 2);
+    height: calc(1.7rem * 2);
+  }
+
+  &.fa-3x {
+    width: calc(1.7rem * 3);
+    height: calc(1.7rem * 3);
+  }
+
+  &.fa-4x {
+    width: calc(1.7rem * 4);
+    height: calc(1.7rem * 4);
+  }
+
+  &.fa-5x {
+    width: calc(1.7rem * 5);
+    height: calc(1.7rem * 5);
+  }
+
+  &.fa-6x {
+    width: calc(1.7rem * 6);
+    height: calc(1.7rem * 6);
+  }
+
+  &.fa-7x {
+    width: calc(1.7rem * 7);
+    height: calc(1.7rem * 7);
+  }
+
+  &.fa-8x {
+    width: calc(1.7rem * 8);
+    height: calc(1.7rem * 8);
+  }
+
+  &.fa-9x {
+    width: calc(1.7rem * 9);
+    height: calc(1.7rem * 9);
+  }
+
+  &.fa-10x {
+    width: calc(1.7rem * 10);
+    height: calc(1.7rem * 10);
+  }
+}
