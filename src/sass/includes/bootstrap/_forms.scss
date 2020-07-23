@@ -123,15 +123,22 @@ select.form-control-xs {
     margin-bottom: 0;
     padding: 12px 0;
 
-    .col-form-label {
+    // .col-form-label {
 
-      .form-horizontal & {
-        text-align: right;
-      }
-    }
+    //   .form-horizontal & {
+    //     text-align: right;
+    //   }
+    // }
 
     label {
       white-space: nowrap;
+
+      &[class*='col-sm'],
+      &[class*='col-md'],
+      &[class*='col-lg'],
+      &[class*='col-xl'] {
+        text-align: left;
+      }
 
       @include media-breakpoint-up(sm) {
         &[class*='col-sm'] {

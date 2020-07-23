@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.12] - 2020-07-23
+
+  - Change align of horizontal form control label (.col-form-label) from right to left.
+
 ## [0.0.11] - 2020-07-23
 
   - Changed to align the label of inline form group (.form-group.row) automatically to the right according to the size of media query.
