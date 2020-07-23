@@ -9,6 +9,7 @@
   border-radius: 50%;
   background-color: #f5f5f5;
   color: #696767;
+  font-size: 1rem !important;
 
   &.icon-primary {
     background-color: theme-color("primary");
@@ -35,64 +36,75 @@
     color: $white;
   }
 
-
   &.fa-xs {
     width: calc(1.7rem * .75);
     height: calc(1.7rem * .75);
+    font-size: .75rem !important;
   }
 
   &.fa-sm {
     width: calc(1.7rem * .875);
     height: calc(1.7rem * .875);
+    font-size: .875rem !important;
   }
 
   &.fa-lg {
     width: calc(1.7rem * 1.33333);
     height: calc(1.7rem * 1.33333);
+    font-size: 1.33333rem !important;
   }
 
   &.fa-2x {
     width: calc(1.7rem * 2);
     height: calc(1.7rem * 2);
+    font-size: 2rem !important;
   }
 
   &.fa-3x {
     width: calc(1.7rem * 3);
     height: calc(1.7rem * 3);
+    font-size: 3rem !important;
   }
 
   &.fa-4x {
     width: calc(1.7rem * 4);
     height: calc(1.7rem * 4);
+    font-size: 4rem !important;
   }
 
   &.fa-5x {
     width: calc(1.7rem * 5);
     height: calc(1.7rem * 5);
+    font-size: 5rem !important;
   }
 
   &.fa-6x {
     width: calc(1.7rem * 6);
     height: calc(1.7rem * 6);
+    font-size: 6rem !important;
   }
 
   &.fa-7x {
     width: calc(1.7rem * 7);
     height: calc(1.7rem * 7);
+    font-size: 7rem !important;
   }
 
   &.fa-8x {
     width: calc(1.7rem * 8);
     height: calc(1.7rem * 8);
+    font-size: 8rem !important;
   }
 
   &.fa-9x {
     width: calc(1.7rem * 9);
     height: calc(1.7rem * 9);
+    font-size: 9rem !important;
   }
 
   &.fa-10x {
     width: calc(1.7rem * 10);
     height: calc(1.7rem * 10);
+    font-size: 10rem !important;
   }
 }

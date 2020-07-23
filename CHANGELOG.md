@@ -1,8 +1,12 @@
 # Changelog
 
+## [0.0.8] - 2020-07-23
+
+  - Added important option to the font size of round icons.
+
 ## [0.0.7] - 2020-07-23
 
-  - Add Sass such as round icon(src/sass/includes/plugins/\_icon.scss).
+  - Add Sass such as round icon.
 
 ## [0.0.6] - 2020-07-23
 
