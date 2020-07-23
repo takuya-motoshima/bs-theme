@@ -15,12 +15,12 @@
 	border: 0;
 	padding: 19px;
 
-	.modal-container:not(.modal-full-color) & {
-		background: #ECECEC;
-		background: -webkit-linear-gradient(top, #ffffff 0%, #e0e0e0);
-		background: linear-gradient(top, #ffffff 0%, #e0e0e0);
-		border-bottom: 1px solid #ccc;
-	}
+	// .modal-container:not(.modal-full-color) & {
+	// 	background: #ECECEC;
+	// 	background: -webkit-linear-gradient(top, #ffffff 0%, #e0e0e0);
+	// 	background: linear-gradient(top, #ffffff 0%, #e0e0e0);
+	// 	border-bottom: 1px solid #ccc;
+	// }
 
 	h1, h2, h3, h4, h5, h6{
 		display: block;

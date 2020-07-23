@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.10] - 2020-07-23
+
+  - Removed background color and border bottom of modal header.
+
 ## [0.0.9] - 2020-07-23
 
   - Add 1x size to round icon.
