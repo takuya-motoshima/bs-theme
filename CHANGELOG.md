@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.9] - 2020-07-23
+
+  - Add 1x size to round icon.
+
 ## [0.0.8] - 2020-07-23
 
   - Added important option to the font size of round icons.

@@ -54,6 +54,12 @@
     font-size: 1.33333rem !important;
   }
 
+  &.fa-1x {
+    width: calc(1.7rem * 1.66666);
+    height: calc(1.7rem * 1.66666);
+    font-size: 1.66666rem !important;
+  }
+
   &.fa-2x {
     width: calc(1.7rem * 2);
     height: calc(1.7rem * 2);
