@@ -135,6 +135,11 @@ select.form-control-xs {
 // Form groups
 .form-group {
 
+  > label:first-child {
+    font-weight: 600;
+    font-size: .875rem;
+  }
+
   &.row {
     margin-bottom: 0;
     padding: 12px 0;

@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.15] - 2020-07-25
+
+  - Optimize the font size of form labels.
+
 ## [0.0.14] - 2020-07-25
 
   - Optimize text field height.
