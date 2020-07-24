@@ -28,8 +28,7 @@
     button{
       box-shadow: none;
       border: none;
-      height: auto;
-      // height: $input-height - .1538rem;
+      height: $input-height - .1538rem;
 
       &:active{
         background-color: transparent;
@@ -55,8 +54,7 @@
     .input-group-btn {
 
       button{
-        height: auto;
-        // height: $input-height-lg - .1538rem;
+        height: $input-height-lg - .1538rem;
       }
     }
   }
@@ -66,8 +64,7 @@
     .input-group-btn{
 
       button{
-        height: auto;
-        // height: $input-height-sm + .4rem;
+        height: $input-height-sm + .4rem;
 
         &:active,
         &:active:hover {
@@ -94,8 +91,7 @@
   > .input-group-append > .input-group-text,
   > .input-group-prepend > .btn,
   > .input-group-append > .btn {
-    height: auto;
-    // height: 57px;
+    height: 57px;
     padding: 12px 14px;
     font-size: 1.385rem;
     font-weight: $font-weight-light;
@@ -126,8 +122,7 @@
   > .input-group-append > .input-group-text,
   > .input-group-prepend > .btn,
   > .input-group-append > .btn {
-    height: auto;
-    // height: 37px;
+    height: 37px;
     font-size: $font-size-base;
     padding: 4px 12px;
   }

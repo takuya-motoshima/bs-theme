@@ -130,6 +130,7 @@
                 </li>
                 <li class="parent"><a href="#"><i class="icon mdi mdi-dot-circle"></i><span>Forms</span></a>
                   <ul class="sub-menu">
+                    <li><a href="form-elements.html">Elements</a></li>
                     <li class="active"><a href="form-validation.html">Validation</a></li>
                   </ul>
                 </li>
@@ -627,10 +628,8 @@
       </div>
     </nav>
   </div>
-
   <script type="module">
     import { init, Validator, $ } from '../dist/build.js';
-
     init();
     for (let $form of [...$('form')]) new Validator($form);
   </script>

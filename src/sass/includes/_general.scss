@@ -20,7 +20,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   
-  &.bt4-alt-bg {
+  &.bt-alt-bg {
     background-color: darken($body-bg, 2%);
   }
 }

@@ -8,7 +8,8 @@
   padding: 10px 12px;
   font-size: $font-size-base + 0.1538rem;
   transition: none;
-  height: $input-height;
+  height: auto;
+  // height: $input-height;
 
   &-plaintext {
     padding: 10px 12px;
@@ -103,7 +104,8 @@ label {
 //
 
 .form-control-xs {
-  height: 30px;
+  height: auto;
+  // height: 30px;
   font-size: $font-size-sm * 1.086;
   padding: 6px 9px;
 }
@@ -115,13 +117,15 @@ select.form-control-xs {
 }
 
 .form-control-sm {
-  height: 37px;
+  height: auto;
+  // height: 37px;
   font-size: $font-size-base;
   padding: 4px 12px;
 }
 
 .form-control-lg {
-  height: 57px;
+  height: auto;
+  // height: 57px;
   padding: 12px 14px;
   font-size: 1.385rem;
   font-weight: $font-weight-light;
@@ -136,7 +140,6 @@ select.form-control-xs {
     padding: 12px 0;
 
     // .col-form-label {
-
     //   .form-horizontal & {
     //     text-align: right;
     //   }

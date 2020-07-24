@@ -56,7 +56,7 @@
   }
 }
 
-.bt4-table-responsive {
+.bt-table-responsive {
   scroller-x: hidden;
 
   @include tablet {
