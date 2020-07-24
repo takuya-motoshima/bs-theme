@@ -6,15 +6,15 @@ h1, h2, h3, h4, h5, h6,
 
   small,
   .small {
-  	font-weight: $font-weight-light;
+    font-weight: $font-weight-light;
   }
 }
 
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-	margin-top: 20px;
-	margin-bottom: 10px;	
+  margin-top: 20px;
+  margin-bottom: 10px;  
 
 }
 
@@ -24,10 +24,10 @@ h6, .h6 {
   margin-top: 15px;
   margin-bottom: 10px;
 
-  	small,
-	  .small {
-	  	font-size: $small-font-size + 10;
-	  }
+    small,
+    .small {
+      font-size: $small-font-size + 10;
+    }
 
 }
 
@@ -35,21 +35,21 @@ h6, .h6 {
 // -------------------------
 
 p {
-	margin: 0 0 $paragraph-margin;
+  margin: 0 0 $paragraph-margin;
 }
 
 .lead {
-	font-size: $font-size-base * 1.616;
-	line-height: 26px;
+  font-size: $font-size-base * 1.616;
+  line-height: 26px;
 }
 
 // Emphasis & misc
 // -------------------------
 p {
-	small,
-	.small {
-	  font-size: .8462rem;
-	}
+  small,
+  .small {
+    font-size: .8462rem;
+  }
 }
 
 mark,
@@ -59,7 +59,7 @@ mark,
 }
 
 .text-bold {
-	font-weight: $font-weight-medium !important;
+  font-weight: $font-weight-medium !important;
 }
 
 // Contextual colors
@@ -81,12 +81,12 @@ mark,
 // Unordered and Ordered lists
 ul,
 ol {
-	line-height: $list-lineheight;
+  line-height: $list-lineheight;
 
-	ul,
-	ol {
-		padding-left: 25px;
-	}
+  ul,
+  ol {
+    padding-left: 25px;
+  }
 }
 
 // List options
@@ -95,7 +95,7 @@ ol {
 .list-unstyled {
   ul, 
   ol {
-  	padding-left: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -104,14 +104,14 @@ ol {
 
 // Blockquotes
 blockquote, .blockquote {
-	margin-bottom: $spacer;
+  margin-bottom: $spacer;
   font-size: $blockquote-font-size;
 
-	p{
-		margin-bottom: 18px;
-	}
+  p{
+    margin-bottom: 18px;
+  }
 
-	p,
+  p,
   ul,
   ol {
     &:last-child {
@@ -119,10 +119,10 @@ blockquote, .blockquote {
     }
   }
 
-	footer,
+  footer,
   small,
   .small {
-  	font-size: 1rem;
+    font-size: 1rem;
   }
 }
 
@@ -130,28 +130,28 @@ blockquote, .blockquote {
 //Display Heading
 // -------------------------
 .display-heading{
-	font-size: $display-heading-size;
-	font-weight: $font-weight-thin;
-	margin: $display-heading-margin;
+  font-size: $display-heading-size;
+  font-weight: $font-weight-thin;
+  margin: $display-heading-margin;
 
-	@include tablet{
-		font-size: ceil($display-heading-size - ($display-heading-size * 0.2));
-	}
+  @include tablet{
+    font-size: ceil($display-heading-size - ($display-heading-size * 0.2));
+  }
 }
 
 //Display Description
 // -------------------------
 
 .display-description{
-	font-size: $display-description-size;
-	font-weight: $font-weight-thin;
-	line-height: $display-description-line-height;
-	margin: $display-description-margin;
+  font-size: $display-description-size;
+  font-weight: $font-weight-thin;
+  line-height: $display-description-line-height;
+  margin: $display-description-margin;
 
-	@include tablet{
-		font-size: ceil($display-description-size - ($display-description-size * 0.2));
-		line-height: ceil($display-description-line-height - ($display-description-line-height * 0.2));
-	}
+  @include tablet{
+    font-size: ceil($display-description-size - ($display-description-size * 0.2));
+    line-height: ceil($display-description-line-height - ($display-description-line-height * 0.2));
+  }
 }
 
 // Addresses

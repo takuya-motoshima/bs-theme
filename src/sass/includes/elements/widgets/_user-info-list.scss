@@ -3,29 +3,29 @@
 */
 .user-info-list{
 
-	table{
-		width: 100%;
-		table-layout: fixed;
+  table{
+    width: 100%;
+    table-layout: fixed;
 
-		tr{
+    tr{
 
-			td{
-				padding: 12px 0;
+      td{
+        padding: 12px 0;
 
-				&.icon{
-					width: 33px;
+        &.icon{
+          width: 33px;
 
-					> span{
-						font-size: 1.538rem;
-						vertical-align: middle;
-						margin-bottom: 1px;
-					}
-				}
+          > span{
+            font-size: 1.538rem;
+            vertical-align: middle;
+            margin-bottom: 1px;
+          }
+        }
 
-				&.item{
-					width: 34%;
-				}
-			}
-		}
-	}		
+        &.item{
+          width: 34%;
+        }
+      }
+    }
+  }   
 }

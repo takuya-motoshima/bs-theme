@@ -47,8 +47,7 @@ $info:			 														#6ba4ff !default;
 $warning:				 												#fbbc05 !default;
 $danger:																#ea4335 !default;
 $light:																	$white !default;
-$dark:																	#232f3e !default;
-// $dark:																	$gray-800 !default;
+$dark:																	$gray-800 !default;
 $grey:																	#cccccc !default;
 
 // Enable contrast color calculations (Requires newer version of libsass)
@@ -82,10 +81,9 @@ $grid-breakpoints: (
 // Left sidebar custom colors. In case you want to build the colors based on only one
 // value, replace this array for a hex value
 $left-sidebar-colors: (
-	"left-sidebar-bg": $white,
+    "left-sidebar-bg": $gray-100,
 	"left-sidebar-text-color": shade-correction($gray-100, true),
-	"left-sidebar-text-active-color": #ec7211,
-	// "left-sidebar-text-active-color": theme-color("primary"),
+	"left-sidebar-text-active-color": theme-color("primary"),
 	"left-sidebar-divider-color": shade-contrast-correction(theme-color("primary"), $gray-100),
 	"left-sidebar-progress-bar-color": theme-color("primary"),
 	"left-sidebar-progress-bar-bg-color": darken($gray-100, 4%),
@@ -97,17 +95,14 @@ $left-sidebar-colors: (
 // Top header custom colors. In case you want to build the colors based on only one
 // value, replace this array for a hex value
 $top-header-colors: (
-	"top-header-bg": #232f3e,
-	// "top-header-bg": $white,
-	"top-header-text-color": #eeeeee,
-	// "top-header-text-color": #404040,
+	"top-header-bg": $white,
+	"top-header-text-color": #404040,
 	"top-header-icons-open-color": theme-color("primary"),
 	"top-header-icons-open-color-mobile": $white,
 	"top-header-icons-color": lighten(#404040, 20%),
 	"top-header-icons-color-mobile": $white,
 	"top-header-indicator-color": theme-color("primary"),
-	"top-header-phone-bg": #232f3e,
-	// "top-header-phone-bg": theme-color("primary"),
+	"top-header-phone-bg": theme-color("primary"),
 	"top-header-link-color": darken($white, 55%),
 	"top-header-nav-link-color-mobile": $white,
 	"top-header-navbar-color-open": theme-color("primary")
@@ -154,7 +149,6 @@ $component-active-bg:                   theme-color("primary") !default;
 
 // Fonts
 $font-family-sans-serif:                $roboto !default;
-$font-family-sf-pro:                    $sf-pro !default;
 
 $line-height-base:                      1.428571429 !default;
 
@@ -417,7 +411,7 @@ $sidebars-push-effect:                  all .35s ease !default;
 $logo-width:                            102px !default;
 $logo-height:                           27px !default;
 $logo-padding:                          20px !default;
-$body-background:                       #FFFFFF !default;
+$body-background:                       #EEEEEE !default;
 $link-color:                            (theme-color("primary") + 10%) !default;
 $scroller-size:                         6px !default;//Scroller plugin width
 
@@ -442,10 +436,8 @@ $top-header-indicator-color-mobile:     $top-header-icons-color-mobile;
 $top-header-nav-link-color-mobile:      is-custom-color($top-header-colors, "top-header-nav-link-color-mobile", "assign", $top-header-text-color) !default;
 $top-header-user-info-text-color:       $top-header-nav-link-color-mobile;
 $top-header-link-color:                 darken(theme-color("light"), 55%) !default;
-$top-header-height:                     50px !default;
-$top-header-height-phone:               60px !default;
-// $top-header-height:                     60px !default;
-// $top-header-height-phone:               70px !default;
+$top-header-height:                     60px !default;
+$top-header-height-phone:               70px !default;
 $top-header-navbar-color:               lighten($top-header-text-color, 10%) !default;
 $top-header-navbar-color-open:          theme-color("primary") !default;
 $top-header-navbar-font-size:           14px !default;
@@ -472,10 +464,8 @@ $arrow-down-code:                       '\f2f2' !default;
 $arrow-up-code:                         '\f2f8' !default;
 
 // Top Header
-$top-header-height:                     52px !default;
-$top-header-height-responsive:          64px !default;
-// $top-header-height:                     62px !default;
-// $top-header-height-responsive:          74px !default;
+$top-header-height:                     62px !default;
+$top-header-height-responsive:          74px !default;
 $top-header-bg:                         theme-color("dark") !default;
 $top-header-bg-mobile:                  theme-color("primary") !default;
 $top-header-menu-color:                 lighten(theme-color("dark"), 31%) !default;
@@ -509,8 +499,7 @@ $navbar-default-brand-color:            $navbar-default-link-color !default;
 
 // Left Sidebar
 $left-sidebar-bg:                           is-custom-color($left-sidebar-colors, "left-sidebar-bg") !default;
-$left-sidebar-width:                        200px !default;
-// $left-sidebar-width:                        230px !default;
+$left-sidebar-width:                        230px !default;
 $left-sidebar-text-color:                   is-custom-color($vartype: $left-sidebar-colors, $list-name: "left-sidebar-text-color", $function-name: "shade-correction", $param1: $left-sidebar-bg, $param3: true) !default;
 $left-sidebar-text-active-color:            is-custom-color($left-sidebar-colors, "left-sidebar-text-active-color", "primary-contrast-correction", theme-color("primary"), $left-sidebar-bg) !default;
 $left-sidebar-divider-color:                is-custom-color($left-sidebar-colors, "left-sidebar-divider-color", "shade-contrast-correction", theme-color("primary"), $left-sidebar-bg) !default;
@@ -591,8 +580,7 @@ $btn-padding-horizontal:                10px !default;
 $btn-font-size-base:                    $font-size-base !default;
 $btn-line-height-base:                  28px !default;
 $btn-border-radius-base:                2px !default;
-$btn-box-shadow-base:                   0 !default;
-// $btn-box-shadow-base:                   0 1px 0 rgba(0, 0, 0, .05) !default;
+$btn-box-shadow-base:                   0 1px 0 rgba(0, 0, 0, .05) !default;
 
 $btn-primary-color:                     $white !default;
 $btn-primary-bg:                        theme-color("primary");
@@ -717,8 +705,7 @@ $status-away:                           #f2c329 !default;
 $progress-line-height:                   22px !default;
 
 // Dividers
-$divider-border:                        1px solid darken(theme-color("light"), 15%) !default;
-// $divider-border:                        1px solid darken(theme-color("light"), 5%) !default;
+$divider-border:                        1px solid darken(theme-color("light"), 5%) !default;
 $divider-margin:                        10px !default;
 $divider-lg-margin:                     15px !default;
 $divider-xl-margin:                     20px !default;
@@ -898,6 +885,10 @@ $sub-nav-dropdown-item-color:           lighten($body-color, 5%);
 
 // Print
 $print:                                 "print";
+
+// Retina Display
+$retina:                                "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+$high-dpi:                              "only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi)";
 
 // Google Chrome Query
 $webkit:                                "screen and (-webkit-min-device-pixel-ratio:0)";

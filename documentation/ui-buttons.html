@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <title>Bootstrap4 Theme</title>
+  <link rel="stylesheet" href="../dist/build.css" type="text/css"/>
+</head>
+<body>
+  <div class="bt-wrapper bt-fixed-sidebar">
+    <nav class="navbar navbar-expand fixed-top bt-top-header">
+      <div class="container-fluid">
+        <div class="bt-navbar-header">
+          <a class="navbar-brand" href="index.html"></a>
+        </div>
+        <div class="page-title"><span>UI Buttons</span></div>
+        <div class="bt-right-navbar">
+          <ul class="nav navbar-nav float-right bt-user-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                <i class="user-icon far fa-user-circle"></i>
+                <span class="user-name">John Smith</span>
+              </a>
+              <div class="dropdown-menu" role="menu">
+                <div class="user-info">
+                  <div class="user-name">John Smith</div>
+                  <div class="user-position online">Available</div>
+                </div>
+                <a class="dropdown-item" href="pages-profile.html"><span class="icon mdi mdi-face"></span>Account</a>
+                <a class="dropdown-item" href="#"><span class="icon mdi mdi-settings"></span>Settings</a>
+                <a class="dropdown-item" href="pages-login.html"><span class="icon mdi mdi-power"></span>Logout</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav float-right bt-icons-nav">
+            <li class="nav-item dropdown"><a class="nav-link bt-toggle-right-sidebar" href="#" role="button" aria-expanded="false"><span class="icon mdi mdi-settings"></span></a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="icon mdi mdi-notifications"></span><span class="indicator"></span></a>
+              <ul class="dropdown-menu bt-notifications">
+                <li>
+                  <div class="title">Notifications<span class="badge badge-pill">3</span></div>
+                  <div class="list">
+                    <div class="bt-scroller-notifications">
+                      <div class="content">
+                        <ul>
+                          <li class="notification notification-unread">
+                            <a href="#">
+                              <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
+                              <div class="notification-info">
+                                <div class="text"><span class="user-name">Jessica Caruso</span> accepted your invitation to join the team.</div>
+                                <span class="date">2 min ago</span>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="notification">
+                            <a href="#">
+                              <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
+                              <div class="notification-info">
+                                <div class="text"><span class="user-name">Joel King</span> is now following you</div>
+                                <span class="date">2 days ago</span>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="notification">
+                            <a href="#">
+                              <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
+                              <div class="notification-info">
+                                <div class="text"><span class="user-name">John Doe</span> is watching your main repository</div>
+                                <span class="date">2 days ago</span>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="notification">
+                            <a href="#">
+                              <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
+                              <div class="notification-info">
+                                <span class="text"><span class="user-name">Emily Carter</span> is now following you</span>
+                                <span class="date">5 days ago</span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer"> <a href="#">View all notifications</a></div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="icon mdi mdi-apps"></span></a>
+              <ul class="dropdown-menu bt-connections">
+                <li>
+                  <div class="list">
+                    <div class="content">
+                      <div class="row">
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Github"><span>Sample</span></a></div>
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                      </div>
+                      <div class="row">
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer"> <a href="#">More</a></div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bt-left-sidebar">
+      <div class="left-sidebar-wrapper">
+        <a class="left-sidebar-toggle" href="#">UI Buttons</a>
+        <div class="left-sidebar-spacer">
+          <div class="left-sidebar-scroll">
+            <div class="left-sidebar-content">
+              <ul class="sidebar-elements">
+                <li class="divider">Menu</li>
+                <li>
+                  <a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
+                </li>
+                <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>UI Elements</span></a>
+                  <ul class="sub-menu">
+                    <li class="active"><a href="ui-buttons.html">Buttons</a></li>
+                  </ul>
+                </li>
+                <li class="parent"><a href="#"><i class="icon mdi mdi-dot-circle"></i><span>Forms</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="form-validation.html">Validation</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bt-content">
+      <div class="page-head">
+        <h2 class="page-head-title">Buttons</h2>
+        <nav aria-label="breadcrumb" role="navigation">
+          <ol class="breadcrumb page-head-nav">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">UI Elements</a></li>
+            <li class="breadcrumb-item active">Buttons</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="main-content container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Basic Buttons</div>
+              <div class="card-body mt-3 text-center">
+                <p class="mt-2 mb-2">
+                  <button class="btn btn-space btn-secondary">Secondary</button>
+                  <button class="btn btn-space btn-primary">Primary</button>
+                  <button class="btn btn-space btn-danger">Danger</button>
+                  <button class="btn btn-space btn-warning">Warning</button>
+                  <button class="btn btn-space btn-success">Success</button>
+                </p>
+                <p class="mt-2 mb-2">
+                  <button class="btn btn-space btn-secondary hover">Secondary</button>
+                  <button class="btn btn-space btn-primary hover">Primary</button>
+                  <button class="btn btn-space btn-danger hover">Danger</button>
+                  <button class="btn btn-space btn-warning hover">Warning</button>
+                  <button class="btn btn-space btn-success hover">Success</button>
+                </p>
+                <p class="mt-2 mb-2">
+                  <button class="btn btn-space btn-secondary active">Secondary</button>
+                  <button class="btn btn-space btn-primary active">Primary</button>
+                  <button class="btn btn-space btn-danger active">Danger</button>
+                  <button class="btn btn-space btn-warning active">Warning</button>
+                  <button class="btn btn-space btn-success active">Success</button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Button Icons</div>
+              <div class="card-body mt-3 text-center">
+                <p class="mt-2 mb-2">
+                  <button class="btn btn-space btn-secondary"><i class="icon icon-left mdi mdi-globe"></i>Secondary</button>
+                  <button class="btn btn-space btn-primary"><i class="icon icon-left mdi mdi-cloud-done"></i>Primary</button>
+                  <button class="btn btn-space btn-danger"><i class="icon icon-left mdi mdi-alert-circle"></i>Danger</button>
+                  <button class="btn btn-space btn-warning"><i class="icon icon-left mdi mdi-alert-triangle"></i>Warning</button>
+                  <button class="btn btn-space btn-success"><i class="icon icon-left mdi mdi-check"></i>Success</button>
+                </p>
+                <p class="mt-2 mb-2">
+                  <button class="btn btn-space btn-secondary hover"> <i class="icon icon-left mdi mdi-globe"></i>Secondary</button>
+                  <button class="btn btn-space btn-primary hover"><i class="icon icon-left mdi mdi-cloud-done"></i>Primary</button>
+                  <button class="btn btn-space btn-danger hover"><i class="icon icon-left mdi mdi-alert-circle"></i>Danger</button>
+                  <button class="btn btn-space btn-warning hover"><i class="icon icon-left mdi mdi-alert-triangle"></i>Warning</button>
+                  <button class="btn btn-space btn-success hover"><i class="icon icon-left mdi mdi-check"></i>Success</button>
+                </p>
+                <p class="mt-2 mb-2">
+                  <button class="btn btn-space btn-secondary active"> <i class="icon icon-left mdi mdi-globe"></i>Secondary</button>
+                  <button class="btn btn-space btn-primary active"><i class="icon icon-left mdi mdi-cloud-done"></i>Primary</button>
+                  <button class="btn btn-space btn-danger active"><i class="icon icon-left mdi mdi-alert-circle"></i>Danger</button>
+                  <button class="btn btn-space btn-warning active"><i class="icon icon-left mdi mdi-alert-triangle"></i>Warning</button>
+                  <button class="btn btn-space btn-success active"><i class="icon icon-left mdi mdi-check"></i>Success</button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Buttons Size</div>
+              <div class="card-body mt-3">
+                <h4>Standard</h4>
+                <p class="mt-2 mb-2">
+                  <button class="btn btn-space btn-secondary btn-xs">Extra Small</button>
+                  <button class="btn btn-space btn-secondary btn-sm">Small</button>
+                  <button class="btn btn-space btn-secondary">Default</button>
+                  <button class="btn btn-space btn-secondary btn-lg">Large</button>
+                  <button class="btn btn-space btn-secondary btn-xl">Extra Large</button>
+                </p>
+                <h4 class="mt-4">With Icons</h4>
+                <p class="mt-2 mb-2">
+                  <button class="btn btn-space btn-primary btn-xs"> <i class="icon icon-left mdi mdi-cloud-done"></i>Extra Small</button>
+                  <button class="btn btn-space btn-primary btn-sm"><i class="icon icon-left mdi mdi-cloud-done"></i>Small</button>
+                  <button class="btn btn-space btn-primary"><i class="icon icon-left mdi mdi-cloud-done"></i>Default</button>
+                  <button class="btn btn-space btn-primary btn-lg"><i class="icon icon-left mdi mdi-cloud-done"></i>Large</button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Buttons Rounded</div>
+              <div class="card-body mt-3">
+                <h4>Standard</h4>
+                <p class="mt-2 mb-2">
+                  <button class="btn btn-rounded btn-space btn-secondary">Secondary</button>
+                  <button class="btn btn-rounded btn-space btn-primary">Primary</button>
+                  <button class="btn btn-rounded btn-space btn-danger">Danger</button>
+                  <button class="btn btn-rounded btn-space btn-warning">Warning</button>
+                  <button class="btn btn-rounded btn-space btn-success">Success</button>
+                </p>
+                <h4 class="mt-6">With Icons</h4>
+                <p class="mt-2 mb-2">
+                  <button class="btn btn-rounded btn-space btn-secondary"><i class="icon icon-left mdi mdi-globe"></i>Secondary</button>
+                  <button class="btn btn-rounded btn-space btn-primary"><i class="icon icon-left mdi mdi-cloud-done"></i>Primary</button>
+                  <button class="btn btn-rounded btn-space btn-danger"><i class="icon icon-left mdi mdi-alert-circle"></i>Danger</button>
+                  <button class="btn btn-rounded btn-space btn-warning"><i class="icon icon-left mdi mdi-alert-triangle"></i>Warning</button>
+                  <button class="btn btn-rounded btn-space btn-success"><i class="icon icon-left mdi mdi-check"></i>Success</button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Buttons Groups</div>
+              <div class="card-body mt-3">
+                <h4>Standard</h4>
+                <div class="mt-4 mb-6">
+                  <div class="btn-toolbar">
+                    <div class="btn-group btn-space mr-2">
+                      <button class="btn btn-secondary" type="button"><i class="icon mdi mdi-email"></i></button>
+                      <button class="btn btn-secondary" type="button"><i class="icon mdi mdi-cloud-outline"></i></button>
+                      <button class="btn btn-secondary" type="button"><i class="icon mdi mdi-mood"></i></button>
+                      <button class="btn btn-secondary" type="button"><i class="icon mdi mdi-favorite-outline"></i></button>
+                    </div>
+                    <div class="btn-group btn-space mr-2">
+                      <button class="btn btn-secondary" type="button"><i class="icon mdi mdi-mic"></i></button>
+                      <button class="btn btn-secondary" type="button"><i class="icon mdi mdi-card-giftcard"></i></button>
+                      <button class="btn btn-secondary" type="button"><i class="icon mdi mdi-portable-wifi-changes"></i></button>
+                    </div>
+                    <div class="btn-group btn-space">
+                      <button class="btn btn-secondary" type="button"><i class="icon mdi mdi-globe-alt"></i></button>
+                      <button class="btn btn-secondary" type="button"><i class="icon mdi mdi-settings"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="mt-6">Default groups</h4>
+                <div class="mt-4 mb-2">
+                  <div class="btn-toolbar">
+                    <div class="btn-group btn-space">
+                      <button class="btn btn-secondary" type="button">Left</button>
+                      <button class="btn btn-secondary" type="button">Mid</button>
+                      <button class="btn btn-secondary" type="button">Right</button>
+                    </div>
+                    <div class="btn-group btn-space">
+                      <button class="btn btn-primary" type="button">Left</button>
+                      <button class="btn btn-primary" type="button">Mid</button>
+                      <button class="btn btn-primary" type="button">Right</button>
+                    </div>
+                    <div class="btn-group btn-space">
+                      <button class="btn btn-danger" type="button">Left</button>
+                      <button class="btn btn-danger" type="button">Mid</button>
+                      <button class="btn btn-danger" type="button">Right</button>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="mt-5">Justified button</h4>
+                <div class="mt-4 mb-2">
+                  <div class="btn-toolbar">
+                    <div class="btn-group btn-group-justified mb-2" role="group">
+                      <a class="btn btn-secondary" href="#">Home</a>
+                      <a class="btn btn-secondary" href="#">Gallery</a>
+                      <a class="btn btn-secondary" href="#">Services</a>
+                      <a class="btn btn-secondary" href="#">Contact</a>
+                      <a class="btn btn-secondary" href="#">Support</a>
+                      <a class="btn btn-secondary" href="#">Help</a>
+                    </div>
+                    <div class="btn-group btn-group-justified btn-space" role="group">
+                      <a class="btn btn-primary" href="#">Home</a>
+                      <a class="btn btn-primary" href="#">Gallery</a>
+                      <a class="btn btn-primary" href="#">Services</a>
+                      <a class="btn btn-primary" href="#">Contact</a>
+                      <a class="btn btn-primary" href="#">Support</a>
+                      <a class="btn btn-primary" href="#">Help</a>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="mt-6">Vertical groups</h4>
+                <div class="mt-4 mb-2">
+                  <div class="btn-toolbar">
+                    <div class="btn-group-vertical btn-space mr-2" role="group">
+                      <a class="btn btn-secondary" href="#">Top</a>
+                      <a class="btn btn-secondary" href="#">Middle</a>
+                      <a class="btn btn-secondary" href="#">Bottom</a>
+                    </div>
+                    <div class="btn-group-vertical btn-space mr-2" role="group">
+                      <a class="btn btn-primary" href="#">Top</a>
+                      <a class="btn btn-primary" href="#">Middle</a>
+                      <a class="btn btn-primary" href="#">Bottom</a>
+                    </div>
+                    <div class="btn-group-vertical btn-space mr-2" role="group">
+                      <a class="btn btn-danger" href="#">Top</a>
+                      <a class="btn btn-danger" href="#">Middle</a>
+                      <a class="btn btn-danger" href="#">Bottom</a>
+                    </div>
+                    <div class="btn-group-vertical btn-space mr-2" role="group">
+                      <a class="btn btn-warning" href="#">Top</a>
+                      <a class="btn btn-warning" href="#">Middle</a>
+                      <a class="btn btn-warning" href="#">Bottom</a>
+                    </div>
+                    <div class="btn-group-vertical btn-space mr-2" role="group">
+                      <a class="btn btn-success" href="#">Top</a>
+                      <a class="btn btn-success" href="#">Middle</a>
+                      <a class="btn btn-success" href="#">Bottom</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header card-header-divider">Big Buttons</div>
+              <div class="card-body">
+                <div class="mt-2 mb-2">
+                  <button class="btn btn-space btn-secondary btn-big"><i class="icon mdi mdi-home"></i> Home </button>
+                  <button class="btn btn-space btn-secondary btn-big"><i class="icon mdi mdi-face"></i> UI </button>
+                  <button class="btn btn-space btn-secondary btn-big"><i class="icon mdi mdi-inbox"></i> Email </button>
+                  <button class="btn btn-space btn-secondary btn-big"><i class="icon mdi mdi-pin"></i> Maps </button>
+                </div>
+                <div class="mt-2 mb-2">
+                  <button class="btn btn-space btn-primary btn-big"><i class="icon mdi mdi-home"></i> Home </button>
+                  <button class="btn btn-space btn-danger btn-big"><i class="icon mdi mdi-face"></i> UI </button>
+                  <button class="btn btn-space btn-warning btn-big"><i class="icon mdi mdi-inbox"></i> Email </button>
+                  <button class="btn btn-space btn-success btn-big"><i class="icon mdi mdi-pin"></i> Maps</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Buttons Dropdowns</div>
+              <div class="card-body mt-3">
+                <h4>Basic dropdown</h4>
+                <div class="mt-4 mb-5">
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Secondary <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Primary <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">Danger <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Warning <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Success <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4 mb-5">
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"><i class="icon icon-left mdi mdi-globe"></i>Icon <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="icon icon-left mdi mdi-cloud-done"></i>Icon <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown"><i class="icon icon-left mdi mdi-alert-circle"></i>Icon <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown"><i class="icon icon-left mdi mdi-alert-triangle"></i>Icon <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown"><i class="icon icon-left mdi mdi-check"></i>Icon <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                </div>
+                <h4>Split state dropdown</h4>
+                <div class="mt-4 mb-6">
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-secondary" type="button">Secondary</button>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"><span class="mdi mdi-chevron-down"></span><span class="sr-only">Toggle Dropdown</span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-primary" type="button">Primary</button>
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="mdi mdi-chevron-down"></span><span class="sr-only">Toggle Dropdown</span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-danger" type="button">Danger</button>
+                    <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown"><span class="mdi mdi-chevron-down"></span><span class="sr-only">Toggle Dropdown</span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-warning" type="button">Warning</button>
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown"><span class="mdi mdi-chevron-down"></span><span class="sr-only">Toggle Dropdown</span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-success" type="button">Success</button>
+                    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown"><span class="mdi mdi-chevron-down"></span><span class="sr-only">Toggle Dropdown</span></button>
+                    <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated</a>
+                    </div>
+                  </div>
+                  <div class="mt-4 mb-6">
+                    <div class="btn-group btn-space">
+                      <button class="btn btn-secondary" type="button">Primary</button>
+                      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="mdi mdi-chevron-down"></span><span class="sr-only">Toggle Dropdown</span></button>
+                      <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated</a>
+                      </div>
+                    </div>
+                    <div class="btn-group btn-space">
+                      <button class="btn btn-secondary" type="button">Danger</button>
+                      <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown"><span class="mdi mdi-chevron-down"></span><span class="sr-only">Toggle Dropdown</span></button>
+                      <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated</a>
+                      </div>
+                    </div>
+                    <div class="btn-group btn-space">
+                      <button class="btn btn-secondary" type="button">Warning</button>
+                      <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown"><span class="mdi mdi-chevron-down"></span><span class="sr-only">Toggle Dropdown</span></button>
+                      <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated</a>
+                      </div>
+                    </div>
+                    <div class="btn-group btn-space">
+                      <button class="btn btn-secondary" type="button">Success</button>
+                      <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown"><span class="mdi mdi-chevron-down"></span><span class="sr-only">Toggle Dropdown</span></button>
+                      <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header card-header-divider">Social Buttons</div>
+              <div class="card-body">
+                <div class="mt-2 mb-2">
+                  <button class="btn btn-space btn-secondary btn-social" type="button"><i class="icon mdi mdi-facebook"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social" type="button"><i class="icon mdi mdi-google-plus"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social" type="button"><i class="icon mdi mdi-twitter"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social" type="button"><i class="icon mdi mdi-dribbble"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social" type="button"><i class="icon mdi mdi-dropbox"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social" type="button"><i class="icon mdi mdi-evernote"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social" type="button"><i class="icon mdi mdi-youtube-play"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social" type="button"><i class="icon mdi mdi-pinterest"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social" type="button"><i class="icon mdi mdi-github-alt"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social" type="button"><i class="icon mdi mdi-tumblr"></i></button>
+                </div>
+                <div class="mt-2 mb-2">
+                  <button class="btn btn-space btn-secondary btn-social btn-facebook" type="button"><i class="icon mdi mdi-facebook"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social btn-google-plus" type="button"><i class="icon mdi mdi-google-plus"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social btn-twitter" type="button"><i class="icon mdi mdi-twitter"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social btn-dribbble" type="button"><i class="icon mdi mdi-dribbble"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social btn-dropbox" type="button"><i class="icon mdi mdi-dropbox"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social btn-evernote" type="button"><i class="icon mdi mdi-evernote"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social btn-youtube" type="button"><i class="icon mdi mdi-youtube-play"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social btn-pinterest" type="button"><i class="icon mdi mdi-pinterest"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social btn-github" type="button"><i class="icon mdi mdi-github-alt"></i></button>
+                  <button class="btn btn-space btn-secondary btn-social btn-tumblr" type="button"><i class="icon mdi mdi-tumblr"></i></button>
+                </div>
+                <div class="mt-2 mb-2">
+                  <button class="btn btn-space btn-social btn-color btn-facebook" type="button"><i class="icon mdi mdi-facebook"></i></button>
+                  <button class="btn btn-space btn-social btn-color btn-google-plus" type="button"><i class="icon mdi mdi-google-plus"></i></button>
+                  <button class="btn btn-space btn-social btn-color btn-twitter" type="button"><i class="icon mdi mdi-twitter"></i></button>
+                  <button class="btn btn-space btn-social btn-color btn-dribbble" type="button"><i class="icon mdi mdi-dribbble"></i></button>
+                  <button class="btn btn-space btn-social btn-color btn-dropbox" type="button"><i class="icon mdi mdi-dropbox"></i></button>
+                  <button class="btn btn-space btn-social btn-color btn-evernote" type="button"><i class="icon mdi mdi-evernote"></i></button>
+                  <button class="btn btn-space btn-social btn-color btn-youtube" type="button"><i class="icon mdi mdi-youtube-play"></i></button>
+                  <button class="btn btn-space btn-social btn-color btn-pinterest" type="button"><i class="icon mdi mdi-pinterest"></i></button>
+                  <button class="btn btn-space btn-social btn-color btn-github" type="button"><i class="icon mdi mdi-github-alt"></i></button>
+                  <button class="btn btn-space btn-social btn-color btn-tumblr" type="button"><i class="icon mdi mdi-tumblr"></i></button>
+                </div>
+                <div class="mt-2">
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-color btn-social btn-facebook" type="button"><i class="icon mdi mdi-facebook"></i></button>
+                    <button class="btn btn-secondary" type="button">Like</button>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-color btn-social btn-twitter" type="button"><i class="icon mdi mdi-twitter"></i></button>
+                    <button class="btn btn-secondary" type="button">Follow Me</button>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-color btn-social btn-google-plus" type="button"><i class="icon mdi mdi-google-plus"></i></button>
+                    <button class="btn btn-secondary" type="button">Plus One</button>
+                  </div>
+                  <div class="btn-group btn-space">
+                    <button class="btn btn-color btn-social btn-github" type="button"><i class="icon mdi mdi-github-alt"></i></button>
+                    <button class="btn btn-secondary" type="button">Fork</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header card-header-divider">Outline Buttons</div>
+              <div class="card-body mt-3">
+                <p class="mt-2 mb-2">
+                  <button class="btn btn-outline-secondary btn-space">Secondary</button>
+                  <button class="btn btn-space btn-outline-primary btn-space">Primary</button>
+                  <button class="btn btn-space btn-outline-danger btn-space">Danger</button>
+                  <button class="btn btn-space btn-outline-warning btn-space">Warning</button>
+                  <button class="btn btn-space btn-outline-success btn-space">Success</button>
+                </p>
+                <p class="mt-2 mb-2">
+                  <button class="btn btn-outline-secondary btn-space"><i class="icon icon-left mdi mdi-globe"></i>Secondary</button>
+                  <button class="btn btn-space btn-outline-primary btn-space"><i class="icon icon-left mdi mdi-cloud-done"></i>Primary</button>
+                  <button class="btn btn-space btn-outline-danger btn-space"><i class="icon icon-left mdi mdi-alert-circle"></i>Danger</button>
+                  <button class="btn btn-space btn-outline-warning btn-space"><i class="icon icon-left mdi mdi-alert-triangle"></i>Warning</button>
+                  <button class="btn btn-space btn-outline-success btn-space"><i class="icon icon-left mdi mdi-check"></i>Success</button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="bt-right-sidebar">
+      <div class="sb-content">
+        <div class="tab-navigation">
+          <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li class="nav-item" role="presentation"><a class="nav-link active" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Chat</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Todo</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Settings</a></li>
+          </ul>
+        </div>
+        <div class="tab-panel">
+          <div class="tab-content">
+            <div class="tab-pane tab-chat active" id="tab1" role="tabpanel">
+              <div class="chat-contacts">
+                <div class="chat-sections">
+                  <div class="bt-scroller-chat">
+                    <div class="content">
+                      <h2>Recent</h2>
+                      <div class="contact-list contact-list-recent">
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status away"></span>
+                              <span class="name">Claire Sassu</span>
+                              <span class="message">Can you share the...</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status"></span>
+                              <span class="name">Maggie jackson</span>
+                              <span class="message">I confirmed the info.</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status offline"></span>
+                              <span class="name">Joel King</span>
+                              <span class="message">Ready for the meeti...</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <h2>Contacts</h2>
+                      <div class="contact-list">
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data2">
+                              <span class="status"></span>
+                              <span class="name">Mike Bolthort</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data2">
+                              <span class="status"></span>
+                              <span class="name">Maggie jackson</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data2">
+                              <span class="status offline"></span>
+                              <span class="name">Jhon Voltemar</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-input">
+                  <input type="text" placeholder="Search..." name="q"><span class="mdi mdi-search"></span>
+                </div>
+              </div>
+              <div class="chat-window">
+                <div class="title">
+                  <div class="user">
+                    <img src="images/avatar.svg" alt="Avatar">
+                    <h2>Maggie jackson</h2>
+                    <span>Active 1h ago</span>
+                  </div>
+                  <span class="icon return mdi mdi-chevron-left"></span>
+                </div>
+                <div class="chat-messages">
+                  <div class="bt-scroller-messages">
+                    <div class="content">
+                      <ul>
+                        <li class="friend"><div class="msg">Hello</div></li>
+                        <li class="self"><div class="msg">Hi, how are you?</div></li>
+                        <li class="friend"><div class="msg">Good, I'll need support with my pc</div></li>
+                        <li class="self"><div class="msg">Sure, just tell me what is going on with your computer?</div></li>
+                        <li class="friend"><div class="msg">I don't know it just turns off suddenly</div></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-input">
+                  <div class="input-wrapper">
+                    <span class="photo mdi mdi-camera"></span>
+                    <input type="text" placeholder="Message..." name="q" autocomplete="off">
+                    <span class="send-msg mdi mdi-mail-send"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane tab-todo" id="tab2" role="tabpanel">
+              <div class="todo-container">
+                <div class="todo-wrapper">
+                  <div class="bt-scroller-todo">
+                    <div class="todo-content"><span class="category-title">Today</span>
+                      <ul class="todo-list">
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" checked id="tck1">
+                            <label class="custom-control-label" for="tck1">Initialize the project</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" id="tck2">
+                            <label class="custom-control-label" for="tck2">Create the main structure</label>
+                          </div>
+                        </li>
+                      </ul><span class="category-title">Tomorrow</span>
+                      <ul class="todo-list">
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" id="tck4">
+                            <label class="custom-control-label" for="tck4">Initialize the project</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" id="tck5">
+                            <label class="custom-control-label" for="tck5">Create the main structure</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" id="tck7">
+                            <label class="custom-control-label" for="tck7" title="This task is too long to be displayed in a normal space!">This task is too long to be displayed in a normal space!</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-input">
+                  <input type="text" placeholder="Create new task..." name="q"><span class="mdi mdi-plus"></span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane tab-settings" id="tab3" role="tabpanel">
+              <div class="settings-wrapper">
+                <div class="bt-scroller-settings"><span class="category-title">General</span>
+                  <ul class="settings-list">
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st1" id="st1">
+                        <span><label for="st1"></label></span>
+                      </div>
+                      <span class="name">Available</span>
+                    </li>
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st2" id="st2">
+                        <span><label for="st2"></label></span>
+                      </div>
+                      <span class="name">Enable notifications</span>
+                    </li>
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st3" id="st3">
+                        <span><label for="st3"></label></span>
+                      </div>
+                      <span class="name">Login with Facebook</span>
+                    </li>
+                  </ul><span class="category-title">Notifications</span>
+                  <ul class="settings-list">
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" name="st4" id="st4">
+                        <span><label for="st4"></label></span>
+                      </div>
+                      <span class="name">Email notifications</span>
+                    </li>
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st5" id="st5">
+                        <span><label for="st5"></label></span>
+                      </div>
+                      <span class="name">Project updates</span>
+                    </li>
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st6" id="st6">
+                        <span><label for="st6"></label></span>
+                      </div>
+                      <span class="name">New comments</span>
+                    </li>
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" name="st7" id="st7">
+                        <span><label for="st7"></label></span>
+                      </div>
+                      <span class="name">Chat messages</span>
+                    </li>
+                  </ul><span class="category-title">Workflow</span>
+                  <ul class="settings-list">
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" name="st8" id="st8">
+                        <span><label for="st8"></label></span>
+                      </div>
+                      <span class="name">Deploy on commit</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <script type="module">
+    import { init } from '../dist/build.js';
+
+    init();
+  </script>
+</body>
+</html>

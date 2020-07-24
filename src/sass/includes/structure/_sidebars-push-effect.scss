@@ -1,49 +1,49 @@
 //Right sidebar animation
 @mixin right-sidebar-animation($ha_animation) {
 
-	@if $ha_animation {
+  @if $ha_animation {
 
-		//With Hardware Acceleration
-		@include tablet {
+    //With Hardware Acceleration
+    @include tablet {
 
-			.bt-wrapper{
-				overflow: hidden;
-			}
+      .bt-wrapper{
+        overflow: hidden;
+      }
 
-			.bt-right-sidebar{
-	    	transform: translate3d(0, 0, 0);
-			}
-		}
-	} @else {
+      .bt-right-sidebar{
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  } @else {
 
-		//Without Hardware Acceleration
-		.bt-right-sidebar{
-			right: 0;
-		}
-	}
+    //Without Hardware Acceleration
+    .bt-right-sidebar{
+      right: 0;
+    }
+  }
 }
 
 //Left sidebar animation
 @mixin left-sidebar-animation($ha_animation) {
-	@if $ha_animation {
+  @if $ha_animation {
 
-		//With Hardware Acceleration
-		@include tablet {
+    //With Hardware Acceleration
+    @include tablet {
 
-			.bt-wrapper {
-				overflow: hidden;
-			}
+      .bt-wrapper {
+        overflow: hidden;
+      }
 
-			.bt-left-sidebar {
-	    	transform: translate3d(0, 0, 0);
-			}
-		}
+      .bt-left-sidebar {
+        transform: translate3d(0, 0, 0);
+      }
+    }
 
-	} @else {
+  } @else {
 
-		//Without Hardware Acceleration
-		.bt-left-sidebar {
-			left: 0;
-		}
-	}
+    //Without Hardware Acceleration
+    .bt-left-sidebar {
+      left: 0;
+    }
+  }
 }

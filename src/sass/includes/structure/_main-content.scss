@@ -2,100 +2,100 @@
   [Main content]
 */
 .bt-content{
-	position: relative;
-	left: 0;
-	margin-left: $left-sidebar-width;
-	min-height: 100%;
+  position: relative;
+  left: 0;
+  margin-left: $left-sidebar-width;
+  min-height: 100%;
 
-	@include tablet {
-		margin-left: 0;
-	}
+  @include tablet {
+    margin-left: 0;
+  }
 
-	@media #{$print} {
-		margin-left: 0;
-	}
+  @media #{$print} {
+    margin-left: 0;
+  }
 
-	.bt-nosidebar-left & {
-		margin-left: 0;
-	}
+  .bt-nosidebar-left & {
+    margin-left: 0;
+  }
 
-	.bt-collapsible-sidebar-collapsed & {
-		margin-left: $left-sidebar-collapsed-width;
+  .bt-collapsible-sidebar-collapsed & {
+    margin-left: $left-sidebar-collapsed-width;
 
-		@include tablet {
-			margin-left: 0;
-		}
-	}
+    @include tablet {
+      margin-left: 0;
+    }
+  }
 
-	.bt-offcanvas-menu & {
-		margin-left: 0;
-	}
+  .bt-offcanvas-menu & {
+    margin-left: 0;
+  }
 
-	// Off canvas menu only on mobile
-	@include non-responsive {
+  // Off canvas menu only on mobile
+  @include non-responsive {
 
-		.bt-offcanvas-menu-sm & {
-			margin-left: $left-sidebar-width;
-		}
-	}
+    .bt-offcanvas-menu-sm & {
+      margin-left: $left-sidebar-width;
+    }
+  }
 
-	.bt-mega-menu & {
-		margin-left: auto;
-	}
+  .bt-mega-menu & {
+    margin-left: auto;
+  }
 
-	@include non-responsive{
-		.bt-boxed-layout & {
-			margin-left: 0;
-			overflow: hidden;
-			width: 100%;
-		}
+  @include non-responsive{
+    .bt-boxed-layout & {
+      margin-left: 0;
+      overflow: hidden;
+      width: 100%;
+    }
 
-		.bt-boxed-layout.bt-fixed-sidebar & {
-			margin-left: $left-sidebar-width;
-			min-height: 100vh;
-		}
-	}
+    .bt-boxed-layout.bt-fixed-sidebar & {
+      margin-left: $left-sidebar-width;
+      min-height: 100vh;
+    }
+  }
 }
 
 .main-content {
-	padding: $grid-gutter-width - 5;
+  padding: $grid-gutter-width - 5;
 
-	@include laptop {
-		padding-left: $grid-gutter-width - 5;
-		padding-right: $grid-gutter-width - 5;
-		padding-top: $grid-gutter-width;
-	}
+  @include laptop {
+    padding-left: $grid-gutter-width - 5;
+    padding-right: $grid-gutter-width - 5;
+    padding-top: $grid-gutter-width;
+  }
 
-	@include tablet {
-		height: 100%;
-		overflow: auto;
-		padding-left: $grid-gutter-width - 15;
-		padding-right: $grid-gutter-width - 15;
-		padding-top: 20px;
-	}
+  @include tablet {
+    height: 100%;
+    overflow: auto;
+    padding-left: $grid-gutter-width - 15;
+    padding-right: $grid-gutter-width - 15;
+    padding-top: 20px;
+  }
 
-	@include phone {
-		padding-right: $grid-gutter-width - 20;
-		padding-left: $grid-gutter-width - 20;
+  @include phone {
+    padding-right: $grid-gutter-width - 20;
+    padding-left: $grid-gutter-width - 20;
 
-		.row {
-			margin-left: -($grid-gutter-width - 20);
-			margin-right: -($grid-gutter-width - 20);
-		}
+    .row {
+      margin-left: -($grid-gutter-width - 20);
+      margin-right: -($grid-gutter-width - 20);
+    }
 
-		%grid-column {
-			padding-left: $grid-gutter-width - 20;
-			padding-right: $grid-gutter-width - 20;
-		}
-	}
+    %grid-column {
+      padding-left: $grid-gutter-width - 20;
+      padding-right: $grid-gutter-width - 20;
+    }
+  }
 
-	.bt-no-padding &{
-		padding: 0;
-	}
+  .bt-no-padding &{
+    padding: 0;
+  }
 }
 
 .page-aside {
-	.bt-nosidebar-left & {
-		left: 0;
-	}
+  .bt-nosidebar-left & {
+    left: 0;
+  }
 }

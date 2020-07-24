@@ -1,229 +1,229 @@
 .docs {
 
-	// Aside docs style
+  // Aside docs style
 
-	.page-aside {
+  .page-aside {
 
-		.aside-content {
+    .aside-content {
 
-			.aside-nav {
-				padding: 0;
+      .aside-nav {
+        padding: 0;
 
-				.navbar {
-					padding: 0;
-					font-size: 1rem;
-					line-height: 20px;
+        .navbar {
+          padding: 0;
+          font-size: 1rem;
+          line-height: 20px;
 
-					> .nav-item {
+          > .nav-item {
 
-						> .nav-link {
+            > .nav-link {
 
-							&:hover {
-								background-color: darken($page-aside-bg, 3%);
-							}
+              &:hover {
+                background-color: darken($page-aside-bg, 3%);
+              }
 
-							&.active {
-								color: $primary;
+              &.active {
+                color: $primary;
 
-								& + ul {
-									display: block;
-								}
-							}
-						}
+                & + ul {
+                  display: block;
+                }
+              }
+            }
 
-						> ul {
-							padding: 10px 0;
-							display: none;
-							background-color: darken($page-aside-bg, 5%);
-							border-top: 1px solid darken($page-aside-bg, 8%);
-							border-bottom: 1px solid darken($page-aside-bg, 8%);
-							font-size: 1rem;
-							line-height: 20px;
+            > ul {
+              padding: 10px 0;
+              display: none;
+              background-color: darken($page-aside-bg, 5%);
+              border-top: 1px solid darken($page-aside-bg, 8%);
+              border-bottom: 1px solid darken($page-aside-bg, 8%);
+              font-size: 1rem;
+              line-height: 20px;
 
-							.nav-link {
-								padding: 8px $page-aside-padding;
+              .nav-link {
+                padding: 8px $page-aside-padding;
 
-								&.active {
-									color: $primary;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+                &.active {
+                  color: $primary;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
-	.shareable-anchor {
-		&:before {
-			display: block;
-			height: 8.25rem;
-			margin-top: -8.25rem;
-			visibility: hidden;
-			content: "";
-		}
+  .shareable-anchor {
+    &:before {
+      display: block;
+      height: 8.25rem;
+      margin-top: -8.25rem;
+      visibility: hidden;
+      content: "";
+    }
 
-		div {
-			a {
-				display: none;
-			}
+    div {
+      a {
+        display: none;
+      }
 
-			&:hover {
-				a {
-					display: inline-block;
-				}
-			}
-		}
-	}
+      &:hover {
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
 
-	// Main content docs style
-	.main-content {
-		background-color: darken($white, 5%);
-	}
+  // Main content docs style
+  .main-content {
+    background-color: darken($white, 5%);
+  }
 
-	section {
-		> h1, > h2 {
-			margin-top: 60px;
-			margin-bottom: 25px;
-			padding-bottom: 15px;
-			border-bottom: 1px solid #ededed;
-		}
+  section {
+    > h1, > h2 {
+      margin-top: 60px;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ededed;
+    }
 
-		> h1, >.h1 {
-			font-size: 40px;
-		}
+    > h1, >.h1 {
+      font-size: 40px;
+    }
 
-		> h2, > .h2 {
-			font-size: 30px;
-		}
+    > h2, > .h2 {
+      font-size: 30px;
+    }
 
-		> h3, > .h3 {
-			margin-top: 45px;
-			margin-bottom: 10px;
-			font-size: 27px;
-		}
+    > h3, > .h3 {
+      margin-top: 45px;
+      margin-bottom: 10px;
+      font-size: 27px;
+    }
 
-		> h4, > .h4 {
-			margin-top: 20px;
-			margin-bottom: 10px;
-			font-size: 24px;
-		}
+    > h4, > .h4 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
 
-		> p {
-			// font-family: "Nunito","Open Sans",sans-serif;
-			font-size: 17px;
-			line-height: 33px;
-			font-weight: 300;
-			margin-bottom: 25px;
+    > p {
+      // font-family: "Nunito","Open Sans",sans-serif;
+      font-size: 17px;
+      line-height: 33px;
+      font-weight: 300;
+      margin-bottom: 25px;
 
-			b, strong {
-				font-weight: 400;
-			}
-		}
+      b, strong {
+        font-weight: 400;
+      }
+    }
 
-		> ul, > ol {
-			font-size: 17px;
-			font-weight: 300;
-			line-height: 33px;
-		}
+    > ul, > ol {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 33px;
+    }
 
-		> img {
-			max-width: 100%;
-		}
-	}
+    > img {
+      max-width: 100%;
+    }
+  }
 
-	.gallery-container{
+  .gallery-container{
 
-		.item{
-			width: 50%;      
-		}
-	}
+    .item{
+      width: 50%;      
+    }
+  }
 
-	/* Pretty printing styles. Used with prettify.js. */
-	.prettyprint {
-		font-size: 13px;
-		line-height: 1.5;
-	}
+  /* Pretty printing styles. Used with prettify.js. */
+  .prettyprint {
+    font-size: 13px;
+    line-height: 1.5;
+  }
 
-	pre {
-		border: 0;
-		padding: 20px;
-		margin-bottom: 0;
-	}
+  pre {
+    border: 0;
+    padding: 20px;
+    margin-bottom: 0;
+  }
 
-	.code-panel {
-		margin-bottom: 30px;
-	}
+  .code-panel {
+    margin-bottom: 30px;
+  }
 
-	.code-panel__heading {
-		background: #5A5775;
-		color: #cecece;
-		font-size: 15px;
-		padding: 11px 16px;
-	}
+  .code-panel__heading {
+    background: #5A5775;
+    color: #cecece;
+    font-size: 15px;
+    padding: 11px 16px;
+  }
 
-	pre {
-		background-color: #4F4A68;
-		color: #EDEBE6;
+  pre {
+    background-color: #4F4A68;
+    color: #EDEBE6;
 
-		.pln {
-			color: #eeeeee;
-		}
-		.str {
-			color: #92CF78;
-		}
-		.kwd {
-			color: #f386ac;
-		}
-		.com {
-			color: #8275E7;
-		}
-		.typ {
-			color: #97f6fb;
-		}
-		.lit {
-			color: #dcc175;
-		}
-		.pun,
-		.opn,
-		.clo {
-			color: #e3e2e0;
-		}
-		.tag {
-			color: #f386ac;
-		}
-		.atn {
-			color: #1DFDC0;
-		}
-		.atv {
-			color: #F2C770;
-		}
-		.dec,
-		.var {
-			color: #E86493;
-		}
-		.fun {
-			color: #445588;
-		}
-	}
+    .pln {
+      color: #eeeeee;
+    }
+    .str {
+      color: #92CF78;
+    }
+    .kwd {
+      color: #f386ac;
+    }
+    .com {
+      color: #8275E7;
+    }
+    .typ {
+      color: #97f6fb;
+    }
+    .lit {
+      color: #dcc175;
+    }
+    .pun,
+    .opn,
+    .clo {
+      color: #e3e2e0;
+    }
+    .tag {
+      color: #f386ac;
+    }
+    .atn {
+      color: #1DFDC0;
+    }
+    .atv {
+      color: #F2C770;
+    }
+    .dec,
+    .var {
+      color: #E86493;
+    }
+    .fun {
+      color: #445588;
+    }
+  }
 
-	/* Specify class=linenums on a pre to get line numbering */
-	ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
-	
-	li.L0,
-	li.L1,
-	li.L2,
-	li.L3,
-	li.L5,
-	li.L6,
-	li.L7,
-	li.L8 { list-style-type: none }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
+  
+  li.L0,
+  li.L1,
+  li.L2,
+  li.L3,
+  li.L5,
+  li.L6,
+  li.L7,
+  li.L8 { list-style-type: none }
 
-	/* Alternate shading for lines */
-	li.L1,
-	li.L3,
-	li.L5,
-	li.L7,
-	li.L9 { background: #eee }
+  /* Alternate shading for lines */
+  li.L1,
+  li.L3,
+  li.L5,
+  li.L7,
+  li.L9 { background: #eee }
 
 }

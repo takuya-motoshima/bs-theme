@@ -1,199 +1,199 @@
 /*------------------------------------------------------------------
-	[Page aside]
+  [Page aside]
 */
 .bt-aside {
 
-	.main-content {
-		margin-left: $page-aside-width;
-		width: auto;
+  .main-content {
+    margin-left: $page-aside-width;
+    width: auto;
 
-		@include tablet {
-			margin-left: inherit;
-		}
-		
-		@media #{$print} {
-			margin-left: 0;
-		}
-	}
+    @include tablet {
+      margin-left: inherit;
+    }
+    
+    @media #{$print} {
+      margin-left: 0;
+    }
+  }
 
-	.bt-content {
-		height: 100%;
-	}
+  .bt-content {
+    height: 100%;
+  }
 
-	.content {
-		height: 100%;
-	}
+  .content {
+    height: 100%;
+  }
 }
 
 .page-aside {
-	background: none repeat scroll 0 0 $page-aside-bg;
-	width: $page-aside-width;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: $left-sidebar-width;
-	border-right: 1px solid darken(theme-color("light"), 10%);
-	margin-top: $top-header-height + 1px;
-	padding-bottom: $top-header-height + 1px;
-	color: $page-aside-text-color;
+  background: none repeat scroll 0 0 $page-aside-bg;
+  width: $page-aside-width;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: $left-sidebar-width;
+  border-right: 1px solid darken(theme-color("light"), 10%);
+  margin-top: $top-header-height + 1px;
+  padding-bottom: $top-header-height + 1px;
+  color: $page-aside-text-color;
 
-	@media #{$print} {
-		display: none;
-	}
+  @media #{$print} {
+    display: none;
+  }
 
-	.bt-collapsible-sidebar-collapsed & {
-		left: $left-sidebar-collapsed-width;
+  .bt-collapsible-sidebar-collapsed & {
+    left: $left-sidebar-collapsed-width;
 
-		@include tablet {
-			left: 0;
-		}
-	}
+    @include tablet {
+      left: 0;
+    }
+  }
 
-	.no-border & {
-		border-width: 0;
-	}
+  .no-border & {
+    border-width: 0;
+  }
 
-	.bt-scroller-aside {
-		position: relative;
-		height: 100%;
-		width: 100%;
-	}
+  .bt-scroller-aside {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
 
-	.content {
-		padding: 16px $page-aside-padding;
-		// padding: 20px $page-aside-padding;
-		position: relative;
-	}
+  .content {
+    padding: 16px $page-aside-padding;
+    // padding: 20px $page-aside-padding;
+    position: relative;
+  }
 
-	@include tablet {
-		width: 100%;
-		display: block;
-		height: auto;
-		position: relative;
-		margin-top: 0 !important;
-		padding-bottom: 0 !important;
-		left: 0;
-		border-bottom: 2px solid darken(theme-color("light"), 5%);
-	}
+  @include tablet {
+    width: 100%;
+    display: block;
+    height: auto;
+    position: relative;
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+    left: 0;
+    border-bottom: 2px solid darken(theme-color("light"), 5%);
+  }
 }
 
 .aside-header {
-	// margin-bottom: 5px;
+  // margin-bottom: 5px;
 
-	.title {
-		display: block;
-		margin: 0;
-		// margin: 16px 0 0;
-		font-size: $page-aside-title-size;
-		line-height: $page-aside-title-size;
-		font-weight: $font-weight-light;
-	}
+  .title {
+    display: block;
+    margin: 0;
+    // margin: 16px 0 0;
+    font-size: $page-aside-title-size;
+    line-height: $page-aside-title-size;
+    font-weight: $font-weight-light;
+  }
 
-	.navbar-toggle {
-		background:rgba(0, 0, 0, 0);
-		display: none;
-		outline: none;
-		border: 0;
+  .navbar-toggle {
+    background:rgba(0, 0, 0, 0);
+    display: none;
+    outline: none;
+    border: 0;
 
-		padding: 0 11px 0 0;
-		text-align: right;
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		position: absolute;
+    padding: 0 11px 0 0;
+    text-align: right;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
 
-		@include tablet {
-			display: block;
-		}
+    @include tablet {
+      display: block;
+    }
 
-		.icon {
-			font-size: 1.538rem;
-			color: lighten($body-color, 50%)
-		}
-	}
+    .icon {
+      font-size: 1.538rem;
+      color: lighten($body-color, 50%)
+    }
+  }
 
-	.description {
-		color: lighten($body-color, 10%);
-		margin: 0;
-	}
+  .description {
+    color: lighten($body-color, 10%);
+    margin: 0;
+  }
 }
 
 .aside-nav {
-	visibility: visible;
+  visibility: visible;
 
-	&.collapse {
-		display: block;
-	}
+  &.collapse {
+    display: block;
+  }
 
-	.nav {
+  .nav {
 
-		li {
+    li {
 
-			a {
-				color: $body-color;
-				padding: 13px $page-aside-padding;
+      a {
+        color: $body-color;
+        padding: 13px $page-aside-padding;
 
-				&.active {
-					background-color: $page-aside-link-active-color;
-					color: theme-color("primary");
-					.icon {
-						color: theme-color("primary");
-					}
-				}
-			}
+        &.active {
+          background-color: $page-aside-link-active-color;
+          color: theme-color("primary");
+          .icon {
+            color: theme-color("primary");
+          }
+        }
+      }
 
-			&.active {
-				
-				a {
-					background-color: $page-aside-link-active-color;
-					color: theme-color("primary");
-					.icon {
-						color: theme-color("primary");
-					}
-				}
-			}
+      &.active {
+        
+        a {
+          background-color: $page-aside-link-active-color;
+          color: theme-color("primary");
+          .icon {
+            color: theme-color("primary");
+          }
+        }
+      }
 
-			.badge {
-				float: right;
-				font-size: .9231rem;
-				font-weight: $font-weight-light;
-				padding: 1px 7px;
-			}
+      .badge {
+        float: right;
+        font-size: .9231rem;
+        font-weight: $font-weight-light;
+        padding: 1px 7px;
+      }
 
-			.icon {
-				font-size: 1.462rem;
-				vertical-align: middle;
-				text-align: center;
-				min-width: 19px;
-				margin-right: 6px;
-				color: lighten($body-color, 13%);
-			}
-		}
-	}
+      .icon {
+        font-size: 1.462rem;
+        vertical-align: middle;
+        text-align: center;
+        min-width: 19px;
+        margin-right: 6px;
+        color: lighten($body-color, 13%);
+      }
+    }
+  }
 
-	.title {
-		display: block;
-		color: lighten($body-color, 35%);
-		font-size: .8462rem;
-		font-weight: $font-weight-bold;
-		text-transform: uppercase;
-		margin: 20px 0 0;
-		padding: 8px $page-aside-padding 4px;
-	}
+  .title {
+    display: block;
+    color: lighten($body-color, 35%);
+    font-size: .8462rem;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    margin: 20px 0 0;
+    padding: 8px $page-aside-padding 4px;
+  }
 
-	@include tablet {
-		border-bottom: 1px solid darken(theme-color("light"), 10%);
+  @include tablet {
+    border-bottom: 1px solid darken(theme-color("light"), 10%);
 
-		&.collapse {
-			display: none;
-		}
+    &.collapse {
+      display: none;
+    }
 
-		&.show {
-			display: block;
-		}
-	}
+    &.show {
+      display: block;
+    }
+  }
 }
 
 // Aside page components
@@ -205,107 +205,107 @@
 //==Email inbox page
 //Inbox header
 .bt-aside-header {
-	background-color: theme-color("light");
-	padding: 37px 25px;
+  background-color: theme-color("light");
+  padding: 37px 25px;
 
-	@include laptop-only {
-		padding: 20px 25px;
-	}
+  @include laptop-only {
+    padding: 20px 25px;
+  }
 }
 
 //Inbox title
 .bt-aside-header-title {
-	display: block;
-	margin: 3px 0 0;
-	font-size: 1.769rem;
-	font-weight: $font-weight-light;
+  display: block;
+  margin: 3px 0 0;
+  font-size: 1.769rem;
+  font-weight: $font-weight-light;
 
-	@include laptop {
-		margin-bottom: 10px;
-	}
+  @include laptop {
+    margin-bottom: 10px;
+  }
 
-	.icon {
-		font-size: 1.769rem;
-		color: lighten($body-color, 20%)
-	}
+  .icon {
+    font-size: 1.769rem;
+    color: lighten($body-color, 20%)
+  }
 
-	.new-messages {
-		font-size: $font-size-base;
-		color: lighten($body-color, 30%);
-		margin-left: 3px;
-	}
+  .new-messages {
+    font-size: $font-size-base;
+    color: lighten($body-color, 30%);
+    margin-left: 3px;
+  }
 }
 
 //Inbox filters
 .bt-aside-header-filters {
-	padding: 0 20px 30px;
-	border-bottom: 1px solid darken(theme-color("light"), 10%);
-	background-color: theme-color("light");
-	display: table;
-	width: 100%;
+  padding: 0 20px 30px;
+  border-bottom: 1px solid darken(theme-color("light"), 10%);
+  background-color: theme-color("light");
+  display: table;
+  width: 100%;
 
-	.dropdown-toggle {
+  .dropdown-toggle {
 
-		&:after {
-			display: inline-block;
-		}
-	}
+    &:after {
+      display: inline-block;
+    }
+  }
 
-	> div {
-		display: table-cell;
-		vertical-align: middle;
+  > div {
+    display: table-cell;
+    vertical-align: middle;
 
-		@include laptop {
-			vertical-align: top;
-		}
-	}
+    @include laptop {
+      vertical-align: top;
+    }
+  }
 
-	.btn-group + .btn-group {
+  .btn-group + .btn-group {
 
-		@include laptop {
-			margin-left: 0;
-		}
-	}
+    @include laptop {
+      margin-left: 0;
+    }
+  }
 
-	.bt-select-all.bt-checkbox {
-		display: inline-block;
-		vertical-align: middle;
-		padding: 0;
+  .bt-select-all.bt-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
 
-		label:before {
-			margin-right: 18px;
-		}
-	}
+    label:before {
+      margin-right: 18px;
+    }
+  }
 
-	.bt-aside-header-filters-right {
-		text-align: right;
-	}
+  .bt-aside-header-filters-right {
+    text-align: right;
+  }
 
-	input {
-		margin-right: 8px;
-	}
+  input {
+    margin-right: 8px;
+  }
 }
 
 //Pagination text
 .bt-aside-pagination-indicator {
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 13px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 13px;
 
-	@include laptop-only {
-		margin-right: 0;
-	}
+  @include laptop-only {
+    margin-right: 0;
+  }
 }
 
 //Pagination buttons nav
 .bt-aside-pagination-nav {
 
-	.btn {
-		min-width: 30px;
+  .btn {
+    min-width: 30px;
 
-		i {
-			font-size: 1.615rem;
-			vertical-align: middle;
-		}
-	}
+    i {
+      font-size: 1.615rem;
+      vertical-align: middle;
+    }
+  }
 }

@@ -2,14 +2,14 @@
   [Dividers inside cards]
 */
 .card-divider{
-	margin: $divider-margin 0;
-	border-top: $divider-border;
+  margin: $divider-margin 0;
+  border-top: $divider-border;
 
-	&-lg{
-		margin: $divider-lg-margin 0;
-	}
+  &-lg{
+    margin: $divider-lg-margin 0;
+  }
 
-	&-xl{
-		margin: $divider-xl-margin 0;
-	}
+  &-xl{
+    margin: $divider-xl-margin 0;
+  }
 }

@@ -2,10 +2,10 @@
   [Badges]
 */
 .badge{
-	font-size: .8462rem;
-	font-weight: $font-weight-bold;
-	line-height: 1.55;
-	border: 1px solid darken(theme-color("light"), 15%);
+  font-size: .8462rem;
+  font-weight: $font-weight-bold;
+  line-height: 1.55;
+  border: 1px solid darken(theme-color("light"), 15%);
 }
 
 .badge-primary{
@@ -13,22 +13,22 @@
 }
 
 .badge-secondary {
-	background-color: theme-color("light");
-	color: $badge-color;
+  background-color: theme-color("light");
+  color: $badge-color;
 }
 
 .badge-success{
- @include badge-color(theme-color("success")); 
+  @include badge-color(theme-color("success")); 
 }
 
 .badge-info{
- @include badge-color(theme-color("info")); 
+  @include badge-color(theme-color("info")); 
 }
 
 .badge-warning{
- @include badge-color(theme-color("warning")); 
+  @include badge-color(theme-color("warning")); 
 }
 
 .badge-danger{
- @include badge-color(theme-color("danger")); 
+  @include badge-color(theme-color("danger")); 
 }

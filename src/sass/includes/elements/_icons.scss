@@ -2,79 +2,79 @@
   [Icons]
 */
 .icon-container{
-	background-color: theme-color("light");
-	padding: 20px;
-	cursor: default;
+  background-color: theme-color("light");
+  padding: 20px;
+  cursor: default;
 
-	.icon{
-		transition: background-color 300ms ease-in-out;
-		background-color: darken(theme-color("light"), 4%);
-		border-radius: 50%;
-		display: inline-block;
-		height: 50px;
-		width: 50px;
-		margin-right:8px;
-		padding: 12px;
-		padding: 13px;
-		text-align: center;
-		vertical-align: middle;
+  .icon{
+    transition: background-color 300ms ease-in-out;
+    background-color: darken(theme-color("light"), 4%);
+    border-radius: 50%;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-right:8px;
+    padding: 12px;
+    padding: 13px;
+    text-align: center;
+    vertical-align: middle;
 
-		span{
-			transition: color 300ms ease-in-out;
-			font-size: 1.923rem;
-			color: lighten(theme-color("dark"), 17%);
-		}
+    span{
+      transition: color 300ms ease-in-out;
+      font-size: 1.923rem;
+      color: lighten(theme-color("dark"), 17%);
+    }
 
-		&:hover{
-			background-color: theme-color("primary");
+    &:hover{
+      background-color: theme-color("primary");
 
-			span{
-				color: theme-color("light");
-			}
-		}
-	}
+      span{
+        color: theme-color("light");
+      }
+    }
+  }
 
-	.icon-class{
-		transition: color 300ms ease-in-out;
-		font-size: 1.385rem;
-		font-weight: 300;
-		vertical-align: middle;
-		color: lighten(theme-color("dark"), 17%);
-	}
+  .icon-class{
+    transition: color 300ms ease-in-out;
+    font-size: 1.385rem;
+    font-weight: 300;
+    vertical-align: middle;
+    color: lighten(theme-color("dark"), 17%);
+  }
 
-	&:hover{
+  &:hover{
 
-		.icon{
-			background-color: theme-color("primary");
+    .icon{
+      background-color: theme-color("primary");
 
-			span{
-				color: theme-color("light");
-			}
-		}
+      span{
+        color: theme-color("light");
+      }
+    }
 
-		.icon-class{
-			color: theme-color("primary");
-		}
-	}
+    .icon-class{
+      color: theme-color("primary");
+    }
+  }
 }
 
 //Filter icons
 .bt4-icons-list{
 
-	&.hide-icons{
-	
-		.icon-category{
+  &.hide-icons{
+  
+    .icon-category{
 
-			.row{
+      .row{
 
-				> div{
-					display: none;
+        > div{
+          display: none;
 
-					&.icon-visible{
-						display: block;
-					}
-				}
-			}
-		}
-	}
+          &.icon-visible{
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }

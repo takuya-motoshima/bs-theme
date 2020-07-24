@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.13] - 2020-07-23
+
+  - Optimized form control and button size.
+
 ## [0.0.12] - 2020-07-23
 
   - Change align of horizontal form control label (.col-form-label) from right to left.

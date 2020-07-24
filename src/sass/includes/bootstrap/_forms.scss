@@ -2,13 +2,23 @@
   [Forms]
 */
 .form-control {
-	border-width: 1px;
+  border-width: 1px;
   border-top-color: $input-top-border;
   box-shadow: none;
   padding: 10px 12px;
   font-size: $font-size-base + 0.1538rem;
   transition: none;
   height: $input-height;
+
+  &-plaintext {
+    padding: 10px 12px;
+    font-size: $font-size-base + 0.1538rem;
+
+    &:focus,
+    &.focus {
+      outline: none;
+    }
+  }
 }
 
 .form-control[multiple] {
@@ -29,7 +39,7 @@
   line-height: 1;
 
   @include phone {
-    padding-bottom: 8px;      
+    padding-bottom: 8px;
   }
 }
 
@@ -39,11 +49,13 @@ input.form-control, textarea.form-control{
 }
 
 // Reset height
-textarea.form-control, select[multiple], select[size] {
+textarea.form-control,
+select[multiple],
+select[size] {
   height: auto;
 }
 
-label{
+label {
   font-weight: $font-weight-normal;
   font-size: $font-size-base;
   margin-bottom: 8px;
@@ -164,12 +176,6 @@ select.form-control-xs {
         }
       }
 
-    }
-  }
-
-  > label {
-    &:first-child {
-      font-weight: bold;
     }
   }
 }

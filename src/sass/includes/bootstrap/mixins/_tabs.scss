@@ -3,17 +3,17 @@
   
   > li.nav-item{
 
-  	a.nav-link {
+    a.nav-link {
 
-  		&:hover, &:focus {
-				color: $color;
-			}
+      &:hover, &:focus {
+        color: $color;
+      }
 
-  		&.active{
-  			border-bottom: 2px solid $color;
-			}	
-  	}
-	}
+      &.active{
+        border-bottom: 2px solid $color;
+      } 
+    }
+  }
 
   &.nav-tabs-classic {
 

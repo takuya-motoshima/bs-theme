@@ -42,29 +42,29 @@
 
       &:hover{
 
-      	.icon{
-      		color: lighten($body-color, 10%);
-      	}
+        .icon{
+          color: lighten($body-color, 10%);
+        }
       }
     }
   }
 
   &.input-group-lg{
 
-  	.input-group-btn {
+    .input-group-btn {
 
-  		button{
-  			height: $input-height-lg - .1538rem;
-  		}
-  	}
+      button{
+        height: $input-height-lg - .1538rem;
+      }
+    }
   }
 
   &.input-group-sm{
 
-  	.input-group-btn{
+    .input-group-btn{
 
-  		button{
-  			height: $input-height-sm + .4rem;
+      button{
+        height: $input-height-sm + .4rem;
 
         &:active,
         &:active:hover {
@@ -76,11 +76,11 @@
           }
         }
 
-  			.icon{
-  				font-size: 1.692rem;
-  			}
-  		}
-  	}
+        .icon{
+          font-size: 1.692rem;
+        }
+      }
+    }
   }
 }
 

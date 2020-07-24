@@ -3,43 +3,43 @@
 */
 
 html{
-	height:100%;
-	overflow-x: hidden;
-	font-size: $font-size-root;
-	scroll-behavior: smooth;
+  height:100%;
+  overflow-x: hidden;
+  font-size: $font-size-root;
+  scroll-behavior: smooth;
 }
 
 body {
-	padding: 0;
-	background-color: $body-background;
-	height: auto;
-	min-height: 100%;
-	line-height: 1.42857143;
-	// font-family: $font-family-sf-pro;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	scroll-behavior: smooth;
-	
-	&.bt4-alt-bg {
-		background-color: darken($body-bg, 2%);
-	}
+  padding: 0;
+  background-color: $body-background;
+  height: auto;
+  min-height: 100%;
+  line-height: 1.42857143;
+  // font-family: $font-family-sf-pro;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  
+  &.bt4-alt-bg {
+    background-color: darken($body-bg, 2%);
+  }
 }
 
 a{
 
-	&:hover, &:focus{
-		text-decoration: none;
-	}	
+  &:hover, &:focus{
+    text-decoration: none;
+  } 
 }
 
 p{
-	font-size: $paragraph-font-size;
-	line-height: $paragraph-line-height;
+  font-size: $paragraph-font-size;
+  line-height: $paragraph-line-height;
 }
 
 //Fix for plugins like charts
 canvas{
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }

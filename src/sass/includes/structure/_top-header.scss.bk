@@ -1,688 +1,688 @@
 /*------------------------------------------------------------------
-	[Top header]
+  [Top header]
 */
 .bt-top-header {
-	background-color: $top-header-bg;
-	border:	0;
-	margin-bottom: 0;
-	border-bottom: 1px solid $top-header-border-color;
-	padding: 0;
-
-	@include tablet{
-		border-bottom-width: 0;
-		position: relative;
-		min-height: 0;
-	}
-
-	.container-fluid {
-		padding: 0;
-
-		.bt-nosidebar-left & {
-
-			@include tablet {
-				display: block;
-
-				.navbar-collapse {
-					align-items: baseline;
-
-					&.collapse {
-						display: none !important;
-
-						&.show {
-							display: block !important;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// logo and toggle button
-	.bt-navbar-header {
-		display: flex;
-		width: $left-sidebar-width;
-		flex: 0 0 $left-sidebar-width;
-
-		.bt-collapsible-sidebar & {
-			justify-content: space-between;
-		}
-
-		// Hide logo on collapsible left sidebar
-		.bt-collapsible-sidebar-hide-logo.bt-collapsible-sidebar-collapsed & {
-			width: $left-sidebar-collapsed-width;
-			flex: 0 0 $left-sidebar-collapsed-width;
-		}
-
-		.bt-nosidebar-left & {
-
-			@include laptop {
-				width: auto;
-			}
-		}
-
-		// logo
-		.navbar-brand {
-			line-height: $top-header-height;
-			height: $top-header-height;
-			width: $logo-width + ($logo-padding * 2);
-			background-image: url("#{contrast-image-selector($top-header-bg, $logo-image)}");
-			background-repeat: no-repeat;
-			background-position: $logo-padding center;
-			background-size: contain;
-			padding: 0 $logo-padding;
-			margin: 0;
-			display: block;
-
-			//Phone style
-			@include tablet {
-				display: none;
-			}
-
-			//Reduce content spacing on tablet res.
-			@include laptop {
-				margin-right: 10px;
-			}
-
-			//Whitout left sidebar style
-			.bt-nosidebar-left & {
-				width: $logo-width + ($logo-padding * 2);
-			}
-
-			// Hide on collapsible left sidebar
-			.bt-collapsible-sidebar-hide-logo.bt-collapsible-sidebar-collapsed & {
-				display: none;
-			}
-		}
-
-		// Toggle left sidebar
-		.bt-toggle-left-sidebar {
-	  	display: inline-block;
-		  text-align: center;
-		  line-height: 60px;
-		  float: right;
-		  padding: 0 15px;
-
-		  .icon {
-		  	font-size: 1.615rem;
-		  	color: $top-header-navbar-color;
-		  	line-height: 25px;
-		  	vertical-align: middle;
-		  }
-
-		  // Hide logo on collapsible left sidebar
-		  .bt-collapsible-sidebar-hide-logo.bt-collapsible-sidebar-collapsed & {
-		  	padding: 0 21px;
-		  }
-		}
-
-		@include tablet {
-			display: none;
-		}
-
-		@media #{$print} {
-			display: none;
-		}
-	}
-
-	// Page title
-	.page-title {
-		font-size: 1.462rem;
-		line-height: $top-header-height;
-		float: left;
-		flex: 1 1 auto;
-		padding: 0 20px;
-		color: $top-header-text-color;
-		overflow: hidden;
-
-		span {
-			display: block;
-			overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-		}
-
-		.bt-nosidebar-left & {
-			padding-left: 10px;
-		}
-
-		@include tablet {
-			display: none;
-		}
-	}
-
-	// Top general navigation
-	.navbar-nav {
-
-		> li {
-
-			> a.nav-link {
-				line-height: $top-header-height;
-				color: $top-header-navbar-color;
-				font-size: $top-header-navbar-font-size;
-				padding: 0 $top-header-navbar-padding;
-				outline: none;
-
-				&:hover, &:focus {
-					color: $top-header-navbar-color;
-				}
-
-				@include laptop {
-					padding: 0 10px;
-				}
-			}
-
-			&.show {
-
-				> a {
-					color: $top-header-navbar-color-open;
-
-					&:focus, &:active, &:hover {
-						color: $top-header-navbar-color-open;
-					}
-				}
-			}
-
-			&.dropdown{
-
-				> a{
-
-					.mdi-caret-down{
-						font-size: 1.769rem;
-						vertical-align: middle;
-						margin-left: 3px;
-					}
-				}
-
-				.dropdown-menu{
-					border-radius: 3px;
-					margin-top: 12px;
-					line-height: 20px;
-
-					> a{
-						color: $dropdown-text-color;
-						padding: 10px 20px;
-						min-width: 175px;
-						line-height: 18px;
-
-						&:hover{
-							background-color: theme-color("primary");
-							color: theme-color("light");
-						}
-
-						&:focus, &:active{
-							background-color: transparent;
-							color: $dropdown-text-color;
-						}
-					}
-
-					&:after, &:before{
-						border-bottom: 8px solid white;
-				    border-left: 8px solid transparent;
-				    border-right: 8px solid transparent;
-				    top: -8px;
-				    content: "";
-				    display: inline-block;
-				    left: 42px;
-				    margin-left: -6px;
-				    position: absolute;
-					}
-
-					&:before{
-						border-bottom-width: 9px;
-						border-left-width: 9px;
-						border-right-width: 9px;
-						border-bottom-color: $dropdown-border-color;
-						margin-left: -7px;
-						top: -9px;
-					}
-				}
-			}
-		}
-	}
-
-	// Default navbar collapse
-	.navbar-collapse {
-		border-width: 0;
-
-		@include tablet {
-			border-top: 1px solid $left-sidebar-bg;
-			max-height: none;
-		}
-
-		.navbar-nav {
-
-			@include tablet {
-				background-color: lighten($left-sidebar-bg, 2%);
-				margin: 0;
-				padding: 15px 0;
-
-				.bt-nosidebar-left &,
-				.bt-top-menu & {
-					width: 100%;
-					flex-direction: column;
-				}
-
-				> li {
-
-					> a {
-						display: block;
-						padding: 0 $left-sidebar-main-level-padding;
-						color: $left-sidebar-text-color;
-						font-size: $left-sidebar-main-level-font-size;
-						line-height: $left-sidebar-main-level-height;
-						text-overflow: ellipsis;
-				    overflow: hidden;
-				    white-space: nowrap;
-
-				    .icon {
-							line-height: $left-sidebar-icon-size - 1px;
-							font-size: $left-sidebar-icon-size;
-							min-width: $left-sidebar-icon-size;
-							margin-right: 9px;
-							text-align: center;
-							vertical-align: middle;
-						}
-					}
-
-					&.dropdown {
-
-						.mdi-caret-down {
-							float: right;
-							line-height: $left-sidebar-main-level-height;
-							color: darken($left-sidebar-bg, 19%);
-						}
-
-						.dropdown-menu {
-							background-color: $left-sidebar-sub-level-bg;
-							padding: 10px 0;
-							border-top: 1px solid darken($left-sidebar-bg, 6%);
-							border-right: 0;
-							border-bottom: 1px solid darken($left-sidebar-bg, 6%);
-							border-left: 0;
-							border-radius: 0;
-
-							.bt-nosidebar-left &,
-							.bt-top-menu & {
-								position: static;
-								float: none;
-						    width: auto;
-						    box-shadow: none;
-							}
-
-							&:before,
-							&:after {
-								display: none;
-							}
-
-							> a {
-								color: $left-sidebar-sub-level-color;
-								padding: $left-sidebar-sub-level-padding;
-								padding-left: 23px;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// Search input
-	.search-container {
-		position: relative;
-		flex: 1 1 auto;
-		display: inline-block;
-		height: 60px;
-		padding: 10px 20px;
-
-		.input-group {
-			max-width: $top-header-search-max-width;
-		}
-
-		@include tablet {
-			display: none;
-		}
-
-		.btn {
-			height: 37px;
-	    font-size: 1rem;
-	    padding: 4px 12px;
-	    border-radius: 0;
-		}
-	}
-
-	.search-input {
-		border-width: 1px;
-		border-right: 0;
-		color: $body-color;
-
-		@include tablet {
-			background-color: theme-color("light");
-			color: $body-color;
-		}
-
-		&:focus {
-			background-color: theme-color("light");
-			color: darken(theme-color("light"), 50%);;
-
-			&::placeholder {
-				color: lighten($body-color, 20%);
-			}
-		}
-	}
-
-	// Right navbar
-	.bt-right-navbar {
-		padding-right: 20px;
-		flex: 0 0 auto;
-
-		.navbar-nav {
-			background-color: transparent;
-
-			@include tablet{
-
-				> li{
-
-					> a.nav-link{
-
-						color: $top-header-nav-link-color-mobile;
-
-						&:focus, &:active{
-							color: $top-header-nav-link-color-mobile;
-						}
-					}
-
-					&.show{
-
-						> a.nav-link{
-							color: $top-header-nav-link-color-mobile;
-
-							&:focus, &:active, &:hover{
-								color: $top-header-nav-link-color-mobile;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		@include tablet {
-			padding-right: 0;
-			display: flex;
-    	justify-content: space-between;
-    	border-bottom: 1px solid $top-header-phone-bg;
-    	position: fixed;
-    	top: 0;
-    	left: 0;
-    	width: 100%;
-    	background-color: $top-header-phone-bg;
-    	z-index: $zindex-fixed;
-		}
-
-		//Off Canvas menu right navbar
-		.bt-offcanvas-menu & {
-
-			@include tablet {
-				flex: 1 1 auto;
-		    width: calc(100% - 48px);
-		    left: 48px;
-				padding-right: 5px;
-			}
-		}
-
-		.bt-nosidebar-left & {
-			width: auto;
-			order: 2;
-
-			@include tablet {
-				width: 100%;
-			}
-		}
-	}
-
-	// Toggle button for right sidebar
-	.bt-toggle-right-sidebar{
-
-		@include tablet{
-			margin-right: 0;
-			padding-left: 5px;
-			padding-right: 9px;
-		}
-	}
-
-	// Toggle button for general navbar
-	.bt-toggle-top-header-menu {
-		display: none;
-		background-color: theme-color("light");
-		padding: 16px 10px;
-		color: $body-color;
-		font-weight: $font-weight-light;
-		font-size: 1.077rem;
-		border-bottom: 1px solid $left-sidebar-bg;
-
-		&:before{
-			content: '\f2f8';
-			float: right;
-			font-family: $icons-font;
-			font-size: 2.077rem;
-			line-height: 22px;
-			color: darken($left-sidebar-bg, 19%);
-		}
-
-		&.collapsed{
-			border-bottom: 1px solid darken($left-sidebar-bg, 7%);
-			transition: border-bottom-color 0.4s ease;
-
-			&:before{
-				content: '\f2f2';
-			}
-		}
-
-		@include tablet{
-			display: block;
-		}
-	}
-
-	// Off canvas menu
-	// Toggle button for off canvas menu
-
-	.bt-offcanvas-menu & {
-
-		@include tablet {
-
-			.bt-toggle-top-header-menu {
-				order: 1;
-				flex: 1 1 100%;
-			}
-
-			.navbar-collapse {
-				order: 2;
-				align-items: baseline;
-
-				&.collapse {
-					display: none !important;
-
-					&.show {
-						display: block !important;
-					}
-				}
-			}
-		}
-
-		.container-fluid {
-
-			@include tablet {
-				display: flex;
-				flex-wrap: wrap;
-			}
-		}
-
-		.bt-navbar-header {
-			width: $left-sidebar-width;
-
-			@include tablet {
-				flex: 0 0 auto;
-				display: block;
-				width: auto;
-				background-color: theme-color("primary");
-			}
-
-			.bt-toggle-left-sidebar {
-		  	padding-left: 25px;
-
-		  	@include tablet {
-		  		position: fixed;
-		  		top: 0;
-		  		left: 0;
-		  		padding-left: 15px;
-		  		padding-right: 13px;
-		  		background-color: theme-color("primary");
-		  		min-width: 48px;
-		  	}
-
-		  	.icon {
-		  		color: $icon-default-color;
-		  		font-size: 1.846rem;
-
-		  		@include tablet {
-		  			color: theme-color("light");
-		  			overflow: hidden;
-		  		}
-		  	}
-		  }
-		}
-
-		.navbar-brand {
-			width: $logo-width + ($logo-padding * 2);
-		}
-
-		.bt-toggle-left-sidebar {
-		  display: inline-block;
-		  text-align: center;
-		  line-height: 60px;
-		  float: left;
-
-		  @include tablet {
-				line-height: 62px;
-			  margin-top: -1px;
-		  }
-
-		  .icon {
-		  	font-size: 1.615rem;
-		  	color: $top-header-navbar-color;
-		  	line-height: 25px;
-		  	vertical-align: middle;
-		  }
-		}
-	}
-
-	// Off canvas menu only on mobile
-	@include non-responsive {
-		.bt-offcanvas-menu-sm & {
-
-			.bt-toggle-left-sidebar {
-				display: none;
-			}
-		}
-	}
-
-	// Color version
-	.bt-color-header & {
-		background-color: theme-color("primary");
-		border-bottom-color: theme-color("primary");
-
-		.bt-navbar-header{
-
-			.navbar-brand{
-				background-image: url("#{$logo-image}");
-			}
-		}
-
-		.page-title{
-			color: theme-color("light");
-		}
-
-		.bt-right-navbar{
-
-			.navbar-nav{
-
-				> li{
-
-					> a{
-						color: theme-color("light");
-					}
-				}
-			}
-
-			.bt-icons-nav{
-
-				> li.dropdown{
-
-					> a{
-
-						.icon{
-							color: theme-color("light");
-						}
-
-						.indicator{
-							background-color: theme-color("light");
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// Success color header
-	.bt-color-header-success & {
-		background-color: theme-color("success");
-		border-bottom-color: theme-color("success");
-
-		@include tablet{
-
-			.bt-right-navbar{
-				background-color: theme-color("success");
-				border-bottom-color: theme-color("success");
-			}
-		}
-	}
-
-	// Warning color header
-	.bt-color-header-warning & {
-		background-color: theme-color("warning");
-		border-bottom-color: theme-color("warning");
-
-		@include tablet{
-
-			.bt-right-navbar{
-				background-color: theme-color("warning");
-				border-bottom-color: theme-color("warning");
-			}
-		}
-	}
-
-	// Danger color header
-	.bt-color-header-danger & {
-		background-color: theme-color("danger");
-		border-bottom-color: theme-color("danger");
-
-		@include tablet{
-
-			.bt-right-navbar{
-				background-color: theme-color("danger");
-				border-bottom-color: theme-color("danger");
-			}
-		}
-	}
-
-	// Wrapper boxed
-	@include non-responsive {
-		.bt-boxed-layout & {
-			max-width: $boxed-layout-width;
+  background-color: $top-header-bg;
+  border: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid $top-header-border-color;
+  padding: 0;
+
+  @include tablet{
+    border-bottom-width: 0;
+    position: relative;
+    min-height: 0;
+  }
+
+  .container-fluid {
+    padding: 0;
+
+    .bt-nosidebar-left & {
+
+      @include tablet {
+        display: block;
+
+        .navbar-collapse {
+          align-items: baseline;
+
+          &.collapse {
+            display: none !important;
+
+            &.show {
+              display: block !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // logo and toggle button
+  .bt-navbar-header {
+    display: flex;
+    width: $left-sidebar-width;
+    flex: 0 0 $left-sidebar-width;
+
+    .bt-collapsible-sidebar & {
+      justify-content: space-between;
+    }
+
+    // Hide logo on collapsible left sidebar
+    .bt-collapsible-sidebar-hide-logo.bt-collapsible-sidebar-collapsed & {
+      width: $left-sidebar-collapsed-width;
+      flex: 0 0 $left-sidebar-collapsed-width;
+    }
+
+    .bt-nosidebar-left & {
+
+      @include laptop {
+        width: auto;
+      }
+    }
+
+    // logo
+    .navbar-brand {
+      line-height: $top-header-height;
+      height: $top-header-height;
+      width: $logo-width + ($logo-padding * 2);
+      background-image: url("#{contrast-image-selector($top-header-bg, $logo-image)}");
+      background-repeat: no-repeat;
+      background-position: $logo-padding center;
+      background-size: contain;
+      padding: 0 $logo-padding;
+      margin: 0;
+      display: block;
+
+      //Phone style
+      @include tablet {
+        display: none;
+      }
+
+      //Reduce content spacing on tablet res.
+      @include laptop {
+        margin-right: 10px;
+      }
+
+      //Whitout left sidebar style
+      .bt-nosidebar-left & {
+        width: $logo-width + ($logo-padding * 2);
+      }
+
+      // Hide on collapsible left sidebar
+      .bt-collapsible-sidebar-hide-logo.bt-collapsible-sidebar-collapsed & {
+        display: none;
+      }
+    }
+
+    // Toggle left sidebar
+    .bt-toggle-left-sidebar {
+      display: inline-block;
+      text-align: center;
+      line-height: 60px;
+      float: right;
+      padding: 0 15px;
+
+      .icon {
+        font-size: 1.615rem;
+        color: $top-header-navbar-color;
+        line-height: 25px;
+        vertical-align: middle;
+      }
+
+      // Hide logo on collapsible left sidebar
+      .bt-collapsible-sidebar-hide-logo.bt-collapsible-sidebar-collapsed & {
+        padding: 0 21px;
+      }
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    @media #{$print} {
+      display: none;
+    }
+  }
+
+  // Page title
+  .page-title {
+    font-size: 1.462rem;
+    line-height: $top-header-height;
+    float: left;
+    flex: 1 1 auto;
+    padding: 0 20px;
+    color: $top-header-text-color;
+    overflow: hidden;
+
+    span {
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .bt-nosidebar-left & {
+      padding-left: 10px;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  // Top general navigation
+  .navbar-nav {
+
+    > li {
+
+      > a.nav-link {
+        line-height: $top-header-height;
+        color: $top-header-navbar-color;
+        font-size: $top-header-navbar-font-size;
+        padding: 0 $top-header-navbar-padding;
+        outline: none;
+
+        &:hover, &:focus {
+          color: $top-header-navbar-color;
+        }
+
+        @include laptop {
+          padding: 0 10px;
+        }
+      }
+
+      &.show {
+
+        > a {
+          color: $top-header-navbar-color-open;
+
+          &:focus, &:active, &:hover {
+            color: $top-header-navbar-color-open;
+          }
+        }
+      }
+
+      &.dropdown{
+
+        > a{
+
+          .mdi-caret-down{
+            font-size: 1.769rem;
+            vertical-align: middle;
+            margin-left: 3px;
+          }
+        }
+
+        .dropdown-menu{
+          border-radius: 3px;
+          margin-top: 12px;
+          line-height: 20px;
+
+          > a{
+            color: $dropdown-text-color;
+            padding: 10px 20px;
+            min-width: 175px;
+            line-height: 18px;
+
+            &:hover{
+              background-color: theme-color("primary");
+              color: theme-color("light");
+            }
+
+            &:focus, &:active{
+              background-color: transparent;
+              color: $dropdown-text-color;
+            }
+          }
+
+          &:after, &:before{
+            border-bottom: 8px solid white;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            top: -8px;
+            content: "";
+            display: inline-block;
+            left: 42px;
+            margin-left: -6px;
+            position: absolute;
+          }
+
+          &:before{
+            border-bottom-width: 9px;
+            border-left-width: 9px;
+            border-right-width: 9px;
+            border-bottom-color: $dropdown-border-color;
+            margin-left: -7px;
+            top: -9px;
+          }
+        }
+      }
+    }
+  }
+
+  // Default navbar collapse
+  .navbar-collapse {
+    border-width: 0;
+
+    @include tablet {
+      border-top: 1px solid $left-sidebar-bg;
+      max-height: none;
+    }
+
+    .navbar-nav {
+
+      @include tablet {
+        background-color: lighten($left-sidebar-bg, 2%);
+        margin: 0;
+        padding: 15px 0;
+
+        .bt-nosidebar-left &,
+        .bt-top-menu & {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        > li {
+
+          > a {
+            display: block;
+            padding: 0 $left-sidebar-main-level-padding;
+            color: $left-sidebar-text-color;
+            font-size: $left-sidebar-main-level-font-size;
+            line-height: $left-sidebar-main-level-height;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+
+            .icon {
+              line-height: $left-sidebar-icon-size - 1px;
+              font-size: $left-sidebar-icon-size;
+              min-width: $left-sidebar-icon-size;
+              margin-right: 9px;
+              text-align: center;
+              vertical-align: middle;
+            }
+          }
+
+          &.dropdown {
+
+            .mdi-caret-down {
+              float: right;
+              line-height: $left-sidebar-main-level-height;
+              color: darken($left-sidebar-bg, 19%);
+            }
+
+            .dropdown-menu {
+              background-color: $left-sidebar-sub-level-bg;
+              padding: 10px 0;
+              border-top: 1px solid darken($left-sidebar-bg, 6%);
+              border-right: 0;
+              border-bottom: 1px solid darken($left-sidebar-bg, 6%);
+              border-left: 0;
+              border-radius: 0;
+
+              .bt-nosidebar-left &,
+              .bt-top-menu & {
+                position: static;
+                float: none;
+                width: auto;
+                box-shadow: none;
+              }
+
+              &:before,
+              &:after {
+                display: none;
+              }
+
+              > a {
+                color: $left-sidebar-sub-level-color;
+                padding: $left-sidebar-sub-level-padding;
+                padding-left: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Search input
+  .search-container {
+    position: relative;
+    flex: 1 1 auto;
+    display: inline-block;
+    height: 60px;
+    padding: 10px 20px;
+
+    .input-group {
+      max-width: $top-header-search-max-width;
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    .btn {
+      height: 37px;
+      font-size: 1rem;
+      padding: 4px 12px;
+      border-radius: 0;
+    }
+  }
+
+  .search-input {
+    border-width: 1px;
+    border-right: 0;
+    color: $body-color;
+
+    @include tablet {
+      background-color: theme-color("light");
+      color: $body-color;
+    }
+
+    &:focus {
+      background-color: theme-color("light");
+      color: darken(theme-color("light"), 50%);;
+
+      &::placeholder {
+        color: lighten($body-color, 20%);
+      }
+    }
+  }
+
+  // Right navbar
+  .bt-right-navbar {
+    padding-right: 20px;
+    flex: 0 0 auto;
+
+    .navbar-nav {
+      background-color: transparent;
+
+      @include tablet{
+
+        > li{
+
+          > a.nav-link{
+
+            color: $top-header-nav-link-color-mobile;
+
+            &:focus, &:active{
+              color: $top-header-nav-link-color-mobile;
+            }
+          }
+
+          &.show{
+
+            > a.nav-link{
+              color: $top-header-nav-link-color-mobile;
+
+              &:focus, &:active, &:hover{
+                color: $top-header-nav-link-color-mobile;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @include tablet {
+      padding-right: 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $top-header-phone-bg;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: $top-header-phone-bg;
+      z-index: $zindex-fixed;
+    }
+
+    //Off Canvas menu right navbar
+    .bt-offcanvas-menu & {
+
+      @include tablet {
+        flex: 1 1 auto;
+        width: calc(100% - 48px);
+        left: 48px;
+        padding-right: 5px;
+      }
+    }
+
+    .bt-nosidebar-left & {
+      width: auto;
+      order: 2;
+
+      @include tablet {
+        width: 100%;
+      }
+    }
+  }
+
+  // Toggle button for right sidebar
+  .bt-toggle-right-sidebar{
+
+    @include tablet{
+      margin-right: 0;
+      padding-left: 5px;
+      padding-right: 9px;
+    }
+  }
+
+  // Toggle button for general navbar
+  .bt-toggle-top-header-menu {
+    display: none;
+    background-color: theme-color("light");
+    padding: 16px 10px;
+    color: $body-color;
+    font-weight: $font-weight-light;
+    font-size: 1.077rem;
+    border-bottom: 1px solid $left-sidebar-bg;
+
+    &:before{
+      content: '\f2f8';
+      float: right;
+      font-family: $icons-font;
+      font-size: 2.077rem;
+      line-height: 22px;
+      color: darken($left-sidebar-bg, 19%);
+    }
+
+    &.collapsed{
+      border-bottom: 1px solid darken($left-sidebar-bg, 7%);
+      transition: border-bottom-color 0.4s ease;
+
+      &:before{
+        content: '\f2f2';
+      }
+    }
+
+    @include tablet{
+      display: block;
+    }
+  }
+
+  // Off canvas menu
+  // Toggle button for off canvas menu
+
+  .bt-offcanvas-menu & {
+
+    @include tablet {
+
+      .bt-toggle-top-header-menu {
+        order: 1;
+        flex: 1 1 100%;
+      }
+
+      .navbar-collapse {
+        order: 2;
+        align-items: baseline;
+
+        &.collapse {
+          display: none !important;
+
+          &.show {
+            display: block !important;
+          }
+        }
+      }
+    }
+
+    .container-fluid {
+
+      @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .bt-navbar-header {
+      width: $left-sidebar-width;
+
+      @include tablet {
+        flex: 0 0 auto;
+        display: block;
+        width: auto;
+        background-color: theme-color("primary");
+      }
+
+      .bt-toggle-left-sidebar {
+        padding-left: 25px;
+
+        @include tablet {
+          position: fixed;
+          top: 0;
+          left: 0;
+          padding-left: 15px;
+          padding-right: 13px;
+          background-color: theme-color("primary");
+          min-width: 48px;
+        }
+
+        .icon {
+          color: $icon-default-color;
+          font-size: 1.846rem;
+
+          @include tablet {
+            color: theme-color("light");
+            overflow: hidden;
+          }
+        }
+      }
+    }
+
+    .navbar-brand {
+      width: $logo-width + ($logo-padding * 2);
+    }
+
+    .bt-toggle-left-sidebar {
+      display: inline-block;
+      text-align: center;
+      line-height: 60px;
+      float: left;
+
+      @include tablet {
+        line-height: 62px;
+        margin-top: -1px;
+      }
+
+      .icon {
+        font-size: 1.615rem;
+        color: $top-header-navbar-color;
+        line-height: 25px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  // Off canvas menu only on mobile
+  @include non-responsive {
+    .bt-offcanvas-menu-sm & {
+
+      .bt-toggle-left-sidebar {
+        display: none;
+      }
+    }
+  }
+
+  // Color version
+  .bt-color-header & {
+    background-color: theme-color("primary");
+    border-bottom-color: theme-color("primary");
+
+    .bt-navbar-header{
+
+      .navbar-brand{
+        background-image: url("#{$logo-image}");
+      }
+    }
+
+    .page-title{
+      color: theme-color("light");
+    }
+
+    .bt-right-navbar{
+
+      .navbar-nav{
+
+        > li{
+
+          > a{
+            color: theme-color("light");
+          }
+        }
+      }
+
+      .bt-icons-nav{
+
+        > li.dropdown{
+
+          > a{
+
+            .icon{
+              color: theme-color("light");
+            }
+
+            .indicator{
+              background-color: theme-color("light");
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Success color header
+  .bt-color-header-success & {
+    background-color: theme-color("success");
+    border-bottom-color: theme-color("success");
+
+    @include tablet{
+
+      .bt-right-navbar{
+        background-color: theme-color("success");
+        border-bottom-color: theme-color("success");
+      }
+    }
+  }
+
+  // Warning color header
+  .bt-color-header-warning & {
+    background-color: theme-color("warning");
+    border-bottom-color: theme-color("warning");
+
+    @include tablet{
+
+      .bt-right-navbar{
+        background-color: theme-color("warning");
+        border-bottom-color: theme-color("warning");
+      }
+    }
+  }
+
+  // Danger color header
+  .bt-color-header-danger & {
+    background-color: theme-color("danger");
+    border-bottom-color: theme-color("danger");
+
+    @include tablet{
+
+      .bt-right-navbar{
+        background-color: theme-color("danger");
+        border-bottom-color: theme-color("danger");
+      }
+    }
+  }
+
+  // Wrapper boxed
+  @include non-responsive {
+    .bt-boxed-layout & {
+      max-width: $boxed-layout-width;
       width: 100%;
       left: calc(50% - #{$boxed-layout-width / 2});
-			z-index: $zindex-fixed + 2;
-		}
-	}
+      z-index: $zindex-fixed + 2;
+    }
+  }
 
   @media (max-width: $boxed-layout-width) {
     .bt-boxed-layout & {
@@ -690,7 +690,7 @@
     }
   }
 
-	@media #{$print} {
-		position: absolute;
-	}
+  @media #{$print} {
+    position: absolute;
+  }
 }

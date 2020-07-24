@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="../dist/build.css" type="text/css"/>
 </head>
 <body>
-  <div class="bt-wrapper">
+  <div class="bt-wrapper bt-fixed-sidebar">
     <nav class="navbar navbar-expand fixed-top bt-top-header">
       <div class="container-fluid">
-        <div class="bt-navbar-header"><a class="navbar-brand" href="index.html"></a>
+        <div class="bt-navbar-header">
+          <a class="navbar-brand" href="index.html"></a>
         </div>
         <div class="page-title"><span>Form Validation</span></div>
         <div class="bt-right-navbar">
@@ -42,24 +43,42 @@
                     <div class="bt-scroller-notifications">
                       <div class="content">
                         <ul>
-                          <li class="notification notification-unread"><a href="#">
+                          <li class="notification notification-unread">
+                            <a href="#">
                               <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
                               <div class="notification-info">
-                                <div class="text"><span class="user-name">Jessica Caruso</span> accepted your invitation to join the team.</div><span class="date">2 min ago</span>
-                              </div></a></li>
-                          <li class="notification"><a href="#">
+                                <div class="text"><span class="user-name">Jessica Caruso</span> accepted your invitation to join the team.</div>
+                                <span class="date">2 min ago</span>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="notification">
+                            <a href="#">
                               <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
                               <div class="notification-info">
-                                <div class="text"><span class="user-name">Joel King</span> is now following you</div><span class="date">2 days ago</span>
-                              </div></a></li>
-                          <li class="notification"><a href="#">
+                                <div class="text"><span class="user-name">Joel King</span> is now following you</div>
+                                <span class="date">2 days ago</span>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="notification">
+                            <a href="#">
                               <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
                               <div class="notification-info">
-                                <div class="text"><span class="user-name">John Doe</span> is watching your main repository</div><span class="date">2 days ago</span>
-                              </div></a></li>
-                          <li class="notification"><a href="#">
+                                <div class="text"><span class="user-name">John Doe</span> is watching your main repository</div>
+                                <span class="date">2 days ago</span>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="notification">
+                            <a href="#">
                               <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
-                              <div class="notification-info"><span class="text"><span class="user-name">Emily Carter</span> is now following you</span><span class="date">5 days ago</span></div></a></li>
+                              <div class="notification-info">
+                                <span class="text"><span class="user-name">Emily Carter</span> is now following you</span>
+                                <span class="date">5 days ago</span>
+                              </div>
+                            </a>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -101,7 +120,14 @@
             <div class="left-sidebar-content">
               <ul class="sidebar-elements">
                 <li class="divider">Menu</li>
-                <li><a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a></li>
+                <li>
+                  <a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
+                </li>
+                <li class="parent"><a href="#"><i class="icon mdi mdi-face"></i><span>UI Elements</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="ui-buttons.html">Buttons</a></li>
+                  </ul>
+                </li>
                 <li class="parent"><a href="#"><i class="icon mdi mdi-dot-circle"></i><span>Forms</span></a>
                   <ul class="sub-menu">
                     <li class="active"><a href="form-validation.html">Validation</a></li>
@@ -109,12 +135,6 @@
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-        <div class="progress-widget">
-          <div class="progress-data"><span class="progress-value">60%</span><span class="name">Current Project</span></div>
-          <div class="progress">
-            <div class="progress-bar progress-bar-primary" style="width: 60%;"></div>
           </div>
         </div>
       </div>
@@ -383,21 +403,66 @@
                     <div class="content">
                       <h2>Recent</h2>
                       <div class="contact-list contact-list-recent">
-                        <div class="user"><a href="#"><img src="images/avatar.svg" alt="Avatar">
-                            <div class="user-data"><span class="status away"></span><span class="name">Claire Sassu</span><span class="message">Can you share the...</span></div></a></div>
-                        <div class="user"><a href="#"><img src="images/avatar.svg" alt="Avatar">
-                            <div class="user-data"><span class="status"></span><span class="name">Maggie jackson</span><span class="message">I confirmed the info.</span></div></a></div>
-                        <div class="user"><a href="#"><img src="images/avatar.svg" alt="Avatar">
-                            <div class="user-data"><span class="status offline"></span><span class="name">Joel King		</span><span class="message">Ready for the meeti...</span></div></a></div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status away"></span>
+                              <span class="name">Claire Sassu</span>
+                              <span class="message">Can you share the...</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status"></span>
+                              <span class="name">Maggie jackson</span>
+                              <span class="message">I confirmed the info.</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status offline"></span>
+                              <span class="name">Joel King</span>
+                              <span class="message">Ready for the meeti...</span>
+                            </div>
+                          </a>
+                        </div>
                       </div>
                       <h2>Contacts</h2>
                       <div class="contact-list">
-                        <div class="user"><a href="#"><img src="images/avatar.svg" alt="Avatar">
-                            <div class="user-data2"><span class="status"></span><span class="name">Mike Bolthort</span></div></a></div>
-                        <div class="user"><a href="#"><img src="images/avatar.svg" alt="Avatar">
-                            <div class="user-data2"><span class="status"></span><span class="name">Maggie jackson</span></div></a></div>
-                        <div class="user"><a href="#"><img src="images/avatar.svg" alt="Avatar">
-                            <div class="user-data2"><span class="status offline"></span><span class="name">Jhon Voltemar</span></div></a></div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data2">
+                              <span class="status"></span>
+                              <span class="name">Mike Bolthort</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data2">
+                              <span class="status"></span>
+                              <span class="name">Maggie jackson</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data2">
+                              <span class="status offline"></span>
+                              <span class="name">Jhon Voltemar</span>
+                            </div>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -408,36 +473,31 @@
               </div>
               <div class="chat-window">
                 <div class="title">
-                  <div class="user"><img src="images/avatar.svg" alt="Avatar">
-                    <h2>Maggie jackson</h2><span>Active 1h ago</span>
-                  </div><span class="icon return mdi mdi-chevron-left"></span>
+                  <div class="user">
+                    <img src="images/avatar.svg" alt="Avatar">
+                    <h2>Maggie jackson</h2>
+                    <span>Active 1h ago</span>
+                  </div>
+                  <span class="icon return mdi mdi-chevron-left"></span>
                 </div>
                 <div class="chat-messages">
                   <div class="bt-scroller-messages">
                     <div class="content">
                       <ul>
-                        <li class="friend">
-                          <div class="msg">Hello</div>
-                        </li>
-                        <li class="self">
-                          <div class="msg">Hi, how are you?</div>
-                        </li>
-                        <li class="friend">
-                          <div class="msg">Good, I'll need support with my pc</div>
-                        </li>
-                        <li class="self">
-                          <div class="msg">Sure, just tell me what is going on with your computer?</div>
-                        </li>
-                        <li class="friend">
-                          <div class="msg">I don't know it just turns off suddenly</div>
-                        </li>
+                        <li class="friend"><div class="msg">Hello</div></li>
+                        <li class="self"><div class="msg">Hi, how are you?</div></li>
+                        <li class="friend"><div class="msg">Good, I'll need support with my pc</div></li>
+                        <li class="self"><div class="msg">Sure, just tell me what is going on with your computer?</div></li>
+                        <li class="friend"><div class="msg">I don't know it just turns off suddenly</div></li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="chat-input">
-                  <div class="input-wrapper"><span class="photo mdi mdi-camera"></span>
-                    <input type="text" placeholder="Message..." name="q" autocomplete="off"><span class="send-msg mdi mdi-mail-send"></span>
+                  <div class="input-wrapper">
+                    <span class="photo mdi mdi-camera"></span>
+                    <input type="text" placeholder="Message..." name="q" autocomplete="off">
+                    <span class="send-msg mdi mdi-mail-send"></span>
                   </div>
                 </div>
               </div>
@@ -449,13 +509,15 @@
                     <div class="todo-content"><span class="category-title">Today</span>
                       <ul class="todo-list">
                         <li>
-                          <div class="custom-checkbox custom-control custom-control-sm"><span class="delete mdi mdi-delete"></span>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
                             <input class="custom-control-input" type="checkbox" checked id="tck1">
                             <label class="custom-control-label" for="tck1">Initialize the project</label>
                           </div>
                         </li>
                         <li>
-                          <div class="custom-checkbox custom-control custom-control-sm"><span class="delete mdi mdi-delete"></span>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
                             <input class="custom-control-input" type="checkbox" id="tck2">
                             <label class="custom-control-label" for="tck2">Create the main structure</label>
                           </div>
@@ -463,19 +525,22 @@
                       </ul><span class="category-title">Tomorrow</span>
                       <ul class="todo-list">
                         <li>
-                          <div class="custom-checkbox custom-control custom-control-sm"><span class="delete mdi mdi-delete"></span>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
                             <input class="custom-control-input" type="checkbox" id="tck4">
                             <label class="custom-control-label" for="tck4">Initialize the project</label>
                           </div>
                         </li>
                         <li>
-                          <div class="custom-checkbox custom-control custom-control-sm"><span class="delete mdi mdi-delete"></span>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
                             <input class="custom-control-input" type="checkbox" id="tck5">
                             <label class="custom-control-label" for="tck5">Create the main structure</label>
                           </div>
                         </li>
                         <li>
-                          <div class="custom-checkbox custom-control custom-control-sm"><span class="delete mdi mdi-delete"></span>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
                             <input class="custom-control-input" type="checkbox" id="tck7">
                             <label class="custom-control-label" for="tck7" title="This task is too long to be displayed in a normal space!">This task is too long to be displayed in a normal space!</label>
                           </div>
@@ -565,6 +630,7 @@
 
   <script type="module">
     import { init, Validator, $ } from '../dist/build.js';
+
     init();
     for (let $form of [...$('form')]) new Validator($form);
   </script>

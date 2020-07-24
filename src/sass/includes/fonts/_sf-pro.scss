@@ -1,10 +1,10 @@
 @mixin sf-pro-font($type, $weight, $file, $format) {
-    @font-face {
-        font-family: 'SF Pro #{$type}';
-        font-style: normal;
-        font-weight: $weight;
-        src: url('#{$fonts-path}/#{$file}.#{$format}') format($format);
-    }
+  @font-face {
+    font-family: 'SF Pro #{$type}';
+    font-style: normal;
+    font-weight: $weight;
+    src: url('#{$fonts-path}/#{$file}.#{$format}') format($format);
+  }
 }
 
 @include sf-pro-font('JP', 300, 'SFProJP_light', 'woff2');
