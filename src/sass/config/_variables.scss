@@ -15,7 +15,7 @@ $logo-white:                            "#{$img-path}/logo-white.png";
 
 // Theme Fonts
 $roboto:                                'Roboto', Arial, sans-serif !default;
-$sf-pro:                                'SF Pro JP','SF Pro Text','SF Pro Icons','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ','Meiryo','ＭＳ Ｐゴシック','Helvetica Neue','Helvetica','Arial',sans-serif !default;
+// $sf-pro:                                'SF Pro JP','SF Pro Text','SF Pro Icons','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ','Meiryo','ＭＳ Ｐゴシック','Helvetica Neue','Helvetica','Arial',sans-serif !default;
 
 $icons-font-path:                       '#{$fonts-path}/material-design-icons' !default;
 $icons-font:                            'Material Icons' !default;
@@ -35,17 +35,17 @@ $gray-700:                              #636c72 !default;
 $gray-800:                              #3d3c3c !default;
 $black:                                 #000000 !default;
 
-$green:                                 #60C060 !default;
-$blue:                                  #5BC0DE !default;
-$orange:                                #FF9900 !default;
-$red:                                   #DF4B33 !default;
+$green:                                 #34c759 !default;
+$blue:                                  #007aff !default;
+$orange:                                #ff9500 !default;
+$red:                                   #ff3b30 !default;
 
 // Brand Colors
-$primary:                               #4285f4 !default;
+$primary:                               #0077ed !default;
 $success:                               #34a853 !default;
 $info:                                  #6ba4ff !default;
-$warning:                               #fbbc05 !default;
-$danger:                                #ea4335 !default;
+$warning:                               #ff9500 !default;
+$danger:                                #e30000 !default;
 $light:                                 $white !default;
 $dark:                                  #232f3e !default;
 $grey:                                  #cccccc !default;

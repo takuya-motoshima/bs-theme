@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.16] - 2020-07-25
+  
+  - Optimized primary, success, warning and danger colors
+
 ## [0.0.15] - 2020-07-25
 
   - Optimize the font size of form labels.
