@@ -2,7 +2,8 @@
 
 ## [0.0.16] - 2020-07-25
   
-  - Optimized primary, success, warning and danger colors
+  - Optimized primary, success, warning and danger colors.
+  - Optimized the validation error color, success color, and error message design.
 
 ## [0.0.15] - 2020-07-25
 

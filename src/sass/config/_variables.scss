@@ -877,6 +877,13 @@ $select2-border-width:                   .07692rem !default;
 
 //Parsley
 $parsley-error-bg:                       $danger-color-text;
+$parsley-error-text:                     theme-color("danger");
+$parsley-input-error-bg:                 lighten(theme-color("danger"), 53%);
+$parsley-input-error-text:               theme-color("danger");
+$parsley-input-error-border:             theme-color("danger");
+$parsley-input-success-bg:               lighten(theme-color("success"), 53%);
+$parsley-input-success-text:             theme-color("success");
+$parsley-input-success-border:           theme-color("success");
 
 // Forms
 $radio-icon-component-color:             lighten($input-color, 25%) !default;

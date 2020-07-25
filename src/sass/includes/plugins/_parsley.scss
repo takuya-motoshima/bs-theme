@@ -2,42 +2,64 @@
   [Parsley]
 */
 .parsley-errors-list.filled{
-  margin-top: 10px;
-  margin-bottom: 0;
-  padding: 15px 20px;
-  position: relative;
-  width: max-content;
-  background-color: $parsley-error-bg;
-  color: theme-color("light");
-  border-radius: 8px;
+  font-size: .875rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding: 0;
+  letter-spacing: .006em;
+  color: $parsley-error-text;
 
-  &:after{
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: -6px;
-    left: 20px;
-    @include triangle(top, $parsley-error-bg, 7px);
-  }
+  // margin-top: 10px;
+  // margin-bottom: 0;
+  // padding: 15px 20px;
+  // position: relative;
+  // width: max-content;
+  // background-color: $parsley-error-bg;
+  // color: theme-color("light");
+  // border-radius: 8px;
 
-  > li{
+  // &:after{
+  //   content: "";
+  //   display: inline-block;
+  //   position: absolute;
+  //   top: -6px;
+  //   left: 20px;
+  //   @include triangle(top, $parsley-error-bg, 7px);
+  // }
+
+  > li {
     list-style: none;
+
+    &:before {
+      font-family: "Font Awesome\ 5 Free";
+      content: "\f06a";
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      font-weight: 900;
+      padding-right: .3em;
+    }
   }
 }
 
 input,
 select,
 textarea {
-
   &.parsley-success {
-    color: #468847 !important;
-    background-color: #DFF0D8 !important;
-    border-color: #D6E9C6 !important;
+    color: $parsley-input-success-text !important;
+    background-color: $parsley-input-success-bg !important;
+    border-color: $parsley-input-success-text !important;
   }
   
   &.parsley-error {
-    color: #B94A48 !important;
-    background-color: #F2DEDE !important;
-    border-color: #EED3D7 !important;
+    color: $parsley-input-error-text !important;
+    background-color: $parsley-input-error-bg !important;
+    border-color: $parsley-input-error-border !important;
   }
 }
