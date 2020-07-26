@@ -2,7 +2,7 @@
 
 ## [0.0.17] - 2020-07-27
 
-  - Removed background color and box shadow of box layout (.bt-boxed-layout)
+  - Removed background color and box shadow of box layout (.bt-boxed-layout).
 
 ## [0.0.16] - 2020-07-25
   
