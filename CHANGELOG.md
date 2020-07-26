@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.18] - 2020-07-27
+
+  - Align vertical position of horizontal form group (.form-group.row) to baseline.
+
 ## [0.0.17] - 2020-07-27
 
   - Removed background color and box shadow of box layout (.bt-boxed-layout).
