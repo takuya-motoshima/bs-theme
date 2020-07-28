@@ -3,7 +3,10 @@ import DialogBase from '~/components/DialogBase';
 
 export default class extends DialogBase {
   
-  constructor({ keyboard = true, icon = 'success' } = {}) {
+  constructor(option) {
+    option = $.extend({
+      keyboard: true
+    }, option);
     const template = `
       <div class="modal-container modal-effect-9 alert-modal">
         <div class="modal-content">
@@ -18,7 +21,7 @@ export default class extends DialogBase {
           </div>
         </div>
       </div>`;
-    super($(template).appendTo('body'), { keyboard });
+    super($(template).appendTo('body'), option);
     this.message = this.modal.find('[data-message]:first');
     this.icon = this.modal.find('.modal-main-icon:first');
     this.modal.on('click', '[action-proceed]', () => {

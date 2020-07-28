@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.19] - 2020-07-28
+
+  - Datatable example page added (./documentation/tables-datatables.html).
+
 ## [0.0.18] - 2020-07-27
 
   - Align vertical position of horizontal form group (.form-group.row) to baseline.

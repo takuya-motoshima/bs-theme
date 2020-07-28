@@ -552,7 +552,7 @@ const scroller = {
 
 function init() {
 
-  console.log('Initialize the theme');
+  // console.log('Initialize the theme');
 
   // Left Sidebar
   if (config.enableLeftSidebar) leftSidebarInit();
@@ -607,7 +607,7 @@ function init() {
     function layoutWrapper() {
       if (!topNavbar.length || !topNavbar.hasClass('fixed-top') || !wrapper.length) return;
       const navHeight = topNavbar.outerHeight();
-      console.log('navHeight=', navHeight);
+      // console.log('navHeight=', navHeight);
       wrapper.css('padding-top', `${navHeight}px`);
       if (aside.length) aside.css({ 'margin-top': `${navHeight}px`, 'padding-bottom': `${navHeight}px` });
     }

@@ -4,9 +4,12 @@ import { ESCAPE_KEYCODE } from '~/config/constant';
 
 export default class {
 
-  constructor(modal, { keyboard = true } = {}) {
+  constructor(modal, option) {
+    option = $.extend({
+      keyboard: true
+    }, option);
     this.modal = modal;
-    this.keyboard = keyboard;
+    this.option = option;
     $('body').append(this.modal)
     const overlay = $('body').find('.modal-overlay');
     if (overlay.length === 0) {
@@ -57,7 +60,7 @@ export default class {
   }
 
   beforeOpen() {
-    if (!this.keyboard) return;
+    if (!this.option.keyboard) return;
     $(document).on(`keydown.dismiss.${this.eventKey}`,  event => {
       if (event.which === ESCAPE_KEYCODE) {
         event.preventDefault();
@@ -83,7 +86,7 @@ export default class {
   beforeClose() {}
 
   afterClose() {
-    if (!this.keyboard) return;
+    if (!this.option.keyboard) return;
     $(document).off(`keydown.dismiss.${this.eventKey}`);
   }
 }
