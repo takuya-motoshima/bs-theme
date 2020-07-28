@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.0.20] - 2020-07-28
+
+  - Added modal example(./documentation/ui-modals.html).
+  - Fixed a bug that set button text failed in confirmation dialog(./src/components/ConfirmDialog.js).
+
 ## [0.0.19] - 2020-07-28
 
   - Datatable example page added (./documentation/tables-datatables.html).

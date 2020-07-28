@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <title>Bootstrap4 Theme</title>
+  <link rel="stylesheet" href="../dist/build.css" type="text/css"/>
+</head>
+<body>
+  <div class="bt-wrapper bt-fixed-sidebar">
+    <nav class="navbar navbar-expand fixed-top bt-top-header">
+      <div class="container-fluid">
+        <div class="bt-navbar-header">
+          <a class="navbar-brand" href="index.html"></a>
+        </div>
+        <div class="page-title"><span>UI Modals</span></div>
+        <div class="bt-right-navbar">
+          <ul class="nav navbar-nav float-right bt-user-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                <i class="user-icon far fa-user-circle"></i>
+                <span class="user-name">John Smith</span>
+              </a>
+              <div class="dropdown-menu" role="menu">
+                <div class="user-info">
+                  <div class="user-name">John Smith</div>
+                  <div class="user-position online">Available</div>
+                </div>
+                <a class="dropdown-item" href="pages-profile.html"><span class="icon mdi mdi-face"></span>Account</a>
+                <a class="dropdown-item" href="#"><span class="icon mdi mdi-settings"></span>Settings</a>
+                <a class="dropdown-item" href="pages-login.html"><span class="icon mdi mdi-power"></span>Logout</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav float-right bt-icons-nav">
+            <li class="nav-item dropdown"><a class="nav-link bt-toggle-right-sidebar" href="#" role="button" aria-expanded="false"><span class="icon mdi mdi-settings"></span></a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="icon mdi mdi-notifications"></span><span class="indicator"></span></a>
+              <ul class="dropdown-menu bt-notifications">
+                <li>
+                  <div class="title">Notifications<span class="badge badge-pill">3</span></div>
+                  <div class="list">
+                    <div class="bt-scroller-notifications">
+                      <div class="content">
+                        <ul>
+                          <li class="notification notification-unread">
+                            <a href="#">
+                              <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
+                              <div class="notification-info">
+                                <div class="text"><span class="user-name">Jessica Caruso</span> accepted your invitation to join the team.</div>
+                                <span class="date">2 min ago</span>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="notification">
+                            <a href="#">
+                              <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
+                              <div class="notification-info">
+                                <div class="text"><span class="user-name">Joel King</span> is now following you</div>
+                                <span class="date">2 days ago</span>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="notification">
+                            <a href="#">
+                              <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
+                              <div class="notification-info">
+                                <div class="text"><span class="user-name">John Doe</span> is watching your main repository</div>
+                                <span class="date">2 days ago</span>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="notification">
+                            <a href="#">
+                              <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
+                              <div class="notification-info">
+                                <span class="text"><span class="user-name">Emily Carter</span> is now following you</span>
+                                <span class="date">5 days ago</span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer"> <a href="#">View all notifications</a></div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="icon mdi mdi-apps"></span></a>
+              <ul class="dropdown-menu bt-connections">
+                <li>
+                  <div class="list">
+                    <div class="content">
+                      <div class="row">
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Github"><span>Sample</span></a></div>
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                      </div>
+                      <div class="row">
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer"> <a href="#">More</a></div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bt-left-sidebar">
+      <div class="left-sidebar-wrapper">
+        <a class="left-sidebar-toggle" href="#">UI Modals</a>
+        <div class="left-sidebar-spacer">
+          <div class="left-sidebar-scroll">
+            <div class="left-sidebar-content">
+              <ul class="sidebar-elements">
+                <li class="divider">Menu</li>
+                <li>
+                  <a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
+                </li>
+                <li class="parent active open">
+                  <a href="#"><i class="icon mdi mdi-face"></i><span>UI Elements</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="ui-buttons.html">Buttons</a></li>
+                    <li class="active"><a href="ui-modals.html">Modals</a></li>
+                  </ul>
+                </li>
+                <li class="parent">
+                  <a href="#"><i class="icon mdi mdi-dot-circle"></i><span>Forms</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="form-elements.html">Elements</a></li>
+                    <li><a href="form-validation.html">Validation</a></li>
+                  </ul>
+                </li>
+                <li class="parent">
+                  <a href="#"><i class="icon mdi mdi-border-all"></i><span>Tables</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="tables-datatables.html">Data Tables</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bt-content">
+      <div class="page-head">
+        <h2 class="page-head-title">UI Modals</h2>
+        <nav aria-label="breadcrumb" role="navigation">
+          <ol class="breadcrumb page-head-nav">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">UI Elements</a></li>
+            <li class="breadcrumb-item active">Modals</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="main-content container-fluid">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Modal Alerts</div>
+              <div class="card-body">
+                <div class="mt-6 mb-4 text-center">
+                  <button class="btn btn-space btn-success" data-toggle="modal" data-target="#bsmdSuccess" type="button">Success</button>
+                  <button class="btn btn-space btn-primary" data-toggle="modal" data-target="#bsmdPrimary" type="button">Primary</button>
+                  <button class="btn btn-space btn-warning" data-toggle="modal" data-target="#bsmdWarning" type="button">Warning</button>
+                  <button class="btn btn-space btn-danger" data-toggle="modal" data-target="#bsmdDanger" type="button">Danger</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Modal Footer</div>
+              <div class="card-body">
+                <div class="mt-6 mb-4 text-center">
+                  <button class="btn btn-space btn-success" data-toggle="modal" data-target="#mdFooterSuccess" type="button">Success</button>
+                  <button class="btn btn-space btn-primary" data-toggle="modal" data-target="#mdFooterPrimary" type="button">Primary</button>
+                  <button class="btn btn-space btn-warning" data-toggle="modal" data-target="#mdFooterWarning" type="button">Warning</button>
+                  <button class="btn btn-space btn-danger" data-toggle="modal" data-target="#mdFooterDanger" type="button">Danger</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Full Color Alerts</div>
+              <div class="card-body">
+                <div class="mt-6 mb-4 text-center">
+                  <button class="btn btn-space btn-success md-trigger" data-modal="mdFullSuccess">Success</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="mdFullPrimary">Primary</button>
+                  <button class="btn btn-space btn-warning md-trigger" data-modal="mdFullWarning">Warning</button>
+                  <button class="btn btn-space btn-danger md-trigger" data-modal="mdFullDanger">Danger</button>
+                  <button class="btn btn-space btn-secondary md-trigger" data-modal="mdFullDark">Dark</button>
+                </div>
+                <div class="modal-container modal-full-color modal-full-color-success modal-effect-8" id="mdFullSuccess">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center"><span class="modal-main-icon mdi mdi-check"></span>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-success btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-full-color modal-full-color-primary modal-effect-8" id="mdFullPrimary">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center"><span class="modal-main-icon mdi mdi-info-outline"></span>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-success btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-full-color modal-full-color-warning modal-effect-8" id="mdFullWarning">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center"><span class="modal-main-icon mdi mdi-alert-triangle"></span>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-success btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-full-color modal-full-color-danger modal-effect-8" id="mdFullDanger">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center"><span class="modal-main-icon mdi mdi-close-circle-o"></span>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-success btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-full-color modal-full-color-dark modal-effect-8" id="mdFullDark">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center"><span class="modal-main-icon mdi mdi-close-circle-o"></span>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-success btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">  
+            <div class="card">
+              <div class="card-header card-header-divider">Colored Header Modal</div>
+              <div class="card-body">
+                <div class="mt-6 mb-4 text-center">
+                  <button class="btn btn-space btn-success md-trigger" data-modal="mdColoredSuccess">Success</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="mdColoredPrimary">Primary</button>
+                  <button class="btn btn-space btn-warning md-trigger" data-modal="mdColoredWarning">Warning</button>
+                  <button class="btn btn-space btn-danger md-trigger" data-modal="mdColoredDanger">Danger</button>
+                  <button class="btn btn-space btn-secondary md-trigger" data-modal="mdColoredDark">Dark</button>
+                </div>
+                <div class="modal-container colored-header colored-header-success modal-effect-10" id="mdColoredSuccess">
+                  <div class="modal-content">
+                    <div class="modal-header modal-header-colored">
+                      <h3 class="modal-title">Title</h3>
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close">             </span></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Message</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary modal-close" type="button" data-dismiss="modal">Cancel</button>
+                      <button class="btn btn-success modal-close" type="button" data-dismiss="modal">Proceed</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-container colored-header colored-header-primary modal-effect-10" id="mdColoredPrimary">
+                  <div class="modal-content">
+                    <div class="modal-header modal-header-colored">
+                      <h3 class="modal-title">Title</h3>
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close">             </span></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Message</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary modal-close" type="button" data-dismiss="modal">Cancel</button>
+                      <button class="btn btn-primary modal-close" type="button" data-dismiss="modal">Proceed</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-container colored-header colored-header-warning modal-effect-10" id="mdColoredWarning">
+                  <div class="modal-content">
+                    <div class="modal-header modal-header-colored">
+                      <h3 class="modal-title">Title</h3>
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close">             </span></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Message</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary modal-close" type="button" data-dismiss="modal">Cancel</button>
+                      <button class="btn btn-warning modal-close" type="button" data-dismiss="modal">Proceed</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-container colored-header colored-header-danger modal-effect-10" id="mdColoredDanger">
+                  <div class="modal-content">
+                    <div class="modal-header modal-header-colored">
+                      <h3 class="modal-title">Title</h3>
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close">             </span></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Message</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary modal-close" type="button" data-dismiss="modal">Cancel</button>
+                      <button class="btn btn-danger modal-close" type="button" data-dismiss="modal">Proceed</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-container colored-header colored-header-dark modal-effect-10" id="mdColoredDark">
+                  <div class="modal-content">
+                    <div class="modal-header modal-header-colored">
+                      <h3 class="modal-title">Title</h3>
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close">             </span></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Message</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary modal-close" type="button" data-dismiss="modal">Cancel</button>
+                      <button class="btn btn-secondary modal-close" type="button" data-dismiss="modal">Proceed</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Bootstrap Modals</div>
+              <div class="card-body">
+                <div class="mt-6 mb-4 text-center">
+                  <button class="btn btn-space btn-primary" data-toggle="modal" data-target="#bsmdDefault" type="button"> Default</button>
+                  <button class="btn btn-space btn-primary" data-toggle="modal" data-target="#bsmdFullWidth" type="button"> Full Width</button>
+                  <button class="btn btn-space btn-primary" data-toggle="modal" data-target="#bsmdCustom" type="button"> Custom width</button>
+                  <button class="btn btn-space btn-primary" data-toggle="modal" data-target="#bsmdColored" type="button"> Colored Header</button>
+                  <button class="btn btn-space btn-primary" data-toggle="modal" data-target="#bsmdFullColor" type="button"> Full Color</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Nifty Modals</div>
+              <div class="card-body">
+                <div class="mt-6 mb-4 text-center">
+                  <button class="btn btn-space btn-success md-trigger" data-modal="mdDefault"> Default</button>
+                  <button class="btn btn-space btn-success md-trigger" data-modal="mdFullWidth"> Full Width</button>
+                  <button class="btn btn-space btn-success md-trigger" data-modal="mdCustom"> Custom width</button>
+                  <button class="btn btn-space btn-success md-trigger" data-modal="mdColored"> Colored Header</button>
+                  <button class="btn btn-space btn-success md-trigger" data-modal="mdFullColor"> Full Color</button>
+                </div>
+                <div class="modal-container modal-effect-1" id="mdDefault">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-success"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-success btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="full-width modal-container modal-effect-1" id="mdFullWidth">
+                  <div class="modal-content full-width">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-success"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-success btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="custom-width modal-container modal-effect-1" id="mdCustom">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-success"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-success btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container colored-header colored-header-success modal-effect-1" id="mdColored">
+                  <div class="modal-content">
+                    <div class="modal-header modal-header-colored">
+                      <h3 class="modal-title">Title</h3>
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Message</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary modal-close" type="button" data-dismiss="modal">Cancel</button>
+                      <button class="btn btn-success modal-close" type="button" data-dismiss="modal">Proceed</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-container modal-full-color modal-full-color-success modal-effect-1" id="mdFullColor">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center"><span class="modal-main-icon mdi mdi-check"></span>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-success btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Nifty Modals Effects</div>
+              <div class="card-body">
+                <div class="mt-6 mb-4 text-center">
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="mdScale"> Fade in & Scale</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="mdSlideLeft"> Slide in Left</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="mdSlideUp"> Slide in Up</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="mdFall"> Fall</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="mdSideFall"> Side Fall</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="mdStickyUp"> Sticky Up</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="mdFlipH"> 3D Flip Horizontal</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="mdFlipV"> 3D Flip Vertical</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="md3dSign"> 3D Sign</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="mdSuperScaled"> Super Scaled</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="mdJustModal"> Just Modal</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="md3dRotateUp"> 3D Rotate Up</button>
+                  <button class="btn btn-space btn-primary md-trigger" data-modal="md3dRotateRight"> 3D Rotate Right</button>
+                </div>
+                <div class="modal-container modal-effect-1" id="mdScale">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-effect-2" id="mdSlideLeft">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-effect-3" id="mdSlideUp">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-effect-5" id="mdFall">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-effect-6" id="mdSideFall">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-effect-7" id="mdStickyUp">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-effect-8" id="mdFlipH">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-effect-9" id="mdFlipV">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-effect-10" id="md3dSign">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-effect-11" id="mdSuperScaled">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-effect-12" id="mdJustModal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-effect-14" id="md3dRotateUp">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-container modal-effect-15" id="md3dRotateRight">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-center">
+                        <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+                        <h3>Title</h3>
+                        <p>Message</p>
+                        <div class="mt-8">
+                          <button class="btn btn-secondary btn-space modal-close" type="button" data-dismiss="modal">Cancel</button>
+                          <button class="btn btn-primary btn-space modal-close" type="button" data-dismiss="modal">Proceed</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                  </div>
+                </div>
+                <div class="modal-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header card-header-divider">Form Modals</div>
+              <div class="card-body">
+                <div class="mt-6 mb-4 text-center">
+                  <button class="btn btn-space btn-success md-trigger" data-modal="mdFormSuccess">Nifty Modal</button>
+                  <button class="btn btn-space btn-primary" data-toggle="modal" data-target="#bsmdForm" type="button">Bootstrap Modal</button>
+                </div>
+                <div class="modal-container colored-header colored-header-success custom-width modal-effect-9" id="mdFormSuccess">
+                  <div class="modal-content">
+                    <div class="modal-header modal-header-colored">
+                      <h3 class="modal-title">Title</h3>
+                      <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+                    </div>
+                    <div class="modal-body form">
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control" type="email" placeholder="username@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input class="form-control" type="text" placeholder="John Doe">
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-md-12">
+                          <label>Birth date</label>
+                        </div>
+                      </div>
+                      <div class="row no-margin-y">
+                        <div class="form-group col-sm-3">
+                          <input class="form-control" type="text" placeholder="DD">
+                        </div>
+                        <div class="form-group col-sm-3">
+                          <input class="form-control" type="text" placeholder="MM">
+                        </div>
+                        <div class="form-group col-sm-3">
+                          <input class="form-control" type="text" placeholder="YYYY">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-md-12">
+                          <div class="custom-checkbox custom-control">
+                            <input class="custom-control-input" type="checkbox" id="check1">
+                            <label class="custom-control-label" for="check1">Send me notifications about new products and services.</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary modal-close" type="button" data-dismiss="modal">Cancel</button>
+                      <button class="btn btn-success modal-close" type="button" data-dismiss="modal">Proceed</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <nav class="bt-right-sidebar">
+      <div class="sb-content">
+        <div class="tab-navigation">
+          <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li class="nav-item" role="presentation"><a class="nav-link active" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Chat</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Todo</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Settings</a></li>
+          </ul>
+        </div>
+        <div class="tab-panel">
+          <div class="tab-content">
+            <div class="tab-pane tab-chat active" id="tab1" role="tabpanel">
+              <div class="chat-contacts">
+                <div class="chat-sections">
+                  <div class="bt-scroller-chat">
+                    <div class="content">
+                      <h2>Recent</h2>
+                      <div class="contact-list contact-list-recent">
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status away"></span>
+                              <span class="name">Claire Sassu</span>
+                              <span class="message">Can you share the...</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status"></span>
+                              <span class="name">Maggie jackson</span>
+                              <span class="message">I confirmed the info.</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status offline"></span>
+                              <span class="name">Joel King</span>
+                              <span class="message">Ready for the meeti...</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <h2>Contacts</h2>
+                      <div class="contact-list">
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data2">
+                              <span class="status"></span>
+                              <span class="name">Mike Bolthort</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data2">
+                              <span class="status"></span>
+                              <span class="name">Maggie jackson</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data2">
+                              <span class="status offline"></span>
+                              <span class="name">Jhon Voltemar</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-input">
+                  <input type="text" placeholder="Search..." name="q"><span class="mdi mdi-search"></span>
+                </div>
+              </div>
+              <div class="chat-window">
+                <div class="title">
+                  <div class="user">
+                    <img src="images/avatar.svg" alt="Avatar">
+                    <h2>Maggie jackson</h2>
+                    <span>Active 1h ago</span>
+                  </div>
+                  <span class="icon return mdi mdi-chevron-left"></span>
+                </div>
+                <div class="chat-messages">
+                  <div class="bt-scroller-messages">
+                    <div class="content">
+                      <ul>
+                        <li class="friend"><div class="msg">Hello</div></li>
+                        <li class="self"><div class="msg">Hi, how are you?</div></li>
+                        <li class="friend"><div class="msg">Good, I'll need support with my pc</div></li>
+                        <li class="self"><div class="msg">Sure, just tell me what is going on with your computer?</div></li>
+                        <li class="friend"><div class="msg">I don't know it just turns off suddenly</div></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-input">
+                  <div class="input-wrapper">
+                    <span class="photo mdi mdi-camera"></span>
+                    <input type="text" placeholder="Message.." name="q" autocomplete="off">
+                    <span class="send-msg mdi mdi-mail-send"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane tab-todo" id="tab2" role="tabpanel">
+              <div class="todo-container">
+                <div class="todo-wrapper">
+                  <div class="bt-scroller-todo">
+                    <div class="todo-content"><span class="category-title">Today</span>
+                      <ul class="todo-list">
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" checked id="tck1">
+                            <label class="custom-control-label" for="tck1">Initialize the project</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" id="tck2">
+                            <label class="custom-control-label" for="tck2">Create the main structure</label>
+                          </div>
+                        </li>
+                      </ul><span class="category-title">Tomorrow</span>
+                      <ul class="todo-list">
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" id="tck4">
+                            <label class="custom-control-label" for="tck4">Initialize the project</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" id="tck5">
+                            <label class="custom-control-label" for="tck5">Create the main structure</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" id="tck7">
+                            <label class="custom-control-label" for="tck7" title="This task is too long to be displayed in a normal space!">This task is too long to be displayed in a normal space!</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-input">
+                  <input type="text" placeholder="Create new task..." name="q"><span class="mdi mdi-plus"></span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane tab-settings" id="tab3" role="tabpanel">
+              <div class="settings-wrapper">
+                <div class="bt-scroller-settings"><span class="category-title">General</span>
+                  <ul class="settings-list">
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st1" id="st1">
+                        <span><label for="st1"></label></span>
+                      </div>
+                      <span class="name">Available</span>
+                    </li>
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st2" id="st2">
+                        <span><label for="st2"></label></span>
+                      </div>
+                      <span class="name">Enable notifications</span>
+                    </li>
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st3" id="st3">
+                        <span><label for="st3"></label></span>
+                      </div>
+                      <span class="name">Login with Facebook</span>
+                    </li>
+                  </ul><span class="category-title">Notifications</span>
+                  <ul class="settings-list">
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" name="st4" id="st4">
+                        <span><label for="st4"></label></span>
+                      </div>
+                      <span class="name">Email notifications</span>
+                    </li>
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st5" id="st5">
+                        <span><label for="st5"></label></span>
+                      </div>
+                      <span class="name">Project updates</span>
+                    </li>
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st6" id="st6">
+                        <span><label for="st6"></label></span>
+                      </div>
+                      <span class="name">New comments</span>
+                    </li>
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" name="st7" id="st7">
+                        <span><label for="st7"></label></span>
+                      </div>
+                      <span class="name">Chat messages</span>
+                    </li>
+                  </ul><span class="category-title">Workflow</span>
+                  <ul class="settings-list">
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" name="st8" id="st8">
+                        <span><label for="st8"></label></span>
+                      </div>
+                      <span class="name">Deploy on commit</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="modal fade" id="bsmdSuccess" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-success"><span class="modal-main-icon mdi mdi-check"></span></div>
+            <h3>Title</h3>
+            <p>Message</p>
+            <div class="mt-8">
+              <button class="btn btn-space btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-space btn-success" type="button" data-dismiss="modal">Proceed</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bsmdPrimary" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-primary"><span class="modal-main-icon mdi mdi-info-outline"></span></div>
+            <h3>Title</h3>
+            <p>Message</p>
+            <div class="mt-8"> 
+              <button class="btn btn-space btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-space btn-primary" type="button" data-dismiss="modal">Proceed</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bsmdDanger" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-danger"><span class="modal-main-icon mdi mdi-close-circle-o"></span></div>
+            <h3>Title</h3>
+            <p>Message</p>
+            <div class="mt-8">
+              <button class="btn btn-space btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-space btn-danger" type="button" data-dismiss="modal">Proceed</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bsmdWarning" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-warning"><span class="modal-main-icon mdi mdi-alert-triangle"></span></div>
+            <h3>Title</h3>
+            <p>Message</p>
+            <div class="mt-8">
+              <button class="btn btn-space btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-space btn-warning" type="button" data-dismiss="modal">Proceed</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="mdFooterSuccess" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-success"><span class="modal-main-icon mdi mdi-check"></span></div>
+            <h3>Title</h3>
+            <p>Message</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-success" type="button" data-dismiss="modal">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="mdFooterPrimary" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-primary"><span class="modal-main-icon mdi mdi-info-outline"></span></div>
+            <h3>Title</h3>
+            <p>Message</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary" type="button" data-dismiss="modal">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="mdFooterDanger" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-danger"><span class="modal-main-icon mdi mdi-close-circle-o"></span></div>
+            <h3>Title</h3>
+            <p>Message</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-danger" type="button" data-dismiss="modal">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="mdFooterWarning" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-warning"><span class="modal-main-icon mdi mdi-alert-triangle"></span></div>
+            <h3>Title</h3>
+            <p>Message</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-warning" type="button" data-dismiss="modal">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bsmdDefault" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+            <h3>Title</h3>
+            <p>Message</p>
+            <div class="mt-8"> 
+              <button class="btn btn-space btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-space btn-primary" type="button" data-dismiss="modal">Proceed</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bsmdFullWidth" tabindex="-1" role="dialog">
+    <div class="modal-dialog full-width">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+            <h3>Title</h3>
+            <p>Message</p>
+            <div class="mt-8"> 
+              <button class="btn btn-space btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-space btn-primary" type="button" data-dismiss="modal">Proceed</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-width modal fade" id="bsmdCustom" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-primary"><span class="modal-main-icon mdi mdi-check"></span></div>
+            <h3>Title</h3>
+            <p>Message</p>
+            <div class="mt-8"> 
+              <button class="btn btn-space btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-space btn-primary" type="button" data-dismiss="modal">Proceed</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade colored-header colored-header-primary" id="bsmdColored" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header modal-header-colored">
+          <h3 class="modal-title">Title</h3>
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <p>Message</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary" type="button" data-dismiss="modal">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-full-color modal-full-color-primary fade" id="bsmdFullColor" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center"><span class="modal-main-icon mdi mdi-info-outline"></span>
+            <h3>Title</h3>
+            <p>Message</p>
+            <div class="mt-8">
+              <button class="btn btn-secondary btn-space" type="button" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-primary btn-space" type="button" data-dismiss="modal">Proceed</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade colored-header colored-header-primary" id="bsmdForm" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header modal-header-colored">
+          <h3 class="modal-title">Form Modal</h3>
+          <button class="close md-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close">       </span></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Email</label>
+            <input class="form-control" type="email" placeholder="username@example.com">
+          </div>
+          <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" type="text" placeholder="John Doe">
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12">
+              <label>Birth date</label>
+            </div>
+          </div>
+          <div class="row no-margin-y">
+            <div class="form-group col-sm-3">
+              <input class="form-control" type="text" placeholder="DD">
+            </div>
+            <div class="form-group col-sm-3">
+              <input class="form-control" type="text" placeholder="MM">
+            </div>
+            <div class="form-group col-sm-3">
+              <input class="form-control" type="text" placeholder="YYYY">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-12">
+              <div class="custom-checkbox custom-control">
+                <input class="custom-control-input" type="checkbox" id="check1">
+                <label class="custom-control-label" for="check1">Send me notifications about new products and services.</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary md-close" type="button" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary md-close" type="button" data-dismiss="modal">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { init, Modal, $ } from '../dist/build.js';
+
+    // Theme initialization
+    init();
+
+    // Nifty Modals
+    const mdFullSuccess = new Modal('#mdFullSuccess');
+    const mdFullPrimary = new Modal('#mdFullPrimary');
+    const mdFullWarning = new Modal('#mdFullWarning');
+    const mdFullDanger = new Modal('#mdFullDanger');
+    const mdFullDark = new Modal('#mdFullDark');
+    const mdColoredSuccess = new Modal('#mdColoredSuccess');
+    const mdColoredPrimary = new Modal('#mdColoredPrimary');
+    const mdColoredWarning = new Modal('#mdColoredWarning');
+    const mdColoredDanger = new Modal('#mdColoredDanger');
+    const mdColoredDark = new Modal('#mdColoredDark');
+    const mdDefault = new Modal('#mdDefault');
+    const mdFullWidth = new Modal('#mdFullWidth');
+    const mdCustom = new Modal('#mdCustom');
+    const mdColored = new Modal('#mdColored');
+    const mdFullColor = new Modal('#mdFullColor');
+    const mdScale = new Modal('#mdScale');
+    const mdSlideLeft = new Modal('#mdSlideLeft');
+    const mdSlideUp = new Modal('#mdSlideUp');
+    const mdFall = new Modal('#mdFall');
+    const mdSideFall = new Modal('#mdSideFall');
+    const mdStickyUp = new Modal('#mdStickyUp');
+    const mdFlipH = new Modal('#mdFlipH');
+    const mdFlipV = new Modal('#mdFlipV');
+    const md3dSign = new Modal('#md3dSign');
+    const mdSuperScaled = new Modal('#mdSuperScaled');
+    const mdJustModal = new Modal('#mdJustModal');
+    const md3dRotateUp = new Modal('#md3dRotateUp');
+    const md3dRotateRight = new Modal('#md3dRotateRight');
+    const mdFormSuccess = new Modal('#mdFormSuccess');
+
+    $('.md-trigger').on('click', event => {
+      const modal = $(event.currentTarget).data('modal');
+      if (modal === 'mdFullSuccess') mdFullSuccess.open();
+      else if (modal === 'mdFullPrimary') mdFullPrimary.open();
+      else if (modal === 'mdFullWarning') mdFullWarning.open();
+      else if (modal === 'mdFullDanger') mdFullDanger.open();
+      else if (modal === 'mdFullDark') mdFullDark.open();
+      else if (modal === 'mdColoredSuccess') mdColoredSuccess.open();
+      else if (modal === 'mdColoredPrimary') mdColoredPrimary.open();
+      else if (modal === 'mdColoredWarning') mdColoredWarning.open();
+      else if (modal === 'mdColoredDanger') mdColoredDanger.open();
+      else if (modal === 'mdColoredDark') mdColoredDark.open();
+      else if (modal === 'mdDefault') mdDefault.open();
+      else if (modal === 'mdFullWidth') mdFullWidth.open();
+      else if (modal === 'mdCustom') mdCustom.open();
+      else if (modal === 'mdColored') mdColored.open();
+      else if (modal === 'mdFullColor') mdFullColor.open();
+      else if (modal === 'mdScale') mdScale.open();
+      else if (modal === 'mdSlideLeft') mdSlideLeft.open();
+      else if (modal === 'mdSlideUp') mdSlideUp.open();
+      else if (modal === 'mdFall') mdFall.open();
+      else if (modal === 'mdSideFall') mdSideFall.open();
+      else if (modal === 'mdStickyUp') mdStickyUp.open();
+      else if (modal === 'mdFlipH') mdFlipH.open();
+      else if (modal === 'mdFlipV') mdFlipV.open();
+      else if (modal === 'md3dSign') md3dSign.open();
+      else if (modal === 'mdSuperScaled') mdSuperScaled.open();
+      else if (modal === 'mdJustModal') mdJustModal.open();
+      else if (modal === 'md3dRotateUp') md3dRotateUp.open();
+      else if (modal === 'md3dRotateRight') md3dRotateRight.open();
+      else if (modal === 'mdFormSuccess') mdFormSuccess.open();
+    });
+  </script>
+</body>
+</html>

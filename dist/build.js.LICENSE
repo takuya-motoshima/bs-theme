@@ -15865,11 +15865,11 @@
 
 // Initialize scroller
 
-// CONCATENATED MODULE: ./src/components/DialogBase.js
+// CONCATENATED MODULE: ./src/components/Modal.js
 
 // afterClose: () => this.afterClose()
 
-// CONCATENATED MODULE: ./src/components/AlertDialog.js
+// CONCATENATED MODULE: ./src/components/AlertModal.js
 
 // CONCATENATED MODULE: ./src/components/Validator.js
 

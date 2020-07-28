@@ -1,8 +1,8 @@
 import $ from 'jquery';
 import { Template } from 'js-shared'
-import DialogBase from '~/components/DialogBase';
+import Modal from '~/components/Modal';
 
-export default class extends DialogBase {
+export default class extends Modal {
 
   constructor(option) {
     option = $.extend({
@@ -31,7 +31,7 @@ export default class extends DialogBase {
           </div>
         </div>
       </div>`;
-    super($(Template.compile(template)(buttons)).appendTo('body'), option);
+    super($(Template.compile(template)(option.buttons)).appendTo('body'), option);
     this.title = this.modal.find('[data-title]:first');
     this.message = this.modal.find('[data-message]:first');
     this.modal.on('click', '[action-proceed]', () => {

@@ -5,21 +5,17 @@ import { ESCAPE_KEYCODE } from '~/config/constant';
 export default class {
 
   constructor(modal, option) {
-    option = $.extend({
-      keyboard: true
-    }, option);
+    if ($.type(modal) === 'string' || modal instanceof HTMLTableElement) modal = $(modal);
+    else if (!(modal instanceof $)) throw new TypeError('Wrong parameter type');
     this.modal = modal;
-    this.option = option;
+    this.option = $.extend({ keyboard: true }, option);
     $('body').append(this.modal)
     const overlay = $('body').find('.modal-overlay');
-    if (overlay.length === 0) {
-      $('<div class="modal-overlay"></div>').insertAfter(this.modal)
-    } else {
-      overlay.insertAfter('.modal-container:last');
-    }
+    if (overlay.length === 0) $('<div class="modal-overlay"></div>').insertAfter(this.modal)
+    else overlay.insertAfter('.modal-container:last');
     this.initialized = false;
     this.listeners = {};
-    this.options = {
+    this.mdOption = {
       contentSelector: '.modal-content',
       closeSelector: '.modal-close',
       classAddAfterOpen: 'modal-show',
@@ -45,9 +41,9 @@ export default class {
 
   open() {
     if (this.initialized) {
-      this.modal.niftyModal('show', this.options);
+      this.modal.niftyModal('show', this.mdOption);
     } else {
-      this.modal.niftyModal(this.options);
+      this.modal.niftyModal(this.mdOption);
       this.initialized = true;
     }
     this.proceed = false;
@@ -55,18 +51,17 @@ export default class {
   }
 
   close() {
-    this.modal.niftyModal('hide', this.options);
+    this.modal.niftyModal('hide', this.mdOption);
     return this;
   }
 
   beforeOpen() {
     if (!this.option.keyboard) return;
     $(document).on(`keydown.dismiss.${this.eventKey}`,  event => {
-      if (event.which === ESCAPE_KEYCODE) {
-        event.preventDefault();
-        this.resolve(false);
-        this.close();
-      }
+      if (event.which !== ESCAPE_KEYCODE) return;
+      event.preventDefault();
+      this.resolve(false);
+      this.close();
     });
   }
 

@@ -10,9 +10,9 @@ import destroyScroller from '~/utils/destroyScroller';
 import waitForFinalEvent from '~/utils/waitForFinalEvent';
 import initScrollTopButton from '~/utils/initScrollTopButton';
 import color from '~/utils/color';
-import AlertDialog from '~/components/AlertDialog';
-import ConfirmDialog from '~/components/ConfirmDialog';
-import DialogBase from '~/components/DialogBase';
+import AlertModal from '~/components/AlertModal';
+import ConfirmModal from '~/components/ConfirmModal';
+import Modal from '~/components/Modal';
 import Validator from '~/components/Validator';
 import DataTable from '~/components/DataTable';
 import Clipboard from '~/components/Clipboard';
@@ -622,9 +622,9 @@ export {
   init,
   color,
   scroller,
-  AlertDialog,
-  ConfirmDialog,
-  DialogBase,
+  AlertModal,
+  ConfirmModal,
+  Modal,
   Validator,
   DataTable,
   Clipboard,

@@ -1,7 +1,7 @@
 import $ from 'jquery';
-import DialogBase from '~/components/DialogBase';
+import Modal from '~/components/Modal';
 
-export default class extends DialogBase {
+export default class extends Modal {
   
   constructor(option) {
     option = $.extend({
