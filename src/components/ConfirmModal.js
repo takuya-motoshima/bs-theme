@@ -5,19 +5,11 @@ import Modal from '~/components/Modal';
 export default class extends Modal {
 
   constructor(option) {
-    option = $.extend({
-      keyboard: true,
-      buttons: {
-        ok: 'OK',
-        cancel: 'Cancel'
-      }
-    }, option);
+    option.buttons = $.extend({ ok: 'OK', cancel: 'Cancel' }, option.buttons || {});
+    option = $.extend({ keyboard: true }, option);
     const template = `
       <div class="modal-container modal-effect-9 confirm-modal">
         <div class="modal-content">
-          <!-- <div class="modal-header">
-            <button class="close modal-close" type="button" data-dismiss="modal" aria-hidden="true"><span class="mdi mdi-close"></span></button>
-          </div> -->
           <div class="modal-body">
             <div class="text-center">
               <span class="modal-main-icon mdi mdi-alert-triangle text-warning"></span>

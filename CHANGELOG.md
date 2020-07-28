@@ -1,9 +1,13 @@
 # Changelog
 
+## [0.0.21] - 2020-07-28
+
+  - Fixed a bug that the button text option of confirmation modal was not applied(./src/components/ConfirmModal.js).
+
 ## [0.0.20] - 2020-07-28
 
   - Added modal example(./documentation/ui-modals.html).
-  - Fixed a bug that set button text failed in confirmation dialog(./src/components/ConfirmDialog.js).
+  - Fixed a bug that set button text failed in confirmation dialog(./src/components/ConfirmModal.js).
 
 ## [0.0.19] - 2020-07-28
 
