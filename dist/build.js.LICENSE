@@ -15867,7 +15867,7 @@
 
 // CONCATENATED MODULE: ./src/components/Modal.js
 
-// afterClose: () => this.afterClose()
+// closeSelector: '.modal-close',
 
 // CONCATENATED MODULE: ./src/components/AlertModal.js
 

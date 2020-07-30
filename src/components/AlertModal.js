@@ -17,17 +17,13 @@ export default class extends Modal {
             </div>
           </div>
           <div class="modal-footer">
-            <button action-proceed class="btn btn-primary" type="button">OK</button>
+            <button class="btn btn-primary" type="button" data-dismiss="modal" data-result="true">OK</button>
           </div>
         </div>
       </div>`;
     super($(template).appendTo('body'), option);
     this.message = this.modal.find('[data-message]:first');
     this.icon = this.modal.find('.modal-main-icon:first');
-    this.modal.on('click', '[action-proceed]', () => {
-      this.proceed = true;
-      super.close();
-    });
   }
 
   async open(message, icon = 'success') {
@@ -42,11 +38,6 @@ export default class extends Modal {
 
   async afterOpen() {
     await super.afterOpen();
-    this.modal.find('[action-proceed]:first').focus();
-  }
-
-  afterClose() {
-    super.afterClose();
-    this.resolve(this.proceed);
+    this.modal.find('[action-ok]:first').focus();
   }
 }

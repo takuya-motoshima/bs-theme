@@ -14,7 +14,7 @@
         <div class="bt-navbar-header">
           <a class="navbar-brand" href="index.html"></a>
         </div>
-        <div class="page-title"><span>Form Validation</span></div>
+        <div class="page-title"><span>UI Notification</span></div>
         <div class="bt-right-navbar">
           <ul class="nav navbar-nav float-right bt-user-nav">
             <li class="nav-item dropdown">
@@ -96,7 +96,7 @@
     </nav>
     <div class="bt-left-sidebar">
       <div class="left-sidebar-wrapper">
-        <a class="left-sidebar-toggle" href="#">Form Validation</a>
+        <a class="left-sidebar-toggle" href="#">UI Notification</a>
         <div class="left-sidebar-spacer">
           <div class="left-sidebar-scroll">
             <div class="left-sidebar-content">
@@ -105,19 +105,19 @@
                 <li>
                   <a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
                 </li>
-                <li class="parent">
+                <li class="parent active open">
                   <a href="#"><i class="icon mdi mdi-face"></i><span>UI</span></a>
                   <ul class="sub-menu">
-                    <li><a href="ui-buttons.html">Button</a></li>
+                    <li><a href="ui-buttons.html">Buttons</a></li>
                     <li><a href="ui-modals.html">Modal</a></li>
-                    <li><a href="ui-notifications.html">Notification</a></li>
+                    <li class="active"><a href="ui-notifications.html">Notification</a></li>
                   </ul>
                 </li>
-                <li class="parent active open">
+                <li class="parent">
                   <a href="#"><i class="icon mdi mdi-dot-circle"></i><span>Form</span></a>
                   <ul class="sub-menu">
                     <li><a href="form-elements.html">Element</a></li>
-                    <li class="active"><a href="form-validation.html">Validation</a></li>
+                    <li><a href="form-validation.html">Validation</a></li>
                   </ul>
                 </li>
                 <li class="parent">
@@ -134,244 +134,54 @@
     </div>
     <div class="bt-content">
       <div class="page-head">
-        <h2 class="page-head-title">Form Validation</h2>
+        <h2 class="page-head-title">Notification</h2>
         <nav aria-label="breadcrumb" role="navigation">
           <ol class="breadcrumb page-head-nav">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Form</a></li>
-            <li class="breadcrumb-item active">Validation</li>
+            <li class="breadcrumb-item"><a href="#">UI</a></li>
+            <li class="breadcrumb-item active">Notification</li>
           </ol>
         </nav>
       </div>
       <div class="main-content container-fluid">
         <div class="row">
           <div class="col-lg-6">
-            <div class="card card-border-color card-border-color-primary">
-              <div class="card-header card-header-divider">Basic Form<span class="card-subtitle">This is the default bootstrap form layout</span></div>
+            <div class="card">
+              <div class="card-header card-header-divider">Notification<span class="card-subtitle">Default Gritter notifications styles</span></div>
               <div class="card-body">
-                <form action="#" data-parsley-validate="" novalidate="">
-                  <div class="form-group">
-                    <label for="inputUserName">User Name</label>
-                    <input class="form-control" id="inputUserName" type="text" name="nick" parsley-trigger="change" required placeholder="Enter user name" autocomplete="off">
-                  </div>
-                  <div class="form-group">
-                    <label for="inputEmail">Email address</label>
-                    <input class="form-control" id="inputEmail" type="email" name="email" parsley-trigger="change" required placeholder="Enter email" autocomplete="off">
-                  </div>
-                  <div class="form-group">
-                    <label for="inputPassword">Password</label>
-                    <input class="form-control" id="inputPassword" type="password" placeholder="Password" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputRepeatPassword">Repeat Password</label>
-                    <input class="form-control" id="inputRepeatPassword" data-parsley-equalto="#inputPassword" type="password" required placeholder="Password">
-                  </div>
-                  <div class="row pt-0 pt-sm-5">
-                    <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
-                      <div class="bt-checkbox custom-control custom-checkbox">
-                        <input class="custom-control-input" type="checkbox" id="check1">
-                        <label class="custom-control-label" for="check1">Remember me</label>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 pl-0">
-                      <p class="text-right">
-                        <button class="btn btn-space btn-primary" type="submit">Submit</button>
-                        <button class="btn btn-space btn-secondary">Cancel</button>
-                      </p>
-                    </div>
-                  </div>
-                </form>
+                <p>You can choose between use the basic, gritter Notification style or our theme based notification, just have fun with them.</p>
+                <p class="mt-6 mb-4 text-center">
+                  <button class="btn btn-space btn-secondary" id="not-basic" type="button"> Basic</button>
+                  <button class="btn btn-space btn-primary" id="not-theme" type="button"> Theme Style</button>
+                  <button class="btn btn-space btn-primary" id="not-text" type="button"> Just Text</button>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header card-header-divider">Color States<span class="card-subtitle">Gritter notifications with template color states</span></div>
+              <div class="card-body">
+                <p>You can choose between use the basic, gritter Notification style or our theme based notification, just have fun with them.</p>
+                <p class="mt-6 text-center">
+                  <button class="btn btn-space btn-success" id="not-success">Success</button>
+                  <button class="btn btn-space btn-primary" id="not-primary">Primary</button>
+                  <button class="btn btn-space btn-warning" id="not-warning">Warning</button>
+                  <button class="btn btn-space btn-danger" id="not-danger">Danger</button>
+                  <button class="btn btn-space btn-secondary" id="not-dark">Dark Color</button>
+                </p>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="card card-border-color card-border-color-primary">
-              <div class="card-header card-header-divider">Horizontal Form<span class="card-subtitle">This is the horizontal bootstrap layout</span></div>
+            <div class="card">
+              <div class="card-header card-header-divider">Positions<span class="card-subtitle">Gritter notifications in different screen positions</span></div>
               <div class="card-body">
-                <form data-parsley-validate="" novalidate="">
-                  <div class="form-group row">
-                    <label class="col-3 col-lg-2 col-form-label text-right" for="inputEmail2">Email</label>
-                    <div class="col-9 col-lg-10">
-                      <input class="form-control" id="inputEmail2" type="email" required parsley-type="email" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-3 col-lg-2 col-form-label text-right" for="inputPassword2">Password</label>
-                    <div class="col-9 col-lg-10">
-                      <input class="form-control" id="inputPassword2" type="password" required placeholder="Password">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-3 col-lg-2 col-form-label text-right" for="inputWebSite">Web Site</label>
-                    <div class="col-9 col-lg-10">
-                      <input class="form-control" id="inputWebSite" type="url" required parsley-type="url" placeholder="URL">
-                    </div>
-                  </div>
-                  <div class="row pt-2 pt-sm-5 mt-1">
-                    <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
-                      <div class="bt-checkbox custom-control custom-checkbox">
-                        <input class="custom-control-input" type="checkbox" id="check2">
-                        <label class="custom-control-label" for="check2">Remember me</label>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 pl-0">
-                      <p class="text-right">
-                        <button class="btn btn-space btn-primary" type="submit">Submit</button>
-                        <button class="btn btn-space btn-secondary">Cancel</button>
-                      </p>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card card-border-color card-border-color-primary">
-              <div class="card-header card-header-divider">Validation Types<span class="card-subtitle">Parsley different validation types</span></div>
-              <div class="card-body">
-                <form>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Required</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" type="text" required placeholder="Type something">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Min Length</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" type="text" required data-parsley-minlength="6" placeholder="Min 6 chars.">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Max Length</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" type="text" required data-parsley-maxlength="6" placeholder="Max 6 chars.">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Range Length</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" type="text" required data-parsley-length="[5,10]" placeholder="Text between 5 - 10 chars length">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Min Value</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" type="text" required data-parsley-min="6" placeholder="Min value is 6">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Max Value</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" type="text" required data-parsley-max="6" placeholder="Max value is 6">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Range Value</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" required type="text" min="6" max="100" placeholder="Number between 6 - 100">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Regular Exp</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" type="text" required data-parsley-pattern="#[A-Fa-f0-9]{6}" placeholder="Hex. Color">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Equal To</label>
-                    <div class="col-sm-4 col-lg-3 mb-3 mb-sm-0">
-                      <input class="form-control" id="pass2" type="password" required placeholder="Password">
-                    </div>
-                    <div class="col-sm-4 col-lg-3">
-                      <input class="form-control" type="password" required data-parsley-equalto="#pass2" placeholder="Re-Type Password">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-3 col-form-label text-sm-right">Min check</label>
-                    <div class="col-sm-6">
-                      <div class="custom-controls-stacked">
-                        <div class="custom-control custom-checkbox">
-                          <input class="custom-control-input" id="ck1" name="ck1" type="checkbox" data-parsley-multiple="groups" value="bar" data-parsley-mincheck="2" data-parsley-errors-container="#error-container1">
-                          <label class="custom-control-label" for="ck1">Option 1</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                          <input class="custom-control-input" id="ck2" name="ck2" type="checkbox" data-parsley-multiple="groups" value="bar2" data-parsley-mincheck="2" data-parsley-errors-container="#error-container1">
-                          <label class="custom-control-label" for="ck2">Option 2</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                          <input class="custom-control-input" id="ck3" name="ck3" type="checkbox" data-parsley-multiple="groups" value="bar3" data-parsley-mincheck="2" required data-parsley-errors-container="#error-container1">
-                          <label class="custom-control-label" for="ck3">Option 3</label>
-                        </div>
-                        <div id="error-container1"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-3 col-form-label text-sm-right">Max check</label>
-                    <div class="col-sm-6">
-                      <div class="custom-controls-stacked">
-                        <div class="custom-control custom-checkbox">
-                          <input class="custom-control-input" type="checkbox" value="bar" id="e1" data-parsley-multiple="group1" data-parsley-errors-container="#error-container2">
-                          <label class="custom-control-label" for="e1">Option 1</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                          <input class="custom-control-input" type="checkbox" value="bar" id="e2" data-parsley-multiple="group1" data-parsley-errors-container="#error-container2">
-                          <label class="custom-control-label" for="e2">Option 2</label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                          <input class="custom-control-input" type="checkbox" value="bar" id="e3" data-parsley-multiple="group1" data-parsley-maxcheck="1" data-parsley-errors-container="#error-container2">
-                          <label class="custom-control-label" for="e3">Option 3</label>
-                        </div>
-                        <div id="error-container2"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">E-Mail</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" type="email" required parsley-type="email" placeholder="Enter a valid e-mail">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">URL</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" parsley-type="url" type="url" required placeholder="URL">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Digits</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" data-parsley-type="digits" type="text" required placeholder="Enter only digits">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Number</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" data-parsley-type="number" type="text" required placeholder="Enter only numbers">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Alphanumeric</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <input class="form-control" data-parsley-type="alphanum" type="text" required placeholder="Enter alphanumeric value">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-sm-3 col-form-label text-sm-right">Textarea</label>
-                    <div class="col-12 col-sm-8 col-lg-6">
-                      <textarea class="form-control" required data-parsley-foobar></textarea>
-                    </div>
-                  </div>
-                  <div class="form-group row text-right">
-                    <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-0">
-                      <button class="btn btn-space btn-primary" type="submit">Submit</button>
-                      <button class="btn btn-space btn-secondary">Cancel</button>
-                    </div>
-                  </div>
-                </form>
+                <p>You can change gritter position easily by plugin options.</p>
+                <p class="mt-6 text-center">
+                  <button class="btn btn-space btn-primary" id="not-tr" type="button">Top Right</button>
+                  <button class="btn btn-space btn-primary" id="not-tl" type="button">Top Left</button>
+                  <button class="btn btn-space btn-primary" id="not-bl" type="button">Bottom Left</button>
+                  <button class="btn btn-space btn-primary" id="not-br" type="button">Bottom Right</button>
+                </p>
               </div>
             </div>
           </div>
@@ -582,12 +392,5 @@
       </div>
     </nav>
   </div>
-  <script type="module">
-    import { init, Validator, $ } from '../dist/build.js';
-
-    // Theme initialization
-    init();
-    for (let $form of [...$('form')]) new Validator($form);
-  </script>
 </body>
 </html>

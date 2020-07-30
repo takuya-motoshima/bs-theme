@@ -16,7 +16,7 @@
 
   .bt-scroller-notifications {
     position: relative;
-    max-height: 222px;
+    height: 222px;
 
     > .content {
 

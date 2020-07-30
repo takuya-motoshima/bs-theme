@@ -16,7 +16,7 @@ export default class extends Modal {
               <h3 data-title></h3>
               <p data-message></p>
               <div class="mt-8">
-                <button action-proceed class="btn btn-space btn-primary" type="button">{{ok}}</button>
+                <button class="btn btn-space btn-primary" type="button" data-dismiss="modal" data-result="true">{{ok}}</button>
                 <button class="btn btn-space btn-dark modal-close" type="button" data-dismiss="modal">{{cancel}}</button>
               </div>
             </div>
@@ -26,10 +26,6 @@ export default class extends Modal {
     super($(Template.compile(template)(option.buttons)).appendTo('body'), option);
     this.title = this.modal.find('[data-title]:first');
     this.message = this.modal.find('[data-message]:first');
-    this.modal.on('click', '[action-proceed]', () => {
-      this.proceed = true;
-      super.close();
-    });
   }
 
   async open(title = '', message = '') {
@@ -40,11 +36,6 @@ export default class extends Modal {
 
   async afterOpen() {
     await super.afterOpen();
-    this.modal.find('[action-proceed]:first').focus();
-  }
-
-  afterClose() {
-    super.afterClose();
-    this.resolve(this.proceed);
+    this.modal.find('[action-ok]:first').focus();
   }
 }

@@ -15,22 +15,23 @@ export default class {
     else overlay.insertAfter('.modal-container:last');
     this.initialized = false;
     this.listeners = {};
-    this.mdOption = {
+    this.modalOption = {
       contentSelector: '.modal-content',
-      closeSelector: '.modal-close',
+      closeSelector: '[data-dismiss="modal"]',
+      // closeSelector: '.modal-close',
       classAddAfterOpen: 'modal-show',
-      beforeOpen: () => this.beforeOpen(),
-      afterOpen: () => this.afterOpen(),
-      beforeClose: () => this.beforeClose(),
-      // afterClose: () => this.afterClose()
+      beforeOpen: (modal) => this.beforeOpen(modal),
+      afterOpen: (modal) => this.afterOpen(modal),
+      beforeClose: (modal, event) => this.beforeClose(modal, event),
+      afterClose: (modal, event) => this.afterClose(modal, event)
     };
     this.eventKey = +new Date;
-    const observer = new MutationObserver(mutations => {
-      const classMutations = mutations.filter(({ attributeName }) => attributeName === 'class');
-      if (!classMutations.length || $(classMutations[0].target).css('visibility') !== 'hidden') return;
-      this.afterClose();
-    });
-    observer.observe(this.modal.get(0), { attributes: true });
+    // const observer = new MutationObserver(mutations => {
+    //   const classMutations = mutations.filter(({ attributeName }) => attributeName === 'class');
+    //   if (!classMutations.length || $(classMutations[0].target).css('visibility') !== 'hidden') return;
+    //   this.afterClose();
+    // });
+    // observer.observe(this.modal.get(0), { attributes: true });
   }
 
 
@@ -41,17 +42,16 @@ export default class {
 
   open() {
     if (this.initialized) {
-      this.modal.niftyModal('show', this.mdOption);
+      this.modal.niftyModal('show', this.modalOption);
     } else {
-      this.modal.niftyModal(this.mdOption);
+      this.modal.niftyModal(this.modalOption);
       this.initialized = true;
     }
-    this.proceed = false;
-    return new Promise(resolve => this.resolve = resolve);
+    return new Promise(resolve => this._resolve = resolve);
   }
 
   close() {
-    this.modal.niftyModal('hide', this.mdOption);
+    this.modal.niftyModal('hide', this.modalOption);
     return this;
   }
 
@@ -61,7 +61,6 @@ export default class {
       if (event.which !== ESCAPE_KEYCODE) return;
       event.preventDefault();
       this.resolve(false);
-      this.close();
     });
   }
 
@@ -78,10 +77,19 @@ export default class {
     });
   }
 
-  beforeClose() {}
+  beforeClose(modal, event) {}
 
-  afterClose() {
-    if (!this.option.keyboard) return;
-    $(document).off(`keydown.dismiss.${this.eventKey}`);
+  afterClose(modal, event) {
+    if (this.option.keyboard) $(document).off(`keydown.dismiss.${this.eventKey}`);
+    const data = event && event.currentTarget ? $(event.currentTarget).data() : {};
+    const result = 'result' in data ? data.result : false;
+    this.resolve(result);
+  }
+
+  resolve(result) {
+    if (!this._resolve) return;
+    this._resolve(result);
+    this._resolve = null;
+    this.close();
   }
 }
