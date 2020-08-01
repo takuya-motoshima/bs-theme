@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.26] - 2020-08-01
+
+- Added Introduction(./getting-started) and API Document(./documentation) to public files
+
 ## [0.0.25] - 2020-08-01
 
 - Added alert UI example(./documentation/ui-alerts.html).
