@@ -9,6 +9,7 @@ import updateScroller from '~/utils/updateScroller';
 import destroyScroller from '~/utils/destroyScroller';
 import waitForFinalEvent from '~/utils/waitForFinalEvent';
 import initScrollTopButton from '~/utils/initScrollTopButton';
+import Api from '~/utils/Api';
 import color from '~/utils/color';
 import AlertModal from '~/components/AlertModal';
 import ConfirmModal from '~/components/ConfirmModal';
@@ -16,7 +17,7 @@ import Modal from '~/components/Modal';
 import Validator from '~/components/Validator';
 import DataTable from '~/components/DataTable';
 import Clipboard from '~/components/Clipboard';
-import Api from '~/utils/Api';
+import Notifier from '~/components/Notifier';
 
 // Core private functions
 function leftSidebarInit() {
@@ -628,5 +629,6 @@ export {
   Validator,
   DataTable,
   Clipboard,
-  Api
+  Api,
+  Notifier
 }

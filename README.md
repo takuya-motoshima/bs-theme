@@ -6,8 +6,9 @@ This is still in development and will be published at a later date.
 
 ## Changelog
 
-### [0.0.24] - 2020-07-30
+### [0.0.23] - 2020-07-30
 
+- Changed to return the processing result of promise after closing it with modal base class.  
 - Changed so that the caller can receive the result of OK or cancellation selected modally.
     
     To get whether the OK button or the Cancel button is selected, add the 'data-result="true"' attribute to the [OK] button.  
@@ -83,10 +84,6 @@ This is still in development and will be published at a later date.
     const myModal = new MyModal();
     const result = await myModal.open();// 'Submit!' or false
     ```
-
-### [0.0.23] - 2020-07-29
-
-- Changed to return the processing result of promise after closing it with modal base class.
 
 ### [0.0.22] - 2020-07-29
 

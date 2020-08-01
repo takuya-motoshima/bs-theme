@@ -19,7 +19,8 @@
 @import "../../node_modules/jquery.niftymodals/src/sass/style-bootstrap";
 @import "../../node_modules/@foxythemes/material-design-iconic-font/scss/material-design-iconic-font";
 @import "../../node_modules/perfect-scrollbar/css/perfect-scrollbar.css";
-@import "../../node_modules/@foxythemes/gritter/css/jquery.gritter.css";
+@import "../../node_modules/awesome-notifications/src/styles/style.scss";
+// @import "../../node_modules/@foxythemes/gritter/css/jquery.gritter.css";
 @import "../../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css";
 @import "../../node_modules/datatables.net-responsive-bs4/css/responsive.bootstrap4.css";
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
@@ -128,7 +129,8 @@
 @import "includes/plugins/flot-chart";
 @import "includes/plugins/full-calendar";
 @import "includes/plugins/perfect-scrollbar";
-@import "includes/plugins/gritter";
+@import "includes/plugins/notifications";
+// @import "includes/plugins/gritter";
 @import "includes/plugins/multiselect";
 @import "includes/plugins/select2";
 @import "includes/plugins/slider";

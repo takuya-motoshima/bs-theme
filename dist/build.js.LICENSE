@@ -13379,9 +13379,11 @@
 
 /* 13 */
 
+/* 14 */
+
 // extracted by mini-css-extract-plugin
 
-/* 14 */
+/* 15 */
 
 /*!
   * Bootstrap v4.5.0 (https://getbootstrap.com/)
@@ -13610,7 +13612,7 @@
 
 //# sourceMappingURL=bootstrap.js.map
 
-/* 15 */
+/* 16 */
 
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
@@ -14781,7 +14783,7 @@
  * An ES6 getter that will return the height of the virtual reference element.
  */
 
-/* 16 */
+/* 17 */
 
 /**
      * Base function to check whether the current viewport is exactly between
@@ -14871,7 +14873,7 @@
          * @return {boolean}
          */
 
-/* 17 */
+/* 18 */
 
 /*!
  * @fileOverview TouchSwipe - jQuery Plugin
@@ -14887,11 +14889,11 @@
  *
  */
 
-/* 18 */
+/* 19 */
 
 /* globals __webpack_amd_options__ */
 
-/* 19 */
+/* 20 */
 
 //Remove body open modal class
 
@@ -14927,7 +14929,7 @@
  * Self execute to support previous versions with 'md-trigger' class & data-modal attribute
  */
 
-/* 20 */
+/* 21 */
 
 // shim for using process in browser
 
@@ -14961,19 +14963,17 @@
 
 // empty string to avoid regexp issues
 
-/* 21 */
+/* 22 */
 
 // Validation errors messages for Parsley
 
 // Load this after Parsley
 
-/* 22 */
+/* 23 */
 
 /*! Bootstrap 4 integration for DataTables' Responsive
  * ©2016 SpryMedia Ltd - datatables.net/license
  */
-
-/* 23 */
 
 /* 24 */
 
@@ -14983,11 +14983,13 @@
 
 /* 27 */
 
+/* 28 */
+
 /*! Bootstrap integration for DataTables' Buttons
  * ©2016 SpryMedia Ltd - datatables.net/license
  */
 
-/* 28 */
+/* 29 */
 
 /*! FixedColumns 3.3.1
  * ©2010-2020 SpryMedia Ltd - datatables.net/license
@@ -15560,7 +15562,7 @@
 
 // Make FixedColumns accessible from the DataTables instance
 
-/* 29 */
+/* 30 */
 
 /*! FixedHeader 3.1.7
  * ©2009-2020 SpryMedia Ltd - datatables.net/license
@@ -15763,7 +15765,7 @@
 
 // DataTables API methods
 
-/* 30 */
+/* 31 */
 
 // ESM COMPAT FLAG
 
@@ -15892,6 +15894,75 @@
 // return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test();
 
 // Escape selector
+
+/**
+   * List positions
+   * @return {string}
+   */
+
+/**
+   * Show tip toast
+   * 
+   * @param  {sting} title
+   * @param  {string|undefined} message
+   * @param  {bottom-right|bottom-left|top-right|top-left|undefined} position
+   * @return {void}
+   */
+
+/**
+   * Show info toast
+   * 
+   * @param  {sting} title
+   * @param  {string|undefined} message
+   * @param  {bottom-right|bottom-left|top-right|top-left|undefined} position
+   * @return {void}
+   */
+
+/**
+   * Show success toast
+   * 
+   * @param  {sting} title
+   * @param  {string|undefined} message
+   * @param  {bottom-right|bottom-left|top-right|top-left|undefined} position
+   * @return {void}
+   */
+
+/**
+   * Show warning toast
+   * 
+   * @param  {sting} title
+   * @param  {string|undefined} message
+   * @param  {bottom-right|bottom-left|top-right|top-left|undefined} position
+   * @return {void}
+   */
+
+/**
+   * Show alert toast
+   * 
+   * @param  {sting} title
+   * @param  {string} message
+   * @param  {bottom-right|bottom-left|top-right|top-left} position
+   * @return {void}
+   */
+
+/**
+   * Show toast
+   * 
+   * @param  {tip|info|success|warning|alert} type
+   * @param  {string} title
+   * @param  {string} message
+   * @param  {bottom-right|bottom-left|top-right|top-left} position
+   * @return {void}
+   */
+
+/**
+   * Expand argument
+   * 
+   * @param  {sting} title
+   * @param  {string|undefined} message
+   * @param  {bottom-right|bottom-left|top-right|top-left|undefined} position
+   * @return {string[]}
+   */
 
 // EXTERNAL MODULE: ./src/components/DataTable.js
 

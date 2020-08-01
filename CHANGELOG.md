@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.24] - 2020-08-01
+
+- Added notification module(./src/components/Notifier.js) and example(./documentation/ui-notifications.html).
+
 ## [0.0.23] - 2020-07-30
 
 - Changed to return the processing result of promise after closing it with modal base class.  

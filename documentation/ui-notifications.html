@@ -47,7 +47,7 @@
                             <a href="#">
                               <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
                               <div class="notification-info">
-                                <div class="text"><span class="user-name">Jessica Caruso</span> accepted your invitation to join the team.</div>
+                                <div class="text"><span class="user-name">Jessica Caruso</span>accepted your invitation to join the team.</div>
                                 <span class="date">2 min ago</span>
                               </div>
                             </a>
@@ -56,7 +56,7 @@
                             <a href="#">
                               <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
                               <div class="notification-info">
-                                <div class="text"><span class="user-name">Joel King</span> is now following you</div>
+                                <div class="text"><span class="user-name">Joel King</span>is now following you</div>
                                 <span class="date">2 days ago</span>
                               </div>
                             </a>
@@ -65,7 +65,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="footer"> <a href="#">View all notifications</a></div>
+                  <div class="footer"><a href="#">View all notifications</a></div>
                 </li>
               </ul>
             </li>
@@ -86,7 +86,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="footer"> <a href="#">More</a></div>
+                  <div class="footer"><a href="#">More</a></div>
                 </li>
               </ul>
             </li>
@@ -147,26 +147,22 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="card">
-              <div class="card-header card-header-divider">Notification<span class="card-subtitle">Default Gritter notifications styles</span></div>
+              <div class="card-header card-header-divider">Notification<span class="card-subtitle">Default notifications styles</span></div>
               <div class="card-body">
-                <p>You can choose between use the basic, gritter Notification style or our theme based notification, just have fun with them.</p>
                 <p class="mt-6 mb-4 text-center">
-                  <button class="btn btn-space btn-secondary" id="not-basic" type="button"> Basic</button>
-                  <button class="btn btn-space btn-primary" id="not-theme" type="button"> Theme Style</button>
-                  <button class="btn btn-space btn-primary" id="not-text" type="button"> Just Text</button>
+                  <button class="btn btn-space btn-secondary" id="notBasic" type="button">Basic</button>
+                  <button class="btn btn-space btn-primary" id="notNoTitle" type="button">No title</button>
                 </p>
               </div>
             </div>
             <div class="card">
-              <div class="card-header card-header-divider">Color States<span class="card-subtitle">Gritter notifications with template color states</span></div>
+              <div class="card-header card-header-divider">Color States<span class="card-subtitle">Notifications with template color states</span></div>
               <div class="card-body">
-                <p>You can choose between use the basic, gritter Notification style or our theme based notification, just have fun with them.</p>
                 <p class="mt-6 text-center">
-                  <button class="btn btn-space btn-success" id="not-success">Success</button>
-                  <button class="btn btn-space btn-primary" id="not-primary">Primary</button>
-                  <button class="btn btn-space btn-warning" id="not-warning">Warning</button>
-                  <button class="btn btn-space btn-danger" id="not-danger">Danger</button>
-                  <button class="btn btn-space btn-secondary" id="not-dark">Dark Color</button>
+                  <button class="btn btn-space btn-info" id="notInfo">Info</button>
+                  <button class="btn btn-space btn-success" id="notSuccess">Success</button>
+                  <button class="btn btn-space btn-warning" id="notWarning">Warning</button>
+                  <button class="btn btn-space btn-danger" id="notAlert">Alert</button>
                 </p>
               </div>
             </div>
@@ -175,12 +171,11 @@
             <div class="card">
               <div class="card-header card-header-divider">Positions<span class="card-subtitle">Gritter notifications in different screen positions</span></div>
               <div class="card-body">
-                <p>You can change gritter position easily by plugin options.</p>
                 <p class="mt-6 text-center">
-                  <button class="btn btn-space btn-primary" id="not-tr" type="button">Top Right</button>
-                  <button class="btn btn-space btn-primary" id="not-tl" type="button">Top Left</button>
-                  <button class="btn btn-space btn-primary" id="not-bl" type="button">Bottom Left</button>
-                  <button class="btn btn-space btn-primary" id="not-br" type="button">Bottom Right</button>
+                  <button class="btn btn-space btn-primary" id="notTr" type="button">Top Right</button>
+                  <button class="btn btn-space btn-primary" id="notTl" type="button">Top Left</button>
+                  <button class="btn btn-space btn-primary" id="notBl" type="button">Bottom Left</button>
+                  <button class="btn btn-space btn-primary" id="notBr" type="button">Bottom Right</button>
                 </p>
               </div>
             </div>
@@ -235,15 +230,6 @@
                             <div class="user-data2">
                               <span class="status"></span>
                               <span class="name">Mike Bolthort</span>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="user">
-                          <a href="#">
-                            <img src="images/avatar.svg" alt="Avatar">
-                            <div class="user-data2">
-                              <span class="status"></span>
-                              <span class="name">Maggie jackson</span>
                             </div>
                           </a>
                         </div>
@@ -317,13 +303,6 @@
                             <label class="custom-control-label" for="tck4">Initialize the project</label>
                           </div>
                         </li>
-                        <li>
-                          <div class="custom-checkbox custom-control custom-control-sm">
-                            <span class="delete mdi mdi-delete"></span>
-                            <input class="custom-control-input" type="checkbox" id="tck5">
-                            <label class="custom-control-label" for="tck5">Create the main structure</label>
-                          </div>
-                        </li>
                       </ul>
                     </div>
                   </div>
@@ -362,27 +341,6 @@
                       </div>
                       <span class="name">Email notifications</span>
                     </li>
-                    <li>
-                      <div class="switch-button switch-button-sm">
-                        <input type="checkbox" checked name="st5" id="st5">
-                        <span><label for="st5"></label></span>
-                      </div>
-                      <span class="name">Project updates</span>
-                    </li>
-                    <li>
-                      <div class="switch-button switch-button-sm">
-                        <input type="checkbox" checked name="st6" id="st6">
-                        <span><label for="st6"></label></span>
-                      </div>
-                      <span class="name">New comments</span>
-                    </li>
-                    <li>
-                      <div class="switch-button switch-button-sm">
-                        <input type="checkbox" name="st7" id="st7">
-                        <span><label for="st7"></label></span>
-                      </div>
-                      <span class="name">Chat messages</span>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -392,5 +350,23 @@
       </div>
     </nav>
   </div>
+  <script type="module">
+    import { init, Notifier, $ } from '../dist/build.js';
+
+    // Theme initialization
+    init();
+
+    // Show Notification
+    $('#notBasic').on('click', event => Notifier.tip('Title', 'Message'));
+    $('#notNoTitle').on('click', event => Notifier.tip('Message'));
+    $('#notInfo').on('click', event => Notifier.info('Message'));
+    $('#notSuccess').on('click', event => Notifier.success('Message'));
+    $('#notWarning').on('click', event => Notifier.warning('Message'));
+    $('#notAlert').on('click', event => Notifier.alert('Message'));
+    $('#notTr').on('click', event => Notifier.tip('Message', Notifier.position.TOP_RIGHT));
+    $('#notTl').on('click', event => Notifier.tip('Message', Notifier.position.TOP_LEFT));
+    $('#notBl').on('click', event => Notifier.tip('Message', Notifier.position.BOTTOM_LEFT));
+    $('#notBr').on('click', event => Notifier.tip('Message', Notifier.position.BOTTOM_RIGHT));
+  </script>
 </body>
 </html>
