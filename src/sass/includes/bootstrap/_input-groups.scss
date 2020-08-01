@@ -2,90 +2,90 @@
   [Input Groups]
 */
 
-//Search input component
-.input-search {
+// Search input component
+// .input-search {
 
-  input{
-    border: 1px solid $input-border-color;
-    border-radius: 0;
-    display: block;
-    font-size: $font-size-base;
+//   input{
+//     border: 1px solid $input-border-color;
+//     border-radius: 0;
+//     display: block;
+//     font-size: $font-size-base;
 
-    &:focus{
-      background-color: transparent;
-    }
-  }
+//     &:focus{
+//       background-color: transparent;
+//     }
+//   }
 
-  .input-group-btn {
-    position: absolute;
-    right: 0;
-    display: block;
-    width: auto;
-    top: 1px;
-    right: 1px;
-    z-index: 3;
+//   .input-group-btn {
+//     // position: absolute;
+//     // right: 0;
+//     display: block;
+//     width: auto;
+//     // top: 1px;
+//     // right: 1px;
+//     // z-index: 3;
 
-    button{
-      box-shadow: none;
-      border: none;
-      height: auto;
-      // height: $input-height - .1538rem;
+//     button{
+//       box-shadow: none;
+//       border: none;
+//       height: auto;
+//       // height: $input-height - .1538rem;
 
-      &:active{
-        background-color: transparent;
-        box-shadow: none;
-      }
+//       &:active{
+//         background-color: transparent;
+//         box-shadow: none;
+//       }
 
-      .icon{
-        font-size: 1.923rem;
-        color: lighten($body-color, 20%);
-      }
+//       .icon{
+//         font-size: 1.923rem;
+//         color: lighten($body-color, 20%);
+//       }
 
-      &:hover{
+//       &:hover{
 
-        .icon{
-          color: lighten($body-color, 10%);
-        }
-      }
-    }
-  }
+//         .icon{
+//           color: lighten($body-color, 10%);
+//         }
+//       }
+//     }
+//   }
 
-  &.input-group-lg{
+//   &.input-group-lg{
 
-    .input-group-btn {
+//     .input-group-btn {
 
-      button{
-        height: auto;
-        // height: $input-height-lg - .1538rem;
-      }
-    }
-  }
+//       button{
+//         height: auto;
+//         // height: $input-height-lg - .1538rem;
+//       }
+//     }
+//   }
 
-  &.input-group-sm{
+//   &.input-group-sm{
 
-    .input-group-btn{
+//     .input-group-btn{
 
-      button{
-        height: auto;
-        // height: $input-height-sm + .4rem;
+//       button{
+//         height: auto;
+//         // height: $input-height-sm + .4rem;
 
-        &:active,
-        &:active:hover {
-          background-color: transparent;
-          box-shadow: none;
+//         &:active,
+//         &:active:hover {
+//           background-color: transparent;
+//           box-shadow: none;
 
-          .icon {
-            color: theme-color("primary");
-          }
-        }
+//           .icon {
+//             color: theme-color("primary");
+//           }
+//         }
 
-        .icon{
-          font-size: 1.692rem;
-        }
-      }
-    }
-  }
-}
+//         .icon{
+//           font-size: 1.692rem;
+//         }
+//       }
+//     }
+//   }
+// }
 
 .input-group-lg{
 

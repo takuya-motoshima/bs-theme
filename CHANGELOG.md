@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.25] - 2020-08-01
+
+- Added alert UI example(./documentation/ui-alerts.html).
+- Added card UI example(./documentation/ui-cards.html).
+- Added panel UI example(./documentation/ui-panels.html).
+- Added General UI example(./documentation/ui-general.html).
+- Added icon UI example(./documentation/ui-icons.html).
+- Added grid system example(./documentation/ui-grid.html).
+- Added tab and accordion example(./documentation/ui-tabs-accordions.html).
+- Added tab and accordion example(./documentation/ui-tabs-accordions.html).
+- Added typography example(./documentation/ui-typography.html).
+
 ## [0.0.24] - 2020-08-01
 
 - Added notification module(./src/components/Notifier.js) and example(./documentation/ui-notifications.html).

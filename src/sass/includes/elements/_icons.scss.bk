@@ -59,7 +59,7 @@
 }
 
 //Filter icons
-.icons-list {
+.bt-icons-list{
 
   &.hide-icons{
   

@@ -14,7 +14,7 @@
         <div class="bt-navbar-header">
           <a class="navbar-brand" href="index.html"></a>
         </div>
-        <div class="page-title"><span>UI Notification</span></div>
+        <div class="page-title"><span>UI Card</span></div>
         <div class="bt-right-navbar">
           <ul class="nav navbar-nav float-right bt-user-nav">
             <li class="nav-item dropdown">
@@ -96,7 +96,7 @@
     </nav>
     <div class="bt-left-sidebar">
       <div class="left-sidebar-wrapper">
-        <a class="left-sidebar-toggle" href="#">UI Notification</a>
+        <a class="left-sidebar-toggle" href="#">UI Card</a>
         <div class="left-sidebar-spacer">
           <div class="left-sidebar-scroll">
             <div class="left-sidebar-content">
@@ -109,12 +109,12 @@
                   <a href="#"><i class="icon mdi mdi-face"></i><span>UI</span></a>
                   <ul class="sub-menu">
                     <li><a href="ui-alerts.html">Alert</a></li>
-                    <li><a href="ui-buttons.html">Buttons</a></li>
-                    <li><a href="ui-cards.html">Card</a></li>
+                    <li><a href="ui-buttons.html">Button</a></li>
+                    <li class="active"><a href="ui-cards.html">Card</a></li>
                     <li><a href="ui-panels.html">Panel</a></li>
                     <li><a href="ui-general.html">General</a></li>
                     <li><a href="ui-modals.html">Modal</a></li>
-                    <li class="active"><a href="ui-notifications.html">Notification</a></li>
+                    <li><a href="ui-notifications.html">Notification</a></li>
                     <li><a href="ui-icons.html">Icon</a></li>
                     <li><a href="ui-grid.html">Grid</a></li>
                     <li><a href="ui-tabs-accordions.html">Tab &amp; Accordion</a></li>
@@ -142,49 +142,271 @@
     </div>
     <div class="bt-content">
       <div class="page-head">
-        <h2 class="page-head-title">Notification</h2>
+        <h2 class="page-head-title">Card</h2>
         <nav aria-label="breadcrumb" role="navigation">
           <ol class="breadcrumb page-head-nav">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="#">UI</a></li>
-            <li class="breadcrumb-item active">Notification</li>
+            <li class="breadcrumb-item active">Card</li>
           </ol>
         </nav>
       </div>
       <div class="main-content container-fluid">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <div class="card">
-              <div class="card-header card-header-divider">Notification<span class="card-subtitle">Default notifications styles</span></div>
+              <div class="card-header">Card with links</div>
               <div class="card-body">
-                <p class="mt-6 mb-4 text-center">
-                  <button class="btn btn-space btn-secondary" id="notBasic" type="button">Basic</button>
-                  <button class="btn btn-space btn-primary" id="notNoTitle" type="button">No title</button>
-                </p>
+                <p>Some messages</p>
+                <a class="card-link" href="#">Card link</a><a class="card-link" href="#">Another link</a>
               </div>
             </div>
+          </div>
+          <div class="col-lg-4">
             <div class="card">
-              <div class="card-header card-header-divider">Color States<span class="card-subtitle">Notifications with template color states</span></div>
+              <div class="card-header">Card with button</div>
               <div class="card-body">
-                <p class="mt-6 text-center">
-                  <button class="btn btn-space btn-info" id="notInfo">Info</button>
-                  <button class="btn btn-space btn-success" id="notSuccess">Success</button>
-                  <button class="btn btn-space btn-warning" id="notWarning">Warning</button>
-                  <button class="btn btn-space btn-danger" id="notAlert">Alert</button>
-                </p>
+                <p>Some messages</p>
+                <a class="btn btn-primary" href="#">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3"><img class="card-img-top" src="images/346x106.png" alt="Placeholder">
+              <div class="card-body">
+                <p class="card-text-no-title">Some messages</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-3"><img class="card-img-top" src="images/342x239.png" alt="Placeholder">
+              <div class="card-header">Card with image and links</div>
+              <div class="card-body">
+                <p>Some messages</p>
+                <a class="card-link" href="#">Card link</a><a class="card-link" href="#">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3"><img class="card-img-top" src="images/342x239.png" alt="Placeholder">
+              <div class="card-header">Card with image and button</div>
+              <div class="card-body">
+                <p>Some messages</p>
+                <a class="btn btn-primary" href="#">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card"><img class="card-img-top" src="images/342x239.png" alt="Placeholder">
+              <div class="card-header">Card with image and list</div>
+              <div class="card-body">
+                <p class="mb-0">Some messages</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card card-contrast">
+              <div class="card-header card-header-contrast card-header-featured">Featured</div>
+              <div class="card-body">
+                <div class="card-title">Card with Header</div>
+                <p>Some messages</p>
+                <a class="btn btn-primary" href="#">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="card card-contrast">
+              <div class="card-header card-header-contrast card-header-featured">Quote</div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Some messages</p>
+                  <footer class="blockquote-footer">Fringilla ante nec tincidunt.</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card card-contrast text-center">
+              <div class="card-header card-header-contrast card-header-featured">Featured</div>
+              <div class="card-body">
+                <div class="card-title">Card with Header and Footer</div>
+                <p>Some messages</p>
+                <a class="btn btn-primary" href="#">Go somewhere</a>
+              </div>
+              <div class="card-footer card-footer-contrast text-muted">2 days ago</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">Card align left</div>
+              <div class="card-body">
+                <p>Some messages</p>
+                <a class="btn btn-primary" href="#">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-center">
+              <div class="card-header">Card align center</div>
+              <div class="card-body">
+                <p>Some messages</p>
+                <a class="btn btn-primary" href="#">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-right">
+              <div class="card-header">Card align right</div>
+              <div class="card-body">
+                <p>Some messages</p>
+                <a class="btn btn-primary" href="#">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="tab-container">
+              <ul class="nav nav-tabs nav-tabs-classic" role="tablist">
+                <li class="nav-item"><a class="nav-link active" href="#active" data-toggle="tab" role="tab">Active</a></li>
+                <li class="nav-item"><a class="nav-link" href="#link" data-toggle="tab" role="tab">Link</a></li>
+                <li class="nav-item"><a class="nav-link disabled" href="#disabled" data-toggle="tab" role="tab">Disabled</a></li>
+              </ul>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active" id="active" role="tabpanel">
+                <div class="card text-center">
+                  <div class="card-header">Card with tabs complete</div>
+                  <div class="card-body">
+                    <p>Some messages</p>
+                    <a class="btn btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="link" role="tabpanel">
+                <div class="card">
+                  <div class="card-header">Card with tabs complete</div>
+                  <div class="card-body">
+                    <p>Some messages</p>
+                    <a class="btn btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="disabled" role="tabpanel">
+                <div class="card text-right">
+                  <div class="card-header">Card with tabs complete</div>
+                  <div class="card-body">
+                    <p>Some messages</p>
+                    <a class="btn btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tab-container">
+              <ul class="nav nav-tabs card-nav-tabs" role="tablist">
+                <li class="nav-item"><a class="nav-link active" href="#active2" data-toggle="tab" role="tab">Active</a></li>
+                <li class="nav-item"><a class="nav-link" href="#link2" data-toggle="tab" role="tab">Link</a></li>
+                <li class="nav-item"><a class="nav-link disabled" href="#disabled2" data-toggle="tab" role="tab">Disabled</a></li>
+              </ul>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active" id="active2" role="tabpanel">
+                <div class="card text-center">
+                  <div class="card-header">Card with tabs complete</div>
+                  <div class="card-body">
+                    <p>Some messages</p>
+                    <a class="btn btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="link2" role="tabpanel">
+                <div class="card">
+                  <div class="card-header">Card with tabs complete</div>
+                  <div class="card-body">
+                    <p>Some messages</p>
+                    <a class="btn btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="disabled2" role="tabpanel">
+                <div class="card text-right">
+                  <div class="card-header">Card with tabs complete</div>
+                  <div class="card-body">
+                    <p>Some messages</p>
+                    <a class="btn btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card"><img class="card-img-top" src="images/529x161.png" alt="Placeholder">
+              <div class="card-header">Card with image top</div>
+              <div class="card-body">
+                <p>Some messages</p>
+                <p> <small class="text-muted">Last update 3 mins ago</small></p>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="card">
-              <div class="card-header card-header-divider">Positions<span class="card-subtitle">Gritter notifications in different screen positions</span></div>
+              <div class="card-header">Card with image bottom</div>
               <div class="card-body">
-                <p class="mt-6 text-center">
-                  <button class="btn btn-space btn-primary" id="notTr" type="button">Top Right</button>
-                  <button class="btn btn-space btn-primary" id="notTl" type="button">Top Left</button>
-                  <button class="btn btn-space btn-primary" id="notBl" type="button">Bottom Left</button>
-                  <button class="btn btn-space btn-primary" id="notBr" type="button">Bottom Right</button>
-                </p>
+                <p>Some messages</p>
+                <p> <small class="text-muted">Last updated 3 mins ago</small></p>
+              </div><img class="card-img-bottom" src="images/529x161.png" alt="Placeholder">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card bg-dark text-white"><img class="card-img" src="images/1088x336.png" alt="Placeholder">
+              <div class="card-img-overlay card-img-overlay-center">
+                <div class="card-title">Card with image overlays</div>
+                <p>Some messages</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card-group">
+              <div class="card card-contrast"><img class="card-img-top" src="images/362x239.png" alt="Placeholder">
+                <div class="card-header">Card groups</div>
+                <div class="card-body">
+                  <p>Some messages</p>
+                </div>
+                <div class="card-footer card-footer-contrast text-muted">Last updated 3 mins ago</div>
+              </div>
+              <div class="card card-contrast"><img class="card-img-top" src="images/362x239.png" alt="Placeholder">
+                <div class="card-header">Card groups</div>
+                <div class="card-body">
+                  <p>Some messages</p>
+                </div>
+                <div class="card-footer card-footer-contrast text-muted">Last updated 3 mins ago</div>
+              </div>
+              <div class="card card-contrast"><img class="card-img-top" src="images/362x239.png" alt="Placeholder">
+                <div class="card-header">Card groups</div>
+                <div class="card-body">
+                  <p>Some messages</p>
+                </div>
+                <div class="card-footer card-footer-contrast text-muted">Last updated 3 mins ago</div>
               </div>
             </div>
           </div>
@@ -359,22 +581,10 @@
     </nav>
   </div>
   <script type="module">
-    import { init, Notifier, $ } from '../dist/build.js';
+    import { init } from '../dist/build.js';
 
     // Theme initialization
     init();
-
-    // Show Notification
-    $('#notBasic').on('click', event => Notifier.tip('Title', 'Some messages'));
-    $('#notNoTitle').on('click', event => Notifier.tip('Some messages'));
-    $('#notInfo').on('click', event => Notifier.info('Some messages'));
-    $('#notSuccess').on('click', event => Notifier.success('Some messages'));
-    $('#notWarning').on('click', event => Notifier.warning('Some messages'));
-    $('#notAlert').on('click', event => Notifier.alert('Some messages'));
-    $('#notTr').on('click', event => Notifier.tip('Some messages', Notifier.position.TOP_RIGHT));
-    $('#notTl').on('click', event => Notifier.tip('Some messages', Notifier.position.TOP_LEFT));
-    $('#notBl').on('click', event => Notifier.tip('Some messages', Notifier.position.BOTTOM_LEFT));
-    $('#notBr').on('click', event => Notifier.tip('Some messages', Notifier.position.BOTTOM_RIGHT));
   </script>
 </body>
 </html>

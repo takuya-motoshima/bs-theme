@@ -566,7 +566,8 @@ $card-heading-icon-size:                1.538rem !default;
 $card-heading-icon-separation:          2px !default;
 $card-heading-icon-line-height:         25px !default;
 $card-margin-bottom:                    25px !default;
-$card-box-shadow:                       0 0 4px 0 rgba(0,0,0,0.04) !default;
+$card-box-shadow:                       0px 10px 30px 0px rgba(0, 0, 0, 0.1) !default;
+// $card-box-shadow:                       0 0 4px 0 rgba(0,0,0,0.04) !default;
 
 $widget-heading-font-size:              1.385rem !default;
 $widget-heading-font-weight:            300 !default;
@@ -582,7 +583,8 @@ $btn-font-size-base:                    .875rem !default;
 $btn-line-height-base:                  40px !default;
 // $btn-line-height-base:                  28px !default;
 $btn-border-radius-base:                2px !default;
-$btn-box-shadow-base:                   0 !default;
+$btn-box-shadow-base:                   none !default;
+// $btn-box-shadow-base:                   0 1px 0 rgba(0, 0, 0, .05) !default;
 
 $btn-primary-color:                     $white !default;
 $btn-primary-bg:                        theme-color("primary");

@@ -14,7 +14,7 @@
         <div class="bt-navbar-header">
           <a class="navbar-brand" href="index.html"></a>
         </div>
-        <div class="page-title"><span>UI Notification</span></div>
+        <div class="page-title"><span>UI Panel</span></div>
         <div class="bt-right-navbar">
           <ul class="nav navbar-nav float-right bt-user-nav">
             <li class="nav-item dropdown">
@@ -96,7 +96,7 @@
     </nav>
     <div class="bt-left-sidebar">
       <div class="left-sidebar-wrapper">
-        <a class="left-sidebar-toggle" href="#">UI Notification</a>
+        <a class="left-sidebar-toggle" href="#">UI Panel</a>
         <div class="left-sidebar-spacer">
           <div class="left-sidebar-scroll">
             <div class="left-sidebar-content">
@@ -109,12 +109,12 @@
                   <a href="#"><i class="icon mdi mdi-face"></i><span>UI</span></a>
                   <ul class="sub-menu">
                     <li><a href="ui-alerts.html">Alert</a></li>
-                    <li><a href="ui-buttons.html">Buttons</a></li>
+                    <li><a href="ui-buttons.html">Button</a></li>
                     <li><a href="ui-cards.html">Card</a></li>
-                    <li><a href="ui-panels.html">Panel</a></li>
+                    <li class="active"><a href="ui-panels.html">Panel</a></li>
                     <li><a href="ui-general.html">General</a></li>
                     <li><a href="ui-modals.html">Modal</a></li>
-                    <li class="active"><a href="ui-notifications.html">Notification</a></li>
+                    <li><a href="ui-notifications.html">Notification</a></li>
                     <li><a href="ui-icons.html">Icon</a></li>
                     <li><a href="ui-grid.html">Grid</a></li>
                     <li><a href="ui-tabs-accordions.html">Tab &amp; Accordion</a></li>
@@ -142,49 +142,240 @@
     </div>
     <div class="bt-content">
       <div class="page-head">
-        <h2 class="page-head-title">Notification</h2>
+        <h2 class="page-head-title">Panel</h2>
         <nav aria-label="breadcrumb" role="navigation">
           <ol class="breadcrumb page-head-nav">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="#">UI</a></li>
-            <li class="breadcrumb-item active">Notification</li>
+            <li class="breadcrumb-item active">Panel</li>
           </ol>
         </nav>
       </div>
       <div class="main-content container-fluid">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header card-header-divider">Notification<span class="card-subtitle">Default notifications styles</span></div>
+          <div class="col-lg-4">
+            <div class="card card-flat">
+              <div class="card-header">Flat Card</div>
               <div class="card-body">
-                <p class="mt-6 mb-4 text-center">
-                  <button class="btn btn-space btn-secondary" id="notBasic" type="button">Basic</button>
-                  <button class="btn btn-space btn-primary" id="notNoTitle" type="button">No title</button>
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header card-header-divider">Color States<span class="card-subtitle">Notifications with template color states</span></div>
-              <div class="card-body">
-                <p class="mt-6 text-center">
-                  <button class="btn btn-space btn-info" id="notInfo">Info</button>
-                  <button class="btn btn-space btn-success" id="notSuccess">Success</button>
-                  <button class="btn btn-space btn-warning" id="notWarning">Warning</button>
-                  <button class="btn btn-space btn-danger" id="notAlert">Alert</button>
-                </p>
+                <p>Some messages</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header card-header-divider">Positions<span class="card-subtitle">Gritter notifications in different screen positions</span></div>
+          <div class="col-lg-4">
+            <div class="card card-default">
+              <div class="card-header"> 
+                <div class="tools"><span class="icon s7-upload"></span><span class="icon s7-edit"></span><span class="icon s7-close"></span></div><span class="title">Default Card</span>
+              </div>
               <div class="card-body">
-                <p class="mt-6 text-center">
-                  <button class="btn btn-space btn-primary" id="notTr" type="button">Top Right</button>
-                  <button class="btn btn-space btn-primary" id="notTl" type="button">Top Left</button>
-                  <button class="btn btn-space btn-primary" id="notBl" type="button">Bottom Left</button>
-                  <button class="btn btn-space btn-primary" id="notBr" type="button">Bottom Right</button>
-                </p>
+                <p>Some messages</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-border">
+              <div class="card-header"><span class="title">Card with border</span></div>
+              <div class="card-body">
+                <p>Some messages</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header card-header-divider">Card with subtitle<span class="card-subtitle">Card subtitle</span></div>
+              <div class="card-body">
+                <p>Some messages</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-default">
+              <div class="card-header card-header-divider">Dismissable card
+                <div class="tools"><span class="icon mdi mdi-close"></span></div><span class="card-subtitle">Card subtitle</span>
+              </div>
+              <div class="card-body">
+                <p>Some messages</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-border">
+              <div class="card-header card-header-divider">Card with tools
+                <div class="tools dropdown"><span class="icon mdi mdi-edit"></span><span class="icon mdi mdi-refresh-sync"></span><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
+                  <div class="dropdown-menu float-right" role="menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div><span class="card-subtitle">Card subtitle</span>
+              </div>
+              <div class="card-body">
+                <p>Some messages</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card card-contrast">
+              <div class="card-header card-header-contrast">Heading contrast<span class="card-subtitle">Card subtitle</span></div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-default card-contrast">
+              <div class="card-header">Body contrast
+                <div class="tools"><span class="icon mdi mdi-close"></span></div><span class="card-subtitle">Card subtitle</span>
+              </div>
+              <div class="card-body card-body-contrast">
+                <p>Some messages</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-border card-contrast">
+              <div class="card-header card-header-contrast">Card with body contrast
+                <div class="tools"><span class="icon mdi mdi-refresh-sync"></span><span class="icon mdi mdi-close"></span></div><span class="card-subtitle">Card subtitle</span>
+              </div>
+              <div class="card-body">
+                <p>Some messages</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card card-border-color card-border-color-primary">
+              <div class="card-header">Border primary</div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-border-color card-border-color-danger">
+              <div class="card-header">Border danger</div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-border-color card-border-color-warning">
+              <div class="card-header">Border warning</div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card card-border-color card-border-color-success">
+              <div class="card-header">Border success</div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-border-color">
+              <div class="card-header">Border default</div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-border-color card-border-color-dark">
+              <div class="card-header">Border dark</div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card card-full-primary">
+              <div class="card-header">Primary Card</div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-full-danger">
+              <div class="card-header">Danger Card</div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-full-warning">
+              <div class="card-header">Warning Card</div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card card-full-success">
+              <div class="card-header">Success Card</div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-full">
+              <div class="card-header">Default Full Card</div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-full-dark">
+              <div class="card-header">Dark Card</div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card card-full-color card-full-primary">
+              <div class="card-header card-header-contrast">Primary Contrast Card
+                <div class="tools"><span class="icon mdi mdi-close"></span></div><span class="card-subtitle">Card subtitle</span>
+              </div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-full-color card-full-danger">
+              <div class="card-header card-header-contrast">Danger Contrast Card
+                <div class="tools"><span class="icon mdi mdi-close"></span></div><span class="card-subtitle">Card subtitle</span>
+              </div>
+              <div class="card-body">
+                <p>Some messages </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-full-color card-full-warning">
+              <div class="card-header card-header-contrast">Warning Contrast Card
+                <div class="tools"><span class="icon mdi mdi-close"></span></div><span class="card-subtitle">Card subtitle</span>
+              </div>
+              <div class="card-body">
+                <p>Some messages </p>
               </div>
             </div>
           </div>
@@ -359,22 +550,10 @@
     </nav>
   </div>
   <script type="module">
-    import { init, Notifier, $ } from '../dist/build.js';
+    import { init } from '../dist/build.js';
 
     // Theme initialization
     init();
-
-    // Show Notification
-    $('#notBasic').on('click', event => Notifier.tip('Title', 'Some messages'));
-    $('#notNoTitle').on('click', event => Notifier.tip('Some messages'));
-    $('#notInfo').on('click', event => Notifier.info('Some messages'));
-    $('#notSuccess').on('click', event => Notifier.success('Some messages'));
-    $('#notWarning').on('click', event => Notifier.warning('Some messages'));
-    $('#notAlert').on('click', event => Notifier.alert('Some messages'));
-    $('#notTr').on('click', event => Notifier.tip('Some messages', Notifier.position.TOP_RIGHT));
-    $('#notTl').on('click', event => Notifier.tip('Some messages', Notifier.position.TOP_LEFT));
-    $('#notBl').on('click', event => Notifier.tip('Some messages', Notifier.position.BOTTOM_LEFT));
-    $('#notBr').on('click', event => Notifier.tip('Some messages', Notifier.position.BOTTOM_RIGHT));
   </script>
 </body>
 </html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <title>Bootstrap4 Theme</title>
+  <link rel="stylesheet" href="../dist/build.css" type="text/css"/>
+</head>
+<body>
+  <div class="bt-wrapper bt-fixed-sidebar">
+    <nav class="navbar navbar-expand fixed-top bt-top-header">
+      <div class="container-fluid">
+        <div class="bt-navbar-header">
+          <a class="navbar-brand" href="index.html"></a>
+        </div>
+        <div class="page-title"><span>UI Tab &amp; Accordion</span></div>
+        <div class="bt-right-navbar">
+          <ul class="nav navbar-nav float-right bt-user-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                <i class="user-icon far fa-user-circle"></i>
+                <span class="user-name">John Smith</span>
+              </a>
+              <div class="dropdown-menu" role="menu">
+                <div class="user-info">
+                  <div class="user-name">John Smith</div>
+                  <div class="user-position online">Available</div>
+                </div>
+                <a class="dropdown-item" href="pages-profile.html"><span class="icon mdi mdi-face"></span>Account</a>
+                <a class="dropdown-item" href="#"><span class="icon mdi mdi-settings"></span>Settings</a>
+                <a class="dropdown-item" href="pages-login.html"><span class="icon mdi mdi-power"></span>Logout</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav float-right bt-icons-nav">
+            <li class="nav-item dropdown"><a class="nav-link bt-toggle-right-sidebar" href="#" role="button" aria-expanded="false"><span class="icon mdi mdi-settings"></span></a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="icon mdi mdi-notifications"></span><span class="indicator"></span></a>
+              <ul class="dropdown-menu bt-notifications">
+                <li>
+                  <div class="title">Notification<span class="badge badge-pill">3</span></div>
+                  <div class="list">
+                    <div class="bt-scroller-notifications">
+                      <div class="content">
+                        <ul>
+                          <li class="notification notification-unread">
+                            <a href="#">
+                              <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
+                              <div class="notification-info">
+                                <div class="text"><span class="user-name">Jessica Caruso</span>accepted your invitation to join the team.</div>
+                                <span class="date">2 min ago</span>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="notification">
+                            <a href="#">
+                              <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
+                              <div class="notification-info">
+                                <div class="text"><span class="user-name">Joel King</span>is now following you</div>
+                                <span class="date">2 days ago</span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer"><a href="#">View all notifications</a></div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="icon mdi mdi-apps"></span></a>
+              <ul class="dropdown-menu bt-connections">
+                <li>
+                  <div class="list">
+                    <div class="content">
+                      <div class="row">
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Github"><span>Sample</span></a></div>
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                      </div>
+                      <div class="row">
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                        <div class="col"><a class="connection-item" href="#"><img src="images/store.svg" alt="Sample"><span>Sample</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer"><a href="#">More</a></div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bt-left-sidebar">
+      <div class="left-sidebar-wrapper">
+        <a class="left-sidebar-toggle" href="#">UI Tab &amp; Accordion</a>
+        <div class="left-sidebar-spacer">
+          <div class="left-sidebar-scroll">
+            <div class="left-sidebar-content">
+              <ul class="sidebar-elements">
+                <li class="divider">Menu</li>
+                <li>
+                  <a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
+                </li>
+                <li class="parent active open">
+                  <a href="#"><i class="icon mdi mdi-face"></i><span>UI</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="ui-alerts.html">Alert</a></li>
+                    <li><a href="ui-buttons.html">Button</a></li>
+                    <li><a href="ui-cards.html">Card</a></li>
+                    <li><a href="ui-panels.html">Panel</a></li>
+                    <li><a href="ui-general.html">General</a></li>
+                    <li><a href="ui-modals.html">Modal</a></li>
+                    <li><a href="ui-notifications.html">Notification</a></li>
+                    <li><a href="ui-icons.html">Icon</a></li>
+                    <li><a href="ui-grid.html">Grid</a></li>
+                    <li class="active"><a href="ui-tabs-accordions.html">Tab &amp; Accordion</a></li>
+                    <li><a href="ui-typography.html">Typography</a></li>
+                  </ul>
+                </li>
+                <li class="parent">
+                  <a href="#"><i class="icon mdi mdi-dot-circle"></i><span>Form</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="form-elements.html">Element</a></li>
+                    <li><a href="form-validation.html">Validation</a></li>
+                  </ul>
+                </li>
+                <li class="parent">
+                  <a href="#"><i class="icon mdi mdi-border-all"></i><span>Table</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="tables-datatables.html">Data Table</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bt-content docs">
+      <div class="page-head">
+        <h2 class="page-head-title">Tab &amp; Accordion</h2>
+        <nav aria-label="breadcrumb" role="navigation">
+          <ol class="breadcrumb page-head-nav">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">UI</a></li>
+            <li class="breadcrumb-item active">Tab &amp; Accordion</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="main-content container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="tab-container">
+              <ul class="nav nav-tabs nav-tabs-classic" role="tablist">
+                <li class="nav-item"><a class="nav-link active" href="#classic_home" data-toggle="tab" role="tab">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#classic_profile" data-toggle="tab" role="tab">Profile</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="classic_home" role="tabpanel">
+                  <h4>Classic Top Tabs</h4>
+                  <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                  <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                </div>
+                <div class="tab-pane" id="classic_profile" role="tabpanel">
+                  <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                  <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="tab-container">
+              <ul class="nav nav-tabs nav-tabs-primary nav-tabs-classic" role="tablist">
+                <li class="nav-item"><a class="nav-link active" href="#primary_home" data-toggle="tab" role="tab">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#primary_profile" data-toggle="tab" role="tab">Profile</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="primary_home" role="tabpanel">
+                  <h4>Primary Classic Top Tabs</h4>
+                  <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                  <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                </div>
+                <div class="tab-pane" id="primary_profile" role="tabpanel">
+                  <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                  <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="tab-container">
+              <ul class="nav nav-tabs nav-tabs-classic" role="tablist">
+                <li class="nav-item"><a class="nav-link active" href="#classic_icon_home" data-toggle="tab" role="tab"><span class="icon mdi mdi-home"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#classic_icon_profile" data-toggle="tab" role="tab"><span class="icon mdi mdi-face"></span></a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="classic_icon_home" role="tabpanel">
+                  <h4>Classic Icon Top Tabs</h4>
+                  <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                  <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                </div>
+                <div class="tab-pane" id="classic_icon_profile" role="tabpanel">
+                  <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                  <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="tab-container tab-left">
+              <ul class="nav nav-tabs nav-tabs-classic" role="tablist">
+                <li class="nav-item"><a class="nav-link active" href="#icon1" data-toggle="tab" role="tab"><span class="icon mdi mdi-home"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#icon2" data-toggle="tab" role="tab"><span class="icon mdi mdi-face"></span></a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="icon1" role="tabpanel">
+                  <h4>Classic Left Icon Tabs</h4>
+                  <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                  <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                </div>
+                <div class="tab-pane" id="icon2" role="tabpanel">
+                  <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                  <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="card">
+              <div class="card-header">Default Tabs</div>
+              <div class="tab-container">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#home" data-toggle="tab" role="tab">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#profile" data-toggle="tab" role="tab">Profile</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="home" role="tabpanel">
+                    <h4>Top Tabs</h4>
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                  <div class="tab-pane" id="profile" role="tabpanel">
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card">
+              <div class="card-header">Success Tabs</div>
+              <div class="tab-container">
+                <ul class="nav nav-tabs nav-tabs-success" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#home1" data-toggle="tab" role="tab">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#profile1" data-toggle="tab" role="tab">Profile</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="home1" role="tabpanel">
+                    <h4>Top Tabs</h4>
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                  <div class="tab-pane" id="profile1" role="tabpanel">
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="card">
+              <div class="card-header">Warning Tabs</div>
+              <div class="tab-container">
+                <ul class="nav nav-tabs nav-tabs-warning" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#home2" data-toggle="tab" role="tab">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#profile2" data-toggle="tab" role="tab">Profile</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="home2" role="tabpanel">
+                    <h4>Top Tabs</h4>
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                  <div class="tab-pane" id="profile2" role="tabpanel">
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card">
+              <div class="card-header">Danger Tabs</div>
+              <div class="tab-container">
+                <ul class="nav nav-tabs nav-tabs-danger" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#home3" data-toggle="tab" role="tab">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#profile3" data-toggle="tab" role="tab">Profile</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="home3" role="tabpanel">
+                    <h4>Top Tabs</h4>
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                  <div class="tab-pane" id="profile3" role="tabpanel">
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="card">
+              <div class="card-header">Icon Tabs</div>
+              <div class="tab-container">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#home4" data-toggle="tab" role="tab"><span class="icon mdi mdi-home"></span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#profile4" data-toggle="tab" role="tab"><span class="icon mdi mdi-face"></span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#messages4" data-toggle="tab" role="tab"><span class="icon mdi mdi-email"></span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#settings4" data-toggle="tab" role="tab"><span class="icon mdi mdi-settings"></span></a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="home4" role="tabpanel">
+                    <h4>Top Tabs</h4>
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                  <div class="tab-pane" id="profile4" role="tabpanel">
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                  <div class="tab-pane" id="messages4" role="tabpanel">
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                    <a href="#">Read more</a>
+                  </div>
+                  <div class="tab-pane cont" id="settings4" role="tabpanel">
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card">
+              <div class="card-header">Icon Text Tabs</div>
+              <div class="tab-container">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#home5" data-toggle="tab" role="tab"><span class="icon mdi mdi-home"></span>Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#profile5" data-toggle="tab" role="tab"><span class="icon mdi mdi-face"></span>Profile</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#messages5" data-toggle="tab" role="tab"><span class="icon mdi mdi-email"></span>Messages</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="home5" role="tabpanel">
+                    <h4>Top Tabs</h4>
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                  <div class="tab-pane" id="profile5" role="tabpanel">
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                  <div class="tab-pane" id="messages5" role="tabpanel">
+                    <p>Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</p>
+                    <p>When daisies pied, and violets blue And lady-smocks all silver-white, And cuckoo-buds of yellow hue Do paint the meadows with delight, The cuckoo then, on every tree, Mocks married men, for thus sings he: 'Cuckoo! Cuckoo, cuckoo!'</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="accordion" id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="icon mdi mdi-chevron-right"></i>Basic accordion</button>
+                </div>
+                <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <button class="btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapsetwo"><i class="icon mdi mdi-chevron-right"></i>Collapsible Group Item #2</button>
+                </div>
+                <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <button class="btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="icon mdi mdi-chevron-right"></i>Collapsible Group Item #3</button>
+                </div>
+                <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour" role="tab">
+                  <button class="btn" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="icon mdi mdi-chevron-right"></i>Collapsible Group Item #4</button>
+                </div>
+                <div class="collapse" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="accordion accordion-color" id="accordion2">
+              <div class="card card-full-primary">
+                <div class="card-header" id="headingOne2">
+                  <button class="btn" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2"><i class="icon mdi mdi-chevron-right"></i>Primary Color</button>
+                </div>
+                <div class="collapse show" id="collapseOne2" aria-labelledby="headingOne2" data-parent="#accordion2">
+                  <div class="card-body">Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</div>
+                </div>
+              </div>
+              <div class="card card-full-success">
+                <div class="card-header" id="headingTwo2">
+                  <button class="btn" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapsetwo2"><i class="icon mdi mdi-chevron-right"></i>Success Color</button>
+                </div>
+                <div class="collapse" id="collapseTwo2" aria-labelledby="headingTwo2" data-parent="#accordion2">
+                  <div class="card-body">Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</div>
+                </div>
+              </div>
+              <div class="card card-full-warning">
+                <div class="card-header">
+                  <div class="card-header" id="headingThree2" role="tab"></div>
+                  <button class="btn" data-toggle="collapse" data-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2"><i class="icon mdi mdi-chevron-right"></i>Warning Color</button>
+                </div>
+                <div class="collapse" id="collapseThree2" aria-labelledby="headingThree2" data-parent="#accordion2">
+                  <div class="card-body">Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</div>
+                </div>
+              </div>
+              <div class="card card-full-danger">
+                <div class="card-header" id="headingFour2" role="tab">
+                  <button class="btn" data-toggle="collapse" data-target="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2"><i class="icon mdi mdi-chevron-right"></i>Danger Color</button>
+                </div>
+                <div class="collapse" id="collapseFour2" aria-labelledby="headingFour2" data-parent="#accordion2">
+                  <div class="card-body">Again rejoicing Nature sees Her robe assume its vernal hues, Her leafy locks wave in the breeze, All freshly steep'd in morning dews.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="bt-right-sidebar">
+      <div class="sb-content">
+        <div class="tab-navigation">
+          <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li class="nav-item" role="presentation"><a class="nav-link active" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Chat</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Todo</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Settings</a></li>
+          </ul>
+        </div>
+        <div class="tab-panel">
+          <div class="tab-content">
+            <div class="tab-pane tab-chat active" id="tab1" role="tabpanel">
+              <div class="chat-contacts">
+                <div class="chat-sections">
+                  <div class="bt-scroller-chat">
+                    <div class="content">
+                      <h2>Recent</h2>
+                      <div class="contact-list contact-list-recent">
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status away"></span>
+                              <span class="name">Claire Sassu</span>
+                              <span class="message">Can you share the...</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status"></span>
+                              <span class="name">Maggie jackson</span>
+                              <span class="message">I confirmed the info.</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <h2>Contacts</h2>
+                      <div class="contact-list">
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data2">
+                              <span class="status"></span>
+                              <span class="name">Mike Bolthort</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-input">
+                  <input type="text" placeholder="Search..." name="q"><span class="mdi mdi-search"></span>
+                </div>
+              </div>
+              <div class="chat-window">
+                <div class="title">
+                  <div class="user">
+                    <img src="images/avatar.svg" alt="Avatar">
+                    <h2>Maggie jackson</h2>
+                    <span>Active 1h ago</span>
+                  </div>
+                  <span class="icon return mdi mdi-chevron-left"></span>
+                </div>
+                <div class="chat-messages">
+                  <div class="bt-scroller-messages">
+                    <div class="content">
+                      <ul>
+                        <li class="friend"><div class="msg">Hello</div></li>
+                        <li class="self"><div class="msg">Hi, how are you?</div></li>
+                        <li class="friend"><div class="msg">Good, I'll need support with my pc</div></li>
+                        <li class="self"><div class="msg">Sure, just tell me what is going on with your computer?</div></li>
+                        <li class="friend"><div class="msg">I don't know it just turns off suddenly</div></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-input">
+                  <div class="input-wrapper">
+                    <span class="photo mdi mdi-camera"></span>
+                    <input type="text" placeholder="Some messages" name="q" autocomplete="off">
+                    <span class="send-msg mdi mdi-mail-send"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane tab-todo" id="tab2" role="tabpanel">
+              <div class="todo-container">
+                <div class="todo-wrapper">
+                  <div class="bt-scroller-todo">
+                    <div class="todo-content">
+                      <span class="category-title">Today</span>
+                      <ul class="todo-list">
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" checked id="tck1">
+                            <label class="custom-control-label" for="tck1">Initialize the project</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" id="tck2">
+                            <label class="custom-control-label" for="tck2">Create the main structure</label>
+                          </div>
+                        </li>
+                      </ul>
+                      <span class="category-title">Tomorrow</span>
+                      <ul class="todo-list">
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" id="tck4">
+                            <label class="custom-control-label" for="tck4">Initialize the project</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-input">
+                  <input type="text" placeholder="Create new task..." name="q"><span class="mdi mdi-plus"></span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane tab-settings" id="tab3" role="tabpanel">
+              <div class="settings-wrapper">
+                <div class="bt-scroller-settings">
+                  <span class="category-title">General</span>
+                  <ul class="settings-list">
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st1" id="st1">
+                        <span><label for="st1"></label></span>
+                      </div>
+                      <span class="name">Available</span>
+                    </li>
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st2" id="st2">
+                        <span><label for="st2"></label></span>
+                      </div>
+                      <span class="name">Enable notifications</span>
+                    </li>
+                  </ul>
+                  <span class="category-title">Notification</span>
+                  <ul class="settings-list">
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" name="st4" id="st4">
+                        <span><label for="st4"></label></span>
+                      </div>
+                      <span class="name">Email notifications</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <script type="module">
+    import { init } from '../dist/build.js';
+
+    // Theme initialization
+    init();
+  </script>
+</body>
+</html>
