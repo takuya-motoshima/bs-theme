@@ -6,6 +6,10 @@ This is still in development and will be published at a later date.
 
 ## Changelog
 
+### [0.0.27] - 2020-08-02
+
+- Added general table example(./documentation/tables-general.html).
+
 ### [0.0.26] - 2020-08-01
 
 - Added Introduction(./getting-started) and API Document(./documentation) to public files

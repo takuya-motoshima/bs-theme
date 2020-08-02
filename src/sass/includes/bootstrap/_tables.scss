@@ -45,12 +45,11 @@
       > td{
         font-weight: $font-weight-normal;
         vertical-align: middle;
-
         // Setting to display long characters in cells as one line without wrapping
-        max-width: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        // max-width: 0;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        // white-space: nowrap;
       }
     }
   }

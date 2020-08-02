@@ -552,9 +552,7 @@ const scroller = {
 };
 
 function init() {
-
   // console.log('Initialize the theme');
-
   // Left Sidebar
   if (config.enableLeftSidebar) leftSidebarInit();
   else wrapper.addClass(config.disabledLeftSidebarClass);

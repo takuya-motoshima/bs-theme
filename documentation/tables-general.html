@@ -14,7 +14,7 @@
         <div class="bt-navbar-header">
           <a class="navbar-brand" href="index.html"></a>
         </div>
-        <div class="page-title"><span>Data Table</span></div>
+        <div class="page-title"><span>General Table</span></div>
         <div class="bt-right-navbar">
           <ul class="nav navbar-nav float-right bt-user-nav">
             <li class="nav-item dropdown">
@@ -96,7 +96,7 @@
     </nav>
     <div class="bt-left-sidebar">
       <div class="left-sidebar-wrapper">
-        <a class="left-sidebar-toggle" href="#">Data Table</a>
+        <a class="left-sidebar-toggle" href="#">General Table</a>
         <div class="left-sidebar-spacer">
           <div class="left-sidebar-scroll">
             <div class="left-sidebar-content">
@@ -131,8 +131,8 @@
                 <li class="parent active open">
                   <a href="#"><i class="icon mdi mdi-border-all"></i><span>Table</span></a>
                   <ul class="sub-menu">
-                    <li><a href="tables-general.html">General</a></li>
-                    <li class="active"><a href="tables-datatables.html">Data Table</a></li>
+                    <li class="active"><a href="tables-general.html">General</a></li>
+                    <li><a href="tables-datatables.html">Data Table</a></li>
                   </ul>
                 </li>
               </ul>
@@ -143,201 +143,111 @@
     </div>
     <div class="bt-content">
       <div class="page-head">
-      <h2 class="page-head-title">Data Table</h2>
+      <h2 class="page-head-title">General Table</h2>
         <nav aria-label="breadcrumb" role="navigation">
           <ol class="breadcrumb page-head-nav">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="#">Table</a></li>
-            <li class="breadcrumb-item active">Data Table</li>
+            <li class="breadcrumb-item active">General Table</li>
           </ol>
         </nav>
       </div>
       <div class="main-content container-fluid">
-        
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-lg-6">
             <div class="card card-table">
-              <div class="card-header">Default
-                <div class="tools dropdown">
-                  <span class="icon mdi mdi-download"></span>
-                  <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
-                  <div class="dropdown-menu" role="menu">
+              <div class="card-header">Basic Table
+                <div class="tools dropdown"><span class="icon mdi mdi-download"></span><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
+                  <div class="dropdown-menu dropdown-menu-right" role="menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Separated link</a>
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <table class="table table-striped table-hover table-fw-widget" id="table1">
+                <table class="table">
                   <thead>
                     <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform</th>
-                      <th>Engine version</th>
+                      <th style="width:50%;">Name</th>
+                      <th style="width:10%;">Date</th>
+                      <th class="number">Rate</th>
+                      <th class="number">Sales</th>
+                      <th class="actions"></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>4</td>
+                      <td>Ellen</td>
+                      <td>8/2</td>
+                      <td class="number">33.3%</td>
+                      <td class="number">999</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-delete"></i></a></td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5</td>
+                      <td>Luce</td>
+                      <td>8/2</td>
+                      <td class="number">33.3%</td>
+                      <td class="number">999</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-delete"></i></a></td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5.5</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>7</td>
+                      <td>Helen</td>
+                      <td>8/2</td>
+                      <td class="number">33.3%</td>
+                      <td class="number">999</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-delete"></i></a></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12">
+          <div class="col-lg-6">
             <div class="card card-table">
-              <div class="card-header">Custom Layout
-                <div class="tools dropdown">
-                  <span class="icon mdi mdi-download"></span>
-                  <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
-                  <div class="dropdown-menu" role="menu">
+              <div class="card-header">Striped Table
+                <div class="tools dropdown"><span class="icon mdi mdi-download"></span><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
+                  <div class="dropdown-menu dropdown-menu-right" role="menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
-                </div><span class="card-subtitle">This is a custom datable layout</span>
-              </div>
-              <div class="card-body">
-                <table class="table table-striped table-hover table-fw-widget" id="table2">
-                  <thead>
-                    <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform</th>
-                      <th>Engine version</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>4</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5.5</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>7</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="card card-table">
-              <div class="card-header">Export Functions
-                <div class="tools dropdown">
-                  <span class="icon mdi mdi-download"></span>
-                  <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
-                  <div class="dropdown-menu" role="menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Separated link</a>
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <table class="table table-striped table-hover table-fw-widget" id="table3">
+                <table class="table table-striped table-borderless">
                   <thead>
                     <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform</th>
-                      <th>Engine version</th>
+                      <th style="width:50%;">Name</th>
+                      <th style="width:10%;">Date</th>
+                      <th class="number">Rate</th>
+                      <th class="number">Sales</th>
+                      <th class="actions"></th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody class="no-border-x">
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>4</td>
+                      <td>Ellen</td>
+                      <td>8/2</td>
+                      <td class="number">33.3%</td>
+                      <td class="number">999</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-delete"></i></a></td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5</td>
+                      <td>Luce</td>
+                      <td>8/2</td>
+                      <td class="number">33.3%</td>
+                      <td class="number">999</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-delete"></i></a></td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5.5</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>7</td>
+                      <td>Helen</td>
+                      <td>8/2</td>
+                      <td class="number">33.3%</td>
+                      <td class="number">999</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-delete"></i></a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -345,127 +255,111 @@
             </div>
           </div>
         </div>
-
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-lg-6">
             <div class="card card-table">
-              <div class="card-header">Expandable responsive table
-                <div class="tools dropdown">
-                  <span class="icon mdi mdi-download"></span>
-                  <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
-                  <div class="dropdown-menu" role="menu">
+              <div class="card-header">Condensed Table
+                <div class="tools dropdown"><span class="icon mdi mdi-download"></span><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
+                  <div class="dropdown-menu dropdown-menu-right" role="menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Separated link</a>
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <table class="table table-striped table-hover table-fw-widget" id="table4">
+                <table class="table table-sm table-striped">
                   <thead>
                     <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform</th>
-                      <th>Engine version</th>
+                      <th>OS</th>
+                      <th class="number">Users</th>
+                      <th class="number">Rebound</th>
+                      <th class="actions"></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>4</td>
+                      <td>Windows</td>
+                      <td class="number">999</td>
+                      <td class="number">16.6%</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-settings"></i></a></td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5</td>
+                      <td>Mac OS</td>
+                      <td class="number">999</td>
+                      <td class="number">16.6%</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-settings"></i></a></td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5.5</td>
+                      <td>Linux</td>
+                      <td class="number">999</td>
+                      <td class="number">16.6%</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-settings"></i></a></td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>6</td>
+                      <td>Android</td>
+                      <td class="number">999</td>
+                      <td class="number">16.6%</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-settings"></i></a></td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>7</td>
+                      <td>iOS</td>
+                      <td class="number">999</td>
+                      <td class="number">16.6%</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-settings"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Other</td>
+                      <td class="number">999</td>
+                      <td class="number">16.6%</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-settings"></i></a></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12">
+          <div class="col-lg-6">
             <div class="card card-table">
-              <div class="card-header">Immediate responsive table
-                <div class="tools dropdown">
-                  <span class="icon mdi mdi-download"></span>
-                  <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
-                  <div class="dropdown-menu" role="menu">
+              <div class="card-header">Hover &amp; Image
+                <div class="tools dropdown"><span class="icon mdi mdi-download"></span><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
+                  <div class="dropdown-menu dropdown-menu-right" role="menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Separated link</a>
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <table class="table table-striped table-hover table-fw-widget" id="table5">
+                <table class="table table-striped table-hover">
                   <thead>
                     <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform</th>
-                      <th>Engine version</th>
+                      <th style="width:37%;">User</th>
+                      <th style="width:36%;">Commit</th>
+                      <th>Date</th>
+                      <th class="actions"></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>4</td>
+                      <td class="user-avatar"> <img src="images/avatar.svg" alt="Avatar">Ellen</td>
+                      <td>Initial commit</td>
+                      <td>August 2, 2020</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-delete"></i></a></td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5</td>
+                      <td class="user-avatar"> <img src="images/avatar.svg" alt="Avatar">Helen</td>
+                      <td>Main structure markup</td>
+                      <td>August 2, 2020</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-delete"></i></a></td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5.5</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>7</td>
+                      <td class="user-avatar"> <img src="images/avatar.svg" alt="Avatar">Luce</td>
+                      <td>Left sidebar adjusments</td>
+                      <td>August 2, 2020</td>
+                      <td class="actions"><a class="icon" href="#"><i class="mdi mdi-delete"></i></a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -473,127 +367,85 @@
             </div>
           </div>
         </div>
-
         <div class="row">
-          <div class="col-sm-12">
-            <div class="card card-table">
-              <div class="card-header">Modal responsive table
-                <div class="tools dropdown">
-                  <span class="icon mdi mdi-download"></span>
-                  <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
-                  <div class="dropdown-menu" role="menu">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header">Bordered Table
+                <div class="tools dropdown"><span class="icon mdi mdi-download"></span><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
+                  <div class="dropdown-menu dropdown-menu-right" role="menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Separated link</a>
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <table class="table table-striped table-hover table-fw-widget" id="table6">
+                <table class="table table-hover table-bordered table-striped">
                   <thead>
                     <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform</th>
-                      <th>Engine version</th>
+                      <th>OS</th>
+                      <th class="number">Users</th>
+                      <th class="number">Rebound</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>4</td>
+                      <td>Mac OS</td>
+                      <td class="number">999</td>
+                      <td class="number">33.3%</td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5</td>
+                      <td>Android</td>
+                      <td class="number">999</td>
+                      <td class="number">33.3%</td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5.5</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>7</td>
+                      <td>iOS</td>
+                      <td class="number">999</td>
+                      <td class="number">33.3%</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12">
+          <div class="col-lg-6">
             <div class="card card-table">
-              <div class="card-header">Change language
-                <div class="tools dropdown">
-                  <span class="icon mdi mdi-download"></span>
-                  <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
-                  <div class="dropdown-menu" role="menu">
+              <div class="card-header">Contextual Classes
+                <div class="tools dropdown"><span class="icon mdi mdi-download"></span><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
+                  <div class="dropdown-menu dropdown-menu-right" role="menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Separated link</a>
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <table class="table table-striped table-hover table-fw-widget" id="table7">
+                <table class="table table-striped table-borderless table-hover">
                   <thead>
                     <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform</th>
-                      <th>Engine version</th>
+                      <th style="width:32%;">User</th>
+                      <th style="width:45%;">Commit</th>
+                      <th>Date</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>4</td>
+                      <td>Ellen</td>
+                      <td>Init  </td>
+                      <td>August 2, 2020</td>
+                    </tr>
+                    <tr class="table-primary">
+                      <td>Helen</td>
+                      <td>Main structure markup</td>
+                      <td>August 2, 2020</td>
                     </tr>
                     <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>5.5</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>Blink</td>
-                      <td>Google Chrome</td>
-                      <td>Windows 10</td>
-                      <td>7</td>
+                      <td>Luce</td>
+                      <td>Left sidebar adjusments</td>
+                      <td>August 2, 2020</td>
                     </tr>
                   </tbody>
                 </table>
@@ -601,7 +453,130 @@
             </div>
           </div>
         </div>
-
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card card-table">
+              <div class="card-header">Responsive Table
+                <div class="tools dropdown"><span class="icon mdi mdi-download"></span><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"><span class="icon mdi mdi-more-vert"></span></a>
+                  <div class="dropdown-menu dropdown-menu-right" role="menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive noSwipe">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th style="width:4%;">
+                          <div class="custom-control custom-control-sm custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check1">
+                            <label class="custom-control-label" for="check1"></label>
+                          </div>
+                        </th>
+                        <th style="width:20%;">User</th>
+                        <th style="width:17%;">Last Commit</th>
+                        <th style="width:15%;">Milestone</th>
+                        <th style="width:10%;">Branch</th>
+                        <th style="width:10%;">Date</th>
+                        <th style="width:10%;"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-control-sm custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check2">
+                            <label class="custom-control-label" for="check2"></label>
+                          </div>
+                        </td>
+                        <td class="user-avatar cell-detail user-info"><img src="images/avatar.svg" alt="Avatar"><span>Ellen</span><span class="cell-detail-description">Developer</span></td>
+                        <td class="cell-detail"> <span>Initial commit</span><span class="cell-detail-description">Bootstrap Admin</span></td>
+                        <td class="milestone"><span class="completed">8 / 15</span><span class="version">v1.2.0</span>
+                          <div class="progress">
+                            <div class="progress-bar progress-bar-primary" style="width: 45%;"></div>
+                          </div>
+                        </td>
+                        <td class="cell-detail"><span>master</span><span class="cell-detail-description">1234567</span></td>
+                        <td class="cell-detail"><span>August 2, 2020</span><span class="cell-detail-description">9:00</span></td>
+                        <td class="text-right">
+                          <div class="btn-group btn-hspace">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Open <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                            <div class="dropdown-menu" role="menu">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="primary">
+                        <td>
+                          <div class="custom-control custom-control-sm custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check3">
+                            <label class="custom-control-label" for="check3"></label>
+                          </div>
+                        </td>
+                        <td class="user-avatar cell-detail user-info"><img src="images/avatar.svg" alt="Avatar"><span>Helen</span><span class="cell-detail-description">Designer</span></td>
+                        <td class="cell-detail"> <span>Main structure markup</span><span class="cell-detail-description">CLI Connector</span></td>
+                        <td class="milestone"><span class="completed">22 / 30</span><span class="version">v1.1.5</span>
+                          <div class="progress">
+                            <div class="progress-bar progress-bar-primary" style="width: 75%;"></div>
+                          </div>
+                        </td>
+                        <td class="cell-detail"><span>develop</span><span class="cell-detail-description">1234567</span></td>
+                        <td class="cell-detail"><span>August 2, 2020</span><span class="cell-detail-description">9:00</span></td>
+                        <td class="text-right">
+                          <div class="btn-group btn-hspace">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Open <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                            <div class="dropdown-menu" role="menu">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="custom-control custom-control-sm custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check4">
+                            <label class="custom-control-label" for="check4"></label>
+                          </div>
+                        </td>
+                        <td class="user-avatar cell-detail user-info"><img src="images/avatar.svg" alt="Avatar"><span>Luce</span><span class="cell-detail-description">Designer</span></td>
+                        <td class="cell-detail"> <span>Left sidebar adjusments</span><span class="cell-detail-description">Back-end Manager</span></td>
+                        <td class="milestone"><span class="completed">10 / 30</span><span class="version">v1.1.3</span>
+                          <div class="progress">
+                            <div class="progress-bar progress-bar-primary" style="width: 33%;"></div>
+                          </div>
+                        </td>
+                        <td class="cell-detail"><span>develop</span><span class="cell-detail-description">1234567</span></td>
+                        <td class="cell-detail"><span>August 2, 2020</span><span class="cell-detail-description">9:00</span></td>
+                        <td class="text-right">
+                          <div class="btn-group btn-hspace">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Open <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                            <div class="dropdown-menu" role="menu">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <nav class="bt-right-sidebar">
