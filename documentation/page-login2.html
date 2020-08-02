@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <title>Bootstrap4 Theme</title>
+  <link rel="stylesheet" href="../dist/build.css" type="text/css"/>
+</head>
+<body class="bt-splash-screen">
+  <div class="bt-wrapper bt-login">
+    <div class="bt-content">
+      <div class="main-content container-fluid">
+        <div class="splash-container">
+          <div class="card card-border-color card-border-color-primary">
+            <div class="card-header">
+              <img class="logo-img" src="images/logo.png" height="32">
+              <span class="splash-description">Sign in with your account.</span>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="login-form">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Username" autocomplete="off">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Password">
+                  </div>
+                  <div class="form-group row login-tools">
+                    <div class="col-6 login-remember">
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="check">
+                        <label class="custom-control-label" for="check">Remember Me</label>
+                      </div>
+                    </div>
+                    <div class="col-6 login-forgot-password"><a href="page-forgot-password.html">Forgot your password?</a></div>
+                  </div>
+                  <div class="form-group row login-submit">
+                    <div class="col-6"><a class="btn btn-secondary" data-dismiss="modal" type="submit">Register</a></div>
+                    <div class="col-6"><a class="btn btn-primary" href="index.html" data-dismiss="modal">Sign in</a></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module">
+    import { init } from '../dist/build.js';
+
+    // Theme initialization
+    init();
+  </script>
+</body>
+</html>

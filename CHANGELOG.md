@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.29] - 2020-08-03
+
+- Added sign-in page example(./documentation/page-login.html, ./documentation/page-login2.html).
+- Added sign-up page example(./documentation/page-sign-up.html).
+- Added forgot password page example(./documentation/page-forgot-password.html).
+
 ## [0.0.28] - 2020-08-03
 
 - Fixed example link(./documentation/\*.html).
