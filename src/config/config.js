@@ -18,5 +18,7 @@ export default {
   collapsibleSidebarCollapsedClass: 'bt-collapsible-sidebar-collapsed',
   openLeftSidebarOnClick: true,
   transitionClass: 'bt-animate',
-  openSidebarDelay: 400
+  openSidebarDelay: 400,
+  megaMenuSectionClass: 'bt-mega-menu-section',
+  subNavClass: 'bt-sub-nav'
 }

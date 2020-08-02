@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="../dist/build.css" type="text/css"/>
 </head>
 <body>
-  <div class="bt-wrapper bt-fixed-sidebar">
+  <div class="bt-wrapper bt-offcanvas-menu bt-fixed-sidebar">
     <nav class="navbar navbar-expand fixed-top bt-top-header">
       <div class="container-fluid">
         <div class="bt-navbar-header">
+          <a class="nav-link bt-toggle-left-sidebar" href="#"><span class="icon mdi mdi-menu"></span></a>
           <a class="navbar-brand" href="index.html"></a>
         </div>
-        <div class="page-title"><span>UI Grid</span></div>
+        <div class="page-title"><span>Off Canvas Menu</span></div>
         <div class="bt-right-navbar">
           <ul class="nav navbar-nav float-right bt-user-nav">
             <li class="nav-item dropdown">
@@ -96,14 +97,14 @@
     </nav>
     <div class="bt-left-sidebar">
       <div class="left-sidebar-wrapper">
-        <a class="left-sidebar-toggle" href="#">UI Grid</a>
+        <a class="left-sidebar-toggle" href="#">Off Canvas Menu</a>
         <div class="left-sidebar-spacer">
           <div class="left-sidebar-scroll">
             <div class="left-sidebar-content">
               <ul class="sidebar-elements">
                 <li class="divider">Menu</li>
                 <li><a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a></li>
-                <li class="parent active open">
+                <li class="parent">
                   <a href="#"><i class="icon mdi mdi-face"></i><span>UI</span></a>
                   <ul class="sub-menu">
                     <li><a href="ui-alerts.html">Alert</a></li>
@@ -114,7 +115,7 @@
                     <li><a href="ui-modals.html">Modal</a></li>
                     <li><a href="ui-notifications.html">Notification</a></li>
                     <li><a href="ui-icons.html">Icon</a></li>
-                    <li class="active"><a href="ui-grid.html">Grid</a></li>
+                    <li><a href="ui-grid.html">Grid</a></li>
                     <li><a href="ui-tabs-accordions.html">Tab &amp; Accordion</a></li>
                     <li><a href="ui-typography.html">Typography</a></li>
                   </ul>
@@ -133,14 +134,14 @@
                     <li><a href="table-datatables.html">Data Table</a></li>
                   </ul>
                 </li>
-                <li class="parent">
+                <li class="parent active open">
                   <a href="#"><i class="icon mdi mdi-view-web"></i><span>Layout</span></a>
                   <ul class="sub-menu">
                     <li><a href="layout-primary-header.html">Primary Header</a></li>
                     <li><a href="layout-success-header.html">Success Header</a></li>
                     <li><a href="layout-warning-header.html">Warning Header</a></li>
                     <li><a href="layout-danger-header.html">Danger Header</a></li>
-                    <li><a href="layout-offcanvas-menu.html">Off Canvas Menu</a></li>
+                    <li class="active"><a href="layout-offcanvas-menu.html">Off Canvas Menu</a></li>
                     <li><a href="layout-top-menu.html">Top Menu</a></li>
                     <li><a href="layout-nosidebar-left.html">Without Left Sidebar</a></li>
                     <li><a href="layout-nosidebar-right.html">Without Right Sidebar</a></li>
@@ -157,103 +158,38 @@
     </div>
     <div class="bt-content">
       <div class="page-head">
-        <h2 class="page-head-title">Grid</h2>
+        <h2 class="page-head-title">Off Canvas Menu</h2>
         <nav aria-label="breadcrumb" role="navigation">
           <ol class="breadcrumb page-head-nav">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">UI</a></li>
-            <li class="breadcrumb-item active">Grid</li>
+            <li class="breadcrumb-item"><a href="#">Layout</a></li>
+            <li class="breadcrumb-item active">Off Canvas Menu</li>
           </ol>
         </nav>
       </div>
       <div class="main-content container-fluid">
         <div class="row">
-          <div class="col-sm-2">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-2</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-2</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-2</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-2</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-2</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-2</span><span class="device"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-3</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-3</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-3</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-3</span><span class="device"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-4</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-4</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-4</span><span class="device"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-6</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-6</span><span class="device"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-12</span><span class="device"></span></div>
+          <div class="col-12 col-lg-6 offset-lg-3">
+            <div class="card">
+              <div class="card-header"><span class="title">Off canvas menu</span></div>
+              <div class="card-body">
+                <p>You can activate the <b>Off canvas menu</b> by default just adding the class <code>bt-offcanvas-menu</code> into the main wapper element, like this:</p>
+              </div>
+              <pre class="prettyprint">&lt;html lang=&quot;en&quot;&gt;
+&lt;body&gt;
+  &lt;div class=&quot;bt-wrapper bt-offcanvas-menu bt-fixed-sidebar&quot;&gt;
+    &lt;nav class=&quot;navbar navbar-expand fixed-top bt-top-header&quot;&gt;
+      &lt;!-- Top bar --&gt;
+    &lt;/nav&gt;
+    &lt;div class=&quot;bt-content&quot;&gt;
+      &lt;!-- Main content --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;bt-right-sidebar&quot;&gt;
+      &lt;!-- Right sidebar --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt; 
+&lt;/body&gt;
+&lt;/html&gt;</pre>
             </div>
           </div>
         </div>
@@ -426,11 +362,15 @@
       </div>
     </nav>
   </div>
+  <script src="../node_modules/code-prettify/src/prettify.js"></script>
   <script type="module">
     import { init } from '../dist/build.js';
 
     // Theme initialization
     init();
+
+    // JavaScript code prettifier
+    prettyPrint();
   </script>
 </body>
 </html>

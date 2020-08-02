@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="../dist/build.css" type="text/css"/>
 </head>
 <body>
-  <div class="bt-wrapper bt-fixed-sidebar bt-color-header">
+  <div class="bt-wrapper bt-aside bt-fixed-sidebar">
     <nav class="navbar navbar-expand fixed-top bt-top-header">
       <div class="container-fluid">
         <div class="bt-navbar-header">
           <a class="navbar-brand" href="index.html"></a>
         </div>
-        <div class="page-title"><span>Primary Heade</span></div>
+        <div class="page-title"><span>Aside</span></div>
         <div class="bt-right-navbar">
           <ul class="nav navbar-nav float-right bt-user-nav">
             <li class="nav-item dropdown">
@@ -96,15 +96,13 @@
     </nav>
     <div class="bt-left-sidebar">
       <div class="left-sidebar-wrapper">
-        <a class="left-sidebar-toggle" href="#">Primary Heade</a>
+        <a class="left-sidebar-toggle" href="#">Aside</a>
         <div class="left-sidebar-spacer">
           <div class="left-sidebar-scroll">
             <div class="left-sidebar-content">
               <ul class="sidebar-elements">
                 <li class="divider">Menu</li>
-                <li>
-                  <a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
-                </li>
+                <li><a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a></li>
                 <li class="parent">
                   <a href="#"><i class="icon mdi mdi-face"></i><span>UI</span></a>
                   <ul class="sub-menu">
@@ -131,17 +129,24 @@
                 <li class="parent">
                   <a href="#"><i class="icon mdi mdi-border-all"></i><span>Table</span></a>
                   <ul class="sub-menu">
-                    <li><a href="tables-general.html">General</a></li>
-                    <li><a href="tables-datatables.html">Data Table</a></li>
+                    <li><a href="table-general.html">General</a></li>
+                    <li><a href="table-datatables.html">Data Table</a></li>
                   </ul>
                 </li>
                 <li class="parent active open">
                   <a href="#"><i class="icon mdi mdi-view-web"></i><span>Layout</span></a>
                   <ul class="sub-menu">
-                    <li class="active"><a href="layouts-primary-header.html">Primary Header</a></li>
-                    <li><a href="layouts-success-header.html">Success Header</a></li>
-                    <li><a href="layouts-warning-header.html">Warning Header</a></li>
-                    <li><a href="layouts-danger-header.html">Danger Header</a></li>
+                    <li><a href="layout-primary-header.html">Primary Header</a></li>
+                    <li><a href="layout-success-header.html">Success Header</a></li>
+                    <li><a href="layout-warning-header.html">Warning Header</a></li>
+                    <li><a href="layout-danger-header.html">Danger Header</a></li>
+                    <li><a href="layout-offcanvas-menu.html">Off Canvas Menu</a></li>
+                    <li><a href="layout-top-menu.html">Top Menu</a></li>
+                    <li><a href="layout-nosidebar-left.html">Without Left Sidebar</a></li>
+                    <li><a href="layout-nosidebar-right.html">Without Right Sidebar</a></li>
+                    <li><a href="layout-nosidebars.html">Without Both Sidebars</a></li>
+                    <li class="active"><a href="layout-fixed-sidebar.html">Fixed Left Sidebar</a></li>
+                    <li><a href="layout-boxed-layout.html">Boxed Layout</a></li>
                   </ul>
                 </li>
               </ul>
@@ -151,35 +156,41 @@
       </div>
     </div>
     <div class="bt-content">
-      <div class="page-head">
-        <h2 class="page-head-title">Primary Header</h2>
-        <nav aria-label="breadcrumb" role="navigation">
-          <ol class="breadcrumb page-head-nav">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Layout</a></li>
-            <li class="breadcrumb-item active">Primary Header</li>
-          </ol>
-        </nav>
-      </div>
+      <aside class="page-aside">
+        <div class="bt-scroller-aside">
+          <div class="aside-content">
+            <div class="content">
+              <h2>Aside Element</h2>
+              <p>This is the <b>aside</b> content, you can easily add content and components to this element.</p>
+              <p>Add the (<code>bt-aside</code>) class to your main wrapper (<code>bt-wrapper</code>) element for proper content spacing.</p>
+            </div>
+          </div>
+        </div>
+      </aside>
       <div class="main-content container-fluid">
         <div class="row">
-          <div class="col-12 col-lg-7 offset-lg-2">
+          <div class="col-12 col-lg-9 offset-lg-1">
             <div class="card">
-              <div class="card-header"><span class="title">Primary header</span></div>
+              <div class="card-header"><span class="title">Aside Layout</span></div>
               <div class="card-body">
-                <p>To change the header white background color and use the primary color you just need to add the class (<code>bt-color-header</code>) to the main wrapper (<code>bt-wrapper</code>) element, this way your main structure should be like this:</p>
+                <p>You can activate page aside layout option to the main content by adding this class (<code>bt-aside</code>) to the main wrapper (<code>bt-wrapper</code>) element and before of the <code>main-content</code> element, and adding the aside (<code>page-aside</code>) inside of the (<code>bt-content</code>) element, this way your main structure should be like this:</p>
               </div>
               <pre class="prettyprint">&lt;html lang=&quot;en&quot;&gt;
 &lt;body&gt;
-  &lt;div class=&quot;bt-wrapper bt-color-header&quot;&gt;
-    &lt;nav class=&quot;navbar navbar-default navbar-fixed-top bt-top-header&quot;&gt;
+  &lt;div class=&quot;bt-wrapper bt-aside&quot;&gt;
+    &lt;nav class=&quot;navbar navbar-expand fixed-top bt-top-header&quot;&gt;
       &lt;!-- Top bar --&gt;
     &lt;/nav&gt;
     &lt;div class=&quot;bt-left-sidebar&quot;&gt;
       &lt;!-- Left sidebar --&gt;
     &lt;/div&gt;
     &lt;div class=&quot;bt-content&quot;&gt;
-      &lt;!-- Main content --&gt;
+      &lt;aside class=&quot;page-aside&quot;&gt;
+        &lt;!-- Aside content --&gt;
+      &lt;/aside&gt;
+      &lt;div class=&quot;main-content container-fluid&quot;&gt;
+        &lt;!-- Main content --&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;bt-right-sidebar&quot;&gt;
       &lt;!-- Right sidebar --&gt;

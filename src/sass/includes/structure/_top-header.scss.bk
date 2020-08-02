@@ -207,7 +207,7 @@
             min-width: 175px;
             line-height: 18px;
 
-            &:hover{
+            &:hover {
               background-color: theme-color("primary");
               color: theme-color("light");
             }
@@ -404,7 +404,7 @@
 
               &:focus,
               &:active,
-              &:hover{
+              &:hover {
                 color: $top-header-nav-link-color-mobile;
               }
             }

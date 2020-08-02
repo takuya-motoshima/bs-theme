@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="../dist/build.css" type="text/css"/>
 </head>
 <body>
-  <div class="bt-wrapper bt-fixed-sidebar bt-color-header bt-color-header-success">
+  <div class="bt-wrapper bt-fixed-sidebar bt-color-header bt-color-header-danger">
     <nav class="navbar navbar-expand fixed-top bt-top-header">
       <div class="container-fluid">
         <div class="bt-navbar-header">
           <a class="navbar-brand" href="index.html"></a>
         </div>
-        <div class="page-title"><span>Success Heade</span></div>
+        <div class="page-title"><span>Danger Header</span></div>
         <div class="bt-right-navbar">
           <ul class="nav navbar-nav float-right bt-user-nav">
             <li class="nav-item dropdown">
@@ -96,15 +96,13 @@
     </nav>
     <div class="bt-left-sidebar">
       <div class="left-sidebar-wrapper">
-        <a class="left-sidebar-toggle" href="#">Success Heade</a>
+        <a class="left-sidebar-toggle" href="#">Danger Header</a>
         <div class="left-sidebar-spacer">
           <div class="left-sidebar-scroll">
             <div class="left-sidebar-content">
               <ul class="sidebar-elements">
                 <li class="divider">Menu</li>
-                <li>
-                  <a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
-                </li>
+                <li><a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a></li>
                 <li class="parent">
                   <a href="#"><i class="icon mdi mdi-face"></i><span>UI</span></a>
                   <ul class="sub-menu">
@@ -131,17 +129,24 @@
                 <li class="parent">
                   <a href="#"><i class="icon mdi mdi-border-all"></i><span>Table</span></a>
                   <ul class="sub-menu">
-                    <li><a href="tables-general.html">General</a></li>
-                    <li><a href="tables-datatables.html">Data Table</a></li>
+                    <li><a href="table-general.html">General</a></li>
+                    <li><a href="table-datatables.html">Data Table</a></li>
                   </ul>
                 </li>
                 <li class="parent active open">
                   <a href="#"><i class="icon mdi mdi-view-web"></i><span>Layout</span></a>
                   <ul class="sub-menu">
-                    <li><a href="layouts-primary-header.html">Primary Header</a></li>
-                    <li class="active"><a href="layouts-success-header.html">Success Header</a></li>
-                    <li><a href="layouts-warning-header.html">Warning Header</a></li>
-                    <li><a href="layouts-danger-header.html">Danger Header</a></li>
+                    <li><a href="layout-primary-header.html">Primary Header</a></li>
+                    <li><a href="layout-success-header.html">Success Header</a></li>
+                    <li><a href="layout-warning-header.html">Warning Header</a></li>
+                    <li class="active"><a href="layout-danger-header.html">Danger Header</a></li>
+                    <li><a href="layout-offcanvas-menu.html">Off Canvas Menu</a></li>
+                    <li><a href="layout-top-menu.html">Top Menu</a></li>
+                    <li><a href="layout-nosidebar-left.html">Without Left Sidebar</a></li>
+                    <li><a href="layout-nosidebar-right.html">Without Right Sidebar</a></li>
+                    <li><a href="layout-nosidebars.html">Without Both Sidebars</a></li>
+                    <li><a href="layout-fixed-sidebar.html">Fixed Left Sidebar</a></li>
+                    <li><a href="layout-boxed-layout.html">Boxed Layout</a></li>
                   </ul>
                 </li>
               </ul>
@@ -152,12 +157,12 @@
     </div>
     <div class="bt-content">
       <div class="page-head">
-        <h2 class="page-head-title">Success Header</h2>
+        <h2 class="page-head-title">Danger Header</h2>
         <nav aria-label="breadcrumb" role="navigation">
           <ol class="breadcrumb page-head-nav">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="#">Layout</a></li>
-            <li class="breadcrumb-item active">Success Header</li>
+            <li class="breadcrumb-item active">Danger Header</li>
           </ol>
         </nav>
       </div>
@@ -165,14 +170,14 @@
         <div class="row">
           <div class="col-12 col-lg-7 offset-lg-2">
             <div class="card">
-              <div class="card-header"><span class="title">Success header</span></div>
+              <div class="card-header"><span class="title">Danger header</span></div>
               <div class="card-body">
-                <p>To change the header white background color and use the success color you just need to add the classes (<code>bt-color-header bt-color-header-success</code>) to the main wrapper (<code>bt-wrapper</code>) element, this way your main structure should be like this:</p>
+                <p>To change the header white background color and use the danger color you just need to add the classes (<code>bt-color-header bt-color-header-danger</code>) to the main wrapper (<code>bt-wrapper</code>) element, this way your main structure should be like this:</p>
               </div>
               <pre class="prettyprint">&lt;html lang=&quot;en&quot;&gt;
 &lt;body&gt;
-  &lt;div class=&quot;bt-wrapper bt-color-header bt-color-header-success&quot;&gt;
-    &lt;nav class=&quot;navbar navbar-default navbar-fixed-top bt-top-header&quot;&gt;
+  &lt;div class=&quot;bt-wrapper bt-color-header bt-color-header-danger&quot;&gt;
+    &lt;nav class=&quot;navbar navbar-expand fixed-top bt-top-header&quot;&gt;
       &lt;!-- Top bar --&gt;
     &lt;/nav&gt;
     &lt;div class=&quot;bt-left-sidebar&quot;&gt;

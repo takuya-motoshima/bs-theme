@@ -15964,6 +15964,18 @@
    * @return {string[]}
    */
 
+// Sub navigation interaction
+
+// Check if the event is fired from mobile
+
+// Get the open sub menus
+
+// If there are open sub menus close them
+
+// Stop default bootstrap dropdown interaction
+
+// Sync tabs when resize between mobile and desktop resolutions
+
 // EXTERNAL MODULE: ./src/components/DataTable.js
 
 // Open-Sidebar when click on topbar button
@@ -16013,8 +16025,6 @@
 // Close opened child submenus
 
 // Open submenu function
-
-// If there are open sub menus close them
 
 // Renew Perfect Scroller instance
 
@@ -16077,5 +16087,3 @@
 // Bootstrap modal scroll top fix
 
 // Wrapper element position
-
-// console.log('navHeight=', navHeight);

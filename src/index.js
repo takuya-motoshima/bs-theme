@@ -18,6 +18,8 @@ import Validator from '~/components/Validator';
 import DataTable from '~/components/DataTable';
 import Clipboard from '~/components/Clipboard';
 import Notifier from '~/components/Notifier';
+import initMegaMenu from '~/utils/initMegaMenu';
+
 
 // Core private functions
 function leftSidebarInit() {
@@ -269,11 +271,11 @@ function leftSidebarInit() {
   }
   
   // Add classes if top menu is present
-  if (topNavbar.find('.container-fluid > .navbar-collapse').length && leftSidebar.length) {
+  if (topnav.find('.container-fluid > .navbar-collapse').length && leftSidebar.length) {
     wrapper.addClass(config.offCanvasLeftSidebarClass).addClass(config.offCanvasLeftSidebarMobileClass);
     wrapper.addClass(config.topHeaderMenuClass);
     leftSidebarToggle = $('<a class="nav-link bt-toggle-left-sidebar" href="#"><span class="icon mdi mdi-menu"></span></a>');
-    $('.bt-navbar-header', topNavbar).prepend(leftSidebarToggle);
+    $('.bt-navbar-header', topnav).prepend(leftSidebarToggle);
   }
 
   // Scrollbar plugin init when left sidebar is fixed
@@ -517,13 +519,14 @@ function initAsidePS() {
 // Get the main elements when document is ready
 const body = $('body');
 const wrapper = $('.bt-wrapper');
-const topNavbar = $('.bt-top-header', wrapper);
+const topnav = $('.bt-top-header', wrapper);
+const rightnav = $('.bt-right-navbar', topnav);
 const leftSidebar = $('.bt-left-sidebar', wrapper);
 const rightSidebar = $('.bt-right-sidebar', wrapper);
 const aside = $('.page-aside', wrapper);
 const asideScroller = $('.bt-scroller-aside', wrapper);
-const leftSidebarToggle = $('.bt-toggle-left-sidebar', topNavbar);
-const notifications = $('.bt-scroller-notifications', topNavbar);
+let leftSidebarToggle = $('.bt-toggle-left-sidebar', topnav);
+const notifications = $('.bt-scroller-notifications', topnav);
 let openSidebar = false;
 
 // Perfect scrollbar variables
@@ -594,24 +597,25 @@ function init() {
     var observer = new MutationObserver((mutationsList, observer) => {
       mutationsList.forEach((mutation) => {
         if (mutation.type !== 'attributes' || mutation.attributeName !== 'style') return;
-        if (document.body.className.indexOf('swal2-shown') > 0) topNavbar.css({ marginLeft: 'calc(-' + document.body.style.paddingRight + ' / 2)' });
-        else topNavbar.css({ marginLeft: '0' });
+        if (document.body.className.indexOf('swal2-shown') > 0) topnav.css({ marginLeft: 'calc(-' + document.body.style.paddingRight + ' / 2)' });
+        else topnav.css({ marginLeft: '0' });
       });
     });
     observer.observe(document.body, { attributes: true });
   }
 
   // Wrapper element position
-  if (topNavbar.length && topNavbar.hasClass('fixed-top') && wrapper.length) {
-    function layoutWrapper() {
-      if (!topNavbar.length || !topNavbar.hasClass('fixed-top') || !wrapper.length) return;
-      const navHeight = topNavbar.outerHeight();
-      // console.log('navHeight=', navHeight);
-      wrapper.css('padding-top', `${navHeight}px`);
-      if (aside.length) aside.css({ 'margin-top': `${navHeight}px`, 'padding-bottom': `${navHeight}px` });
+  if (topnav.length && topnav.hasClass('fixed-top') && rightnav.length) {
+    function layout() {
+      const height = `${rightnav.outerHeight()}px`;
+      wrapper.css('padding-top', height);
+      if (aside.length) aside.css({
+        'margin-top': height,
+        'padding-bottom': height
+      });
     }
-    $(window).on('resize', () => layoutWrapper());
-    layoutWrapper();
+    $(window).on('resize', () => layout());
+    layout();
   }
   console.log('Completed theme initialization');
 }
@@ -628,5 +632,6 @@ export {
   DataTable,
   Clipboard,
   Api,
-  Notifier
+  Notifier,
+  initMegaMenu
 }

@@ -1,17 +1,18 @@
 # Changelog
 
-## [0.0.27] - 2020-08-02
+## [0.0.27] - 2020-08-03
 
-- Added layout example(./documentation/layouts-\*.html).
-- Added general table example(./documentation/tables-general.html).
+- Added layout example(./documentation/layout-\*.html).
+- Added general table example(./documentation/table-general.html).
 - Added theme color header SCSS(./src/sass/includes/structure/\_top-header.scss).
 - Fixed the bug that the layout of the table column dropdown is broken(./src/sass/includes/bootstrap/\_tables.scss).
+- Fixed SCSS of off canvas menu(./src/sass/includes/structure/\_top-header.scss).
 
-## [0.0.26] - 2020-08-01
+## [0.0.26] - 2020-08-02
 
 - Added Introduction(./getting-started) and API Document(./documentation) to public files
 
-## [0.0.25] - 2020-08-01
+## [0.0.25] - 2020-08-02
 
 - Added alert UI example(./documentation/ui-alerts.html).
 - Added card UI example(./documentation/ui-cards.html).
@@ -121,7 +122,7 @@
 
 ## [0.0.19] - 2020-07-28
 
-- Datatable example page added (./documentation/tables-datatables.html).
+- Datatable example page added (./documentation/table-datatables.html).
 
 ## [0.0.18] - 2020-07-27
 

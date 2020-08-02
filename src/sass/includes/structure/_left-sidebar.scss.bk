@@ -98,7 +98,7 @@
     padding: 0;
 
     .divider {
-      padding: 0 $left-sidebar-main-level-padding;
+      padding: 20px $left-sidebar-main-level-padding 0;
       color: $left-sidebar-divider-color;
       line-height: 30px;
       font-weight: 600;

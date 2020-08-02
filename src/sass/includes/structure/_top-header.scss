@@ -10,7 +10,7 @@
 
   @include tablet{
     // border-bottom-width: 0;
-    // position: relative;
+    position: relative;
     min-height: 0;
   }
 
@@ -48,7 +48,7 @@
     }
 
     // Hide logo on collapsible left sidebar
-    .bt-collapsible-sidebar-hide-logo.bt-collapsible-sidebar-collapsed & {
+    .bt-collapsible-sidebar-collapsed & {
       width: $left-sidebar-collapsed-width;
       flex: 0 0 $left-sidebar-collapsed-width;
     }
@@ -89,7 +89,7 @@
       }
 
       // Hide on collapsible left sidebar
-      .bt-collapsible-sidebar-hide-logo.bt-collapsible-sidebar-collapsed & {
+      .bt-collapsible-sidebar-collapsed & {
         display: none;
       }
     }
@@ -110,7 +110,7 @@
       }
 
       // Hide logo on collapsible left sidebar
-      .bt-collapsible-sidebar-hide-logo.bt-collapsible-sidebar-collapsed & {
+      .bt-collapsible-sidebar-collapsed & {
         padding: 0 21px;
       }
     }
@@ -207,7 +207,7 @@
             min-width: 175px;
             line-height: 18px;
 
-            &:hover{
+            &:hover {
               background-color: theme-color("primary");
               color: theme-color("light");
             }
@@ -418,9 +418,9 @@
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid $top-header-phone-bg;
-      // position: fixed;
-      // top: 0;
-      // left: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
       background-color: $top-header-phone-bg;
       z-index: $zindex-fixed;
@@ -520,6 +520,8 @@
 
       @include tablet {
         display: flex;
+        // flex-wrap: nowrap;
+        // flex-direction: row;
         flex-wrap: wrap;
       }
     }
@@ -531,7 +533,7 @@
         flex: 0 0 auto;
         display: block;
         width: auto;
-        background-color: theme-color("primary");
+        // background-color: theme-color("primary");
       }
 
       .bt-toggle-left-sidebar {
@@ -543,7 +545,7 @@
           left: 0;
           padding-left: 15px;
           padding-right: 13px;
-          background-color: theme-color("primary");
+          // background-color: theme-color("primary");
           min-width: 48px;
         }
 
@@ -552,7 +554,7 @@
           font-size: 1.846rem;
 
           @include tablet {
-            color: theme-color("light");
+            // color: theme-color("light");
             overflow: hidden;
           }
         }
@@ -602,6 +604,13 @@
 
       .navbar-brand{
         background-image: url("#{$logo-white}");
+      }
+
+      .bt-toggle-left-sidebar {
+
+        .icon {
+          color: theme-color("light");
+        }
       }
     }
 

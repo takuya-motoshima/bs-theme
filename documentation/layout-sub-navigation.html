@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="../dist/build.css" type="text/css"/>
 </head>
 <body>
-  <div class="bt-wrapper bt-fixed-sidebar">
+  <div class="bt-wrapper">
     <nav class="navbar navbar-expand fixed-top bt-top-header">
       <div class="container-fluid">
         <div class="bt-navbar-header">
           <a class="navbar-brand" href="index.html"></a>
         </div>
-        <div class="page-title"><span>UI Grid</span></div>
+        <div class="page-title"><span>Sub Navigation</span></div>
         <div class="bt-right-navbar">
           <ul class="nav navbar-nav float-right bt-user-nav">
             <li class="nav-item dropdown">
@@ -94,166 +94,61 @@
         </div>
       </div>
     </nav>
-    <div class="bt-left-sidebar">
-      <div class="left-sidebar-wrapper">
-        <a class="left-sidebar-toggle" href="#">UI Grid</a>
-        <div class="left-sidebar-spacer">
-          <div class="left-sidebar-scroll">
-            <div class="left-sidebar-content">
-              <ul class="sidebar-elements">
-                <li class="divider">Menu</li>
-                <li><a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a></li>
-                <li class="parent active open">
-                  <a href="#"><i class="icon mdi mdi-face"></i><span>UI</span></a>
-                  <ul class="sub-menu">
-                    <li><a href="ui-alerts.html">Alert</a></li>
-                    <li><a href="ui-buttons.html">Button</a></li>
-                    <li><a href="ui-cards.html">Card</a></li>
-                    <li><a href="ui-panels.html">Panel</a></li>
-                    <li><a href="ui-general.html">General</a></li>
-                    <li><a href="ui-modals.html">Modal</a></li>
-                    <li><a href="ui-notifications.html">Notification</a></li>
-                    <li><a href="ui-icons.html">Icon</a></li>
-                    <li class="active"><a href="ui-grid.html">Grid</a></li>
-                    <li><a href="ui-tabs-accordions.html">Tab &amp; Accordion</a></li>
-                    <li><a href="ui-typography.html">Typography</a></li>
-                  </ul>
-                </li>
-                <li class="parent">
-                  <a href="#"><i class="icon mdi mdi-dot-circle"></i><span>Form</span></a>
-                  <ul class="sub-menu">
-                    <li><a href="form-elements.html">Element</a></li>
-                    <li><a href="form-validation.html">Validation</a></li>
-                  </ul>
-                </li>
-                <li class="parent">
-                  <a href="#"><i class="icon mdi mdi-border-all"></i><span>Table</span></a>
-                  <ul class="sub-menu">
-                    <li><a href="table-general.html">General</a></li>
-                    <li><a href="table-datatables.html">Data Table</a></li>
-                  </ul>
-                </li>
-                <li class="parent">
-                  <a href="#"><i class="icon mdi mdi-view-web"></i><span>Layout</span></a>
-                  <ul class="sub-menu">
-                    <li><a href="layout-primary-header.html">Primary Header</a></li>
-                    <li><a href="layout-success-header.html">Success Header</a></li>
-                    <li><a href="layout-warning-header.html">Warning Header</a></li>
-                    <li><a href="layout-danger-header.html">Danger Header</a></li>
-                    <li><a href="layout-offcanvas-menu.html">Off Canvas Menu</a></li>
-                    <li><a href="layout-top-menu.html">Top Menu</a></li>
-                    <li><a href="layout-nosidebar-left.html">Without Left Sidebar</a></li>
-                    <li><a href="layout-nosidebar-right.html">Without Right Sidebar</a></li>
-                    <li><a href="layout-nosidebars.html">Without Both Sidebars</a></li>
-                    <li><a href="layout-fixed-sidebar.html">Fixed Left Sidebar</a></li>
-                    <li><a href="layout-boxed-layout.html">Boxed Layout</a></li>
-                  </ul>
-                </li>
-              </ul>
+    <nav class="navbar navbar-expand-md bt-sub-navigation">
+      <a class="navbar-brand bt-sub-navigation-collapse collapsed" href="#" data-toggle="collapse" aria-expanded="false" data-target="#bt-sub-navigation-collapse">Sub Navigation</a>
+      <div class="navbar-collapse collapse" id="bt-sub-navigation-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Forms <span class="mdi mdi-caret-down"></span></a>
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="form-elements.html">Element</a>
+              <a class="dropdown-item" href="form-validation.html">Validation</a>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
+
     <div class="bt-content">
       <div class="page-head">
-        <h2 class="page-head-title">Grid</h2>
+        <h2 class="page-head-title">Sub Navigation</h2>
         <nav aria-label="breadcrumb" role="navigation">
           <ol class="breadcrumb page-head-nav">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">UI</a></li>
-            <li class="breadcrumb-item active">Grid</li>
+            <li class="breadcrumb-item"><a href="#">Layout</a></li>
+            <li class="breadcrumb-item active">Sub Navigation</li>
           </ol>
         </nav>
       </div>
       <div class="main-content container-fluid">
         <div class="row">
-          <div class="col-sm-2">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-2</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-2</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-2</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-2</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-2</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-2</span><span class="device"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-3</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-3</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-3</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-3</span><span class="device"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-4</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-4</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-4</span><span class="device"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-6</span><span class="device"></span></div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-6</span><span class="device"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="bt-grid-block">
-              <div class="content"><span class="size">.col-md-12</span><span class="device"></span></div>
+          <div class="col-12 col-lg-7 offset-lg-2">
+            <div class="card">
+              <div class="card-header"><span class="title">Add sub navigation</span></div>
+              <div class="card-body">
+                <p>You can add the <b>Sub navigation</b> by default just adding the nav <code>bt-sub-navigation</code> between the <b>bt-top-header</b> and <b>bt-content</b> wrapper element, like this:</p>
+              </div>
+              <pre class="prettyprint">&lt;html lang=&quot;en&quot;&gt;
+&lt;body&gt;
+  &lt;div class=&quot;bt-wrapper&quot;&gt;
+    &lt;nav class=&quot;navbar navbar-expand fixed-top bt-top-header&quot;&gt;
+      &lt;!-- Top bar --&gt;
+    &lt;/nav&gt;
+
+    &lt;nav class=&quot;navbar navbar-expand-md bt-sub-navigation&quot;&gt;
+      &lt;!-- Sub navigation --&gt;
+    &lt;/nav&gt;
+
+    &lt;div class=&quot;bt-content&quot;&gt;
+      &lt;!-- Main content --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;bt-right-sidebar&quot;&gt;
+      &lt;!-- Right sidebar --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt; 
+&lt;/body&gt;
+&lt;/html&gt;</pre>
             </div>
           </div>
         </div>
@@ -426,11 +321,15 @@
       </div>
     </nav>
   </div>
+  <script src="../node_modules/code-prettify/src/prettify.js"></script>
   <script type="module">
     import { init } from '../dist/build.js';
 
     // Theme initialization
     init();
+
+    // JavaScript code prettifier
+    prettyPrint();
   </script>
 </body>
 </html>

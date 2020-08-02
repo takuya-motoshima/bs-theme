@@ -83,7 +83,8 @@ $grid-breakpoints: (
 $left-sidebar-colors: (
   "left-sidebar-bg": $white,
   "left-sidebar-text-color": shade-correction($gray-100, true),
-  "left-sidebar-text-active-color": #ec7211,
+  "left-sidebar-text-active-color": #efc600,
+  // "left-sidebar-text-active-color": theme-color("primary"),
   "left-sidebar-divider-color": shade-contrast-correction(theme-color("primary"), $gray-100),
   "left-sidebar-progress-bar-color": theme-color("primary"),
   "left-sidebar-progress-bar-bg-color": darken($gray-100, 4%),
