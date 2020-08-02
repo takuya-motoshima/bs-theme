@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.28] - 2020-08-03
+
+- Fixed example link(./documentation/\*.html).
+
 ## [0.0.27] - 2020-08-03
 
 - Added layout example(./documentation/layout-\*.html).
