@@ -2,7 +2,10 @@
 
 ## [0.0.27] - 2020-08-02
 
+- Added layout example(./documentation/layouts-\*.html).
 - Added general table example(./documentation/tables-general.html).
+- Added theme color header SCSS(./src/sass/includes/structure/\_top-header.scss).
+- Fixed the bug that the layout of the table column dropdown is broken(./src/sass/includes/bootstrap/\_tables.scss).
 
 ## [0.0.26] - 2020-08-01
 

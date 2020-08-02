@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="shortcut icon" href="images/favicon.png">
   <title>Bootstrap4 Theme</title>
-  <link rel="stylesheet" href="../dist/build.css" type="text/css" />
+  <link rel="stylesheet" href="../dist/build.css" type="text/css"/>
 </head>
 <body>
-  <div class="bt-wrapper bt-fixed-sidebar">
+  <div class="bt-wrapper bt-fixed-sidebar bt-color-header bt-color-header-success">
     <nav class="navbar navbar-expand fixed-top bt-top-header">
       <div class="container-fluid">
         <div class="bt-navbar-header">
           <a class="navbar-brand" href="index.html"></a>
         </div>
-        <div class="page-title"><span>Dashboard</span></div>
+        <div class="page-title"><span>Success Heade</span></div>
         <div class="bt-right-navbar">
           <ul class="nav navbar-nav float-right bt-user-nav">
             <li class="nav-item dropdown">
@@ -47,9 +47,7 @@
                             <a href="#">
                               <div class="image"><img src="images/avatar.svg" alt="Avatar"></div>
                               <div class="notification-info">
-                                <div class="text">
-                                  <span class="user-name">Jessica Caruso</span>accepted your invitation to join the team.
-                                </div>
+                                <div class="text"><span class="user-name">Jessica Caruso</span>accepted your invitation to join the team.</div>
                                 <span class="date">2 min ago</span>
                               </div>
                             </a>
@@ -98,13 +96,13 @@
     </nav>
     <div class="bt-left-sidebar">
       <div class="left-sidebar-wrapper">
-        <a class="left-sidebar-toggle" href="#">Dashboard</a>
+        <a class="left-sidebar-toggle" href="#">Success Heade</a>
         <div class="left-sidebar-spacer">
           <div class="left-sidebar-scroll">
             <div class="left-sidebar-content">
               <ul class="sidebar-elements">
                 <li class="divider">Menu</li>
-                <li class="active">
+                <li>
                   <a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
                 </li>
                 <li class="parent">
@@ -137,11 +135,11 @@
                     <li><a href="tables-datatables.html">Data Table</a></li>
                   </ul>
                 </li>
-                <li class="parent">
+                <li class="parent active open">
                   <a href="#"><i class="icon mdi mdi-view-web"></i><span>Layout</span></a>
                   <ul class="sub-menu">
                     <li><a href="layouts-primary-header.html">Primary Header</a></li>
-                    <li><a href="layouts-success-header.html">Success Header</a></li>
+                    <li class="active"><a href="layouts-success-header.html">Success Header</a></li>
                     <li><a href="layouts-warning-header.html">Warning Header</a></li>
                     <li><a href="layouts-danger-header.html">Danger Header</a></li>
                   </ul>
@@ -153,7 +151,45 @@
       </div>
     </div>
     <div class="bt-content">
+      <div class="page-head">
+        <h2 class="page-head-title">Success Header</h2>
+        <nav aria-label="breadcrumb" role="navigation">
+          <ol class="breadcrumb page-head-nav">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Layout</a></li>
+            <li class="breadcrumb-item active">Success Header</li>
+          </ol>
+        </nav>
+      </div>
       <div class="main-content container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-7 offset-lg-2">
+            <div class="card">
+              <div class="card-header"><span class="title">Success header</span></div>
+              <div class="card-body">
+                <p>To change the header white background color and use the success color you just need to add the classes (<code>bt-color-header bt-color-header-success</code>) to the main wrapper (<code>bt-wrapper</code>) element, this way your main structure should be like this:</p>
+              </div>
+              <pre class="prettyprint">&lt;html lang=&quot;en&quot;&gt;
+&lt;body&gt;
+  &lt;div class=&quot;bt-wrapper bt-color-header bt-color-header-success&quot;&gt;
+    &lt;nav class=&quot;navbar navbar-default navbar-fixed-top bt-top-header&quot;&gt;
+      &lt;!-- Top bar --&gt;
+    &lt;/nav&gt;
+    &lt;div class=&quot;bt-left-sidebar&quot;&gt;
+      &lt;!-- Left sidebar --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;bt-content&quot;&gt;
+      &lt;!-- Main content --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;bt-right-sidebar&quot;&gt;
+      &lt;!-- Right sidebar --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt; 
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <nav class="bt-right-sidebar">
@@ -323,11 +359,15 @@
       </div>
     </nav>
   </div>
+  <script src="../node_modules/code-prettify/src/prettify.js"></script>
   <script type="module">
     import { init } from '../dist/build.js';
 
     // Theme initialization
     init();
+
+    // JavaScript code prettifier
+    prettyPrint();
   </script>
 </body>
 </html>

@@ -97,15 +97,15 @@ $left-sidebar-colors: (
 $top-header-colors: (
   "top-header-bg": $white,
   "top-header-text-color": #404040,
-  "top-header-icons-open-color": theme-color("primary"),
-  "top-header-icons-open-color-mobile": $white,
+  "top-header-icons-open-color": lighten(#404040, 20%),
+  "top-header-icons-open-color-mobile": lighten(#404040, 20%),
   "top-header-icons-color": lighten(#404040, 20%),
-  "top-header-icons-color-mobile": $white,
+  "top-header-icons-color-mobile": lighten(#404040, 20%),
   "top-header-indicator-color": theme-color("primary"),
-  "top-header-phone-bg": #232f3e,
+  "top-header-phone-bg": $white,
   "top-header-link-color": darken($white, 55%),
-  "top-header-nav-link-color-mobile": $white,
-  "top-header-navbar-color-open": theme-color("primary")
+  "top-header-nav-link-color-mobile": darken($white, 55%),
+  "top-header-navbar-color-open": lighten(#404040, 20%)
 ) !default;
 
 //Spacing
@@ -439,7 +439,8 @@ $top-header-link-color:                 darken(theme-color("light"), 55%) !defau
 $top-header-height:                     60px !default;
 $top-header-height-phone:               70px !default;
 $top-header-navbar-color:               lighten($top-header-text-color, 10%) !default;
-$top-header-navbar-color-open:          theme-color("primary") !default;
+$top-header-navbar-color-open:          lighten($top-header-text-color, 10%) !default;
+// $top-header-navbar-color-open:          theme-color("primary") !default;
 $top-header-navbar-font-size:           14px !default;
 $top-header-navbar-padding:             18px !default;
 $top-header-search-max-width:           800px !default;
