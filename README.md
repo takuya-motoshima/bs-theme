@@ -6,6 +6,41 @@ This is still in development and will be published at a later date.
 
 ## Changelog
 
+### [0.0.30] - 2020-08-08
+
+- Added locale to validation component(./src/components/Validator.js). An example is in ./documentation/form-validation.html.
+
+    ```js
+    <form id="form">
+      <div class="form-group">
+        <label>Email</label>
+        <input class="form-control" type="email" required parsley-type="email">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input class="form-control" type="password" required>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+
+    import { Validator } from 'bs-theme';
+
+    // Initialize form validation.
+    // The first parameter is the form to validate (form ID or HTMLFormElement, or jqElement of the form).
+    // The second parameter is the locale. The default is "en".
+    // Available locales are al, ar, bg, ca, cs, da, de, el, en, es, et, eu, fa, fi, fr, he, hr, hu, id, it, ja, ko, lt, lv, ms, nl, no, pl, pt-br, pt-pt, ro, ru, sk, sl, sq, sr, sv, th, tk, tr, ua, uk, ur, zh_cn, zh_tw.
+    // See "https://parsleyjs.org/doc/" for details on HTML validation attributes.
+    const validator = new Validator('#form', 'ja');
+    //const validator = new Validator(document.querySelector('#form'), 'en');
+    //const validator = new Validator($('#form'), 'en');
+
+    // If all errors are resolved, the submit event will be called.
+    validator.on('submit', event => {
+      // When there are no errors
+      alert('Submit');
+    });
+    ```
+
 ### [0.0.29] - 2020-08-03
 
 - Added sign-in page example(./documentation/page-login.html, ./documentation/page-login2.html).

@@ -1,6 +1,50 @@
 import $ from 'jquery';
 import Parsley from 'parsleyjs';
-import 'parsleyjs/dist/i18n/ja.js';
+import 'parsleyjs/dist/i18n/al';
+import 'parsleyjs/dist/i18n/ar';
+import 'parsleyjs/dist/i18n/bg';
+import 'parsleyjs/dist/i18n/ca';
+import 'parsleyjs/dist/i18n/cs';
+import 'parsleyjs/dist/i18n/da';
+import 'parsleyjs/dist/i18n/de';
+import 'parsleyjs/dist/i18n/el';
+import 'parsleyjs/dist/i18n/en';
+import 'parsleyjs/dist/i18n/es';
+import 'parsleyjs/dist/i18n/et';
+import 'parsleyjs/dist/i18n/eu';
+import 'parsleyjs/dist/i18n/fa';
+import 'parsleyjs/dist/i18n/fi';
+import 'parsleyjs/dist/i18n/fr';
+import 'parsleyjs/dist/i18n/he';
+import 'parsleyjs/dist/i18n/hr';
+import 'parsleyjs/dist/i18n/hu';
+import 'parsleyjs/dist/i18n/id';
+import 'parsleyjs/dist/i18n/it';
+import 'parsleyjs/dist/i18n/ja';
+import 'parsleyjs/dist/i18n/ko';
+import 'parsleyjs/dist/i18n/lt';
+import 'parsleyjs/dist/i18n/lv';
+import 'parsleyjs/dist/i18n/ms';
+import 'parsleyjs/dist/i18n/nl';
+import 'parsleyjs/dist/i18n/no';
+import 'parsleyjs/dist/i18n/pl';
+import 'parsleyjs/dist/i18n/pt-br';
+import 'parsleyjs/dist/i18n/pt-pt';
+import 'parsleyjs/dist/i18n/ro';
+import 'parsleyjs/dist/i18n/ru';
+import 'parsleyjs/dist/i18n/sk';
+import 'parsleyjs/dist/i18n/sl';
+import 'parsleyjs/dist/i18n/sq';
+import 'parsleyjs/dist/i18n/sr';
+import 'parsleyjs/dist/i18n/sv';
+import 'parsleyjs/dist/i18n/th';
+import 'parsleyjs/dist/i18n/tk';
+import 'parsleyjs/dist/i18n/tr';
+import 'parsleyjs/dist/i18n/ua';
+import 'parsleyjs/dist/i18n/uk';
+import 'parsleyjs/dist/i18n/ur';
+import 'parsleyjs/dist/i18n/zh_cn';
+import 'parsleyjs/dist/i18n/zh_tw';
 
 // Add password verification
 Parsley.addValidator('password', {
@@ -29,14 +73,24 @@ Parsley.addValidator('password', {
 });
 
 export default class {
-  constructor(form) {
-    this.form = form instanceof $ ? form : $(form);
+
+  /**
+   * @param  {string|HTMLFormElement|jqElement} form   [description]
+   * @param  {al|ar|bg|ca|cs|da|de|el|en|es|et|eu|fa|fi|fr|he|hr|hu|id|it|ja|ko|lt|lv|ms|nl|no|pl|pt-br|pt-pt|ro|ru|sk|sl|sq|sr|sv|th|tk|tr|ua|uk|ur|zh_cn|zh_tw} locale 
+   */
+  constructor(form, locale = 'en') {
+    if ($.type(form) === 'string' || form instanceof HTMLFormElement) form = $(form);
+    else if (!(form instanceof $)) throw new TypeError('Wrong parameter type');
+    this.form = form;
     this.submit = this.form.find('[type="submit"]:first');
+    if (!this.submit.length && this.form.attr('id') && $(`[type="submit"][form="${this.form.attr('id')}"]`).length)
+      this.submit = $(`[type="submit"][form="${this.form.attr('id')}"]`);
     this.listeners = {
       submit: () => {},
       fieldSuccess: () => {},
       fieldValidate: () => {}
     };
+    Parsley.setLocale(locale);
     this.parsley = this.form.parsley({
       inputs: 'input,textarea,select,input[type=hidden],:hidden',
       excluded: 'input[type=button],input[type=submit],input[type=reset],[disabled]',
