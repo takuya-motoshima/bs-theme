@@ -11897,6 +11897,44 @@
 
 /* 3 */
 
+/* WEBPACK VAR INJECTION */
+
+/*!
+   * Bowser - a browser detector
+   * https://github.com/lancedikson/bowser
+   * MIT License | (c) Dustin Diaz 2012-2015
+   * MIT License | (c) Denis Demchenko 2015-2019
+   */
+
+/**!
+
+   @license
+   handlebars v4.7.3
+
+  Copyright (C) 2011-2019 by Yehuda Katz
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+
+  */
+
+/* 4 */
+
 // This works in non-strict mode
 
 // This works if eval is allowed (see CSP)
@@ -11909,7 +11947,7 @@
 
 // easier to handle this case. if(!global) { ...}
 
-/* 4 */
+/* 5 */
 
 /*! DataTables Bootstrap 4 integration
  * ©2011-2017 SpryMedia Ltd - datatables.net/license
@@ -11930,7 +11968,7 @@
 
 /* Bootstrap paging button renderer */
 
-/* 5 */
+/* 6 */
 
 /*!
   * Bootstrap v4.5.0 (https://getbootstrap.com/)
@@ -12161,9 +12199,7 @@
 
 //# sourceMappingURL=bootstrap.js.map
 
-/* 6 */
-
-/* WEBPACK VAR INJECTION */
+/* 7 */
 
 /**
      * Base function to check whether the current viewport is exactly between
@@ -12253,7 +12289,7 @@
          * @return {boolean}
          */
 
-/* 7 */
+/* 8 */
 
 /* harmony import */
 
@@ -12294,6 +12330,10 @@
 
 // return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test();
 
+// Added verification of input file size
+
+// e.g. <input type="file" name="file" required data-parsley-max-file-size="42">
+
 // Initialize form validation
 
 // Set event
@@ -12302,7 +12342,7 @@
 
 // Escape selector
 
-/* 8 */
+/* 9 */
 
 /*!
 * Parsley.js
@@ -12918,8 +12958,6 @@
 
 // Bind the testing handlers
 
-/* 9 */
-
 /* 10 */
 
 /* 11 */
@@ -13010,6 +13048,8 @@
 
 /* 54 */
 
+/* 55 */
+
 // Make it available globally as it needs to be accessible within the single file components (.vue)
 
 /**
@@ -13073,7 +13113,7 @@
    * @return {Object|string}
    */
 
-/* 55 */
+/* 56 */
 
 /*! Responsive 2.2.3
  * 2014-2018 SpryMedia Ltd - datatables.net/license
@@ -13573,45 +13613,9 @@
 
 // events so we can automatically initialise
 
-/* 56 */
-
 /* 57 */
 
 /* 58 */
-
-/*!
-   * Bowser - a browser detector
-   * https://github.com/lancedikson/bowser
-   * MIT License | (c) Dustin Diaz 2012-2015
-   * MIT License | (c) Denis Demchenko 2015-2019
-   */
-
-/**!
-
-   @license
-   handlebars v4.7.3
-
-  Copyright (C) 2011-2019 by Yehuda Katz
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-  THE SOFTWARE.
-
-  */
 
 /* 59 */
 

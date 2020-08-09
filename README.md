@@ -6,6 +6,35 @@ This is still in development and will be published at a later date.
 
 ## Changelog
 
+### [0.0.34] - 2020-08-09
+
+- Added validation for maximum upload file size(./src/components/Validator.js). Also add examples(./documentation/form-validation.html).
+
+    ```js
+    <form id="myForm">
+      <div class="form-group row">
+        <label class="col-12 col-sm-3 col-form-label text-sm-right">Upload file size</label>
+        <div class="col-12 col-sm-8 col-lg-6">
+          <input class="inputfile" id="file" type="file" name="file" required data-parsley-max-file-size="1">
+          <label class="btn-secondary" for="file"><i class="mdi mdi-upload"></i><span>Browse file...</span></label>
+        </div>
+      </div>
+      <div class="form-group row text-right">
+        <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-0">
+          <button class="btn btn-space btn-primary" type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    import { Validator, $ } from 'bs-theme';
+
+    // Form validation
+    const validator = new Validator('#myForm');
+    validator.on('submit', event => {
+      alert('Submit');
+    });
+    ```
+
 ### [0.0.33] - 2020-08-09
 
 - Added usage of data table row template to changelog.

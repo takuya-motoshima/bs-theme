@@ -52,8 +52,24 @@ export default class {
         // return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test();
       },
       messages: {
+        en: 'The password must contain at least one letter, number, and symbol.',
+        fr: 'Le mot de passe doit contenir au moins une lettre, un chiffre et un symbole.',
         ja: 'パスワードは英数記号をそれぞれ1文字以上含めてください。',
-        en: 'The password must contain at least one letter, number, and symbol.'
+      }
+    });
+
+    // Added verification of input file size
+    // e.g. <input type="file" name="file" required data-parsley-max-file-size="42">
+    this.addValidator('maxFileSize', {
+      requirementType: 'integer',
+      validateString: function(_, maxSize, parsleyInstance) {
+        const files = parsleyInstance.$element[0].files;
+        return files.length != 1  || files[0].size <= maxSize * 1024;
+      },
+      messages: {
+        en: 'This file should not be larger than %s Kb',
+        fr: 'Ce fichier est plus grand que %s Kb.',
+        ja: 'アップロードできるファイルサイズは%s Kb以下までです。'
       }
     });
 

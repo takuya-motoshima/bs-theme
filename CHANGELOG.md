@@ -1,5 +1,34 @@
 # Changelog
 
+## [0.0.34] - 2020-08-09
+
+- Added validation for maximum upload file size(./src/components/Validator.js). Also add examples(./documentation/form-validation.html)
+
+    ```js
+    <form id="myForm">
+      <div class="form-group row">
+        <label class="col-12 col-sm-3 col-form-label text-sm-right">Upload file size</label>
+        <div class="col-12 col-sm-8 col-lg-6">
+          <input class="inputfile" id="file" type="file" name="file" required data-parsley-max-file-size="1">
+          <label class="btn-secondary" for="file"><i class="mdi mdi-upload"></i><span>Browse file...</span></label>
+        </div>
+      </div>
+      <div class="form-group row text-right">
+        <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-0">
+          <button class="btn btn-space btn-primary" type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    import { Validator, $ } from 'bs-theme';
+
+    // Form validation
+    const validator = new Validator('#myForm');
+    validator.on('submit', event => {
+      alert('Submit');
+    });
+    ```
+
 ## [0.0.33] - 2020-08-09
 
 - Added usage of data table row template to changelog.
@@ -140,7 +169,7 @@
 - Added locale to validation component(./src/components/Validator.js). An example is in ./documentation/form-validation.html.
 
     ```js
-    <form id="form">
+    <form id="myForm">
       <div class="form-group">
         <label>Email</label>
         <input class="form-control" type="email" required parsley-type="email">
@@ -159,9 +188,9 @@
     // The second parameter is the locale. The default is "en".
     // Available locales are al, ar, bg, ca, cs, da, de, el, en, es, et, eu, fa, fi, fr, he, hr, hu, id, it, ja, ko, lt, lv, ms, nl, no, pl, pt_br, pt_pt, ro, ru, sk, sl, sq, sr, sv, th, tk, tr, ua, uk, ur, zh_cn, zh_tw.
     // See "https://parsleyjs.org/doc/" for details on HTML validation attributes.
-    const validator = new Validator('#form', 'ja');
-    //const validator = new Validator(document.querySelector('#form'));
-    //const validator = new Validator($('#form'));
+    const validator = new Validator('#myForm', 'ja');
+    //const validator = new Validator(document.querySelector('#myForm'));
+    //const validator = new Validator($('#myForm'));
 
     // If all errors are resolved, the submit event will be called.
     validator.on('submit', event => {
