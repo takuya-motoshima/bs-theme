@@ -6,6 +6,10 @@ This is still in development and will be published at a later date.
 
 ## Changelog
 
+### [0.0.33] - 2020-08-09
+
+- Added usage of data table row template to changelog.
+
 ### [0.0.32] - 2020-08-09
 
 - Added theme color to background color of notifications.(./documentation/ui-notifications.html).
@@ -13,6 +17,9 @@ This is still in development and will be published at a later date.
     <img src="screencap/notification.png">
 
 - Added example of adding, editing and deleting rows in data table(./documentation/table-datatables.html).
+
+    The table row template uses Handlebars.  
+    See the reference (https://handlebarsjs.com/guide/) for details.  
 
     Add row:  
     <img src="screencap/datatable-add-row.jpg">
