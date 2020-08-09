@@ -3,7 +3,7 @@ import Modal from '~/components/Modal';
 
 export default class extends Modal {
   
-  constructor(option) {
+  constructor(option = {}) {
     option = $.extend({
       keyboard: true
     }, option);

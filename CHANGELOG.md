@@ -1,6 +1,130 @@
 # Changelog
 
-## [0.0.31] - 2020-08-08
+## [0.0.32] - 2020-08-09
+
+- Added theme color to background color of notifications.(./documentation/ui-notifications.html).
+
+    <img src="screencap/notification.png">
+
+- Added example of adding, editing and deleting rows in data table(./documentation/table-datatables.html).
+
+    Add row:  
+    <img src="screencap/datatable-add-row.jpg">
+
+    Delete row:  
+    <img src="screencap/datatable-delete-row.jpg">
+
+    Sample code:  
+
+    ```js
+    <table class="table table-striped table-hover table-fw-widget" id="myTable">
+      <thead><tr><th>Name</th><th>Action</th></tr></thead>
+      <tbody>
+        <script type="text/html" id="myTemplate">
+          <tr data-id="{{{id}}}">
+            <td>{{name}}</td>
+            <td class="text-nowrap">
+              <button edit class="btn btn-sm btn-primary"><i class="fas fa-edit mr-1"></i>Edit row</button>
+              <button delete class="btn btn-sm btn-danger ml-4"><i class="fas fa-trash mr-1"></i>Delete row</button>
+            </td>
+          </tr>
+        </script>
+      </tbody>
+    </table>
+
+    <div class="modal-container custom-width modal-effect-9" id="myModal">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form id="myForm">
+            <div class="form-group">
+              <label>Name</label>
+              <input name="name" type="text" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-dark modal-close" type="button" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary" type="submit" form="myForm"><i class="fas fa-check mr-1"></i>Save</button>
+        </div>
+      </div>
+    </div>
+
+    import { $, DataTable, ConfirmModal, Modal, Notifier } from 'bs-theme';
+
+    // Add, delete, edit table rows
+    const dt = new DataTable('#myTable', {
+      template: '#myTemplate',
+      columnDefs: [
+        { targets: 0, name: 'name' },
+        { targets: 1, name: 'action', orderable: false, searchable: false }
+      ],
+      buttons: [{
+        text: '<i class="fas fa-plus-circle mr-1"></i>Add new row',
+        className: 'btn-primary',
+        action: async () => {
+          const res = await myModal.open();
+          if (!res) return;
+          dt.addRow(res);
+          Notifier.success('Added table row');
+        }
+      }]
+    });
+
+    // Add and edit modal
+    const myModal = new (class extends Modal {
+      constructor() {
+        super('#myModal');
+        this.form = this.modal.find('form:first');
+        this.modal.on('submit', 'form', event => {
+          event.preventDefault();
+
+          // Convert input data to object
+          const data = {};
+          new FormData(this.form.get(0)).forEach((value, key) => data[key] = value);
+
+          // Returns input data to the caller
+          this.resolve(data);
+        });
+      }
+      async open(set = undefined) {
+        const promise = super.open();
+        if (set !== undefined) {
+          // Display data of selected table row in form when editing
+          this.form.find('[name="name"]:first').val(set.name);
+        }
+        return promise;
+      }
+      beforeOpen() {
+        super.beforeOpen();
+        this.form.get(0).reset();
+      }
+    });
+
+    // Draw rows
+    const rows = [
+      { id: 1, name: 'Tiger Nixon' },
+      { id: 2, name: 'Garrett Winters' }
+    ];
+    for (let row of rows) dt.addRow(row);
+
+    // Edit and delete actions
+    const confirmModal = new ConfirmModal();
+    dt.table
+      .on('click', '[delete]', async event => {
+        if (!(await confirmModal.open('Delete row', 'Are you sure to delete this?'))) return;
+        const row = $(event.currentTarget).closest('tr');
+        await dt.deleteRow(row);
+      })
+      .on('click', '[edit]', async event => {
+        const row = $(event.currentTarget).closest('tr');
+        const res = await myModal.open({ name: dt.getRowData(row, 0) });
+        if (!res) return;
+        dt.updateRow(row, res);
+        Notifier.success('Changed table row');
+      });
+    ```
+
+## [0.0.31] - 2020-08-09
 
 - Fix the bug that validator locale doesn't work when bundled(./src/components/Validator.js).
 
@@ -82,7 +206,7 @@
 
 - Changed to return the processing result of promise after closing it with modal base class.  
 - Changed so that the caller can receive the result of OK or cancellation selected modally.
-    
+
     To get whether the OK button or the Cancel button is selected, add the 'data-result="true"' attribute to the [OK] button.  
     Returns "true" if the OK button is selected and "false" if the cancel button or escape key is selected.  
 

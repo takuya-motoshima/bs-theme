@@ -11897,7 +11897,412 @@
 
 /* 3 */
 
+// This works in non-strict mode
+
+// This works if eval is allowed (see CSP)
+
+// This works if the window reference is available
+
+// g can still be undefined, but nothing to do about it...
+
+// We return undefined, instead of nothing here, so it's
+
+// easier to handle this case. if(!global) { ...}
+
+/* 4 */
+
+/*! DataTables Bootstrap 4 integration
+ * ©2011-2017 SpryMedia Ltd - datatables.net/license
+ */
+
+/**
+ * DataTables integration for Bootstrap 4. This requires Bootstrap 4 and
+ * DataTables 1.10 or newer.
+ *
+ * This file sets the defaults and adds options to DataTables to style its
+ * controls using Bootstrap. See http://datatables.net/manual/styling/bootstrap
+ * for further information.
+ */
+
+/* Set the defaults for DataTables initialisation */
+
+/* Default class modification */
+
+/* Bootstrap paging button renderer */
+
+/* 5 */
+
+/*!
+  * Bootstrap v4.5.0 (https://getbootstrap.com/)
+  * Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  */
+
+/**
+   * --------------------------------------------------------------------------
+   * Public Util Api
+   * --------------------------------------------------------------------------
+   */
+
+// eslint-disable-next-line no-bitwise
+
+// "~~" acts like a faster Math.floor() here
+
+// Get transition-duration of the element
+
+// Return 0 if element or transition duration is not found
+
+// If multiple durations are defined, take the first
+
+// TODO: Remove in v5
+
+// Shoutout AngusCroll (https://goo.gl/pxwQGp)
+
+// Can find the shadow root otherwise it'll return the document
+
+// when we don't find a shadow root
+
+// eslint-disable-line prefer-rest-params
+
+/**
+   * ------------------------------------------------------------------------
+   * Constants
+   * ------------------------------------------------------------------------
+   */
+
+/*#__PURE__*/
+
+// Getters
+
+// Public
+
+// Private
+
+// Static
+
+/**
+   * ------------------------------------------------------------------------
+   * Data Api implementation
+   * ------------------------------------------------------------------------
+   */
+
+/**
+   * ------------------------------------------------------------------------
+   * jQuery
+   * ------------------------------------------------------------------------
+   */
+
+// if it's not a radio button or checkbox don't add a pointless/invalid checked property to the input
+
+// work around Firefox bug #1540995
+
+// ensure correct active class is set to match the controls' actual values/states
+
+// find all checkboxes/readio buttons inside data-toggle groups
+
+// find all button toggles
+
+// Don't call next when the page isn't visible
+
+// or the carousel or its parent isn't visible
+
+// swipe left
+
+// swipe right
+
+// If it's a touch-enabled device, mouseenter/leave are fired as
+
+// part of the mouse compatibility events on first tap - the carousel
+
+// would stop cycling until user tapped out of it;
+
+// here, we listen for touchend, explicitly pause the carousel
+
+// (as if it's the second time we tap on it, mouseenter compat event
+
+// is NOT fired) and after a timeout (to allow for mouse compatibility
+
+// events to fire) we explicitly restart cycling
+
+// ensure swiping with one touch and not pinching
+
+// Coerce string values
+
+// It's a jQuery object
+
+// preventDefault only for <a> elements (which change the URL) not inside the collapsible element
+
+// Disable totally Popper.js for Dropdown in Navbar
+
+/**
+         * Check for Popper dependency
+         * Popper - https://popper.js.org
+         */
+
+// Check if it's jQuery element
+
+// If boundary is not `scrollParent`, then set position to `static`
+
+// to allow the menu to "escape" the scroll parent's boundaries
+
+// https://github.com/twbs/bootstrap/issues/24251
+
+// If this is a touch-enabled device we add extra
+
+// empty mouseover listeners to the body's immediate children;
+
+// only needed because of broken event delegation on iOS
+
+// https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
+
+// Handle dropup
+
+// Disable Popper.js if we have a static display
+
+// If this is a touch-enabled device we remove the extra
+
+// empty mouseover listeners we added for iOS support
+
+// eslint-disable-next-line complexity
+
+// If not input/textarea:
+
+//  - And not a key in REGEXP_KEYDOWN => not a dropdown command
+
+// If input/textarea:
+
+//  - If space key => not a dropdown command
+
+//  - If key is other than escape
+
+//    - If key is not up or down => not a dropdown command
+
+//    - If trigger inside the menu => not a dropdown command
+
+// Up
+
+// Down
+
+/**
+       * `document` has 2 events `EVENT_FOCUSIN` and `EVENT_CLICK_DATA_API`
+       * Do not move `document` in `htmlElements` array
+       * It will remove `EVENT_CLICK_DATA_API` event that should remain
+       */
+
+// Don't move modal's DOM position
+
+// ----------------------------------------------------------------------
+
+// the following methods are used to handle overflowing modals
+
+// todo (fat): these should probably be refactored out of modal.js
+
+// Note: DOMNode.style.paddingRight returns the actual value or '' if not set
+
+//   while $(DOMNode).css('padding-right') returns the calculated value or 0 if not set
+
+// Adjust fixed content padding
+
+// Adjust sticky content margin
+
+// Adjust body padding
+
+// Restore fixed content padding
+
+// Restore sticky content
+
+// Restore body padding
+
+// thx d.walsh
+
+/**
+   * --------------------------------------------------------------------------
+   * Bootstrap (v4.5.0): tools/sanitizer.js
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * --------------------------------------------------------------------------
+   */
+
+// Global attributes allowed on any supplied element below.
+
+// Check if a regular expression validates the attribute.
+
+// private
+
+// Protected
+
+// Content is a DOM node or a jQuery
+
+/**
+   * --------------------------------------------------------------------------
+   * Bootstrap (v4.5.0): util.js
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * --------------------------------------------------------------------------
+   */
+
+/**
+   * ------------------------------------------------------------------------
+   * Private TransitionEnd Helpers
+   * ------------------------------------------------------------------------
+   */
+
+// Overrides
+
+// We use append for html objects to maintain js events
+
+// TODO (fat): remove sketch reliance on jQuery position/offset
+
+// Set triggered link as active
+
+// Set triggered links parents as active
+
+// With both <ul> and <nav> markup a parent is the previous sibling of any nav ancestor
+
+// Handle special case when .nav-link is inside .nav-item
+
+//# sourceMappingURL=bootstrap.js.map
+
+/* 6 */
+
 /* WEBPACK VAR INJECTION */
+
+/**
+     * Base function to check whether the current viewport is exactly between
+     * the minimum and maximum boundaries for the given bootstrap 4 breakpoint.
+     *
+     * This will only return true for ONE of the breakpoints at any one time.
+     *
+     * @param {string} breakPoint Something like xs|sm|md|lg|xl
+     * @returns {boolean}
+     */
+
+/**
+     * Base function to check the current visibility of
+     * @param {string} breakPoint Something like  xs|sm|md|lg
+     * @return {boolean}
+     */
+
+// XS is always visible at larger sizes
+
+/**
+         * Check whether the current viewport width is smaller than the "sm" breakpoint.
+         * Shorthand function alias for $.isBreakpoint("xs")
+         *
+         * @returns {boolean}
+         */
+
+/**
+         * Checks whether the current viewport width is between the "sm" and "md"
+         * breakpoints (eg. is "sm" only).
+         * Shorthand function alias for $.isBreakpoint("sm")
+         *
+         * @returns {boolean}
+         */
+
+/**
+         * Checks whether the current viewport width is between the "md" and "lg"
+         * breakpoints (eg. is "md" only).
+         *
+         * @returns {boolean}
+         */
+
+/**
+         * Checks whether the current viewport width is between the "lg" and "xl"
+         * breakpoints (eg. is "lg" only).
+         * Shorthand function alias for $.isBreakpoint("lg")
+         *
+         * @returns {boolean}
+         */
+
+/**
+         * Check whether the current viewport width is larger than the "xl" breakpoint.
+         * Shorthand function alias for $.isBreakpoint("xl")
+         *
+         * @returns {boolean}
+         */
+
+/**
+         * Check whether the current viewport with is within the "xs" breakpoint,
+         * or larger. This is always true, because the "xs" breakpoint is just
+         * min-width:0 and upwards.
+         * Shorthand function alias for $.isBreakpointUp("xs")
+         *
+         * @return {boolean}
+         */
+
+/**
+         * Check whether the current viewport with is within the "sm" breakpoint,
+         * or larger.
+         * Shorthand function alias for $.isBreakpointUp("sm")
+         *
+         * @return {boolean}
+         */
+
+/**
+         * Check whether the current viewport with is within the "md" breakpoint,
+         * or larger.
+         * Shorthand function alias for $.isBreakpointUp("md")
+         *
+         * @return {boolean}
+         */
+
+/**
+         * Check whether the current viewport with is within the "lg" breakpoint,
+         * or larger.
+         * Shorthand function alias for $.isBreakpointUp("lg")
+         *
+         * @return {boolean}
+         */
+
+/* 7 */
+
+/* harmony import */
+
+// import Parsley from 'parsleyjs';
+
+/* harmony default export */
+
+/**
+   * @param  {string|HTMLFormElement|jqElement} form
+   * @param  {al|ar|bg|ca|cs|da|de|el|en|es|et|eu|fa|fi|fr|he|hr|hu|id|it|ja|ko|lt|lv|ms|nl|no|pl|pt_br|pt_pt|ro|ru|sk|sl|sq|sr|sv|th|tk|tr|ua|uk|ur|zh_cn|zh_tw} locale 
+   */
+
+// Form element
+
+// Submit button
+
+// Event listener
+
+// When built with a client program, this Parsley and the client program Parsley are different references.
+
+// Then Parsley.setLocale does not work, so Parsley defines it in "webpack.ProvidePlugin".
+
+// Add password verification
+
+// /*
+
+//   At least 8 characters long
+
+//   At least 1 capital letter
+
+//   At least 1 lowercase letter
+
+//   At least 1 special character
+
+//   At least 1 numeric character
+
+// */
+
+// return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test();
+
+// Initialize form validation
+
+// Set event
+
+// Set locale
+
+// Escape selector
+
+/* 8 */
 
 /*!
 * Parsley.js
@@ -12513,411 +12918,6 @@
 
 // Bind the testing handlers
 
-/* 4 */
-
-// This works in non-strict mode
-
-// This works if eval is allowed (see CSP)
-
-// This works if the window reference is available
-
-// g can still be undefined, but nothing to do about it...
-
-// We return undefined, instead of nothing here, so it's
-
-// easier to handle this case. if(!global) { ...}
-
-/* 5 */
-
-/*! DataTables Bootstrap 4 integration
- * ©2011-2017 SpryMedia Ltd - datatables.net/license
- */
-
-/**
- * DataTables integration for Bootstrap 4. This requires Bootstrap 4 and
- * DataTables 1.10 or newer.
- *
- * This file sets the defaults and adds options to DataTables to style its
- * controls using Bootstrap. See http://datatables.net/manual/styling/bootstrap
- * for further information.
- */
-
-/* Set the defaults for DataTables initialisation */
-
-/* Default class modification */
-
-/* Bootstrap paging button renderer */
-
-/* 6 */
-
-/*!
-  * Bootstrap v4.5.0 (https://getbootstrap.com/)
-  * Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-  */
-
-/**
-   * --------------------------------------------------------------------------
-   * Public Util Api
-   * --------------------------------------------------------------------------
-   */
-
-// eslint-disable-next-line no-bitwise
-
-// "~~" acts like a faster Math.floor() here
-
-// Get transition-duration of the element
-
-// Return 0 if element or transition duration is not found
-
-// If multiple durations are defined, take the first
-
-// TODO: Remove in v5
-
-// Shoutout AngusCroll (https://goo.gl/pxwQGp)
-
-// Can find the shadow root otherwise it'll return the document
-
-// when we don't find a shadow root
-
-// eslint-disable-line prefer-rest-params
-
-/**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
-
-/*#__PURE__*/
-
-// Getters
-
-// Public
-
-// Private
-
-// Static
-
-/**
-   * ------------------------------------------------------------------------
-   * Data Api implementation
-   * ------------------------------------------------------------------------
-   */
-
-/**
-   * ------------------------------------------------------------------------
-   * jQuery
-   * ------------------------------------------------------------------------
-   */
-
-// if it's not a radio button or checkbox don't add a pointless/invalid checked property to the input
-
-// work around Firefox bug #1540995
-
-// ensure correct active class is set to match the controls' actual values/states
-
-// find all checkboxes/readio buttons inside data-toggle groups
-
-// find all button toggles
-
-// Don't call next when the page isn't visible
-
-// or the carousel or its parent isn't visible
-
-// swipe left
-
-// swipe right
-
-// If it's a touch-enabled device, mouseenter/leave are fired as
-
-// part of the mouse compatibility events on first tap - the carousel
-
-// would stop cycling until user tapped out of it;
-
-// here, we listen for touchend, explicitly pause the carousel
-
-// (as if it's the second time we tap on it, mouseenter compat event
-
-// is NOT fired) and after a timeout (to allow for mouse compatibility
-
-// events to fire) we explicitly restart cycling
-
-// ensure swiping with one touch and not pinching
-
-// Coerce string values
-
-// It's a jQuery object
-
-// preventDefault only for <a> elements (which change the URL) not inside the collapsible element
-
-// Disable totally Popper.js for Dropdown in Navbar
-
-/**
-         * Check for Popper dependency
-         * Popper - https://popper.js.org
-         */
-
-// Check if it's jQuery element
-
-// If boundary is not `scrollParent`, then set position to `static`
-
-// to allow the menu to "escape" the scroll parent's boundaries
-
-// https://github.com/twbs/bootstrap/issues/24251
-
-// If this is a touch-enabled device we add extra
-
-// empty mouseover listeners to the body's immediate children;
-
-// only needed because of broken event delegation on iOS
-
-// https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
-
-// Handle dropup
-
-// Disable Popper.js if we have a static display
-
-// If this is a touch-enabled device we remove the extra
-
-// empty mouseover listeners we added for iOS support
-
-// eslint-disable-next-line complexity
-
-// If not input/textarea:
-
-//  - And not a key in REGEXP_KEYDOWN => not a dropdown command
-
-// If input/textarea:
-
-//  - If space key => not a dropdown command
-
-//  - If key is other than escape
-
-//    - If key is not up or down => not a dropdown command
-
-//    - If trigger inside the menu => not a dropdown command
-
-// Up
-
-// Down
-
-/**
-       * `document` has 2 events `EVENT_FOCUSIN` and `EVENT_CLICK_DATA_API`
-       * Do not move `document` in `htmlElements` array
-       * It will remove `EVENT_CLICK_DATA_API` event that should remain
-       */
-
-// Don't move modal's DOM position
-
-// ----------------------------------------------------------------------
-
-// the following methods are used to handle overflowing modals
-
-// todo (fat): these should probably be refactored out of modal.js
-
-// Note: DOMNode.style.paddingRight returns the actual value or '' if not set
-
-//   while $(DOMNode).css('padding-right') returns the calculated value or 0 if not set
-
-// Adjust fixed content padding
-
-// Adjust sticky content margin
-
-// Adjust body padding
-
-// Restore fixed content padding
-
-// Restore sticky content
-
-// Restore body padding
-
-// thx d.walsh
-
-/**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v4.5.0): tools/sanitizer.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-
-// Global attributes allowed on any supplied element below.
-
-// Check if a regular expression validates the attribute.
-
-// private
-
-// Protected
-
-// Content is a DOM node or a jQuery
-
-/**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v4.5.0): util.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-
-/**
-   * ------------------------------------------------------------------------
-   * Private TransitionEnd Helpers
-   * ------------------------------------------------------------------------
-   */
-
-// Overrides
-
-// We use append for html objects to maintain js events
-
-// TODO (fat): remove sketch reliance on jQuery position/offset
-
-// Set triggered link as active
-
-// Set triggered links parents as active
-
-// With both <ul> and <nav> markup a parent is the previous sibling of any nav ancestor
-
-// Handle special case when .nav-link is inside .nav-item
-
-//# sourceMappingURL=bootstrap.js.map
-
-/* 7 */
-
-/**
-     * Base function to check whether the current viewport is exactly between
-     * the minimum and maximum boundaries for the given bootstrap 4 breakpoint.
-     *
-     * This will only return true for ONE of the breakpoints at any one time.
-     *
-     * @param {string} breakPoint Something like xs|sm|md|lg|xl
-     * @returns {boolean}
-     */
-
-/**
-     * Base function to check the current visibility of
-     * @param {string} breakPoint Something like  xs|sm|md|lg
-     * @return {boolean}
-     */
-
-// XS is always visible at larger sizes
-
-/**
-         * Check whether the current viewport width is smaller than the "sm" breakpoint.
-         * Shorthand function alias for $.isBreakpoint("xs")
-         *
-         * @returns {boolean}
-         */
-
-/**
-         * Checks whether the current viewport width is between the "sm" and "md"
-         * breakpoints (eg. is "sm" only).
-         * Shorthand function alias for $.isBreakpoint("sm")
-         *
-         * @returns {boolean}
-         */
-
-/**
-         * Checks whether the current viewport width is between the "md" and "lg"
-         * breakpoints (eg. is "md" only).
-         *
-         * @returns {boolean}
-         */
-
-/**
-         * Checks whether the current viewport width is between the "lg" and "xl"
-         * breakpoints (eg. is "lg" only).
-         * Shorthand function alias for $.isBreakpoint("lg")
-         *
-         * @returns {boolean}
-         */
-
-/**
-         * Check whether the current viewport width is larger than the "xl" breakpoint.
-         * Shorthand function alias for $.isBreakpoint("xl")
-         *
-         * @returns {boolean}
-         */
-
-/**
-         * Check whether the current viewport with is within the "xs" breakpoint,
-         * or larger. This is always true, because the "xs" breakpoint is just
-         * min-width:0 and upwards.
-         * Shorthand function alias for $.isBreakpointUp("xs")
-         *
-         * @return {boolean}
-         */
-
-/**
-         * Check whether the current viewport with is within the "sm" breakpoint,
-         * or larger.
-         * Shorthand function alias for $.isBreakpointUp("sm")
-         *
-         * @return {boolean}
-         */
-
-/**
-         * Check whether the current viewport with is within the "md" breakpoint,
-         * or larger.
-         * Shorthand function alias for $.isBreakpointUp("md")
-         *
-         * @return {boolean}
-         */
-
-/**
-         * Check whether the current viewport with is within the "lg" breakpoint,
-         * or larger.
-         * Shorthand function alias for $.isBreakpointUp("lg")
-         *
-         * @return {boolean}
-         */
-
-/* 8 */
-
-/* harmony import */
-
-// import Parsley from 'parsleyjs';
-
-/* harmony default export */
-
-/**
-   * @param  {string|HTMLFormElement|jqElement} form   [description]
-   * @param  {al|ar|bg|ca|cs|da|de|el|en|es|et|eu|fa|fi|fr|he|hr|hu|id|it|ja|ko|lt|lv|ms|nl|no|pl|pt_br|pt_pt|ro|ru|sk|sl|sq|sr|sv|th|tk|tr|ua|uk|ur|zh_cn|zh_tw} locale 
-   */
-
-// Form element
-
-// Submit button
-
-// Event listener
-
-// When built with a client program, this Parsley and the client program Parsley are different references.
-
-// Then Parsley.setLocale does not work, so Parsley defines it in "webpack.ProvidePlugin".
-
-// Add password verification
-
-// /*
-
-//   At least 8 characters long
-
-//   At least 1 capital letter
-
-//   At least 1 lowercase letter
-
-//   At least 1 special character
-
-//   At least 1 numeric character
-
-// */
-
-// return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test();
-
-// Initialize form validation
-
-// Set event
-
-// Set locale
-
-// Escape selector
-
 /* 9 */
 
 /* 10 */
@@ -13012,9 +13012,66 @@
 
 // Make it available globally as it needs to be accessible within the single file components (.vue)
 
+/**
+   * @param  {string|HTMLTableElement|jqElement} table
+   * @param  {Object} option
+   */
+
+// Table element
+
+// option
+
 // buttons: [ 'copy', 'csv', 'excel', 'pdf', 'print' ],
 
 // dom: "<'row bt-datatable-header'<'col-sm-6'l><'col-sm-6'f>><'row bt-datatable-body'<'col-sm-12'tr>><'row bt-datatable-footer'<'col-sm-5'i><'col-sm-7'p>>",
+
+// Table row template
+
+// Number of page numbers displayed
+
+// Initialize data table
+
+/**
+   * @param {Object} set
+   * @return {this}
+   */
+
+// addRow(row) {
+
+//   if (!(row instanceof jQuery)) row = $(row);
+
+//   this.dt.row.add(row).draw();
+
+//   return this;
+
+// }
+
+/**
+   * @param  {HTMLTableRowElement|jqElement} row Table row element
+   * @param  {Objext} set
+   * @return {this}
+   */
+
+// updateRow(row, set) {
+
+//   const dtRow = this.dt.row(row.get(0));
+
+//   if ($.isPlainObject(set)) set = Object.assign(dtRow.data(), set);
+
+//   else if (typeof set === 'string') set = $(set).find('td').map((i, column) => column.innerHTML).get();
+
+//   dtRow.data(set).draw();
+
+/**
+   * @param  {HTMLTableRowElement|jqElement} row Table row element
+   * @return {this}
+   */
+
+/**
+   * @param  {HTMLTableRowElement|jqElement} row Table row element
+   * @param  {number|undefined} index Cell position number
+   * @return {Object|string}
+   */
 
 /* 55 */
 

@@ -4,26 +4,25 @@
 .awn-toast {
   width: $notification-width;
   max-width: $notification-max-width;
-  background: #fff !important;
+  background: #fff;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-  // box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2) !important;
-  color: $body-color !important;
+  color: $body-color;
   border-radius: 0;
 
   .awn-toast-label {
-    color: $body-color !important;
+    color: $body-color;
     font-weight: 400;
   }
 
   .awn-toast-wrapper {
     border: 0 !important;
-    // border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    // border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0;
   }
 
   &.awn-toast-info {
-    // color: theme-color("info");
-    // box-shadow: 0 0px 4px lighten($info, 15%);
+    color: theme-color("info");
+    box-shadow: 0 0px 4px lighten($info, 15%);
     // .awn-toast-wrapper {
     //   border-color: theme-color("info");
     // }
@@ -36,8 +35,8 @@
   }
 
   &.awn-toast-success {
-    // color: theme-color("success");
-    // box-shadow: 0 0px 4px lighten($success, 15%);
+    color: theme-color("success");
+    box-shadow: 0 0 12px lighten($success, 15%);
     // .awn-toast-wrapper {
     //   border-color: theme-color("success");
     // }
@@ -50,8 +49,8 @@
   }
 
   &.awn-toast-warning {
-    // color: theme-color("warning");
-    // box-shadow: 0 0px 4px lighten($warning, 15%);
+    color: theme-color("warning");
+    box-shadow: 0 0 12px lighten($warning, 15%);
     // .awn-toast-wrapper {
     //   border-color: theme-color("warning");
     // }
@@ -64,8 +63,8 @@
   }
 
   &.awn-toast-alert {
-    // color: theme-color("danger");
-    // box-shadow: 0 0px 4px lighten($danger, 15%);
+    color: theme-color("danger");
+    box-shadow: 0 0 12px lighten($danger, 15%);
     // .awn-toast-wrapper {
     //   border-color: theme-color("danger");
     // }

@@ -5,7 +5,7 @@ import * as lang from '~/i18n/validator/index';
 export default class {
 
   /**
-   * @param  {string|HTMLFormElement|jqElement} form   [description]
+   * @param  {string|HTMLFormElement|jqElement} form
    * @param  {al|ar|bg|ca|cs|da|de|el|en|es|et|eu|fa|fi|fr|he|hr|hu|id|it|ja|ko|lt|lv|ms|nl|no|pl|pt_br|pt_pt|ro|ru|sk|sl|sq|sr|sv|th|tk|tr|ua|uk|ur|zh_cn|zh_tw} locale 
    */
   constructor(form, locale = 'en') {

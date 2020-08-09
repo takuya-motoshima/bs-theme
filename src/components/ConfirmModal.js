@@ -4,8 +4,11 @@ import Modal from '~/components/Modal';
 
 export default class extends Modal {
 
-  constructor(option) {
-    option.buttons = $.extend({ ok: 'OK', cancel: 'Cancel' }, option.buttons || {});
+  constructor(option = {}) {
+    option.buttons = $.extend({
+      ok: 'OK',
+      cancel: 'Cancel'
+    }, option.buttons || {});
     option = $.extend({ keyboard: true }, option);
     const template = `
       <div class="modal-container modal-effect-9 confirm-modal">
