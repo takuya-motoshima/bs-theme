@@ -1,96 +1,63 @@
 import $ from 'jquery';
-import Parsley from 'parsleyjs';
-import 'parsleyjs/dist/i18n/al';
-import 'parsleyjs/dist/i18n/ar';
-import 'parsleyjs/dist/i18n/bg';
-import 'parsleyjs/dist/i18n/ca';
-import 'parsleyjs/dist/i18n/cs';
-import 'parsleyjs/dist/i18n/da';
-import 'parsleyjs/dist/i18n/de';
-import 'parsleyjs/dist/i18n/el';
-import 'parsleyjs/dist/i18n/en';
-import 'parsleyjs/dist/i18n/es';
-import 'parsleyjs/dist/i18n/et';
-import 'parsleyjs/dist/i18n/eu';
-import 'parsleyjs/dist/i18n/fa';
-import 'parsleyjs/dist/i18n/fi';
-import 'parsleyjs/dist/i18n/fr';
-import 'parsleyjs/dist/i18n/he';
-import 'parsleyjs/dist/i18n/hr';
-import 'parsleyjs/dist/i18n/hu';
-import 'parsleyjs/dist/i18n/id';
-import 'parsleyjs/dist/i18n/it';
-import 'parsleyjs/dist/i18n/ja';
-import 'parsleyjs/dist/i18n/ko';
-import 'parsleyjs/dist/i18n/lt';
-import 'parsleyjs/dist/i18n/lv';
-import 'parsleyjs/dist/i18n/ms';
-import 'parsleyjs/dist/i18n/nl';
-import 'parsleyjs/dist/i18n/no';
-import 'parsleyjs/dist/i18n/pl';
-import 'parsleyjs/dist/i18n/pt-br';
-import 'parsleyjs/dist/i18n/pt-pt';
-import 'parsleyjs/dist/i18n/ro';
-import 'parsleyjs/dist/i18n/ru';
-import 'parsleyjs/dist/i18n/sk';
-import 'parsleyjs/dist/i18n/sl';
-import 'parsleyjs/dist/i18n/sq';
-import 'parsleyjs/dist/i18n/sr';
-import 'parsleyjs/dist/i18n/sv';
-import 'parsleyjs/dist/i18n/th';
-import 'parsleyjs/dist/i18n/tk';
-import 'parsleyjs/dist/i18n/tr';
-import 'parsleyjs/dist/i18n/ua';
-import 'parsleyjs/dist/i18n/uk';
-import 'parsleyjs/dist/i18n/ur';
-import 'parsleyjs/dist/i18n/zh_cn';
-import 'parsleyjs/dist/i18n/zh_tw';
-
-// Add password verification
-Parsley.addValidator('password', {
-  requirementType: 'string',
-  validateString: value => {
-    /*
-      At least 8 characters long
-      At least 1 alphabet letter
-      At least 1 special character
-      At least 1 numeric character
-    */
-    return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[a-z\d@$!%*?&]{8,}$/i.test(value);
-    // /*
-    //   At least 8 characters long
-    //   At least 1 capital letter
-    //   At least 1 lowercase letter
-    //   At least 1 special character
-    //   At least 1 numeric character
-    // */
-    // return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test();
-  },
-  messages: {
-    ja: 'パスワードは英数記号をそれぞれ1文字以上含めてください。',
-    en: 'The password must contain at least one letter, number, and symbol.'
-  }
-});
+// import Parsley from 'parsleyjs';
+import * as lang from '~/i18n/validator/index';
 
 export default class {
 
   /**
    * @param  {string|HTMLFormElement|jqElement} form   [description]
-   * @param  {al|ar|bg|ca|cs|da|de|el|en|es|et|eu|fa|fi|fr|he|hr|hu|id|it|ja|ko|lt|lv|ms|nl|no|pl|pt-br|pt-pt|ro|ru|sk|sl|sq|sr|sv|th|tk|tr|ua|uk|ur|zh_cn|zh_tw} locale 
+   * @param  {al|ar|bg|ca|cs|da|de|el|en|es|et|eu|fa|fi|fr|he|hr|hu|id|it|ja|ko|lt|lv|ms|nl|no|pl|pt_br|pt_pt|ro|ru|sk|sl|sq|sr|sv|th|tk|tr|ua|uk|ur|zh_cn|zh_tw} locale 
    */
   constructor(form, locale = 'en') {
+
+    // Form element
     if ($.type(form) === 'string' || form instanceof HTMLFormElement) form = $(form);
     else if (!(form instanceof $)) throw new TypeError('Wrong parameter type');
     this.form = form;
+
+    // Submit button
     this.submit = this.form.find('[type="submit"]:first');
     if (!this.submit.length && this.form.attr('id') && $(`[type="submit"][form="${this.form.attr('id')}"]`).length)
       this.submit = $(`[type="submit"][form="${this.form.attr('id')}"]`);
+
+    // Event listener
     this.listeners = {
       submit: () => {},
       fieldSuccess: () => {},
       fieldValidate: () => {}
     };
-    Parsley.setLocale(locale);
+
+    // When built with a client program, this Parsley and the client program Parsley are different references.
+    // Then Parsley.setLocale does not work, so Parsley defines it in "webpack.ProvidePlugin".
+    this.Parsley = window.Parsley;
+
+    // Add password verification
+    this.addValidator('password', {
+      requirementType: 'string',
+      validateString: value => {
+        /*
+          At least 8 characters long
+          At least 1 alphabet letter
+          At least 1 special character
+          At least 1 numeric character
+        */
+        return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[a-z\d@$!%*?&]{8,}$/i.test(value);
+        // /*
+        //   At least 8 characters long
+        //   At least 1 capital letter
+        //   At least 1 lowercase letter
+        //   At least 1 special character
+        //   At least 1 numeric character
+        // */
+        // return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test();
+      },
+      messages: {
+        ja: 'パスワードは英数記号をそれぞれ1文字以上含めてください。',
+        en: 'The password must contain at least one letter, number, and symbol.'
+      }
+    });
+
+    // Initialize form validation
     this.parsley = this.form.parsley({
       inputs: 'input,textarea,select,input[type=hidden],:hidden',
       excluded: 'input[type=button],input[type=submit],input[type=reset],[disabled]',
@@ -106,14 +73,18 @@ export default class {
         return container;
       }
     });
-    this.form.on('submit', event => {
-      event.preventDefault();
-      this.isValidForm() && this.listeners.submit(event);
-    });
-    this.form.on('input', 'input', () => {
-      if (this.isValidForm()) this.submit.removeClass('disabled');
-      else this.submit.addClass('disabled');
-    });
+
+    // Set event
+    this.form
+      .on('submit', event => {
+        event.preventDefault();
+        this.isValidForm() && this.listeners.submit(event);
+      })
+      .on('input', 'input', () => {
+        if (!this.submit.length) return;
+        if (this.isValidForm()) this.submit.removeClass('disabled');
+        else this.submit.addClass('disabled');
+      });
     this.parsley
       .on('field:success', event => {
         const $field = $(event.$element);
@@ -123,6 +94,9 @@ export default class {
         const $field = $(event.$element);
         this.listeners.fieldValidate($field.attr('name'), $field);
       });
+
+    // Set locale
+    this.setLocale(locale);
   }
 
   on(type, listener) {
@@ -156,8 +130,7 @@ export default class {
   }
 
   removeFieldError(name, error) {
-    const field = this.getField(name);
-    field.removeError(error);
+    this.getField(name).removeError(error);
     return this;
   }
 
@@ -175,6 +148,11 @@ export default class {
   }
 
   addValidator(name, validator, priority) {
-    Parsley.addValidator(name, validator, priority);
+    this.Parsley.addValidator(name, validator, priority);
+  }
+
+  setLocale(locale) {
+    this.Parsley.addMessages(locale, lang[locale]);
+    this.Parsley.setLocale(locale);
   }
 }

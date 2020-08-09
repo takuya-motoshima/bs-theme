@@ -12873,15 +12873,150 @@
 
 /* harmony import */
 
-// Make it available globally as it needs to be accessible within the single file components (.vue)
+// import Parsley from 'parsleyjs';
 
 /* harmony default export */
+
+/**
+   * @param  {string|HTMLFormElement|jqElement} form   [description]
+   * @param  {al|ar|bg|ca|cs|da|de|el|en|es|et|eu|fa|fi|fr|he|hr|hu|id|it|ja|ko|lt|lv|ms|nl|no|pl|pt_br|pt_pt|ro|ru|sk|sl|sq|sr|sv|th|tk|tr|ua|uk|ur|zh_cn|zh_tw} locale 
+   */
+
+// Form element
+
+// Submit button
+
+// Event listener
+
+// When built with a client program, this Parsley and the client program Parsley are different references.
+
+// Then Parsley.setLocale does not work, so Parsley defines it in "webpack.ProvidePlugin".
+
+// Add password verification
+
+// /*
+
+//   At least 8 characters long
+
+//   At least 1 capital letter
+
+//   At least 1 lowercase letter
+
+//   At least 1 special character
+
+//   At least 1 numeric character
+
+// */
+
+// return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test();
+
+// Initialize form validation
+
+// Set event
+
+// Set locale
+
+// Escape selector
+
+/* 9 */
+
+/* 10 */
+
+/* 11 */
+
+/* 12 */
+
+/* 13 */
+
+/* 14 */
+
+/* 15 */
+
+/* 16 */
+
+/* 17 */
+
+/* 18 */
+
+/* 19 */
+
+/* 20 */
+
+/* 21 */
+
+/* 22 */
+
+/* 23 */
+
+/* 24 */
+
+/* 25 */
+
+/* 26 */
+
+/* 27 */
+
+/* 28 */
+
+/* 29 */
+
+/* 30 */
+
+/* 31 */
+
+/* 32 */
+
+/* 33 */
+
+/* 34 */
+
+/* 35 */
+
+/* 36 */
+
+/* 37 */
+
+/* 38 */
+
+/* 39 */
+
+/* 40 */
+
+/* 41 */
+
+/* 42 */
+
+/* 43 */
+
+/* 44 */
+
+/* 45 */
+
+/* 46 */
+
+/* 47 */
+
+/* 48 */
+
+/* 49 */
+
+/* 50 */
+
+/* 51 */
+
+/* 52 */
+
+/* 53 */
+
+/* 54 */
+
+// Make it available globally as it needs to be accessible within the single file components (.vue)
 
 // buttons: [ 'copy', 'csv', 'excel', 'pdf', 'print' ],
 
 // dom: "<'row bt-datatable-header'<'col-sm-6'l><'col-sm-6'f>><'row bt-datatable-body'<'col-sm-12'tr>><'row bt-datatable-footer'<'col-sm-5'i><'col-sm-7'p>>",
 
-/* 9 */
+/* 55 */
 
 /*! Responsive 2.2.3
  * 2014-2018 SpryMedia Ltd - datatables.net/license
@@ -13381,11 +13516,11 @@
 
 // events so we can automatically initialise
 
-/* 10 */
+/* 56 */
 
-/* 11 */
+/* 57 */
 
-/* 12 */
+/* 58 */
 
 /*!
    * Bowser - a browser detector
@@ -13421,11 +13556,13 @@
 
   */
 
-/* 13 */
+/* 59 */
 
 /* harmony reexport (default from named exports) */
 
-/* 14 */
+/* 60 */
+
+/* 61 */
 
 /*!
  * clipboard.js v2.0.6
@@ -13696,13 +13833,13 @@
  * @param {Element} element
  */
 
-/* 15 */
+/* 62 */
 
-/* 16 */
+/* 63 */
 
 // extracted by mini-css-extract-plugin
 
-/* 17 */
+/* 64 */
 
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
@@ -14873,7 +15010,7 @@
  * An ES6 getter that will return the height of the virtual reference element.
  */
 
-/* 18 */
+/* 65 */
 
 /*!
  * @fileOverview TouchSwipe - jQuery Plugin
@@ -14889,11 +15026,11 @@
  *
  */
 
-/* 19 */
+/* 66 */
 
 /* globals __webpack_amd_options__ */
 
-/* 20 */
+/* 67 */
 
 //Remove body open modal class
 
@@ -14929,7 +15066,7 @@
  * Self execute to support previous versions with 'md-trigger' class & data-modal attribute
  */
 
-/* 21 */
+/* 68 */
 
 // shim for using process in browser
 
@@ -14963,113 +15100,11 @@
 
 // empty string to avoid regexp issues
 
-/* 22 */
-
-// Validation errors messages for Parsley
-
-/* 23 */
-
-// Load this after Parsley
-
-/* 24 */
-
-/* 25 */
-
-/* 26 */
-
-/* 27 */
-
-/* 28 */
-
-/* 29 */
-
-/* 30 */
-
-// thus there is no use in adding it to your project.
-
-/* 31 */
-
-// ParsleyConfig definition if not already set
-
-/* 32 */
-
-/* 33 */
-
-/* 34 */
-
-/* 35 */
-
-/* 36 */
-
-/* 37 */
-
-/* 38 */
-
-/* 39 */
-
-/* 40 */
-
-/* 41 */
-
-/* 42 */
-
-/* 43 */
-
-/* 44 */
-
-/* 45 */
-
-/* 46 */
-
-/* 47 */
-
-/* 48 */
-
-/* 49 */
-
-/* 50 */
-
-/* 51 */
-
-/* 52 */
-
-/* 53 */
-
-/* 54 */
-
-/* 55 */
-
-/* 56 */
-
-/* 57 */
-
-/* 58 */
-
-/* 59 */
-
-/* 60 */
-
-/* 61 */
-
-/* 62 */
-
-/* 63 */
-
-/* 64 */
-
-/* 65 */
-
-/* 66 */
-
-/* 67 */
+/* 69 */
 
 /*! Bootstrap 4 integration for DataTables' Responsive
  * ©2016 SpryMedia Ltd - datatables.net/license
  */
-
-/* 68 */
-
-/* 69 */
 
 /* 70 */
 
@@ -15077,11 +15112,15 @@
 
 /* 72 */
 
+/* 73 */
+
+/* 74 */
+
 /*! Bootstrap integration for DataTables' Buttons
  * ©2016 SpryMedia Ltd - datatables.net/license
  */
 
-/* 73 */
+/* 75 */
 
 /*! FixedColumns 3.3.1
  * ©2010-2020 SpryMedia Ltd - datatables.net/license
@@ -15654,7 +15693,7 @@
 
 // Make FixedColumns accessible from the DataTables instance
 
-/* 74 */
+/* 76 */
 
 /*! FixedHeader 3.1.7
  * ©2009-2020 SpryMedia Ltd - datatables.net/license
@@ -15857,7 +15896,7 @@
 
 // DataTables API methods
 
-/* 75 */
+/* 77 */
 
 // ESM COMPAT FLAG
 
@@ -15963,35 +16002,6 @@
 
 // closeSelector: '.modal-close',
 
-// CONCATENATED MODULE: ./src/components/AlertModal.js
-
-// CONCATENATED MODULE: ./src/components/Validator.js
-
-// Add password verification
-
-// /*
-
-//   At least 8 characters long
-
-//   At least 1 capital letter
-
-//   At least 1 lowercase letter
-
-//   At least 1 special character
-
-//   At least 1 numeric character
-
-// */
-
-// return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test();
-
-/**
-   * @param  {string|HTMLFormElement|jqElement} form   [description]
-   * @param  {al|ar|bg|ca|cs|da|de|el|en|es|et|eu|fa|fi|fr|he|hr|hu|id|it|ja|ko|lt|lv|ms|nl|no|pl|pt-br|pt-pt|ro|ru|sk|sl|sq|sr|sv|th|tk|tr|ua|uk|ur|zh_cn|zh_tw} locale 
-   */
-
-// Escape selector
-
 /**
    * List positions
    * @return {string}
@@ -16073,7 +16083,7 @@
 
 // Sync tabs when resize between mobile and desktop resolutions
 
-// EXTERNAL MODULE: ./src/components/DataTable.js
+// CONCATENATED MODULE: ./src/components/AlertModal.js
 
 // Open-Sidebar when click on topbar button
 

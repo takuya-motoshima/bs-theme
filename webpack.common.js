@@ -15,21 +15,12 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'build.js',
-    library: 'theme',
+    library: 'bs',
     libraryExport: '',
     libraryTarget: 'var',
     globalObject: 'this',
     pathinfo: false
   },
-  // output: {
-  //   path: path.resolve(__dirname, 'dist'),
-  //   filename: 'build.js',
-  //   library: 'theme',
-  //   libraryExport: 'default',
-  //   libraryTarget: 'umd',
-  //   globalObject: 'this',
-  //   pathinfo: false
-  // },
   module: {
     rules: [
       {
@@ -66,7 +57,9 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      'window.jQuery': 'jquery'
+      'window.jQuery': 'jquery',
+      Parsley: 'parsleyjs',
+      'window.Parsley': 'parsleyjs'
     }),
     new EsmWebpackPlugin(),
     new CleanWebpackPlugin(),

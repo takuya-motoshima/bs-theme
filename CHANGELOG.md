@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.31] - 2020-08-08
+
+- Fix the bug that validator locale doesn't work when bundled(./src/components/Validator.js).
+
 ## [0.0.30] - 2020-08-08
 
 - Added locale to validation component(./src/components/Validator.js). An example is in ./documentation/form-validation.html.
@@ -22,7 +26,7 @@
     // Initialize form validation.
     // The first parameter is the form to validate (form ID or HTMLFormElement, or jqElement of the form).
     // The second parameter is the locale. The default is "en".
-    // Available locales are al, ar, bg, ca, cs, da, de, el, en, es, et, eu, fa, fi, fr, he, hr, hu, id, it, ja, ko, lt, lv, ms, nl, no, pl, pt-br, pt-pt, ro, ru, sk, sl, sq, sr, sv, th, tk, tr, ua, uk, ur, zh_cn, zh_tw.
+    // Available locales are al, ar, bg, ca, cs, da, de, el, en, es, et, eu, fa, fi, fr, he, hr, hu, id, it, ja, ko, lt, lv, ms, nl, no, pl, pt_br, pt_pt, ro, ru, sk, sl, sq, sr, sv, th, tk, tr, ua, uk, ur, zh_cn, zh_tw.
     // See "https://parsleyjs.org/doc/" for details on HTML validation attributes.
     const validator = new Validator('#form', 'ja');
     //const validator = new Validator(document.querySelector('#form'));
