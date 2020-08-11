@@ -4,6 +4,14 @@
 
 - Optimized the icon size of the icon navigation menu (.bt-icons-nav> .nav-item) that is not a drop-down type(src/sass/includes/structure/top-header/\_icons-nav.scss).
 
+    Desktop icon navigation:  
+
+    <img src="screencap/icon-navigation-desktop.png">
+
+    Mobile and tablet icon navigation:  
+
+    <img src="screencap/icon-navigation-mobile-and-tablet.png">
+
 ## [0.0.34] - 2020-08-09
 
 - Added validation for maximum upload file size(./src/components/Validator.js). Also add examples(./documentation/form-validation.html)
