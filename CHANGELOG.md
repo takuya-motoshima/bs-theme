@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.35] - 2020-08-11
+
+- Optimized the icon size of the icon navigation menu (.bt-icons-nav> .nav-item) that is not a drop-down type(src/sass/includes/structure/top-header/\_icons-nav.scss).
+
 ## [0.0.34] - 2020-08-09
 
 - Added validation for maximum upload file size(./src/components/Validator.js). Also add examples(./documentation/form-validation.html)
