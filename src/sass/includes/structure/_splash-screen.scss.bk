@@ -2,7 +2,7 @@
   [Splash screen]
 */
 .bt-splash-screen{
-  // background-color: $splash-screen-bg;
+  background-color: $splash-screen-bg;
 
   .bt-wrapper{
     padding-top: 0;

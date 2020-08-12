@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.36] - 2020-08-12
+
+- Removed gray background and box shadows for boxed layouts and splash screens.
+
 ## [0.0.35] - 2020-08-11
 
 - Optimized the icon size of the icon navigation menu (.bt-icons-nav> .nav-item) that is not a drop-down type(src/sass/includes/structure/top-header/\_icons-nav.scss).
