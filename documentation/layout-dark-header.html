@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="../dist/build.css" type="text/css"/>
 </head>
 <body>
-  <div class="bt-wrapper bt-fixed-sidebar">
+  <div class="bt-wrapper bt-fixed-sidebar bt-color-header bt-color-header-dark">
     <nav class="navbar navbar-expand fixed-top bt-top-header">
       <div class="container-fluid">
         <div class="bt-navbar-header">
           <a class="navbar-brand" href="index.html"></a>
         </div>
+        <div class="page-title"><span>Dark Header</span></div>
         <div class="bt-right-navbar">
           <ul class="nav navbar-nav float-right bt-user-nav">
             <li class="nav-item dropdown">
@@ -33,6 +34,7 @@
             </li>
           </ul>
           <ul class="nav navbar-nav float-right bt-icons-nav">
+            <li class="nav-item dropdown"><a class="nav-link bt-toggle-right-sidebar" href="#" role="button" aria-expanded="false"><span class="icon mdi mdi-settings"></span></a></li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="icon mdi mdi-notifications"></span><span class="indicator"></span></a>
               <ul class="dropdown-menu bt-notifications">
                 <li>
@@ -94,7 +96,7 @@
     </nav>
     <div class="bt-left-sidebar">
       <div class="left-sidebar-wrapper">
-        <a class="left-sidebar-toggle" href="#">Without Right Sidebar</a>
+        <a class="left-sidebar-toggle" href="#">Dark Header</a>
         <div class="left-sidebar-spacer">
           <div class="left-sidebar-scroll">
             <div class="left-sidebar-content">
@@ -147,11 +149,11 @@
                     <li><a href="layout-success-header.html">Success Header</a></li>
                     <li><a href="layout-warning-header.html">Warning Header</a></li>
                     <li><a href="layout-danger-header.html">Danger Header</a></li>
-                    <li><a href="layout-dark-header.html">Dark Header</a></li>
+                    <li class="active"><a href="layout-dark-header.html">Dark Header</a></li>
                     <li><a href="layout-offcanvas-menu.html">Off Canvas Menu</a></li>
                     <li><a href="layout-top-menu.html">Top Menu</a></li>
                     <li><a href="layout-nosidebar-left.html">Without Left Sidebar</a></li>
-                    <li class="active"><a href="layout-nosidebar-right.html">Without Right Sidebar</a></li>
+                    <li><a href="layout-nosidebar-right.html">Without Right Sidebar</a></li>
                     <li><a href="layout-nosidebars.html">Without Both Sidebars</a></li>
                     <li><a href="layout-fixed-sidebar.html">Fixed Left Sidebar</a></li>
                     <li><a href="layout-boxed-layout.html">Boxed Layout</a></li>
@@ -169,12 +171,12 @@
     </div>
     <div class="bt-content">
       <div class="page-head">
-        <h2 class="page-head-title">Without Right Sidebar</h2>
+        <h2 class="page-head-title">Dark Header</h2>
         <nav aria-label="breadcrumb" role="navigation">
           <ol class="breadcrumb page-head-nav">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="#">Layout</a></li>
-            <li class="breadcrumb-item active">Without Right Sidebar</li>
+            <li class="breadcrumb-item active">Dark Header</li>
           </ol>
         </nav>
       </div>
@@ -182,21 +184,24 @@
         <div class="row">
           <div class="col-12 col-lg-7 offset-lg-2">
             <div class="card">
-              <div class="card-header"><span class="title">Remove sidebar right</span></div>
+              <div class="card-header"><span class="title">Dark header</span></div>
               <div class="card-body">
-                <p>You can remove the <b>Right Sidebar</b> element directly from the html structure (<code>bt-right-sidebar</code>), you'll find it inside the main wapper, also you should remove the sidebar toggle button (<code>bt-toggle-right-sidebar</code>) from the top header, once they are removed your main structure should look like this:</p>
+                <p>To change the header white background color and use the dark color you just need to add the classes (<code>bt-color-header bt-color-header-dark</code>) to the main wrapper (<code>bt-wrapper</code>) element, this way your main structure should be like this:</p>
               </div>
               <pre class="prettyprint">&lt;html lang=&quot;en&quot;&gt;
 &lt;body&gt;
-  &lt;div class=&quot;bt-wrapper&quot;&gt;
+  &lt;div class=&quot;bt-wrapper bt-color-header bt-color-header-dark&quot;&gt;
     &lt;nav class=&quot;navbar navbar-expand fixed-top bt-top-header&quot;&gt;
-      &lt;!-- Top bar without sidebar toggle button --&gt;
+      &lt;!-- Top bar --&gt;
     &lt;/nav&gt;
     &lt;div class=&quot;bt-left-sidebar&quot;&gt;
       &lt;!-- Left sidebar --&gt;
     &lt;/div&gt;
     &lt;div class=&quot;bt-content&quot;&gt;
       &lt;!-- Main content --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;bt-right-sidebar&quot;&gt;
+      &lt;!-- Right sidebar --&gt;
     &lt;/div&gt;
   &lt;/div&gt; 
 &lt;/body&gt;
@@ -206,6 +211,172 @@
         </div>
       </div>
     </div>
+    <nav class="bt-right-sidebar">
+      <div class="sb-content">
+        <div class="tab-navigation">
+          <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li class="nav-item" role="presentation"><a class="nav-link active" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Chat</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Todo</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Settings</a></li>
+          </ul>
+        </div>
+        <div class="tab-panel">
+          <div class="tab-content">
+            <div class="tab-pane tab-chat active" id="tab1" role="tabpanel">
+              <div class="chat-contacts">
+                <div class="chat-sections">
+                  <div class="bt-scroller-chat">
+                    <div class="content">
+                      <h2>Recent</h2>
+                      <div class="contact-list contact-list-recent">
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status away"></span>
+                              <span class="name">Claire Sassu</span>
+                              <span class="message">Can you share the...</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data">
+                              <span class="status"></span>
+                              <span class="name">Maggie jackson</span>
+                              <span class="message">I confirmed the info.</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <h2>Contacts</h2>
+                      <div class="contact-list">
+                        <div class="user">
+                          <a href="#">
+                            <img src="images/avatar.svg" alt="Avatar">
+                            <div class="user-data2">
+                              <span class="status"></span>
+                              <span class="name">Mike Bolthort</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-input">
+                  <input type="text" placeholder="Search..." name="q"><span class="mdi mdi-search"></span>
+                </div>
+              </div>
+              <div class="chat-window">
+                <div class="title">
+                  <div class="user">
+                    <img src="images/avatar.svg" alt="Avatar">
+                    <h2>Maggie jackson</h2>
+                    <span>Active 1h ago</span>
+                  </div>
+                  <span class="icon return mdi mdi-chevron-left"></span>
+                </div>
+                <div class="chat-messages">
+                  <div class="bt-scroller-messages">
+                    <div class="content">
+                      <ul>
+                        <li class="friend"><div class="msg">Hello</div></li>
+                        <li class="self"><div class="msg">Hi, how are you?</div></li>
+                        <li class="friend"><div class="msg">Good, I'll need support with my pc</div></li>
+                        <li class="self"><div class="msg">Sure, just tell me what is going on with your computer?</div></li>
+                        <li class="friend"><div class="msg">I don't know it just turns off suddenly</div></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-input">
+                  <div class="input-wrapper">
+                    <span class="photo mdi mdi-camera"></span>
+                    <input type="text" placeholder="Some messages" name="q" autocomplete="off">
+                    <span class="send-msg mdi mdi-mail-send"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane tab-todo" id="tab2" role="tabpanel">
+              <div class="todo-container">
+                <div class="todo-wrapper">
+                  <div class="bt-scroller-todo">
+                    <div class="todo-content">
+                      <span class="category-title">Today</span>
+                      <ul class="todo-list">
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" checked id="tck1">
+                            <label class="custom-control-label" for="tck1">Initialize the project</label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" id="tck2">
+                            <label class="custom-control-label" for="tck2">Create the main structure</label>
+                          </div>
+                        </li>
+                      </ul>
+                      <span class="category-title">Tomorrow</span>
+                      <ul class="todo-list">
+                        <li>
+                          <div class="custom-checkbox custom-control custom-control-sm">
+                            <span class="delete mdi mdi-delete"></span>
+                            <input class="custom-control-input" type="checkbox" id="tck4">
+                            <label class="custom-control-label" for="tck4">Initialize the project</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-input">
+                  <input type="text" placeholder="Create new task..." name="q"><span class="mdi mdi-plus"></span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane tab-settings" id="tab3" role="tabpanel">
+              <div class="settings-wrapper">
+                <div class="bt-scroller-settings">
+                  <span class="category-title">General</span>
+                  <ul class="settings-list">
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st1" id="st1">
+                        <span><label for="st1"></label></span>
+                      </div>
+                      <span class="name">Available</span>
+                    </li>
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" checked name="st2" id="st2">
+                        <span><label for="st2"></label></span>
+                      </div>
+                      <span class="name">Enable notifications</span>
+                    </li>
+                  </ul>
+                  <span class="category-title">Notification</span>
+                  <ul class="settings-list">
+                    <li>
+                      <div class="switch-button switch-button-sm">
+                        <input type="checkbox" name="st4" id="st4">
+                        <span><label for="st4"></label></span>
+                      </div>
+                      <span class="name">Email notifications</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
   <script src="../node_modules/code-prettify/src/prettify.js"></script>
   <script type="module">

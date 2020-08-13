@@ -716,6 +716,20 @@
     }
   }
 
+  // Dark color header
+  .bt-color-header-dark & {
+    background-color: theme-color("dark");
+    border-bottom-color: theme-color("dark");
+
+    @include tablet{
+
+      .bt-right-navbar{
+        background-color: theme-color("dark");
+        border-bottom-color: theme-color("dark");
+      }
+    }
+  }
+
   // Wrapper boxed
   @include non-responsive {
     .bt-boxed-layout & {

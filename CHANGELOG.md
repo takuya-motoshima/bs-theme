@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.0.37] - 2020-08-13
+
+- Added dark background header.An example is in "./documentation/layout-dark-header.html".
+
+    Dark Header:  
+
+    <img src="screencap/header-dark.png">
+
+    Primary Header:  
+
+    <img src="screencap/header-primary.png">
+
+    Success Header:  
+
+    <img src="screencap/header-success.png">
+
+    Warning Header:  
+
+    <img src="screencap/header-warning.png">
+
+    Danger Header:  
+
+    <img src="screencap/header-danger.png">
+
 ## [0.0.36] - 2020-08-12
 
 - Removed gray background and box shadows for boxed layouts and splash screens.
