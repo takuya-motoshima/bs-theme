@@ -6,6 +6,10 @@ This is still in development and will be published at a later date.
 
 ## Changelog
 
+### [0.0.38] - 2020-08-13
+
+- Optimize padding above and below cells in small tables (.table-sm).
+
 ### [0.0.37] - 2020-08-13
 
 - Added dark background header.An example is in "./documentation/layout-dark-header.html".

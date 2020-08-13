@@ -54,7 +54,6 @@
     }
   }
 
-
   &.table-striped{
     > tbody{
       >tr{
@@ -129,7 +128,7 @@
       td{
 
         @media (min-width: 576px) {
-          padding: 0 10px;
+          padding: 3px 10px;
           line-height: 27px;
         }
       }
