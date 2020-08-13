@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.39] - 2020-08-13
+
+- Changed the icon color of the icon navigation in the color header to white.
+
 ## [0.0.38] - 2020-08-13
 
 - Optimize padding above and below cells in small tables (.table-sm).

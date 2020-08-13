@@ -26,6 +26,9 @@
           position: relative;
           top: 1px;
         }
+        .bt-color-header & {
+          color: $white;
+        }
       }
       .indicator {
         background-color: $top-header-indicator-color;
