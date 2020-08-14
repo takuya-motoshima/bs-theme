@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.40] - 2020-08-14
+
+- Fixed a bug that icon navigation is displayed to the left when there is no user navigation.
+
+    After:  
+
+    <img src="screencap/fixing-the-icon-navigation-bug-after.png">
+
+    Before:  
+
+    <img src="screencap/fixing-the-icon-navigation-bug-before.png">
+
 ## [0.0.39] - 2020-08-13
 
 - Changed the icon color of the icon navigation in the color header to white.
