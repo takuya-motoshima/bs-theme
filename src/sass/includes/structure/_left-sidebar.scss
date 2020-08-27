@@ -128,6 +128,7 @@
         padding: 0 $left-sidebar-main-level-padding;
         color: $left-sidebar-text-color;
         font-size: $left-sidebar-main-level-font-size;
+        font-weight: $left-sidebar-main-level-font-weight;
         line-height: $left-sidebar-main-level-height;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -307,6 +308,7 @@
             padding: $left-sidebar-sub-level-padding;
             color: $left-sidebar-sub-level-color;
             font-size: $left-sidebar-sub-level-font-size;
+            font-weight: $left-sidebar-sub-level-font-weight;
             display: block;
             text-overflow: ellipsis;
             overflow: hidden;

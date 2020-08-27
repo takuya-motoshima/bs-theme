@@ -83,7 +83,7 @@ $grid-breakpoints: (
 $left-sidebar-colors: (
   "left-sidebar-bg": $white,
   "left-sidebar-text-color": shade-correction($gray-100, true),
-  "left-sidebar-text-active-color": #efc600,
+  "left-sidebar-text-active-color": rgba(29,161,242,1.00),
   // "left-sidebar-text-active-color": theme-color("primary"),
   "left-sidebar-divider-color": shade-contrast-correction(theme-color("primary"), $gray-100),
   "left-sidebar-progress-bar-color": theme-color("primary"),
@@ -427,6 +427,7 @@ $page-aside-link-active-color:          $body-bg !default;
 $top-header-bg:                         is-custom-color($top-header-colors, "top-header-bg") !default;
 $top-header-border-color:               darken($top-header-bg, 10%) !default;
 $top-header-text-color:                 is-custom-color($vartype: $top-header-colors, $list-name: "top-header-text-color", $function-name: "shade-correction", $param1: $top-header-bg, $param3: true) !default;
+$top-header-font-weight:                $font-weight-bold !default;
 $top-header-icons-color:                is-custom-color($top-header-colors, "top-header-icons-color", "assign", $top-header-text-color) !default;
 $top-header-icons-color-mobile:         is-custom-color($top-header-colors, "top-header-icons-color-mobile", "assign", $top-header-text-color) !default;
 $top-header-icons-open-color:           is-custom-color($top-header-colors, "top-header-icons-open-color", "assign", $top-header-icons-color) !default;
@@ -511,6 +512,7 @@ $left-sidebar-sub-menu-arrow-color:         is-custom-color($left-sidebar-colors
 $left-sidebar-logo-bg:                      is-custom-color($vartype: $left-sidebar-colors, $list-name: "left-sidebar-logo-bg", $function-name: "darken", $param1: theme-color("dark"), $param5: 1.5%) !default;
 $left-sidebar-icon-size:                    19px !default;
 $left-sidebar-main-level-font-size:         1.077rem !default;
+$left-sidebar-main-level-font-weight:       $font-weight-bold !default;
 $left-sidebar-main-level-hover-bg:          darken($left-sidebar-bg, 2%);
 $left-sidebar-main-level-hover-text-color:  is-custom-color($left-sidebar-colors, "left-sidebar-main-level-hover-text-color", "assign", $left-sidebar-text-active-color) !default;
 $left-sidebar-main-level-padding:           20px !default;
@@ -519,6 +521,7 @@ $left-sidebar-main-level-label-margin:      ($left-sidebar-main-level-height / 2
 $left-sidebar-sub-level-color:              $left-sidebar-text-color !default;
 $left-sidebar-sub-level-bg:                 darken($left-sidebar-bg, 2.8%) !default;
 $left-sidebar-sub-level-font-size:          13px !default;
+$left-sidebar-sub-level-font-weight:        $font-weight-bold !default;
 $left-sidebar-sub-level-padding:            8px 15px 8px 49px !default;
 $left-sidebar-multilevel-sub-level-padding: 49px !default;
 $left-sidebar-collapsible-submenu-padding:  25px !default;
@@ -561,7 +564,7 @@ $card-heading-bottom-padding:           $card-spacer-y !default;
 $card-heading-padding:                  $card-heading-top-padding $card-heading-horizontal-padding $card-heading-bottom-padding !default;
 $card-heading-subtitle-margin:          0.4615rem !default;
 $card-heading-font-size:                18px !default;
-$card-heading-font-weight:              $font-weight-light !default;
+$card-heading-font-weight:              $font-weight-bold !default;
 $card-heading-icon-color:               darken(theme-color("light"), 27%) !default;
 $card-heading-icon-hover:               darken(theme-color("light"), 35%) !default;
 $card-heading-icon-size:                1.538rem !default;

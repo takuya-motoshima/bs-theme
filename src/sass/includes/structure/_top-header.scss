@@ -139,6 +139,7 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      font-weight: $top-header-font-weight;
     }
 
     .bt-nosidebar-left & {

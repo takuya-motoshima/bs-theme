@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.41] - 2020-08-27
+
+- Changed the font of the left side menu, card header, and modal header to bold. And changed the text color of the side navigation menu from #efc600 to rgba (29,161,242,1.00).
+
 ## [0.0.40] - 2020-08-14
 
 - Fixed a bug that icon navigation is displayed to the left when there is no user navigation.
