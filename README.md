@@ -6,6 +6,10 @@ This is still in development and will be published at a later date.
 
 ## Changelog
 
+### [0.0.43] - 2020-11-16
+
+- Changed to not escape HTML tags of confirm modal text strings(components/ConfirmModal).
+
 ### [0.0.42] - 2020-10-19
 
 - Make the splash screen title bold.

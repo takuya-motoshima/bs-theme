@@ -33,7 +33,7 @@ export default class extends Modal {
 
   async open(title = '', message = '') {
     this.title.text(title);
-    this.message.text(message);
+    this.message.html(message);
     return super.open();
   }
 
